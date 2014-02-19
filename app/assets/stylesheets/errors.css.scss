@@ -1,0 +1,22 @@
+.form-errors {
+  margin-bottom: 10px;
+
+  .bs-callout {
+    padding: 5px;
+    margin: 0;
+
+    h4 {
+      margin: 0;
+
+      a:focus, a:active, a:hover {
+        color: #b94a48;
+        text-decoration: underline;
+      }
+
+    }
+  }
+
+  i.indicator {
+    padding-right: 5px;
+  }
+}

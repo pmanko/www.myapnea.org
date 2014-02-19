@@ -1,0 +1,15 @@
+<div class="form-errors">
+  <div class="bs-callout bs-callout-danger">
+    <h4>
+      <a class="text-danger" data-toggle="collapse" href="#errorList">
+        <i class="indicator glyphicon glyphicon-plus"></i>
+        <%= sentence %>
+      </a>
+    </h4>
+    <div id="errorList" class="collapse text-danger">
+      <div class="">
+        <ul><%= messages.map { |msg| content_tag(:li, msg) }.join.html_safe %></ul>
+      </div>
+    </div>
+  </div>
+</div>

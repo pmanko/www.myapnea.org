@@ -1,0 +1,52 @@
+
+#highlights {
+  #join-us {
+    form {
+      padding: 0 15px;
+    }
+    .floater {
+      display: none;
+    }
+    a {
+      margin: 10px 0;
+    }
+  }
+}
+
+
+
+#reason-carousel {
+  //width: 400px;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+  #highlights {
+    position: relative;
+
+    .link {
+      position: absolute;
+      right: 0;
+      height: 100%;
+
+      .floater{
+        float: left;
+        height: 50%;
+        margin-bottom: -19px;
+      }
+
+      a {
+        margin: 0;
+        clear: left;
+      }
+    }
+  }
+}

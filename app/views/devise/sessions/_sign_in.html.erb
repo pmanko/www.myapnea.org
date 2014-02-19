@@ -1,0 +1,23 @@
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f| %>
+  <%= display_errors(resource) %>
+
+  <h2 class="form-signin-heading">Please sign in</h2>
+  <%= f.email_field :email, autofocus: true, class: "form-control", placeholder: "Email address" %>
+  <%= f.password_field :password, class: "form-control", placeholder: "Password" %>
+
+  <div class="row">
+    <% if devise_mapping.rememberable? %>
+      <label class="checkbox col-md-5">
+        <div><%= f.check_box :remember_me %></div>
+        Remember me
+      </label>
+    <% end %>
+    <small class="text-muted join-now col-md-7">Not signed up yet?<%= link_to "Join Now!", new_user_registration_path({skip_intro: true}) %></small>
+
+  </div>
+
+
+
+  <div><%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %></div>
+
+<% end %>

@@ -1,0 +1,195 @@
+<div id="patient-profile">
+    <div class="jumbotron">
+      <div class="container">
+        <h1><%= current_user.full_name %></h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div id="profile-nav" data-offset-top="220" data-spy="affix">
+            <ul class="nav sidebar">
+              <li><a href="#basic-info">Basic Information</a></li>
+              <li><a href="#labs-measurements">Labs & Measurements</a></li>
+              <li><a href="#medical-record">Medical Record</a></li>
+              <li><a href="#surveys-questionnaires">Surveys</a></li>
+              <li><a href="#connections">Connections</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div id="basic-info">
+            <div class="page-header">
+              <h2><span>Basic Information</span></h2>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h4>Contact Information<button class="btn btn-link pull-right btn-xs"><span class="glyphicon glyphicon-edit"></span><small class="text-primary">Choose how you'd like to be contacted</small></button></h4>
+                <table class="table table-bordered table-striped">
+                  <tbody>
+                    <tr>
+                      <th>Email</th>
+                      <td><%= current_user.email %></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>
+              <div class="col-md-6">
+                <h4>Demographics</h4>
+                <button class="btn btn-default"><span class="glyphicon glyphicon-list-alt"></span>View and Edit</button>
+              </div>
+            </div>
+
+          </div>
+
+          <div id="labs-measurements">
+            <div class="page-header">
+              <h2>Measurements & Labs</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a>Sleep Diary</a></li>
+                  <li><a>Heigh</a></li>
+                  <li><a>Weight</a></li>
+                </ul>
+
+                <a href="#"><span class="glyphicon glyphicon-plus"></span>add new measurement</a>
+              </div>
+
+              <div id="chart" class="col-md-9">
+
+              </div>
+
+            </div>
+          </div>
+
+          <div id="medical-record">
+            <div class="page-header">
+              <h2><span>Medical Record</span><button class="btn btn-link pull-right"><span class="glyphicon glyphicon-edit"></span>edit</button></h2>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Medications</div>
+                  <ul class="list-group">
+                    <li class="list-group-item">Aspirin</li>
+                    <li class="list-group-item">Tylenol</li>
+                    <li class="list-group-item"><a href="#"><span class="glyphicon glyphicon-plus"></span>add new</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Conditions</div>
+                  <ul class="list-group">
+                    <li class="list-group-item"><button class="btn btn-link"><span class="glyphicon glyphicon-plus"></span>add new</button></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Family History</div>
+                  <div class="panel-body">
+                    <a href="#"><span class="glyphicon glyphicon-list"></span>edit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="surveys-questionnaires">
+            <div class="page-header">
+              <h2>Surveys & Questionnaires</h2>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <h3>Assigned</h3>
+                <div class='list-group'>
+                  <a href="#" class='list-group-item'><span class="glyphicon glyphicon-unchecked"></span><strong class="survey-name">Own & Lark Questionnaire</strong><small class="survey-date text-muted">Assigned on 08/23/2013</small></a>
+                  <a href="#" class='list-group-item'><span class="glyphicon glyphicon-unchecked"></span><strong class="survey-name">Physical Activity Questionnaire</strong><small class="survey-date text-muted">Assigned on 09/02/2013</small></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Completed</h3>
+                <div class='list-group'>
+                  <a href="#" class='list-group-item'><span class="glyphicon glyphicon-check"></span><strong class="survey-name">Basic Information</strong><small class="survey-date text-muted">Completed on 09/04/2013</small> </a>
+                  <a href="#" class='list-group-item'><span class="glyphicon glyphicon-check"></span><strong class="survey-name">Sleep Apnea Questionnaire</strong><small class="survey-date text-muted">Completed on 09/16/2013</small></a>
+                  <a href="#" class='list-group-item'><span class="glyphicon glyphicon-check"></span><strong class="survey-name">Sleep Quality Questionnaire</strong><small class="survey-date text-muted">Completed on 09/17/2013</small> </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <div id="connections">
+            <div class="page-header">
+              <h2>
+                <span>Connections</span>
+                <button class="btn btn-sm btn-primary pull-right"><span class="glyphicon glyphicon-lock"></span>Sharing Settings</button>
+              </h2>
+
+
+            </div>
+
+            <div class="row">
+
+              <div class="connection col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Sleep Quality Network</div>
+                  <div class="panel-body">
+                    <p>Your sleep score: <strong class="sleep-score text-danger">45</strong></p>
+                    <p>Top <span class="sleep-percentile text-warning">60%</span> among your friends.</p>
+                    <a href="#">Learn how to improve your sleep quality.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="connection col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Educational Material</div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+              <div class="connection col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Connected Website</div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+              <div class="connection col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Connected Device</div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+              <div class="connection col-md-4">
+                <div class="panel panel-default">
+                  <div class="panel-heading">Connected Application</div>
+                  <div class="panel-body">
+
+                  </div>
+                </div>
+              </div>
+              <div class="connection col-md-4">
+                <div class="panel panel-info">
+                  <div class="panel-body">
+                    <a href="#"><span class="glyphicon glyphicon-plus"></span>Add New</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
