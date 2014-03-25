@@ -3,7 +3,7 @@ class CreateAnswerValues < ActiveRecord::Migration
     create_table :answer_values do |t|
       t.integer :answer_id
       t.integer :answer_option_id
-      t.numeric :numeric_value
+      t.decimal :numeric_value
       t.string :text_value
       t.datetime :time_value
 
