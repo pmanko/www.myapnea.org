@@ -1,25 +1,29 @@
-<h1>Listing question_types</h1>
+<div class="page-header">
+  <%= link_to new_question_type_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Question type
+  <% end %>
+  <h1>Listing question_types</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @question_types.each do |question_type| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= question_type.name %></td>
-        <td><%= link_to 'Show', question_type %></td>
+            <th>Name</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @question_types) do |question_type| %>
+            <td><%= question_type.name %></td>
+            <td><%= link_to 'Show', question_type %></td>
         <td><%= link_to 'Edit', edit_question_type_path(question_type) %></td>
         <td><%= link_to 'Destroy', question_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Question type', new_question_type_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

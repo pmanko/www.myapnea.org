@@ -1,29 +1,33 @@
-<h1>Listing answer_options</h1>
+<div class="page-header">
+  <%= link_to new_answer_option_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Answer option
+  <% end %>
+  <h1>Listing answer_options</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Numeric value</th>
-      <th>Text value</th>
-      <th>Time value</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @answer_options.each do |answer_option| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= answer_option.numeric_value %></td>
-        <td><%= answer_option.text_value %></td>
-        <td><%= answer_option.time_value %></td>
-        <td><%= link_to 'Show', answer_option %></td>
+            <th>Numeric value</th>
+            <th>Text value</th>
+            <th>Time value</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @answer_options) do |answer_option| %>
+            <td><%= answer_option.numeric_value %></td>
+            <td><%= answer_option.text_value %></td>
+            <td><%= answer_option.time_value %></td>
+            <td><%= link_to 'Show', answer_option %></td>
         <td><%= link_to 'Edit', edit_answer_option_path(answer_option) %></td>
         <td><%= link_to 'Destroy', answer_option, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Answer option', new_answer_option_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

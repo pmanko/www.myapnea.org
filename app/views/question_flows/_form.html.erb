@@ -1,7 +1,8 @@
-<%= form_for(@question_flow) do |f| %>
+<%= form_for(@question_flow, :html => { :class => "form-horizontal" }) do |f| %>
   <% if @question_flow.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@question_flow.errors.count, "error") %> prohibited this question_flow from being saved:</h2>
+    <div class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h4><%= pluralize(@question_flow.errors.count, "error") %> prohibited this question_flow from being saved:</h4>
 
       <ul>
       <% @question_flow.errors.full_messages.each do |msg| %>
@@ -11,19 +12,27 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :answer_option_id %><br>
-    <%= f.number_field :answer_option_id %>
+  <div class="form-group">
+    <%= f.label :answer_option_id, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.number_field :answer_option_id, :class => "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :condition %><br>
-    <%= f.text_field :condition %>
+  <div class="form-group">
+    <%= f.label :condition, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :condition, :class => "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :child_id %><br>
-    <%= f.number_field :child_id %>
+  <div class="form-group">
+    <%= f.label :child_id, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.number_field :child_id, :class => "form-control" %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit :class => "btn btn-primary" %>
+    </div>
   </div>
 <% end %>

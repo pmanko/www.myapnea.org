@@ -1,27 +1,31 @@
-<h1>Listing answer_types</h1>
+<div class="page-header">
+  <%= link_to new_answer_type_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Answer type
+  <% end %>
+  <h1>Listing answer_types</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Data type</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @answer_types.each do |answer_type| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= answer_type.name %></td>
-        <td><%= answer_type.data_type %></td>
-        <td><%= link_to 'Show', answer_type %></td>
+            <th>Name</th>
+            <th>Data type</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @answer_types) do |answer_type| %>
+            <td><%= answer_type.name %></td>
+            <td><%= answer_type.data_type %></td>
+            <td><%= link_to 'Show', answer_type %></td>
         <td><%= link_to 'Edit', edit_answer_type_path(answer_type) %></td>
         <td><%= link_to 'Destroy', answer_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Answer type', new_answer_type_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

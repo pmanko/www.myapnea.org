@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to answer_options_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_answer_option_path(@answer_option), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show answer_option</h1>
+</div>
 
-<p>
-  <strong>Numeric value:</strong>
-  <%= @answer_option.numeric_value %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Numeric value:</dt>
+  <dd><%= @answer_option.numeric_value %></dd>
 
-<p>
-  <strong>Text value:</strong>
-  <%= @answer_option.text_value %>
-</p>
+  <dt>Text value:</dt>
+  <dd><%= @answer_option.text_value %></dd>
 
-<p>
-  <strong>Time value:</strong>
-  <%= @answer_option.time_value %>
-</p>
+  <dt>Time value:</dt>
+  <dd><%= @answer_option.time_value %></dd>
 
-<%= link_to 'Edit', edit_answer_option_path(@answer_option) %> |
-<%= link_to 'Back', answer_options_path %>
+</dl>

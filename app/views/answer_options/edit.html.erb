@@ -1,6 +1,13 @@
-<h1>Editing answer_option</h1>
+<div class="page-header">
+  <%= link_to answer_options_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to @answer_option, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    Show
+  <% end %>
+  <h1>Editing answer_option</h1>
+</div>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @answer_option %> |
-<%= link_to 'Back', answer_options_path %>

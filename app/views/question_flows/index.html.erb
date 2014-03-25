@@ -1,29 +1,33 @@
-<h1>Listing question_flows</h1>
+<div class="page-header">
+  <%= link_to new_question_flow_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Question flow
+  <% end %>
+  <h1>Listing question_flows</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Answer option</th>
-      <th>Condition</th>
-      <th>Child</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @question_flows.each do |question_flow| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= question_flow.answer_option_id %></td>
-        <td><%= question_flow.condition %></td>
-        <td><%= question_flow.child_id %></td>
-        <td><%= link_to 'Show', question_flow %></td>
+            <th>Answer option</th>
+            <th>Condition</th>
+            <th>Child</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @question_flows) do |question_flow| %>
+            <td><%= question_flow.answer_option_id %></td>
+            <td><%= question_flow.condition %></td>
+            <td><%= question_flow.child_id %></td>
+            <td><%= link_to 'Show', question_flow %></td>
         <td><%= link_to 'Edit', edit_question_flow_path(question_flow) %></td>
         <td><%= link_to 'Destroy', question_flow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Question flow', new_question_flow_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

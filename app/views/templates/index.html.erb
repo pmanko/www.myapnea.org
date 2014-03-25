@@ -1,27 +1,31 @@
-<h1>Listing templates</h1>
+<div class="page-header">
+  <%= link_to new_template_path, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Template
+  <% end %>
+  <h1>Listing templates</h1>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Question flow</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @templates.each do |template| %>
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
       <tr>
-        <td><%= template.name %></td>
-        <td><%= template.question_flow_id %></td>
-        <td><%= link_to 'Show', template %></td>
+            <th>Name</th>
+            <th>Question flow</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @templates) do |template| %>
+            <td><%= template.name %></td>
+            <td><%= template.question_flow_id %></td>
+            <td><%= link_to 'Show', template %></td>
         <td><%= link_to 'Edit', edit_template_path(template) %></td>
         <td><%= link_to 'Destroy', template, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Template', new_template_path %>
+      <% end %>
+    </tbody>
+  </table>
+</div>

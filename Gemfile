@@ -46,6 +46,8 @@ gem 'high_voltage', '~> 2.1.0'
 
 # Less support
 gem 'less-rails'
+gem 'bootstrap-generators', '~> 3.1.1'
+
 
 # Development
 group :development do

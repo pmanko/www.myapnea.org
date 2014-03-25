@@ -1,19 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to question_flows_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_question_flow_path(@question_flow), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show question_flow</h1>
+</div>
 
-<p>
-  <strong>Answer option:</strong>
-  <%= @question_flow.answer_option_id %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Answer option:</dt>
+  <dd><%= @question_flow.answer_option_id %></dd>
 
-<p>
-  <strong>Condition:</strong>
-  <%= @question_flow.condition %>
-</p>
+  <dt>Condition:</dt>
+  <dd><%= @question_flow.condition %></dd>
 
-<p>
-  <strong>Child:</strong>
-  <%= @question_flow.child_id %>
-</p>
+  <dt>Child:</dt>
+  <dd><%= @question_flow.child_id %></dd>
 
-<%= link_to 'Edit', edit_question_flow_path(@question_flow) %> |
-<%= link_to 'Back', question_flows_path %>
+</dl>

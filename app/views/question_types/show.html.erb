@@ -1,9 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to question_types_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_question_type_path(@question_type), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show question_type</h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @question_type.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @question_type.name %></dd>
 
-<%= link_to 'Edit', edit_question_type_path(@question_type) %> |
-<%= link_to 'Back', question_types_path %>
+</dl>

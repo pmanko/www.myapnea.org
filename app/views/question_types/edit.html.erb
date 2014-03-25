@@ -1,6 +1,13 @@
-<h1>Editing question_type</h1>
+<div class="page-header">
+  <%= link_to question_types_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to @question_type, :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-info-sign"></span>
+    Show
+  <% end %>
+  <h1>Editing question_type</h1>
+</div>
 
 <%= render 'form' %>
-
-<%= link_to 'Show', @question_type %> |
-<%= link_to 'Back', question_types_path %>

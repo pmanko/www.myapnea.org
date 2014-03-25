@@ -1,7 +1,8 @@
-<%= form_for(@answer_type) do |f| %>
+<%= form_for(@answer_type, :html => { :class => "form-horizontal" }) do |f| %>
   <% if @answer_type.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@answer_type.errors.count, "error") %> prohibited this answer_type from being saved:</h2>
+    <div class="alert alert-danger alert-dismissable">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <h4><%= pluralize(@answer_type.errors.count, "error") %> prohibited this answer_type from being saved:</h4>
 
       <ul>
       <% @answer_type.errors.full_messages.each do |msg| %>
@@ -11,15 +12,21 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+  <div class="form-group">
+    <%= f.label :name, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :name, :class => "form-control" %>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :data_type %><br>
-    <%= f.text_field :data_type %>
+  <div class="form-group">
+    <%= f.label :data_type, :class => "col-sm-2 control-label" %>
+    <div class="col-sm-10">
+      <%= f.text_field :data_type, :class => "form-control" %>
+    </div>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <%= f.submit :class => "btn btn-primary" %>
+    </div>
   </div>
 <% end %>

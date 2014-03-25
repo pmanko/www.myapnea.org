@@ -1,14 +1,20 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to answer_types_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_answer_type_path(@answer_type), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show answer_type</h1>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @answer_type.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @answer_type.name %></dd>
 
-<p>
-  <strong>Data type:</strong>
-  <%= @answer_type.data_type %>
-</p>
+  <dt>Data type:</dt>
+  <dd><%= @answer_type.data_type %></dd>
 
-<%= link_to 'Edit', edit_answer_type_path(@answer_type) %> |
-<%= link_to 'Back', answer_types_path %>
+</dl>
