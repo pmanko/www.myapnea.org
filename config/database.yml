@@ -20,13 +20,14 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  username: www.myapnea.org
-  password: www.myapnea.org
+  username: myapnea
+  password: myapnea
   host: localhost
 
 development:
   <<: *default
-  database: www_myapnea_org_development
+  port: 5432
+  database: myapnea_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -44,7 +45,6 @@ development:
 
   # The TCP port the server listens on. Defaults to 5432.
   # If your server runs on a different port number, change accordingly.
-  #port: 5432
 
   # Schema search path. The server defaults to $user,public
   #schema_search_path: myapp,sharedapp,public
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: www_myapnea_org_test
+  database: myapnea_test
 
 # Do not keep production credentials in the repository,
 # instead read the configuration from the environment.
