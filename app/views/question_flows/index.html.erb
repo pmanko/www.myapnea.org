@@ -1,0 +1,29 @@
+<h1>Listing question_flows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Answer option</th>
+      <th>Condition</th>
+      <th>Child</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @question_flows.each do |question_flow| %>
+      <tr>
+        <td><%= question_flow.answer_option_id %></td>
+        <td><%= question_flow.condition %></td>
+        <td><%= question_flow.child_id %></td>
+        <td><%= link_to 'Show', question_flow %></td>
+        <td><%= link_to 'Edit', edit_question_flow_path(question_flow) %></td>
+        <td><%= link_to 'Destroy', question_flow, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Question flow', new_question_flow_path %>

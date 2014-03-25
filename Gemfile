@@ -52,4 +52,5 @@ group :development do
   gem "better_errors"
   gem "meta_request"
   gem "binding_of_caller"
+  gem 'schema_to_scaffold'
 end

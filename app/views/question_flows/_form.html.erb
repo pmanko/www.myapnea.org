@@ -1,0 +1,29 @@
+<%= form_for(@question_flow) do |f| %>
+  <% if @question_flow.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@question_flow.errors.count, "error") %> prohibited this question_flow from being saved:</h2>
+
+      <ul>
+      <% @question_flow.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :answer_option_id %><br>
+    <%= f.number_field :answer_option_id %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.text_field :condition %>
+  </div>
+  <div class="field">
+    <%= f.label :child_id %><br>
+    <%= f.number_field :child_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

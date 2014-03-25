@@ -1,0 +1,29 @@
+<h1>Listing answer_options</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Numeric value</th>
+      <th>Text value</th>
+      <th>Time value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @answer_options.each do |answer_option| %>
+      <tr>
+        <td><%= answer_option.numeric_value %></td>
+        <td><%= answer_option.text_value %></td>
+        <td><%= answer_option.time_value %></td>
+        <td><%= link_to 'Show', answer_option %></td>
+        <td><%= link_to 'Edit', edit_answer_option_path(answer_option) %></td>
+        <td><%= link_to 'Destroy', answer_option, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Answer option', new_answer_option_path %>

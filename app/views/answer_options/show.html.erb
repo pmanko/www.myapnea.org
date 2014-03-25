@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Numeric value:</strong>
+  <%= @answer_option.numeric_value %>
+</p>
+
+<p>
+  <strong>Text value:</strong>
+  <%= @answer_option.text_value %>
+</p>
+
+<p>
+  <strong>Time value:</strong>
+  <%= @answer_option.time_value %>
+</p>
+
+<%= link_to 'Edit', edit_answer_option_path(@answer_option) %> |
+<%= link_to 'Back', answer_options_path %>

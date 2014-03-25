@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Answer option:</strong>
+  <%= @question_flow.answer_option_id %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @question_flow.condition %>
+</p>
+
+<p>
+  <strong>Child:</strong>
+  <%= @question_flow.child_id %>
+</p>
+
+<%= link_to 'Edit', edit_question_flow_path(@question_flow) %> |
+<%= link_to 'Back', question_flows_path %>
