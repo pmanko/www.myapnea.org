@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'patient/dashboard'
+
   resources :templates
 
   resources :questions
