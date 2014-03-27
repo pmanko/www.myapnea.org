@@ -19,11 +19,16 @@
 
     <nav class="collapse navbar-collapse pi-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Network", "" %></li>
-        <li><%= link_to "Technology", "" %></li>
-        <li><%= link_to "FAQs", "" %></li>
-        <li><%= link_to "Team", "" %></li>
-        <li><%= link_to "Log In", "" %></li>
+        <li class="<%= 'active' if current_page?(page_path('network')) %>"><%= link_to "Network", page_path('network') %></li>
+        <li class="<%= 'active' if current_page?(page_path('technology')) %>"><%= link_to "Technology", page_path('technology') %></li>
+        <li class="<%= 'active' if current_page?(page_path('faqs')) %>"><%= link_to "FAQs", page_path('faqs') %></li>
+        <li class="<%= 'active' if current_page?(page_path('team')) %>"><%= link_to "Team", page_path('team') %></li>
+
+        <% if user_signed_in? %>
+          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Log In", new_user_session_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

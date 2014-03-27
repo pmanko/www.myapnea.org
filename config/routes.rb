@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'patient/dashboard'
+  get 'dashboard', to: "patient#dashboard"
 
-  resources :templates
+  resources :plans
 
   resources :questions
 
@@ -13,7 +13,8 @@ Rails.application.routes.draw do
 
   resources :answer_options
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'user/registrations'}
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

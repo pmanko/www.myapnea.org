@@ -1,13 +1,13 @@
 <div class="page-header">
-  <%= link_to templates_path, :class => 'btn btn-default' do %>
+  <%= link_to plans_path, :class => 'btn btn-default' do %>
     <span class="glyphicon glyphicon-list-alt"></span>
     Back
   <% end %>
-  <%= link_to @template, :class => 'btn btn-primary' do %>
+  <%= link_to @plan, :class => 'btn btn-primary' do %>
     <span class="glyphicon glyphicon-info-sign"></span>
     Show
   <% end %>
-  <h1>Editing template</h1>
+  <h1>Editing plan</h1>
 </div>
 
 <%= render 'form' %>

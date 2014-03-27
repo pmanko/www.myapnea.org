@@ -19,15 +19,10 @@
 <body>
 
 <%= render partial: 'layouts/menu' %>
-<div class="container">
+<div class="container main-container">
   <%= yield %>
 </div>
 
-<div class="container" id="join-bottom">
-  <div class="row">
-    <div class="col-md-12"><button class="btn btn-block btn-primary join">Join Now!</button></div>
-  </div>
-</div>
 <div class="container" id="footer">
 
   <div class="well">
@@ -36,11 +31,11 @@
       <div class="col-md-3">
         <div class="center-block">
         <ul class="">
-          <li><%= link_to "About", "" %></li>
-          <li><%= link_to "Team", "" %></li>
-          <li><%= link_to "Partners", "" %></li>
-          <li><%= link_to "Technology", "" %></li>
-          <li><%= link_to "FAQs", "" %></li>
+          <li><%= link_to "About", page_path('about') %></li>
+          <li><%= link_to "Team", page_path('team') %></li>
+          <li><%= link_to "Network", page_path('network') %></li>
+          <li><%= link_to "Technology", page_path('technology') %></li>
+          <li><%= link_to "FAQs", page_path('faqs') %></li>
           <li><%= link_to "Privacy Policy", "" %></li>
         </ul>
       </div>
