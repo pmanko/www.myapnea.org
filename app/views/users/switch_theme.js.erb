@@ -1,0 +1,5 @@
+// location.reload();
+
+$('link[rel=stylesheet][href*="<%= @old %>"]').prop('disabled', true).remove();
+$('head').append('<%= stylesheet_link_tag @new, media: 'all', 'data-turbolinks-track' => true %>');
+$('#theme-switcher').html('<%= link_to @old, switch_theme_path(@old), remote: true  %>');
