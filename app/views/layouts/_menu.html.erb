@@ -1,7 +1,7 @@
 <header class="navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".pi-navbar-collapse">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".myapnea-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -10,14 +10,7 @@
       <%= link_to "My Apnea", root_path, class: "navbar-brand" %>
     </div>
 
-
-
-
-    <div class="flash-messages">
-      <%= render partial: "layouts/flash" %>
-    </div>
-
-    <nav class="collapse navbar-collapse pi-navbar-collapse" role="navigation">
+    <nav class="collapse navbar-collapse myapnea-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
         <li class="<%= 'active' if current_page?(page_path('network')) %>"><%= link_to "Network", page_path('network') %></li>
         <li class="<%= 'active' if current_page?(page_path('technology')) %>"><%= link_to "Technology", page_path('technology') %></li>
@@ -29,7 +22,16 @@
         <% else %>
           <li><%= link_to "Log In", new_user_session_path %></li>
         <% end %>
+        <li id="theme-switcher">
+          <% if current_theme == "day_theme" %>
+            <%= link_to icon("moon-o"), switch_theme_path(theme: 'night_theme'), remote: true %>
+          <% else %>
+            <%= link_to icon("sun-o"), switch_theme_path(theme: 'day_theme'), remote: true %>
+          <% end %>
+        </li>
       </ul>
+
+
     </nav>
   </div>
 </header>

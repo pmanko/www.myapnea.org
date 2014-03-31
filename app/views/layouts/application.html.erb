@@ -21,70 +21,12 @@
 
 
 <%= render partial: 'layouts/menu' %>
+<%= render partial: "layouts/flash" %>
+
 <div class="container main-container">
   <%= yield %>
 </div>
-
-<footer class="container" id="footer">
-  <div class="hiii"><%= icon('moon') %></div>
-
-  <div class="well">
-
-    <div class="row">
-      <div class="col-md-3">
-        <div class="center-block">
-        <ul class="">
-          <li><%= link_to "About", page_path('about') %></li>
-          <li><%= link_to "Team", page_path('team') %></li>
-          <li><%= link_to "Network", page_path('network') %></li>
-          <li><%= link_to "Technology", page_path('technology') %></li>
-          <li><%= link_to "FAQs", page_path('faqs') %></li>
-          <li><%= link_to "Privacy Policy", "" %></li>
-        </ul>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div class="center-block">
-        <h5 class="text-danger">Connect</h5>
-        <ul>
-          <li><%= link_to "SAPCON", "http://pfaawards.pcori.org/node/20/datavizwiz/detail/4344" %></li>
-          <li><%= link_to "ASAA", "http://www.sleepapnea.org/" %></li>
-          <li><%= link_to "Brigham & Women's Hospital", "www.brighamandwomens.org" %></li>
-        </ul>
-      </div>
-      </div>
-      <div class="col-md-3">
-        <div class="center-block">
-          <h5 class="text-danger">Social</h5>
-          <ul>
-            <li><%= link_to "Facebook", "" %></li>
-            <li><%= link_to "Twitter", "" %></li>
-            <li><%= link_to "Instagram", "" %></li>
-            <li><%= link_to "LinkedIn", "" %></li>
-            <li><%= link_to "Etc.", "" %></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="container" id="theme-switcher">
-          <% if current_theme == "day_theme" %>
-              <%= link_to "night mode", switch_theme_path('night_theme'), remote: true %>
-          <% else %>
-              <%= link_to "day mode", switch_theme_path('day_theme'), remote: true %>
-          <% end %>
-        </div>
-
-        <div class="center-block">
-          <a class="navbar-brand" href="/">My Apnea</a>
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </div>
-</footer>
+<%= render partial: 'layouts/footer' %>
 
 </body>
 </html>
