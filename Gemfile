@@ -46,7 +46,6 @@ gem 'high_voltage', '~> 2.1.0'
 
 # Less support
 gem 'less-rails'
-gem 'font-awesome-less'
 
 # Scaffold Generation
 gem 'bootstrap-generators', '~> 3.1.1'

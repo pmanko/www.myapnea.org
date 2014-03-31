@@ -24,9 +24,13 @@
         <% end %>
         <li id="theme-switcher">
           <% if current_theme == "day_theme" %>
-            <%= link_to icon("moon-o"), switch_theme_path(theme: 'night_theme'), remote: true %>
+            <%= link_to(switch_theme_path(theme: 'night_theme', format: :js), remote: true) do %>
+              <i class="fa fa-moon-o"></i>
+            <% end %>
           <% else %>
-            <%= link_to icon("sun-o"), switch_theme_path(theme: 'day_theme'), remote: true %>
+            <%= link_to(switch_theme_path(theme: 'day_theme', format: :js), remote: true) do %>
+              <i class="fa fa-sun-o"></i>
+            <% end %>
           <% end %>
         </li>
       </ul>
