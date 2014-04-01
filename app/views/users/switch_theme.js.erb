@@ -1,8 +1,12 @@
 $('link[rel=stylesheet][href*="<%= @old %>"]').prop('disabled', true).remove();
 $('head').append('<%= stylesheet_link_tag @new, media: 'all', 'data-turbolinks-track' => true %>');
 
+var new_path = '<%= switch_theme_path(theme: @old, format: :js) %>';
 <% if @old =~ /day/ %>
-  $('#theme-switcher').html('<%= link_to(switch_theme_path(@old), remote: true) { '<i class="fa fa-sun-o"></i>'.html_safe }  %>');
+var new_icon = 'fa-sun-o';
 <% else %>
-  $('#theme-switcher').html('<%= link_to(switch_theme_path(@old), remote: true) { '<i class="fa fa-moon-o"></i>'.html_safe }  %>');
+var new_icon = 'fa-moon-o';
 <% end %>
+
+$('#theme-switcher a').attr('href', new_path);
+$('#theme-switcher i').removeClass().addClass("fa").addClass(new_icon);
