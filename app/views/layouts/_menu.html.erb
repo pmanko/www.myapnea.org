@@ -7,13 +7,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <%= link_to "My Apnea", root_path, class: "navbar-brand" %>
+      <a href="<%= root_path %>" class="navbar-brand">
+        <div id="main-brand">My Apnea</div>
+        <div id="sub-brand">Sleep Apnea Patient Centered Outcomes Network</div>
+      </a>
     </div>
 
     <nav class="collapse navbar-collapse myapnea-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav navbar-right">
         <li class="<%= 'active' if current_page?(page_path('network')) %>"><%= link_to "Network", page_path('network') %></li>
-        <li class="<%= 'active' if current_page?(page_path('technology')) %>"><%= link_to "Technology", page_path('technology') %></li>
+        <li class="<%= 'active' if current_page?(page_path('connect')) %>"><%= link_to "Connect", page_path('connect') %></li>
         <li class="<%= 'active' if current_page?(page_path('faqs')) %>"><%= link_to "FAQs", page_path('faqs') %></li>
         <li class="<%= 'active' if current_page?(page_path('team')) %>"><%= link_to "Team", page_path('team') %></li>
 
@@ -22,6 +25,7 @@
         <% else %>
           <li><%= link_to "Log In", new_user_session_path %></li>
         <% end %>
+
         <li id="theme-switcher">
           <% if current_theme == "day_theme" %>
             <%= link_to(switch_theme_path(theme: 'night_theme', format: :js), remote: true) do %>
@@ -34,8 +38,6 @@
           <% end %>
         </li>
       </ul>
-
-
     </nav>
   </div>
 </header>

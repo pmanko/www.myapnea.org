@@ -1,24 +1,66 @@
 #splash {
 
-  #personal-stories {
-    img {
-      height: 300px;
-      width: auto;
-      margin-top: 0px;
+  section {
+    margin-bottom: 50px;
+  }
+
+  section#join {
+    margin-top: 50px;
+
+    #join-btn-top {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    div#main-video {
+      // Based on http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+      .aspect-box:before {
+        padding-top: 75%;
+      }
+
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 
-  .row {
-    margin-top: 10px;
-    margin-bottom: 10px;
+  section#goal {
+    .aspect-box:before {
+      padding-top: 66%;
+    }
+    #goal-chart {
+      height: 100%;
+      width: 100%;
+    }
   }
 
-  img {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .join-top {
-    margin-top: 74px;
+  section#personal-stories {
+    @personal-stories-height: 300px;
+
+    .vertical-center {
+      display: table;
+      height: @personal-stories-height;
+      .cell {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .thumbnail {
+      display: block;
+      padding: 0;
+      margin: 0;
+      line-height: 1.42857143;
+      background-color: #fff;
+      border: none;
+      -webkit-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+
+      img {
+        height: @personal-stories-height;
+        border: none;
+      }
+    }
+
+
   }
 }
-

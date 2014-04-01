@@ -1,6 +1,18 @@
-i {
-  font-size: 16px;
+@import "less/flatly_variables.less";
+
+header {
+  .navbar-brand {
+    padding-top: 11.5px;
+    #main-brand {
+      font-size: @font-size-large;
+
+    }
+    #sub-brand {;
+      font-size: @font-size-small;
+    }
+  }
 }
+
 
 #footer {
   .well {
@@ -16,15 +28,22 @@ i {
       padding-left: 0;
       margin-left: 0
     }
-    .center-block {
-      padding-left: 40px;
+    .bottom-brand {
+      font-size: @font-size-large;
+      a {
+        color: inherit;
+      }
     }
   }
 }
 
 #join-bottom {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  span {
+    font-size: @font-size-large;
+    padding-right: 100px;
+  }
 }
 
 .main-container {

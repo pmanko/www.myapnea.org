@@ -1,126 +1,160 @@
-<div class="pd">
-
-</div>
-
 <div id="splash">
+
+  <section id="join">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Join My Apnea</h1>
+        <p> Be part of a Patient Powered Network that drives Sleep Apnea research by focusing on the needs of those diagnosed with Sleep Apnea.</p>
+        <ul>
+          <li>It's easy</li>
+          <li>It's safe</li>
+          <li>You can make a difference for yourself and others</li>
+        </ul>
+        <%= link_to "Join Now!", page_path('pledge'), class: "btn btn-block btn-primary", id: "join-btn-top", remote: false %>
+
+      </div>
+      <div class="col-md-6" id="main-video">
+        <div class="aspect-box">
+          <div class="aspect-content">
+            <iframe src="//www.youtube.com/embed/4JkiWvWn2aU?html5=1" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <div class="row">
+    <div class="col-md-5">
+      <section id="goal">
+        <h3>Our Goal: 50,000 Signups</h3>
+        <div class="aspect-box">
+          <div class="aspect-content">
+            <div id="goal-chart">
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div class="col-md-7">
-      <h1>Join the My Apnea Network!</h1>
-      <ul>
-        <li>It's easy</li>
-        <li>It's safe</li>
-        <li>You can make a difference</li>
-        <li>Benefits</li>
-      </ul>
-
-      <%= link_to "Join Now!", page_path('pledge'), class: "btn btn-block btn-primary", remote: false %>
-    </div>
-    <div class="col-md-5" id="main-video">
-      <iframe width='457px' height="257px" src="//www.youtube.com/embed/xQ6xgDI7Whc" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
-
-
-  <div class="row" id="perils">
-    <div class="col-md-9">
-      <h3>The perils of Sleep Apnea:</h3>
-      <ul>
-        <li>EDS</li>
-        <li>Hypertension</li>
-        <li>Heart Attack</li>
-        <li>Stroke</li>
-        <li>Diabetes</li>
-        <li>Etc.</li>
-      </ul>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "snore.jpg" %>
+      <section id="perils">
+        <h3>The perils of Sleep Apnea:</h3>
+        <ul>
+          <li>EDS</li>
+          <li>Hypertension</li>
+          <li>Heart Attack</li>
+          <li>Stroke</li>
+          <li>Diabetes</li>
+          <li>What & why we need to understand etc</li>
+        </ul>
+      </section>
     </div>
 
   </div>
+  <section id="safe-easy">
+    <div class="row">
+      <div class="col-md-4">
+        <div class='thumbnail'><%= image_tag "pages/safe-easy.jpg" %></div>
+      </div>
 
-  <div class="row" id="safe-easy">
-    <div class="col-md-4">
-      <%= image_tag "safe-easy.jpg" %>
+      <div class="col-md-7 col-md-offset-1">
+        <h3></h3>
+        <p><strong class="text-info">It's Safe!</strong><br />Your privacy and health information are protected.</p>
+        <p><strong class="text-info">It's Easy!</strong><br />Simple controls, cross platform, site tour...</p>
+      </div>
     </div>
+  </section>
 
-    <div class="col-md-7 col-md-offset-1">
-      <h3></h3>
-      <p><strong class="text-info">It's Safe!</strong><br />Your privacy and health information are protected.</p>
-      <p><strong class="text-info">It's Easy!</strong><br />Simple controls, cross platform, site tour...</p>
+  <section id="make-difference">
+    <div class="row">
+      <div class="col-md-7">
+        <h3>Make a difference!</h3>
+        <ul>
+          <li>Better treatments and patient outcomes</li>
+          <li>Manage your symptoms and increase quality of life</li>
+          <li>Share and find advice with other patients around the world</li>
+          <li>Encourage patient involvement in scientific collaboration and research</li>
+          <li>Increase awareness</li>
+        </ul>
+      </div>
+      <div class="col-md-4 col-md-offset-1">
+        <div class="thumbnail"><%= image_tag "pages/make-difference.jpg" %></div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <div class="row" id="make-difference">
-    <div class="col-md-9">
-      <h3>Make a difference!</h3>
-      <ul>
-        <li>Better treatments and patient outcomes</li>
-        <li>Manage your symptoms and increase quality of life</li>
-        <li>Share and find advice with other patients around the world</li>
-        <li>Encourage patient involvement in scientific collaboration and research</li>
-        <li>Increase awareness</li>
-      </ul>
-    </div>
-    <div class="col-md-3">
-      <%= image_tag "make-difference.jpg" %>
 
-    </div>
+  <section id="personal-stories">
+    <div id="reason-carousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#reason-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#reason-carousel" data-slide-to="1" class=""></li>
+        <li data-target="#reason-carousel" data-slide-to="2" class=""></li>
+      </ol>
 
-  </div>
-  <div id="personal-stories">
-  <div id="reason-carousel" class="carousel slide">
-    <ol class="carousel-indicators">
-      <li data-target="#reason-carousel" data-slide-to="0" class="active"></li>
-      <li data-target="#reason-carousel" data-slide-to="1" class=""></li>
-      <li data-target="#reason-carousel" data-slide-to="2" class=""></li>
-    </ol>
-
-    <div class="carousel-inner">
-      <div class="item active">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "people/1.jpg" %>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail"><%= image_tag "people/1.jpg" %></div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <div class="vertical-center">
+                <div class="cell">
+                  <blockquote>
+                    <p>My husband has sleep apnea. And my daughter was diagnosed at the age of 3. I want other parents to realized that kids can have this condition too.</p>
+                    <footer><cite>Justine</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-md-5 col-md-offset-3">
-            <h3>Personal Anecdote #1</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail"><%= image_tag "people/2.jpg" %></div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <div class="vertical-center">
+                <div class="cell">
+                  <blockquote>
+                    <p>My wife told me I stopped breathing while I slept. A lot. Thankfully she read an article on sleep apnea and made me go to the Doctor. I don’t want other people to suffer needlessly from this condition.</p>
+                    <footer><cite>Steve</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="thumbnail"><%= image_tag "people/3.jpg" %></div>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <div class="vertical-center">
+                <div class="cell">
+                  <blockquote>
+                    <p>
+                      I have always been a snorer - I had no idea it was more than just a nuisance to my partner. I have lowered my blood pressure and my chances of heart disease by wearing a CPAP. I want to be a part of the study to find out what else is effected by this condition.
+                    </p>
+                    <footer><cite>Richard</cite></footer>
+                  </blockquote>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="item">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "people/2.jpg" %>
-          </div>
-          <div class="col-md-5 col-md-offset-3">
-            <h3>Personal Anecdote #2</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="row">
-          <div class="col-md-4">
-            <%= image_tag "people/3.jpg" %>
-          </div>
-          <div class="col-md-5 col-md-offset-3">
-            <h3>Personal Anecdote #3</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </div>
-        </div>
-      </div>
+      <a class="left carousel-control" href="#reason-carousel" data-slide="prev">
+        <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#reason-carousel" data-slide="next">
+        <span class="icon-next"></span>
+      </a>
     </div>
-    <a class="left carousel-control" href="#reason-carousel" data-slide="prev">
-      <span class="icon-prev"></span>
-    </a>
-    <a class="right carousel-control" href="#reason-carousel" data-slide="next">
-      <span class="icon-next"></span>
-    </a>
-  </div>
-  </div>
-
-
+  </section>
 </div>
 
 <%= render partial: 'layouts/join_bottom' %>
