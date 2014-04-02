@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
-      <div class="panel panel-info">
+      <div class="panel panel-primary" id="pledge">
         <div class="panel-heading">
-          <h2>The Pledge</h2>
-          <p>Here's what we expect from you when you sign up for My Apnea, and what you can expect from us.</p>
+          <h2>Our Promise</h2>
+          <p>When you sign up for the study, here's what we expect of you - and what you should expect of us.</p>
         </div>
         <div id="pledge" class="panel-body">
           <div class="row">
@@ -11,16 +11,16 @@
               <h3 class="center-block">You promise to...</h3>
               <div class="list-group">
                 <div class="list-group-item">
-                  <h4>Promise #1</h4>
-                  <p>Some description of this promise...</p>
+                  <h4>Tell us about your health</h4>
+                  <p>Answer our health-related questions as completely and accurately as you can.</p>
                 </div>
                 <div class="list-group-item">
-                  <h4>Promise #2</h4>
-                  <p>Another description for this promise...</p>
+                  <h4>Check in regularly</h4>
+                  <p>Update your information regularly (we’ll remind you) so we have all your latest data.</p>
                 </div>
                 <div class="list-group-item">
-                  <h4>Promise #3</h4>
-                  <p>Yet another description, maybe a bit longer, detailing what you would be signing up for...</p>
+                  <h4>Stick around</h4>
+                  <p>We’d like you to be in the study for 10+ years so we know how your health changes over time.</p>
                 </div>
               </div>
             </div>
@@ -28,14 +28,28 @@
               <h3 class="center-block">We promise to...</h3>
               <div class="list-group">
                 <div class="list-group-item">
-                  <h4>Promise #1</h4>
-                  <p>Some description of this promise...</p>
+                  <h4>Make things easy for you</h4>
+                  <p>Surveys can be done in 5-minute blocks on your computer, tablet, or smartphone.</p>
+                </div>
+                <div class="list-group-item">
+                  <h4>Respect your time and privacy</h4>
+                  <p>We will keep communication to a minimum and assure that your data is extremely secure.</p>
+                </div>
+                <div class="list-group-item">
+                  <h4>Provide a community and tools to help you</h4>
+                  <p> We will build useful tools to help you manage
+                    your condition and provide a community where
+                    you can be supported.</p>
                 </div>
               </div>
             </div>
 
           </div>
-          <%= link_to "I'm in!", new_registration_path(:user), class: 'btn btn-info btn-block' %>
+          <div class="text-center">
+            <%= link_to "Awesome - I'm in!", new_registration_path(:user), class: 'btn btn-primary btn-lg' %>
+            <%= link_to "I'm not sure - is there another way to help?", page_path("faqs"), class: 'btn btn-default btn-lg' %>
+
+          </div>
         </div>
       </div>
   </div>
