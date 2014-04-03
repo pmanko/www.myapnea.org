@@ -1,139 +1,180 @@
-<div class="jumbotron">
-  <div class="container">
-    <h1>Welcome to My Apnea!</h1>
-    <p>Take a <%= link_to 'tour', '' %> of our website. </p>
+<div id="about">
+  <div class="page-header">
+    <h1>A Little Bit About Us</h1>
   </div>
-</div>
-<div class="container">
-  <div id="highlights" class="row">
-    <div class="col-lg-6">
-      <div id="reason-carousel" class="carousel slide">
-        <ol class="carousel-indicators">
-          <li data-target="#reason-carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#reason-carousel" data-slide-to="1" class=""></li>
-          <li data-target="#reason-carousel" data-slide-to="2" class=""></li>
-          <li data-target="#reason-carousel" data-slide-to="3" class=""></li>
-          <li data-target="#reason-carousel" data-slide-to="4" class=""></li>
-        </ol>
 
-        <div class="carousel-inner">
-          <div class="item active">
-            <%= image_tag "reasons/1.jpg", class: "img-rounded" %>
-            <div class="carousel-caption">
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag "reasons/2.jpg" %>
-            <div class="carousel-caption">
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag "reasons/3.jpg" %>
-            <div class="carousel-caption">
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag "reasons/4.jpg" %>
-            <div class="carousel-caption">
-              <h3>Fourth slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-          <div class="item">
-            <%= image_tag "reasons/5.jpg" %>
-            <div class="carousel-caption">
-              <h3>Fifth slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-        <a class="left carousel-control" href="#reason-carousel" data-slide="prev">
-          <span class="icon-prev"></span>
-        </a>
-        <a class="right carousel-control" href="#reason-carousel" data-slide="next">
-          <span class="icon-next"></span>
-        </a>
+  <section>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>What is MyApnea.org?</h3>
+        <p>
+          MyApnea.org is a whole new approach to conducting sleep apnea research.  Our network, the Sleep Apnea Patient Centered Outcomes Network, or SAPCON, is recruiting 50,000 diagnosed adults and parents or caregivers of children with sleep apnea to join the network via MyApnea.org. Patients and researchers are actively working together to build MyApnea.org for other patients to collect and share health information to improve the treatment and management of sleep apnea.  It will be a social network platform that allows for dynamic engagement of the patient community through two-way communication between patients and researchers.
+        </p>
+
+        <p>
+          For patients, the portal will:
+          <ul>
+            <li>Provide a secure and dynamic dashboard of sleep, health, and risk measures based on the personal health data you submit by survey and by CPAP, actigraph and other health monitoring devices.</li>
+            <li>Give you a voice in what health outcomes that are important to you.</li>
+            <li>Connect you to thousands of other patients to share frustrations and advice about living with sleep apnea.</li>
+            <li>Support you with “how-to” information and other educational resources.</li>
+            <li>Present the latest in sleep health news and research findings.</li>
+          </ul>
+        </p>
+
+        <h3>What is the Sleep Apnea Patient Centered Outcome Network?</h3>
+        <p>
+          The Sleep Apnea Patient Centered Outcomes Network (SAPCON) is coordinated by lead partners, the American Sleep Apnea Association and the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital under the guidance of principal investigator Susan Redline, M.D., M.P.H.  In turn, the sleep apnea network is part of a historic national research endeavor that will ultimately enlist <strong>one hundred million</strong> Americans to provide personal health data and to guide the course of comparative effectiveness research for multiple, serious and chronic diseases.  Funded by the Patient Centered Outcomes Research Institute (PCORI), SAPCON is one of 18 Patient Powered Research Networks (PPRN) that will comprise a national “network of networks” dedicated to conducting comparative effectiveness research.  It is an unprecedented effort that will redefine how health research is done in this country and it holds tremendous promise for people who suffer from these conditions each day.
+        </p>
+
+        <h3>What is Sleep Apnea?</h3>
+        <p>
+          Sleep apnea is a common and potentially life threatening sleep and breathing disorder.  It is characterized by brief interruptions of breathing during sleep, sometimes hundreds of times during the night and often for a minute or longer. Left untreated, sleep apnea increases one’s risk for high blood pressure, heart attack, stroke and other medical conditions. It has been estimated that at least 18 million Americans have sleep apnea, but it often goes unrecognized and untreated.  Once diagnosed, sleep apnea can be successfully treated and shouldn’t interfere with one’s job or quality of life as long as the patient complies with their treatment.
+        </p>
       </div>
-
-
     </div>
-    <div id="join-us" class="col-lg-6 link">
-      <div class="panel panel-default">
-        <div class="panel-heading">Tell us a bit about yourself</div>
-        <div class="panel-body">
-          <%= form_tag nil, {class: 'form-horizontal', role: 'form'} do %>
-              <div class="form-group">
-                <%= label_tag :first_name, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= text_field_tag :first_name, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <%= label_tag :last_name, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= text_field_tag :last_name, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <%= label_tag :email, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= email_field_tag :email, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <%= label_tag :email_confirmation, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= email_field_tag :email_confirmation, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <%= label_tag :password, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= password_field_tag :password, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <%= label_tag :password_confirmation, nil, class: 'col-lg-4 control-label' %>
-                <div class="col-lg-8">
-                  <%= password_field_tag :password_confirmation, nil, class: 'form-control' %>
-                </div>
-              </div>
-
-
-              <div class="form-group">
-                <%= submit_tag "Sign up", class: 'btn btn-primary btn-block' %>
-              </div>
-          <% end %>
-
+  </section>
+  <section>
+    <h3>The Sleep Apnea Patient Centered Outcomes Network Steering Committee</h3>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= image_tag 'pages/about/redline.jpg' %>
         </div>
       </div>
-
+      <div class="col-md-9">
+        <h4>Susan Redline, M.D., M.P.H. – Principal Investigator and SAPCON Co-chair</h4>
+        <p>Susan Redline is the Peter C. Farrell Professor of Sleep Medicine at Harvard Medical School and Director of the Programs in Sleep and Cardiovascular Medicine and Sleep Medicine Epidemiology at Brigham and Women’s Hospital and Beth Israel Deaconess Medical Center. She has developed an internationally recognized research program addressing the epidemiology of sleep disorders, with a focus on understanding the genetic etiology for sleep apnea and the cardiovascular and neurocognitive consequences of sleep disorders. She directs a national Sleep Reading Center that has pioneered methods for collecting sleep study data in multi-center studies, providing the scientific leadership for sleep assessments in major studies such as the Sleep Heart Health Study, the Hispanic Community Health Study, and Multiethnic Study of Atherosclerosis (MESA). She leads several National Institute of Health multi-center clinical trials examining the role of sleep apnea interventions to improve blood pressure, metabolism, lipids, and neurocognitive outcomes in both pediatric and adult populations. She is the Co-Chair of the International Collaboration of Sleep Apnea Cardiovascular Trialists and Chair of the National Clinical and Translational Science Award Sleep Research Network Steering Committee. She also is a Board member for the American Academy of Sleep Medicine and has served on the ATS Scientific Advisory Committee, Parker B Francis Scientific Advisory Committee, Institute of Medicine’s Committee on Sleep Medicine, Sleep Research Society Board of Directors, and National Center on Sleep Disorders Research Advisory Board.</p>
+      </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-lg-4">
-      <h4>Many benefits for you</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= image_tag 'pages/about/amdur.jpg' %>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h4>Adam Amdur – SAPCON Co-chair</h4>
+        <p>Mr. Amdur is the chief operating officer and immediate past-chair of the American Sleep Apnea Association, the nation’s leading patient-led organization dedicated to reducing injury, disability, and death from sleep apnea and to enhancing the well-being of those affected by this common disorder.  Amdur was diagnosed with severe obstructive sleep apnea (OSA) in 2008.  As he struggled to manage his treatment, it wasn't until he found his way to the sleep center at Stanford University that he received the support needed to adequately control his overall medical condition.  Since then, Amdur has been passionate about assisting others with understanding this disease and getting the help they need.  He is currently writing a memoir, Asleep at the Wheel: Living with Sleep Apnea, in hope of educating the public about apnea and its effects on both adults and children.</p>
+      </div>
     </div>
-    <div class="col-lg-4">
-      <h4>Valuable research</h4>
-
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= image_tag 'pages/about/owens.png' %>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h4>Judith Owens, M.D., M.P.H., – SAPCON Steering Committee Member  </h4>
+        <p>Dr. Owens is president and chief medical officer of the American Sleep Apnea Association.  She is also Director of Sleep Medicine at Children’s National Medical Center (CNMC) and Professor of Pediatrics at George Washington University School of Medicine and Health Sciences.  She is an internationally-recognized authority on pediatric sleep and the author of over 100 original research and review articles in peer-review journals, chapters, and books on the topic.  Before taking her present position in 2010, she was associate professor of pediatrics at Brown University Medical School and director of pediatric sleep disorders at Hasbro Children’s Hospital in Providence, RI.</p>
+      </div>
     </div>
-    <div class="col-lg-4">
-      <h4>Be a part of our patient-centered community</h4>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= image_tag 'pages/about/headapohl.jpg' %>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h4>Will Headapohl – SAPCON Steering Committee Member </h4>
+        <p>Mr. Headapohl is Chairman of the Board of Directors for the American Sleep Apnea Association.  He also is a patient advocate, writer and consultant focused on the challenges of getting all undiagnosed apnea sufferers into treatment.  He is the co-author of the book Sleep or Die: Overcome Apnea Before It Overcomes You.  His work is aimed at mobilizing all those touched by the disease including partners, family members, loved ones, medical care providers, and victims.  Headapohl’s resume includes Executive Vice President, Chief Information Officer, and Chief Operating Officer roles in the Internet/IT/Wireless industries.</p>
+      </div>
     </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="thumbnail">
+          <%= image_tag 'pages/about/kapur.jpg' %>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <h4>Vishesh Kapur, M.D., M.P.H. – SAPCON Steering Committee Member</h4>
+        <p>Dr. Vishesh Kapur is the founder and director of the UW Medicine Sleep Disorders Center at Harborview Medical Center and Assistant Professor of Medicine at the University of Washington.  He received his medical degree from Yale University and went on to complete his residency in internal medicine at the University of Rochester in New York. Dr. Kapur is board certified in internal medicine, pulmonary medicine, critical care medicine, and sleep medicine.</p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <h3>The Sleep Apnea Patient Centered Outcomes Network Steering Committee</h3>
+    <div class="row">
+      <div class="col-md-12">
+
+        <a href="http://www.sleepapnea.org/">
+          <h4>American Sleep Apnea Association</h4>
+        </a>
+        <p>
+          The American Sleep Apnea Association, founded in 1990, is a 501(c)(3) nonprofit organization that promotes awareness of sleep apnea, works for continuing improvements in treatments for this serious disease, and advocates for the interests of sleep apnea patients.  Its mission is to reduce injury, disability and death from sleep apnea and to enhance the wellbeing of those affected by this common disorder.  The ASAA promotes education and awareness, coordinates and services the A.W.A.K.E. Network of voluntary mutual support groups, promotes research and continuous improvement of care.
+        </p>
+        <p>
+          The Association's governing board of directors includes both health care professionals and patients and patient advocates among its members.  ASAA policy, however, requires that a majority of the directors always be patients and their advocates.  The bylaws also require that the chair of the board be a patient or patient advocate.  The founders put these rules in place in the ASAA's early days to ensure that the ASAA would always be a patient-driven organization.  The ASAA president is a physician who serves as well as the organization's chief medical officer.
+        </p>
 
 
-  </div>
+        <a href="http://www.brighamandwomens.org/Departments_and_Services/medicine/services/sleepmedicine/default.aspx">
+          <h4>Division of Sleep and Circadian Disorders, Brigham and Women's Hospital</h4>
+        </a>
+        <p>
+          Boston's Brigham and Women's Hospital (BWH) is an international leader in virtually every area of medicine and has been the site of pioneering breakthroughs that have improved lives around the world. A major teaching hospital of Harvard Medical School, BWH has a legacy of excellence that continues to grow year after year.
+        </p>
+        <p>
+          The Division of Sleep and Circadian Disorders was formed in 2013 by the Departments of Medicine and Neurology to unify the delivery of clinical care, increase educational opportunities and promote interdisciplinary research in the fields of sleep and circadian biology.  Its mission is to forge a path of discovery in sleep medicine while providing the highest standard of clinical care for patients with sleep disorders and training the next generation of leaders in sleep and circadian biology. 
+        </p>
+        <p>
+          The division has over 50 faculty and more than 20 postdoctoral fellows who are jointly appointed by the Departments of Medicine and Neurology.  In 2008, the American Academy of Sleep Medicine (AASM) recognized one of the division’s predecessors (BWH Department of Medicine, Division Sleep Medicine) as an AASM Comprehensive Academic Sleep Program of Distinction.  This is one of the first such programs in the country, and is awarded to academic sleep programs that have demonstrated excellence through compliance with rigorous standards in the areas of clinical service, educational mission, and research accomplishments.
+        </p>
+
+        <a href="https://sleepepi.partners.org/about/">
+          <h4>Brigham & Women’s Hospital Sleep Medicine Epidemiology Program</h4>
+        </a>
+        <p>
+          The Brigham & Women’s Hospital Sleep Medicine Epidemiology Program is an integrated research and clinical program that aims to improve the care of patients with sleep disorders through clinical trials and comparative effectiveness research. The SMEP also is a leader in data management for sleep disorders research.  It houses a national Sleep Reading Center that has supported the collection, analysis, quality control, and archival of a wide variety of sleep and other health data from nearly 50,000 adult and pediatric participants from studies conducted since 1994 across the U.S.  It also has served as the Data Coordinating Center for comparative effectiveness studies and clinical trials that evaluate sleep apnea interventions. It has pioneered novel informatics platform development to support sleep research through NIH supported initiatives (a National Center for Research Resource Pilot Informatics Platform and a NHLBI R24 Resource grant which creates the National Sleep Research Resource.) The SMEP staff is comprised of approximately 30 individuals, including epidemiologists, biostatisticians, informaticians, clinicians, data managers, research assistants and study coordinators.  Its Informatics Core (led by Dr. Remo Mueller) uses cutting-edge open-source software development tools to create secure, scalable, and reusable software.
+        </p>
+
+        <a href="http://www.sleepresearchnetwork.org/">
+          <h4>The Sleep Research Network (SRN)</h4>
+        </a>
+        <p>
+          The Sleep Research Network (SRN) is intended to promote sustainable multi-institutional collaborations in clinical and translational research that address significant public health and mechanistic questions related to sleep medicine and circadian biology that require large-scale, coordinated, and multidisciplinary approaches, while also attracting and supporting the training of the next generation of sleep medicine investigators.  The network is currently comprised of researchers representing 40 of the current 60 CTSA institutions across the United States. As the network matures, it will broaden participation to include other organizations and partners outside of the CTSA sites. The primary goal of the Sleep Research Network conferences (supported in part by an R13 conference grant from the National Center for Research Resources, RR028183 and the National Center for Advancing Translational Science, TR000172) is to provide an ongoing forum for investigators and trainees from across the United States to meet for the purpose of:
+          <ol>
+            <li>Building a Sleep Research Network</li>
+            <li>Evaluating diagnostic and therapeutic technologies</li>
+            <li>Identifying opportunities for new lines of collaborative research and training</li>
+            <li>Leveraging resources available through local CTSAs to promote inter-institutional sleep and circadian medicine research</li>
+          </ol>
+        </p>
+
+        <a href="https://www.i2b2.org/">
+          <h4>Informatics for Integrating Biology and the Bedside (i2b2)</h4>
+        </a>
+        <p>
+          Informatics for Integrating Biology and the Bedside (i2b2) is an NIH-funded National Center for Biomedical Computing (NCBC) based at Partners HealthCare System in Boston, Massachusetts.  Established in 2004 in response to an NIH Roadmap Initiative RFA, this NCBC is one of four national centers awarded in this first competition (<a href="http://www.bisti.nih.gov/ncbc/">http://www.bisti.nih.gov/ncbc/</a>); currently there are seven NCBCs. One of 12 specific initiatives in the New Pathways to Discovery Cluster, the NCBCs will initiate the development of a national computational infrastructure for biomedical computing. The NCBCs and related R01s constitute the National Program of Excellence in Biomedical Computing.
+        </p>
+        <p>
+          The i2b2 Center, led by Director Isaac Kohane, M.D., Ph.D., Professor of Pediatrics at Harvard Medical School at Children's Hospital Boston, is comprised of six cores involving investigators from the Harvard-affiliated hospitals, MIT, Harvard School of Public Health, Harvard Medical School and the Harvard/MIT Division of Health Sciences and Technology.  This Center is funded under a Cooperative agreement with the National Institutes of Health.
+        </p>
+        <p>
+          The i2b2 Center is developing a scalable computational framework to address the bottleneck limiting the translation of genomic findings and hypotheses in model systems relevant to human health.  New computational paradigms (Core 1) and methodologies (Cores 3) are being developed and tested in several diseases (airways disease, hypertension, type 2 diabetes mellitus, Huntington’s Disease, rheumatoid arthritis, major depressive disorder, inflammatory bowel disease, multiple sclerosis) (Core 2 Driving Biological Projects).
+        </p>
+
+        <a href="http://catalyst.harvard.edu/services/shrine/">
+          <h4>Shared Health Research Information Network (SHRINE)</h4>
+        </a>
+        <p>
+          The Shared Health Research Information Network (SHRINE) helps researchers overcome one of the greatest problems in population-based research: Compiling large groups of well-characterized patients. Eligible investigators may use the SHRINE web-based query tool to determine the aggregate total number of patients at participating hospitals who meet a given set of inclusion and exclusion criteria (currently demographics, diagnoses, medications, and selected laboratory values). Because counts are aggregate, patient privacy is protected.
+        </p>
+        <p>
+          Participating organizations include Beth Israel Deaconess Medical Center (BIDMC), Boston Children's Hospital (BCH), and Partners HealthCare System (PHS), Brigham and Women’s Hospital, Dana-Farber Cancer Institute, and Massachusetts General Hospital.
+        </p>
+
+        <a href="http://www.pcori.org/funding-opportunities/pcornet-national-patient-centered-clinical-research-network/">
+          <h4>Patient-Centered Outcomes Research Institute (PCORI)</h4>
+        </a>
+        <p>
+          The Patient-Centered Outcomes Research Institute (PCORI), an independent, non-profit organization authorized by Congress in 2010 to fund research aimed at improving the health of entire populations.
+        </p>
+        <p>
+          On December 17, 2013, The Patient-Centered Outcomes Research Institute approved $93.5 to support 29 clinical research data networks that together will form an ambitious new resource known as PCORnet, the National Patient-Centered Clinical Research Network. PCORnet will be a large, highly representative, national network for conducting clinical outcomes research. PCORnet will integrate data from 11 Clinical Data Research Networks (CDRNs) — networks that originate in healthcare systems such as hospitals, health plans, or practice-based networks and securely collect “real-time,” “real-world” health information during the routine course of patient care – and 18 Patient-Powered Research Networks (PPRNs) — networks operated and governed by groups of patients and their partners who are focused on a particular condition and interested in sharing health information and participating in research.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </div>

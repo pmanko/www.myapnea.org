@@ -8,4 +8,8 @@ class UsersController < ApplicationController
       cookies[:theme] = params[:theme]
     end
   end
+
+  def process_consent
+
+  end
 end

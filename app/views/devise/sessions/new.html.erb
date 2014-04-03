@@ -3,18 +3,33 @@
     <div id="sign-in" class="panel panel-default">
       <div class="panel-body">
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: {class: "form-signin"}) do |f| %>
-            <h2 class="form-signin-heading">Please sign in</h2>
+
+            <div class="row" id="header">
+              <div class="col-md-7"><h2 class="form-signin-heading">Please sign in</h2></div>
+              <div class="col-md-5"><small class="text-muted join-now pull-right">Not signed up yet?<%= link_to "Join Now!", page_path('pledge') %></small></div>
+            </div>
+
             <div class='form-group'><%= f.email_field :email, autofocus: true, class: "form-control input-lg", placeholder: "Email address" %></div>
             <div class='form-group'><%= f.password_field :password, class: "form-control input-lg", placeholder: "Password" %></div>
 
             <div class="row">
               <% if devise_mapping.rememberable? %>
-                  <label class="checkbox col-md-5">
-                    <div><%= f.check_box :remember_me %></div>
-                    Remember me
-                  </label>
+                <label class="checkbox col-md-7">
+                  <div><%= f.check_box :remember_me %></div>
+                  Remember me
+                </label>
               <% end %>
-              <small class="text-muted join-now col-md-7">Not signed up yet?<%= link_to "Join Now!", page_path('pledge') %></small>
+
+              <div class="col-md-5">
+                <% if devise_mapping.recoverable? %>
+                  <small class="forgot">
+                    <%= link_to "Forgot Password?", new_user_password_path, class: 'pull-right' %>
+                    <div class="clearfix"></div>
+                  </small>
+                <% end %>
+              </div>
+
+
 
             </div>
             <div><%= f.submit "Sign in", class: "btn btn-lg btn-primary btn-block" %></div>

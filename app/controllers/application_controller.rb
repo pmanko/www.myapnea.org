@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
-
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
   protected
@@ -13,6 +12,9 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.for(:sign_up) << :last_name
   end
 
+  def after_sign_up_path_for(resource)
+    page_path('consent')
+  end
   def after_sign_in_path_for(resource)
     dashboard_path
   end
