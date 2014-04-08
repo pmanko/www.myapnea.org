@@ -58,3 +58,14 @@ group :development do
   gem "binding_of_caller"
   gem 'schema_to_scaffold'
 end
+
+# Testing
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'factory_girl_rails'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+end
+
+gem 'simplecov', :require => false, :group => :test
