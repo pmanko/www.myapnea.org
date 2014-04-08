@@ -11,12 +11,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140330235857) do
+ActiveRecord::Schema.define(version: 20140408202510) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "answer_flows", force: true do |t|
+  create_table "answer_nodes", force: true do |t|
     t.integer  "answer_id"
     t.integer  "child_id"
     t.datetime "created_at"
@@ -27,6 +27,14 @@ ActiveRecord::Schema.define(version: 20140330235857) do
     t.decimal  "numeric_value"
     t.string   "text_value"
     t.datetime "time_value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "answer_sessions", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "question_flow_id"
+    t.integer  "answer_node_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -54,13 +62,6 @@ ActiveRecord::Schema.define(version: 20140330235857) do
     t.datetime "updated_at"
   end
 
-  create_table "plans", force: true do |t|
-    t.string   "name"
-    t.integer  "question_flow_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "question_answer_options", force: true do |t|
     t.integer  "question_id"
     t.integer  "answer_option_id"
@@ -69,6 +70,13 @@ ActiveRecord::Schema.define(version: 20140330235857) do
   end
 
   create_table "question_flows", force: true do |t|
+    t.string   "name"
+    t.integer  "question_node_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "question_nodes", force: true do |t|
     t.integer  "answer_option_id"
     t.string   "condition"
     t.integer  "child_id"
@@ -86,14 +94,6 @@ ActiveRecord::Schema.define(version: 20140330235857) do
     t.string   "question_text"
     t.integer  "question_type_id"
     t.integer  "answer_type_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "sessions", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "template_id"
-    t.integer  "answer_flow_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

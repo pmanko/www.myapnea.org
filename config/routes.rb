@@ -2,13 +2,13 @@ Rails.application.routes.draw do
   get 'dashboard', to: "patient#dashboard"
   get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme
 
-  resources :plans
+  resources :question_flows
 
   resources :questions
 
   resources :question_types
 
-  resources :question_flows
+  resources :question_nodes
 
   resources :answer_types
 

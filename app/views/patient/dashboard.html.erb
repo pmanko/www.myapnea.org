@@ -6,7 +6,7 @@
   <div class="col-md-8">
     <h2>Questionnaires</h2>
     <div id="questionnaires" class="list-group">
-      <% Plan.find_each do |t| %>
+      <% QuestionFlow.find_each do |t| %>
         <a class="list-group-item">
           <strong><%= t.name %></strong>
           <div class="progress">

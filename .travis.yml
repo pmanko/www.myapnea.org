@@ -6,5 +6,6 @@ before_install:
   - "sh -e /etc/init.d/xvfb start"
 before_script:
   - "ruby lib/initial_setup.rb ../.travis_setup"
+  - "cp config/database.yml.travis config/database.yml"
   - "psql -c 'create database myapnea_test;' -U postgres"
   - "bundle exec rake db:migrate"

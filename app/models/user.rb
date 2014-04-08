@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
-  has_many :sessions
+  has_many :answer_sessions
 
   validates :first_name, presence: true
   validates :last_name, presence: true

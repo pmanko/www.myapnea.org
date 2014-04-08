@@ -1,4 +1,4 @@
-json.array!(@question_flows) do |question_flow|
-  json.extract! question_flow, :id, :answer_option_id, :condition, :child_id
-  json.url question_flow_url(question_flow, format: :json)
+json.array!(@plans) do |plan|
+  json.extract! plan, :id, :name, :question_flow_id
+  json.url plan_url(plan, format: :json)
 end
