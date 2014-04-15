@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140408202510) do
+ActiveRecord::Schema.define(version: 20140415185532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "answer_nodes", force: true do |t|
-    t.integer  "answer_id"
-    t.integer  "child_id"
+  create_table "answer_edges", force: true do |t|
+    t.integer  "parent_answer_id"
+    t.integer  "child_answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 20140408202510) do
   create_table "answer_sessions", force: true do |t|
     t.integer  "user_id"
     t.integer  "question_flow_id"
-    t.integer  "answer_node_id"
+    t.integer  "first_answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -69,31 +69,42 @@ ActiveRecord::Schema.define(version: 20140408202510) do
     t.datetime "updated_at"
   end
 
-  create_table "question_flows", force: true do |t|
-    t.string   "name"
-    t.integer  "question_node_id"
+  create_table "question_edges", force: true do |t|
+    t.integer  "question_flow_id"
+    t.integer  "parent_question_id"
+    t.integer  "child_question_id"
+    t.string   "condition"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "question_nodes", force: true do |t|
-    t.integer  "answer_option_id"
-    t.string   "condition"
-    t.integer  "child_id"
+  create_table "question_flows", force: true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.integer  "first_question_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "question_types", force: true do |t|
     t.string   "name"
+    t.string   "tag"
+    t.string   "input_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "questions", force: true do |t|
-    t.string   "question_text"
+    t.string   "text"
     t.integer  "question_type_id"
     t.integer  "answer_type_id"
+    t.integer  "unit_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "units", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

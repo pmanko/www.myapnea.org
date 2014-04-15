@@ -1,0 +1,54 @@
+- question_flow_id: 1
+  parent_question_id: 1
+  child_question_id: 2
+  condition:
+- question_flow_id: 1
+  parent_question_id: 2
+  child_question_id: 3
+  condition:
+- question_flow_id: 1
+  parent_question_id: 3
+  child_question_id: 4
+  condition:
+- question_flow_id: 1
+  parent_question_id: 4
+  child_question_id: 5
+  condition: answer.answer_option_id = 29
+- question_flow_id: 1
+  parent_question_id: 5
+  child_question_id: 6
+  condition:
+- question_flow_id: 1
+  parent_question_id: 4
+  child_question_id: 6
+  condition:
+- question_flow_id: 1
+  parent_question_id: 6 
+  child_question_id: 7
+  condition:
+- question_flow_id: 1
+  parent_question_id: 7  
+  child_question_id: 8
+  condition:
+- question_flow_id: 1
+  parent_question_id: 8 
+  child_question_id: 9 
+  condition: answer.answer_option_id = 26
+- question_flow_id: 1
+  parent_question_id: 8 
+  child_question_id: 11
+  condition: answer.answer_option_id = 27
+- question_flow_id: 1
+  parent_question_id: 9 
+  child_question_id: 10
+  condition: answer.answer_option_id = 29
+- question_flow_id: 1
+  parent_question_id: 9
+  child_question_id: 11
+  condition:
+- question_flow_id: 1
+  parent_question_id: 11
+  child_question_id: 12
+  condition: 
+  
+  

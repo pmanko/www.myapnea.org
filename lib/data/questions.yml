@@ -1,0 +1,97 @@
+- text: What is your biological sex?
+  id: 1
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 1
+  - 2
+- text: What is your last height?
+  id: 2
+  question_type_id: 6
+  answer_type_id: 2
+  unit_id: 2
+- text: What is your last weight?
+  id: 3
+  question_type_id: 6
+  answer_type_id: 2
+  unit_id: pounds
+- text: Where were you born (country)?
+  id: 4
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 29
+- text: Please specify the country you were born in.
+  id: 5
+  question_type_id: 1
+  answer_type_id: 1
+- text: What is your racial background?
+  id: 6
+  question_type_id: 4
+  answer_type_id: 1
+  answer_option_ids:
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 28
+  - 29
+- text: Are you of Hispanic, Latino, or Spanish origin or ancestry?
+  id: 7
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 27
+  - 14
+  - 15
+  - 16
+  - 17
+  - 28
+- text: Is there a healthcare system where you receive most of your primary medical care?
+  id: 8
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 26
+  - 27
+- text: Which of the following healthcare systems do you recieve most of your medical care in?
+  id: 9
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 29
+- text: Please specify your the healthcare system you recieve your medical care in.
+  id: 10
+  question_type_id: 1
+  answer_type_id: 1
+- text: Do you have a cell phone?
+  id: 11
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 26
+  - 27
+- text: Do you have an account on any of the following? Check all that apply.
+  id: 12
+  question_type_id: 4
+  answer_type_id: 1
+  answer_option_ids:
+  - 23
+  - 24
+  - 25
+  - 8
+
+
+

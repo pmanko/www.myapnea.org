@@ -1,5 +1,3 @@
 class QuestionFlow < ActiveRecord::Base
-  belongs_to :question_node
-
-
+  belongs_to :first_question, class: "Question"
 end

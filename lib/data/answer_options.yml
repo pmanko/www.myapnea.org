@@ -1,0 +1,58 @@
+- id: 1
+  text_value: Male
+- id: 2
+  text_value: Female
+- id: 3
+  text_value: USA
+- id: 4
+  text_value: Mexico
+- id: 5
+  text_value: China
+- id: 6
+  text_value: India
+- id: 7
+  text_value: Philippines
+- id: 8
+  text_value: Twitter
+- id: 9
+  text_value: Black or African American
+- id: 10
+  text_value: White
+- id: 11
+  text_value: Asian (including South Asian and Asian Indian)
+- id: 12
+  text_value: Native Hawaiian or Pacific Islander
+- id: 13
+  text_value: American Indian or Alaskan Native
+- id: 14
+  text_value: Yes, Mexican, Mexican American, or Chicano
+- id: 15
+  text_value: Yes, Puerto Rican
+- id: 16
+  text_value: Yes, Cuban
+- id: 17
+  text_value: Yes, other or Mixed Hispanic, Latino, or Spanish origin
+- id: 18
+  text_value: Partners Healthcare
+- id: 19
+  text_value: Group Health
+- id: 20
+  text_value: UPMC
+- id: 21
+  text_value: Wake Forest
+- id: 22
+  text_value: Columbus
+- id: 23
+  text_value: Facebook
+- id: 24
+  text_value: Google+
+- id: 25
+  text_value: LinkedIn
+- id: 26
+  text_value: Yes
+- id: 27
+  text_value: No
+- id: 28
+  text_value: Don't know
+- id: 29
+  text_value: Other

@@ -27,6 +27,13 @@ module WwwMyapneaOrg
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+
+    # Precompile additional assets.
+    # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
+    # NOTE: TEMPORARY
+    # TODO: Remove once issue #129 on sprockets-rails gem is merged
+    config.assets.precompile += %w( day_theme night_theme )
+
     # Set templating engine for stylesheets to less.
     config.app_generators.stylesheet_engine :less
 

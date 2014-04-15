@@ -8,7 +8,8 @@ module Scaffoldable
   end
 
   def index
-    set_model_instance(MODEL_CLASS.all)
+    @temp = MODEL_CLASS
+    set_model_collection
   end
 
   def show
@@ -62,10 +63,13 @@ module Scaffoldable
   end
 
   def set_model_instance(val)
-    instance_variable_set("@#{MODEL_CLASS.name.downcase}", val)
+    instance_variable_set("@#{MODEL_CLASS.name.underscore}", val)
   end
 
+  def set_model_collection
+    instance_variable_set("@#{MODEL_CLASS.name.pluralize.underscore}", MODEL_CLASS.all)
+  end
   def model_instance
-    instance_variable_get("@#{MODEL_CLASS.name.downcase}")
+    instance_variable_get("@#{MODEL_CLASS.name.underscore}")
   end
 end
