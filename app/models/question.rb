@@ -7,4 +7,17 @@ class Question < ActiveRecord::Base
   has_many :answers
   has_many :in_edges, class_name: "QuestionEdge", foreign_key: "child_question_id"
   has_many :out_edges, class_name: "QuestionEdge", foreign_key: "parent_question_id"
+
+
+  def next_question(question_flow)
+    candidate_edges = QuestionEdge.where(parent_question_id: self[:id], question_flow_id: question_flow.id)
+    candidate_edges.first
+  end
+
+  def previos_question(question_flow)
+    candidate_edges = QuestionEdge.where(child_question_id: self[:id], question_flow_id: question_flow.id)
+    candidate_edges.first
+  end
+
+
 end

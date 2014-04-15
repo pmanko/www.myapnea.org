@@ -1,0 +1,6 @@
+<%= form_tag(nil, {role: "form"}) do %>
+  <div class="form-group">
+    <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" class="form-control" />
+  </div>
+
+<% end %>

@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   get 'dashboard', to: "patient#dashboard"
   get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme
 
+
+  # Answer Sessions
+  get 'survey/:question_flow_id', to: 'answer_sessions#start', as: :start_answer_session
+  get 'survey/:answer_session_id/:question_id', to: 'answer_sessions#ask_question', as: :ask_question
+
   resources :question_flows
 
   resources :questions
