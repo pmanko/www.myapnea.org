@@ -15,7 +15,7 @@ files.each do |file_name, model_class|
   yaml_data = YAML.load_file(file_path)
 
   yaml_data.each do |object_attrs|
-    MY_LOG.info object_attrs
+    #MY_LOG.info object_attrs
     model_class.create(object_attrs)
   end
 
