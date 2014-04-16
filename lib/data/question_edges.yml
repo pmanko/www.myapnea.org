@@ -13,7 +13,7 @@
 - question_flow_id: 1
   parent_question_id: 4
   child_question_id: 5
-  condition: answer.answer_option_id = 29
+  condition: "Other"
 - question_flow_id: 1
   parent_question_id: 5
   child_question_id: 6
@@ -33,17 +33,21 @@
 - question_flow_id: 1
   parent_question_id: 8 
   child_question_id: 9 
-  condition: answer.answer_option_id = 26
+  condition: "Yes"
 - question_flow_id: 1
   parent_question_id: 8 
   child_question_id: 11
-  condition: answer.answer_option_id = 27
+  condition: "No"
 - question_flow_id: 1
   parent_question_id: 9 
   child_question_id: 10
-  condition: answer.answer_option_id = 29
+  condition: "Other"
 - question_flow_id: 1
   parent_question_id: 9
+  child_question_id: 11
+  condition:
+- question_flow_id: 1
+  parent_question_id: 10
   child_question_id: 11
   condition:
 - question_flow_id: 1

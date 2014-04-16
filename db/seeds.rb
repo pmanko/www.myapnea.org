@@ -20,3 +20,5 @@ files.each do |file_name, model_class|
   end
 
 end
+
+User.create(email: "piotr.mankowski@gmail.com", first_name: "Piotr", last_name: "Mankowski", password: "123")

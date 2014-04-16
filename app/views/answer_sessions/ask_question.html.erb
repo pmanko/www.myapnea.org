@@ -3,18 +3,20 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title"><%= @answer_session.question_flow.name %></h3>
-          <%= render partial: 'session_progress' %>
+        <%= form_tag(process_answer_path, {role: "form"}) do %>
+          <div class="panel-heading">
+            <h3 class="panel-title"><%= @answer_session.question_flow.name %></h3>
+            <%= render partial: 'session_progress', locals: {answer_session: @answer_session} %>
+          </div>
+          <div class="panel-body">
+            <%= render partial: 'question_form' %>
+          </div>
+          <div class="panel-footer">
+            <button type="button" name="direction" value="previous" class="btn btn-default btn-lg" disabled>Previous Question</button>
+            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
+          </div>
+        <% end %>
         </div>
-        <div class="panel-body">
-          <%= render partial: 'question_form' %>
-        </div>
-        <div class="panel-footer">
-          <%= link_to "Previous Question", nil, class: 'btn btn-default btn-lg' %>
-          <%= link_to "Next Question", nil, class: 'btn btn-primary btn-lg' %>
-        </div>
-      </div>
     </div>
   </div>
 </div>

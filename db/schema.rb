@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140415221725) do
+ActiveRecord::Schema.define(version: 20140415192413) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(version: 20140415221725) do
   create_table "answer_edges", force: true do |t|
     t.integer  "parent_answer_id"
     t.integer  "child_answer_id"
+    t.integer  "answer_session_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "answer_session_id"
   end
 
   create_table "answer_options", force: true do |t|
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20140415221725) do
     t.integer  "user_id"
     t.integer  "question_flow_id"
     t.integer  "first_answer_id"
+    t.integer  "last_answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -59,9 +60,9 @@ ActiveRecord::Schema.define(version: 20140415221725) do
 
   create_table "answers", force: true do |t|
     t.integer  "question_id"
+    t.integer  "answer_session_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "answer_session_id"
   end
 
   create_table "question_answer_options", force: true do |t|

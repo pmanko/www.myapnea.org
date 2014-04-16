@@ -4,6 +4,7 @@ class CreateAnswerSessions < ActiveRecord::Migration
       t.integer :user_id
       t.integer :question_flow_id
       t.integer :first_answer_id
+      t.integer :last_answer_id
 
       t.timestamps
     end

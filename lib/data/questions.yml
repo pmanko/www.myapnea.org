@@ -11,13 +11,13 @@
   question_type_id: 6
   time_estimate: 1
   answer_type_id: 2
-  unit_id: 2
+  unit_id: 1
 - text: What is your last weight?
   id: 3
   question_type_id: 6
   time_estimate: 1
   answer_type_id: 2
-  unit_id: pounds
+  unit_id: 2
 - text: Where were you born (country)?
   id: 4
   question_type_id: 3

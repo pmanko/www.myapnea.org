@@ -12,7 +12,7 @@
 - name: check_box
   id: 4
   tag: input
-  input_type: select
+  input_type: checkbox
 - name: date
   id: 5
   tag: input

@@ -49,9 +49,9 @@
 - id: 25
   text_value: LinkedIn
 - id: 26
-  text_value: Yes
+  text_value: "Yes"
 - id: 27
-  text_value: No
+  text_value: "No"
 - id: 28
   text_value: Don't know
 - id: 29

@@ -1,9 +1,11 @@
-<p>Around <%= @answer_session.completed_time %> out of <%= @answer_session.question_flow.total_time %> minutes completed. Only <%= @answer_session.question_flow.total_time - @answer_session.completed_time %> minutes remaining!</p>
+
+<p><%= answer_session.completed_answers.length %> / <%= answer_session.question_flow.all_questions.length %> questions done</p>
+<p>Around <%= answer_session.completed_time %> out of <%= answer_session.question_flow.total_time %> minutes completed. Only <%= answer_session.question_flow.total_time - answer_session.completed_time %> minutes remaining!</p>
 
 <div class="progress">
 
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="<%= @answer_session.completed_percentage %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= @answer_session.completed_percentage %>%">
-    <span class="sr-only"><%= @answer_session.completed_percentage %>% Complete</span>
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="<%= answer_session.completed_percentage %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= answer_session.completed_percentage %>%">
+    <span class="sr-only"><%= answer_session.completed_percentage %>% Complete</span>
   </div>
 
 </div>

@@ -1,6 +1,26 @@
-<%= form_tag(nil, {role: "form"}) do %>
+<%= hidden_field_tag :question_id, @question.id %>
+<%= hidden_field_tag :answer_session_id, @answer_session.id %>
+<p><%= @question.text %></p>
+<% if @question.answer_options.present? %>
+  <% @question.answer_options.each_with_index do |answer_option, i| %>
+    <div class="<%= @question.question_type.input_type %>">
+      <label>
+        <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" name="<%= @question.id %>" id="question_<%= "#{@question.id}_#{i+1}" %>" value="<%= answer_option.value(@question.answer_type.data_type) %>"/>
+        <%= answer_option.value(@question.answer_type.data_type) %>
+      </label>
+    </div>
+  <% end %>
+<% else %>
   <div class="form-group">
-    <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" class="form-control" />
+    <% if @question.unit.present? %>
+      <div class="input-group">
+    <% end %>
+      <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" class="form-control"  name="<%= @question.id %>" id="question_<%= @question.id %>"  />
+      <% if @question.unit.present? %>
+        <span class="input-group-addon"><%= @question.unit.name %></span>
+      <% end %>
+    <% if @question.unit.present? %>
+      </div>
+    <%end %>
   </div>
-
 <% end %>
