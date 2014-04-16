@@ -16,8 +16,6 @@ Rails.application.routes.draw do
 
   resources :question_types
 
-  resources :question_nodes
-
   resources :answer_types
 
   resources :answer_options
