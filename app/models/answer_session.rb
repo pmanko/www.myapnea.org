@@ -16,14 +16,14 @@ class AnswerSession < ActiveRecord::Base
 
   end
 
-  def add_answer(question, params)
+  def process_answer(question, params)
     # adding should always be at tail!
 
     # Create answer object
     # Create answer edge from tail to new answer
 
     #answer_values =
-    answer = Answer.new(question_id: question.id, answer_session_id: self.id)
+    answer = Answer.where(question_id: question.id, answer_session_id: self.id).first || Answer.new(question_id: question.id, answer_session_id: self.id)
     answer.value = params[question.id.to_s]
     answer.save
     answer

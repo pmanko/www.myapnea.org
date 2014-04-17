@@ -6,8 +6,7 @@ class AnswerSessionsController < ApplicationController
     # question_flow
     # creates (or finds) answer session
     @question_flow = QuestionFlow.find(params[:question_flow_id])
-    @answer_session = AnswerSession.create(user_id: current_user.id, question_flow_id: @question_flow.id)
-
+    @answer_session = AnswerSession.find_or_create_by(user_id: current_user.id, question_flow_id: @question_flow.id)
   end
 
   def finish
@@ -21,15 +20,18 @@ class AnswerSessionsController < ApplicationController
 
     @answer_session = AnswerSession.find(params[:answer_session_id])
     @question = Question.find(params[:question_id])
+    @answer = Answer.where(question_id: @question.id, answer_session_id: @answer_session.id).first || Answer.new
   end
 
   def process_answer
     @question = Question.find(params[:question_id])
     @answer_session = AnswerSession.find(params[:answer_session_id]) # Validate user!
 
-    answer = @answer_session.add_answer(@question, params)
+    answer = @answer_session.process_answer(@question, params)
 
     candidate_edges = QuestionEdge.where(parent_question_id: @question.id, question_flow_id: @answer_session.question_flow.id)
+
+    #raise StandardError
 
     if candidate_edges.length == 0
       redirect_to dashboard_path

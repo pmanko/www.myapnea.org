@@ -15,4 +15,5 @@
 //= require turbolinks
 //= require bootstrap
 //= require jquery.slimscroll
+//= require jquery.PrintArea
 //= require_tree .
