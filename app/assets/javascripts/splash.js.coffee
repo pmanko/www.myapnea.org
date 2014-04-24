@@ -2,7 +2,7 @@
   if $("#splash").length
     $("#goal-chart").highcharts
       title:
-        text: "MyApnea Enrollment"
+        text: "Our Goal: 50,000 Signups"
 
       xAxis:
         categories: [

@@ -1,3 +1,5 @@
+@import "less/variables.less";
+
 #splash {
 
   section {
@@ -7,27 +9,56 @@
   section#join {
     margin-top: 50px;
 
+    img {
+      width: 100%;
+
+    }
+
+    #bwh-logo {
+      padding-top: 5px;
+
+    }
+
+    #asaa-logo {
+      padding-top: 18px;
+    }
+
     #join-btn-top {
       margin-top: 20px;
       margin-bottom: 20px;
     }
-    div#main-video {
-      // Based on http://www.mademyday.de/css-height-equals-width-with-pure-css.html
-      .aspect-box:before {
-        padding-top: 75%;
-      }
 
-      iframe {
-        height: 100%;
-        width: 100%;
-      }
+  }
+
+  div#main-video {
+    margin-top: 21px;
+    // Based on http://www.mademyday.de/css-height-equals-width-with-pure-css.html
+    .aspect-box:before {
+      padding-top: 75%;
+    }
+
+    iframe {
+      height: 100%;
+      width: 100%;
     }
   }
 
+
   section#goal {
-    .aspect-box:before {
-      padding-top: 66%;
+    margin-top: 11px;
+
+    @media (min-width: @screen-sm-min) {
+      .aspect-box:before {
+        padding-top: 35%;
+      }
     }
+
+    @media (min-width: @screen-lg-min) {
+      .aspect-box:before {
+        padding-top: 75%;
+      }
+    }
+
     #goal-chart {
       height: 100%;
       width: 100%;

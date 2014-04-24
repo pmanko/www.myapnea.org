@@ -2,21 +2,21 @@
 
   <section id="join">
     <div class="row">
-      <div class="col-md-6">
-        <h1>Join My Apnea</h1>
-        <p> Be part of a Patient Powered Network that drives Sleep Apnea research by focusing on the needs of those diagnosed with Sleep Apnea.</p>
-        <ul>
-          <li>It's easy</li>
-          <li>It's safe</li>
-          <li>You can make a difference for yourself and others</li>
-        </ul>
-        <%= link_to "Join Now!", page_path('pledge'), class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
+      <div class="col-md-12">
+        <h1>Finding Answers...Together!</h1>
+        <p>Join the largest patient-led community ever created to fight sleep apnea.  MyApnea.org is a network created by people with sleep apnea to empower others like you and us get the answers WE want and need.</p>
+        <p>We are inviting thousands of people with sleep apnea to come together at MyApnea.org and become part of a national research network to improve OUR lives.  It’s a whole new way of finding help—for you and for millions of people like us.</p>
+        <p>MyApnea.org is what’s called patient-powered research.  Together, we share health information, discuss experiences regarding treatment, and express views on future research projects directly with researchers and sleep experts that can make a difference.  In return, you will get easy to use tools to track your health and will be able to learn from others about treatments, symptoms, and coping with sleep apnea in order to take control of your life.</p>
 
-      </div>
-      <div class="col-md-6" id="main-video">
-        <div class="aspect-box">
-          <div class="aspect-content">
-            <iframe src="//www.youtube.com/embed/4JkiWvWn2aU?html5=1" frameborder="0" allowfullscreen></iframe>
+        <div class="row">
+          <div class='col-md-3 col-xs-5'>
+            <img id='bwh-logo' src="http://www.brighamandwomens.org/_images/logo.gif" />
+          </div>
+          <div class="col-md-4 col-xs-7">
+            <img id='asaa-logo' src="http://sleepapnea.org/assets/templates/asaa/images/asaa-logo.png" />
+          </div>
+          <div class="col-md-5 col-xs-12">
+            <%= link_to "Join Now!", page_path('pledge'), class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
           </div>
         </div>
       </div>
@@ -24,10 +24,30 @@
   </section>
 
 
+
   <div class="row">
-    <div class="col-md-5">
+
+
+
+
+    <div class="col-lg-4 col-sm-6" id="main-video">
+      <div class="aspect-box">
+        <div class="aspect-content">
+          <iframe src="//www.youtube.com/embed/4JkiWvWn2aU?html5=1" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4 col-sm-6">
+      <section id="perils">
+        <h3>Why?</h3>
+        <p>Sleep apnea is a common and potentially life threatening sleep and breathing disorder that affects millions of people like us.  Left untreated, sleep apnea increases the risk for high blood pressure, heart attack, stroke and other medical conditions.  Although there are several treatments for sleep apnea, there is a lot that is not known about what treatments work best for which people.</p>
+      </section>
+    </div>
+
+    <div class="col-lg-4 col-sm-12">
       <section id="goal">
-        <h3>Our Goal: 50,000 Signups</h3>
         <div class="aspect-box">
           <div class="aspect-content">
             <div id="goal-chart">
@@ -36,48 +56,31 @@
         </div>
       </section>
     </div>
-    <div class="col-md-7">
-      <section id="perils">
-        <h3>The perils of Sleep Apnea:</h3>
-        <ul>
-          <li>EDS</li>
-          <li>Hypertension</li>
-          <li>Heart Attack</li>
-          <li>Stroke</li>
-          <li>Diabetes</li>
-          <li>What & why we need to understand etc</li>
-        </ul>
-      </section>
-    </div>
 
   </div>
   <section id="safe-easy">
     <div class="row">
-      <div class="col-md-4">
-        <div class='thumbnail'><%= image_tag "pages/safe-easy.jpg" %></div>
+      <div class="col-md-6">
+        <h2>It's Safe</h2>
+        <p>Because patients run the network, we are committed to protecting the security of your identity and information.  MyApnea.org will never sell your contact information.  Our partners—the American Sleep Apnea Association and the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital, Harvard Medical School—are dedicated to helping patients with sleep apnea.  They are interested in generating new knowledge while respecting the privacy concerns of our members. </p>
+        <h3>It's Easy</h3>
+        <p>Use your computer, your tablet or your smartphone.  The health surveys you answer are short, easy to complete, and can be done whenever is easiest for you.</p>
       </div>
 
-      <div class="col-md-7 col-md-offset-1">
-        <h3></h3>
-        <p><strong class="text-info">It's Safe!</strong><br />Your privacy and health information are protected.</p>
-        <p><strong class="text-info">It's Easy!</strong><br />Simple controls, cross platform, site tour...</p>
+      <div class="col-md-6">
+        <div class='thumbnail'><%= image_tag "pages/safe-easy.jpg" %></div>
       </div>
     </div>
   </section>
 
   <section id="make-difference">
     <div class="row">
-      <div class="col-md-7">
-        <h3>Make a difference!</h3>
-        <ul>
-          <li>Better treatments and patient outcomes</li>
-          <li>Manage your symptoms and increase quality of life</li>
-          <li>Share and find advice with other patients around the world</li>
-          <li>Encourage patient involvement in scientific collaboration and research</li>
-          <li>Increase awareness</li>
-        </ul>
+      <div class="col-md-9">
+        <h3>"Patient Power"</h3>
+        <p>MyApnea.org will bring together more people with sleep apnea to share, learn and contribute to research than has ever been tried before.  By joining our community, you can make a big difference in how you, and others like us, live everyday and sleep every night. </p>
+        <p>You will also have a choice to weigh in on what questions you most want answered about sleep apnea.  And we will report back on all interesting research findings, in language you don’t have to be a scientist to understand.</p>
       </div>
-      <div class="col-md-4 col-md-offset-1">
+      <div class="col-md-3">
         <div class="thumbnail"><%= image_tag "pages/make-difference.jpg" %></div>
       </div>
     </div>
