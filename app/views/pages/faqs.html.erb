@@ -6,12 +6,6 @@
 
 <div class="row">
   <div class="col-md-12">
-
-
-
-
-
-
     <!-- Nav tabs category -->
     <ul class="nav nav-tabs faq-cat-tabs">
       <% faq_data.each_key do |category| %>
@@ -21,12 +15,9 @@
 
     <!-- Tab panes -->
     <div class="tab-content faq-cat-content">
-      <% i = 1 %>
       <% faq_data.each_pair do |category, faqs| %>
         <div class="tab-pane <%= 'active' if category == 'general' %> in fade" id="faq-cat-<%= category %>">
-          <div class="panel-group" id="accordion-cat-<%= i %>">
-
-
+          <div class="panel-group" id="accordion-cat-<%= category %>">
             <% faqs.each_with_index do |qa_hash, j| %>
               <div class="panel panel-default panel-faq">
                 <div class="panel-heading">
@@ -39,15 +30,13 @@
                 </div>
                 <div id="faq-cat-<%= category %>-sub-<%= j %>" class="panel-collapse collapse">
                   <div class="panel-body">
-                    <%= qa_hash['answer'] %>
+                    <%= markdown qa_hash['answer'] %>
                   </div>
                 </div>
               </div>
             <% end %>
           </div>
         </div>
-        <% i += 1 %>
-
       <% end %>
     </div>
 

@@ -3,6 +3,7 @@
   splashReady()
   consentReady()
   faqsReady()
+  affixSidebarReady()
 
 $(document).ready(loaders)
 $(document).on('page:load', loaders)

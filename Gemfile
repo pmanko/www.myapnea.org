@@ -50,6 +50,8 @@ gem 'less-rails'
 # Scaffold Generation
 gem 'bootstrap-generators', '~> 3.1.1'
 
+# Markdown Support
+gem 'redcarpet'
 
 # Development
 group :development do

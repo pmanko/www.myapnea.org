@@ -1,13 +1,45 @@
-<div class="page-header">
-  <h1>Our Team</h1>
-</div>
+<% team_data = YAML.load_file(Rails.root.join('lib', 'data', 'team.yml')) %>
 
 <div class="row">
-  <div class="col-md-12">
-    <h2>SAPCOM</h2>
-    <h2>ASAA</h2>
-    <h2>Harvard</h2>
-    <h2>Brigham & Women's Hospital</h2>
+  <div class="col-md-9">
+    <section id="top">
+      <h1 class="page-header" id="myapnea"><%= team_data['myapnea']['title'] %></h1>
+      <div class="section-content" id="myapnea-overview">
+        <%= markdown team_data['myapnea']['content'] %>
+      </div>
+    </section>
+
+    <section>
+      <h1 class="page-header" id="sapcon"><%= team_data['sapcon']['title'] %></h1>
+      <div class="section-content" id="sapcon-overview">
+        <%= markdown team_data['sapcon']['content'] %>
+      </div>
+    </section>
+
+  </div>
+  <div class="col-md-3">
+
+    <div class="myapnea-sidebar hidden-print affix-top" role="complementary">
+      <ul class="nav myapnea-sidenav">
+
+        <li class="">
+          <a href="#myapnea"><%= team_data['myapnea']['title'] %></a>
+          <ul class="nav">
+            <li><a href="#myapnea-overview">Overview</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#sapcon"><%= team_data['sapcon']['title'] %></a>
+          <ul class="nav">
+            <li><a href="#sapcon-overview">Overview</a></li>
+          </ul>
+        </li>
+      </ul>
+      <a class="back-to-top" href="#top">
+        Back to top
+      </a>
+    </div>
+
   </div>
 </div>
 

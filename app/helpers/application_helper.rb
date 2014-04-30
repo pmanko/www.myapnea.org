@@ -7,4 +7,8 @@ module ApplicationHelper
     (user_signed_in? ? current_user.theme : cookies[:theme]) || 'day_theme'
   end
 
+  def markdown(text)
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
+    markdown.render(text).html_safe
+  end
 end
