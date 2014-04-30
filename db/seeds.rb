@@ -10,7 +10,7 @@
 files = [["units.yml", Unit], ["answer_types.yml", AnswerType], ["question_types.yml", QuestionType], ["answer_options.yml", AnswerOption], ["questions.yml", Question], ["question_flows.yml", QuestionFlow], ["question_edges.yml", QuestionEdge]]
 
 files.each do |file_name, model_class|
-  file_path = Rails.root.join('lib', 'data', file_name)
+  file_path = Rails.root.join('lib', 'data', 'questionnaires', file_name)
 
   yaml_data = YAML.load_file(file_path)
 
