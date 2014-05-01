@@ -2,10 +2,8 @@
   $("body").scrollspy(target: '.myapnea-sidebar')
   $("body").scrollspy('refresh')
 
-  $(".myapnea-sidebar").affix offset:
-      top: 100
-      bottom: 100
-
+  $("#team .myapnea-sidebar").affix(100)
+  $("#network .myapnea-sidebar").affix()
 #    offset:
 #    top: ->
 ##      c = b.offset().top

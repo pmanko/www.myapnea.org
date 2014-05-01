@@ -1,5 +1,5 @@
 <% team_data = YAML.load_file(Rails.root.join('lib', 'data', 'team.yml')) %>
-
+<div id="team">
 <div class="row">
   <div class="col-md-9">
     <section id="top">
@@ -20,7 +20,7 @@
       <h1 class="page-header" id="steering">The Sleep Apnea Patient Centered Outcomes Network Steering Committee</h1>
 
       <% team_data['steering'].each do |person| %>
-        <div class="section-content" id="steering-<%= person['name'].underscore %>">
+        <div class="section-content" id="steering-<%= person['name'].parameterize %>">
 
           <div class="row">
             <div class="col-md-3">
@@ -32,6 +32,19 @@
               <h4><%= person['name'] %><%= ", #{person['titles'] if person['titles'].present? }" %> – <%= person['role'] %> </h4>
               <%= markdown person['description'] %>
             </div>
+          </div>
+        </div>
+      <% end %>
+    </section>
+
+    <section>
+      <h1 class="page-header" id="partners">Partners</h1>
+      <% team_data['partners'].each do |partner| %>
+        <div class="section-content" id="partners-<%= partner['name'].parameterize %>">
+          <h2><%= partner['name'] %></h2>
+          <a href="<%= partner['link'] %>"><%= partner['link'] %></a>
+          <div>
+            <%= markdown partner['description'] %>
           </div>
         </div>
       <% end %>
@@ -59,17 +72,31 @@
           <a href="#steering">The SAPCOM Steering Committee</a>
           <ul class="nav">
             <% team_data['steering'].each do |person| %>
-              <li><a href="#<%= person['name'].underscore %>"><%= person['name'] %></a></li>
+              <li><a href="#steering-<%= person['name'].parameterize %>"><%= person['name'] %></a></li>
             <% end %>
           </ul>
         </li>
+        <li class="">
+          <a href="#partners">Partners</a>
+          <ul class="nav">
+            <% team_data['partners'].each do |partner| %>
+              <li><a href="#partners-<%= partner['name'].parameterize %>"><%= partner['name'] %></a></li>
+            <% end %>
+          </ul>
+        </li>
+
+
       </ul>
+
+
+
       <a class="back-to-top" href="#top">
         Back to top
       </a>
     </div>
 
   </div>
+</div>
 </div>
 
 <%= render partial: 'layouts/join_bottom' %>

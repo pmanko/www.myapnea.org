@@ -7,4 +7,3 @@ $(document).on 'focus', '#registration input#user_date_of_birth', () ->
 $(document).on 'blur', '#registration input#user_date_of_birth', () ->
    if $(this).val() == ''
      $(this).attr('type', 'text')
-     alert("hooo")
