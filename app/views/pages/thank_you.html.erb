@@ -5,25 +5,8 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <h3>Thank you for signing up!</h3>
+              <%= markdown File.read(Rails.root.join('lib', 'data', 'thank_you.md')) %>
 
-              <p>You have made an important contribution to your future and the future of other sufferers of Sleep Apnea.</p>
-
-              <p>
-                We thank you for your time and participation in <strong>YOUR</strong> network. We promise that your data is valuable and your
-                opinion matters. Over time we will launch further surveys and as a result will be able to provide useful tools you
-                can use to better manage your care. You can read about some of our promises on the <%= link_to "connect", page_path('connect') %> page. We will email
-                you from time to time to let you know about these tools.
-              </p>
-
-              <p>
-                We will <strong>NEVER</strong> sell or abuse your personal information. But we do have agreements with other patient powered networks to share
-                relevant information. All of these companies are not-for-profit and are true to our non commercial ideals. For
-                example if you indicate on one of our surveys that you have diabetes - you may get an email inviting you to join
-                the diabetes patient powered network.
-              </p>
-
-              <p>Again - thank you - while we are building those tools for you - please enjoy one of these FREE books: <%= link_to "eBook Download", "" %></p>
             </div>
           </div>
 

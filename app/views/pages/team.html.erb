@@ -16,6 +16,27 @@
       </div>
     </section>
 
+    <section>
+      <h1 class="page-header" id="steering">The Sleep Apnea Patient Centered Outcomes Network Steering Committee</h1>
+
+      <% team_data['steering'].each do |person| %>
+        <div class="section-content" id="steering-<%= person['name'].underscore %>">
+
+          <div class="row">
+            <div class="col-md-3">
+              <div class="thumbnail">
+                <%= image_tag "pages/team/#{person['image']}" %>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h4><%= person['name'] %><%= ", #{person['titles'] if person['titles'].present? }" %> – <%= person['role'] %> </h4>
+              <%= markdown person['description'] %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </section>
+
   </div>
   <div class="col-md-3">
 
@@ -32,6 +53,14 @@
           <a href="#sapcon"><%= team_data['sapcon']['title'] %></a>
           <ul class="nav">
             <li><a href="#sapcon-overview">Overview</a></li>
+          </ul>
+        </li>
+        <li class="">
+          <a href="#steering">The SAPCOM Steering Committee</a>
+          <ul class="nav">
+            <% team_data['steering'].each do |person| %>
+              <li><a href="#<%= person['name'].underscore %>"><%= person['name'] %></a></li>
+            <% end %>
           </ul>
         </li>
       </ul>

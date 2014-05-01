@@ -16,8 +16,16 @@
         <%= f.text_field :last_name, class: 'form-control input-lg', placeholder: "Last Name" %>
       </div>
       <div class='form-group'>
+        <%= f.label :date_of_birth, class: 'sr-only' %>
+        <%= f.date_field :date_of_birth, class: 'form-control input-lg', placeholder: "Date of Birth" %>
+      </div>
+      <div class='form-group'>
+        <%= f.label :zip_code, class: 'sr-only' %>
+        <%= f.text_field :zip_code, class: 'form-control input-lg', placeholder: "Zip Code" %>
+      </div>
+      <div class='form-group'>
         <%= f.label :email, class: 'sr-only' %>
-        <%= f.text_field :email, class: 'form-control input-lg', placeholder: "Email" %>
+        <%= f.email_field :email, class: 'form-control input-lg', placeholder: "Email" %>
       </div>
       <div class='form-group'>
         <%= f.label :password, class: 'sr-only' %>
