@@ -56,3 +56,12 @@
   text_value: Don't know
 - id: 29
   text_value: Other
+- id: 30
+  text_value: High chance of dozing
+- id: 31
+  text_value: Moderate chance of dozing
+- id: 32
+  text_value: Slight chance of dozing
+- id: 33
+  text_value: Would never doze
+

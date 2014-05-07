@@ -104,6 +104,20 @@
   - 24
   - 25
   - 8
+- text: |
+    What is the chance that you would doze or fall asleep (not just “feel tired)) in the following situation?
+    Please choose the best answer for this situation. If you are never or rarely in the situation, please give your best guess.
+    Situation: Sitting and reading
+  id: 13
+  time_estimate: .2
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids:
+  - 30
+  - 31
+  - 32
+  - 33
+
 
 
 
