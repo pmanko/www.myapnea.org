@@ -98,13 +98,14 @@ ActiveRecord::Schema.define(version: 20140501035329) do
   end
 
   create_table "questions", force: true do |t|
-    t.string   "text"
+    t.text     "text"
     t.integer  "question_type_id"
     t.integer  "answer_type_id"
     t.integer  "unit_id"
+    t.decimal  "time_estimate"
+    t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.decimal  "time_estimate"
   end
 
   create_table "units", force: true do |t|
