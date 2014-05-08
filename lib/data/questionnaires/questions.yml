@@ -122,9 +122,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Sitting and reading
-  id: 13
+  id: 14
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -135,9 +136,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Watching TV
-  id: 13
+  id: 15
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -148,9 +150,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Sitting, inactive, in a public place (e.g., a movie theater or classroom)
-  id: 13
+  id: 16
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -161,9 +164,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Riding as a passenger in a car for an hour without a break
-  id: 13
+  id: 17
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -174,9 +178,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Lying down to rest in the afternoon when circumstances permit
-  id: 13
+  id: 18
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -187,9 +192,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Sitting and talking to someone
-  id: 13
+  id: 19
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -200,9 +206,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** Sitting quietly after lunch without alcohol
-  id: 13
+  id: 20
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
@@ -213,9 +220,10 @@
     How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
 
     **Situation:** In a car, while stopped for a few minutes in traffic
-  id: 13
+  id: 21
   time_estimate: .2
   question_type_id: 3
+  question_help_id: 1
   answer_type_id: 1
   answer_option_ids:
   - 30
