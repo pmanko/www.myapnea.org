@@ -5,5 +5,7 @@ We are busy getting this site ready to launch - we should be ready very soon.
 You'll be the first to know when we're up and running, so stay tuned!
 
 In the meantime you can find out more about sleep apnea from the ASAA [www.sleepapnea.org](http://www.sleepapnea.org).
+You can also learn more about Patient Centered Outcomes Research at PCORI [www.pcornet.org](http://www.pcornet.org).
 
-And you can learn more about Patient Centered Outcomes Research at PCORI [www.pcornet.org](http://www.pcornet.org).
+Finally, feel free to contact us with any questions, suggestions, or concerns by emailing support@myapnea.org.
+
