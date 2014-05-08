@@ -11,9 +11,8 @@
 // about supported directives.
 //
 //= require jquery
-//= require jquery_ujs
-//= require turbolinks
+//= require modernizr.custom
 //= require bootstrap
-//= require jquery.slimscroll
-//= require jquery.PrintArea
-//= require_tree .
+//= require soon/plugins
+//= require soon/jquery.themepunch.revolution.min
+//= require soon/custom.js

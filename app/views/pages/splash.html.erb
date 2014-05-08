@@ -1,164 +1,30 @@
-<div id="splash">
+<header>
+  <!-- HEADLINE -->
+  <h1 data-animated="GoIn"><b>MyApnea.org</b> is coming soon...</h1>
+</header>
 
-  <section id="join">
-    <div class="row">
-      <div class="col-md-12">
-        <h1>Finding Answers...Together!</h1>
-        <p>Join the largest patient-led community ever created to fight sleep apnea.  MyApnea.org is a network created by people with sleep apnea to empower others like you and us get the answers WE want and need.</p>
-        <p>We are inviting thousands of people with sleep apnea to come together at MyApnea.org and become part of a national research network to improve OUR lives.  It’s a whole new way of finding help—for you and for millions of people like us.</p>
-        <p>MyApnea.org is what’s called patient-powered research.  Together, we share health information, discuss experiences regarding treatment, and express views on future research projects directly with researchers and sleep experts that can make a difference.  In return, you will get easy to use tools to track your health and will be able to learn from others about treatments, symptoms, and coping with sleep apnea in order to take control of your life.</p>
-
-        <div class="row">
-          <div class='col-md-3 col-xs-5'>
-            <img id='bwh-logo' src="http://www.brighamandwomens.org/_images/logo.gif" />
-          </div>
-          <div class="col-md-4 col-xs-7">
-            <img id='asaa-logo' src="http://sleepapnea.org/assets/templates/asaa/images/asaa-logo.png" />
-          </div>
-          <div class="col-md-5 col-xs-12">
-            <%= link_to "Join Now!", page_path('pledge'), class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
-          </div>
-        </div>
-      </div>
+<div class="col-lg-4 col-lg-offset-4 mt centered">
+  <h4>LET ME KNOW WHEN YOU LAUNCH</h4>
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+      <input type="email" class="form-control" id="user-email" placeholder="Enter email">
     </div>
-  </section>
-
-
-
-  <div class="row">
-
-
-
-
-    <div class="col-md-4 col-sm-6" id="main-video">
-      <div class="aspect-box">
-        <div class="aspect-content">
-          <iframe src="//www.youtube.com/embed/4JkiWvWn2aU?html5=1" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-4">
-      <section id="perils">
-        <h3>Why?</h3>
-        <p>Sleep apnea is a common and potentially life threatening sleep and breathing disorder that affects millions of people like us.  Left untreated, sleep apnea increases the risk for high blood pressure, heart attack, stroke and other medical conditions.  Although there are several treatments for sleep apnea, there is a lot that is not known about what treatments work best for which people.</p>
-      </section>
-    </div>
-
-    <div class="col-md-4 visible-md visible-lg">
-      <section id="goal">
-        <div class="aspect-box">
-          <div class="aspect-content">
-            <div id="goal-chart">
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-
-  </div>
-  <section id="safe-easy">
-    <div class="row">
-      <div class="col-md-6">
-        <h2>It's Safe</h2>
-        <p>Because patients run the network, we are committed to protecting the security of your identity and information.  MyApnea.org will never sell your contact information.  Our partners—the American Sleep Apnea Association and the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital, Harvard Medical School—are dedicated to helping patients with sleep apnea.  They are interested in generating new knowledge while respecting the privacy concerns of our members. </p>
-        <h3>It's Easy</h3>
-        <p>Use your computer, your tablet or your smartphone.  The health surveys you answer are short, easy to complete, and can be done whenever is easiest for you.</p>
-      </div>
-
-      <div class="col-md-6">
-        <div class='thumbnail'><%= image_tag "pages/safe-easy.jpg" %></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="make-difference">
-    <div class="row">
-      <div class="col-md-9">
-        <h3>"Patient Power"</h3>
-        <p>MyApnea.org will bring together more people with sleep apnea to share, learn and contribute to research than has ever been tried before.  By joining our community, you can make a big difference in how you, and others like us, live everyday and sleep every night. </p>
-        <p>You will also have a choice to weigh in on what questions you most want answered about sleep apnea.  And we will report back on all interesting research findings, in language you don’t have to be a scientist to understand.</p>
-      </div>
-      <div class="col-md-3">
-        <div class="thumbnail"><%= image_tag "pages/make-difference.jpg" %></div>
-      </div>
-    </div>
-  </section>
-
-
-  <section id="personal-stories">
-    <div id="reason-carousel" class="carousel slide">
-      <ol class="carousel-indicators">
-        <li data-target="#reason-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#reason-carousel" data-slide-to="1" class=""></li>
-        <li data-target="#reason-carousel" data-slide-to="2" class=""></li>
-      </ol>
-
-      <div class="carousel-inner">
-        <div class="item active">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/1.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>My husband has sleep apnea. And my daughter was diagnosed at the age of 3. I want other parents to realized that kids can have this condition too.</p>
-                    <footer><cite>Justine</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/2.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>My wife told me I stopped breathing while I slept. A lot. Thankfully she read an article on sleep apnea and made me go to the Doctor. I don’t want other people to suffer needlessly from this condition.</p>
-                    <footer><cite>Steve</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/3.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>
-                      I have always been a snorer - I had no idea it was more than just a nuisance to my partner. I have lowered my blood pressure and my chances of heart disease by wearing a CPAP. I want to be a part of the study to find out what else is effected by this condition.
-                    </p>
-                    <footer><cite>Richard</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#reason-carousel" data-slide="prev">
-        <span class="icon-prev"></span>
-      </a>
-      <a class="right carousel-control" href="#reason-carousel" data-slide="next">
-        <span class="icon-next"></span>
-      </a>
-    </div>
-  </section>
+    <button type="submit" class="btn btn-info">Submit</button>
+  </form>
 </div>
 
-<%= render partial: 'layouts/join_bottom' %>
-<%= render partial: 'layouts/press_others' %>
+</div>
+<!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
+<div id="layer"></div>
+<!-- END LAYER -->
+<!-- START SLIDER -->
+<div id="slider" class="rev_slider">
+  <ul>
+    <%= (1..6).each do |i| %>
+      <li data-transition="slideleft" data-slotamount="1" data-thumb="<%= asset_path("#{i}.jpg") %>">
+        <img src="<%= asset_path("#{i}.jpg") %>">
+      </li>
+    <% end %>
+  </ul>
+</div>
