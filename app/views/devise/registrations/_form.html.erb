@@ -6,6 +6,18 @@
     </div>
   </div>
   <div class="panel-body">
+    <% if resource.errors.any? %>
+      <div class="alert alert-danger alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>There were some problems with your registration.</strong>
+        <ul>
+          <% resource.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+        </ul>
+      </div>
+
+    <% end %>
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {}) do |f| %>
       <div class='form-group'>
         <%= f.label :first_name, class: 'sr-only' %>

@@ -11,4 +11,14 @@ module ApplicationHelper
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
     markdown.render(text).html_safe
   end
+
+  def flash_class(level)
+    case level.to_sym
+      when :notice then "text-info"
+      when :success then "text-success"
+      when :error then "text-danger"
+      when :alert then "text-danger"
+      else ""
+    end
+  end
 end

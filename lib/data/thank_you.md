@@ -5,3 +5,4 @@ Thank you for joining this historic, patient-powered effort to help millions of 
 Your time is important, so we promise to keep the study surveys quick and easy.  Your data is valuable so you can depend on us to keep it safe.  As part of a much larger, national network, you may get an occasional invitation to take part in a related study—for instance, on diabetes if you suffer from both conditions.  But don’t worry.  Your identity is still protected and it is always up to you whether you want to participate or not.
 
 We could not do this without you.  Together, we can get the answers we need and want.
+
