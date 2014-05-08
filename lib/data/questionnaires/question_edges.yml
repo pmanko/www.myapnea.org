@@ -53,14 +53,24 @@
 - question_flow_id: 1
   parent_question_id: 11
   child_question_id: 12
-  condition: 
-- question_flow_id: 2
-  
-
-- question_flow_id: 3
-  parent_question_id: 13
-  child_question_id: 14
   condition:
+- question_flow_id: 2
+  parent_question_id: 1
+  child_question_id: 2
+  condition:
+- question_flow_id: 2
+  parent_question_id: 2
+  child_question_id: 3
+  condition:
+- question_flow_id: 2
+  parent_question_id: 3
+  child_question_id: 6
+  condition:
+- question_flow_id: 2
+  parent_question_id: 6
+  child_question_id: 7
+  condition:
+
 - question_flow_id: 3
   parent_question_id: 14
   child_question_id: 15

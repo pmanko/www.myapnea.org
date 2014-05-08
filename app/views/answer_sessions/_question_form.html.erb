@@ -1,6 +1,6 @@
 <%= hidden_field_tag :question_id, @question.id %>
 <%= hidden_field_tag :answer_session_id, @answer_session.id %>
-<p><%= @question.text %></p>
+<p><%= markdown @question.text %></p>
 <% if @question.answer_options.present? %>
   <% @question.answer_options.each_with_index do |answer_option, i| %>
     <div class="<%= @question.question_type.input_type %>">

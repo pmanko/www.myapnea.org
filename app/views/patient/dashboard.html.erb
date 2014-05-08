@@ -6,13 +6,17 @@
   <div class="col-md-8">
     <h2>Questionnaires</h2>
     <div id="questionnaires" class="list-group">
-      <% QuestionFlow.all.each do |qf| %>
+      <% QuestionFlow.where(status: "show").each do |qf| %>
         <a href="<%= start_answer_session_path(question_flow_id: qf.id) %>" class="list-group-item">
-          <strong><%= qf.name %></strong>
-          <% if AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).length > 0 %>
+          <h3><%= qf.name %></h3>
+          <% if AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).order(updated_at: :desc).length > 0 and (AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).order(updated_at: :desc).first.completed_answers.length == qf.all_questions.length) %>
+            <p><strong>Questionnaire finished!</strong></p>
+          <% elsif AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).length > 0 %>
             <%= render partial: 'answer_sessions/session_progress', locals: {answer_session: AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).order(updated_at: :desc).first} %>
           <% else %>
-            <p>Questionnaire not yet started. Estimated time of completion: <%= qf.total_time %> minutes for <%= qf.all_questions.length %> questions. Start now!</p>
+            <p>Questionnaire not yet started.</p>
+            <p><strong>Estimated time commitment:</strong> <%= qf.total_time.round %> minutes for <%= qf.all_questions.length %> questions.</p>
+
           <% end %>
 
         </a>

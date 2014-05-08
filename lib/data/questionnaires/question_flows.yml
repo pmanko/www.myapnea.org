@@ -2,11 +2,13 @@
   name: A Little about Me (full)
   description: This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general.
   first_question_id: 1
+  status: hide
 - id: 2
   name: A Little about Me
   description: |
     This survey covers some basic information about your age, sex, and background.
   first_question_id: 1
+  status: show
 - id: 3
   name: Epworth Sleepiness Scale
   description: |
@@ -15,4 +17,5 @@
     In the situations that follow, let us know how likely you are to doze off or fall asleep - not just feel tired - in your recent experience. If you are never or rarely in the situation, please give your best guess.
 
     For more information, please visit [http://healthysleep.med.harvard.edu/narcolepsy/diagnosing-narcolepsy/epworth-sleepiness-scale]
-  first_question_id: 13
+  first_question_id: 14
+  status: show

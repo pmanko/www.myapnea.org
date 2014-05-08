@@ -4,6 +4,7 @@ class CreateQuestionFlows < ActiveRecord::Migration
       t.string :name
       t.text :description
       t.integer :first_question_id
+      t.string :status
 
       t.timestamps
     end

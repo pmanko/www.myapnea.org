@@ -1,6 +1,6 @@
 
 <p><%= answer_session.completed_answers.length %> / <%= answer_session.question_flow.all_questions.length %> questions done</p>
-<p>Around <%= answer_session.completed_time.round %> out of <%= answer_session.question_flow.total_time.round %> minutes completed. Only <%= (answer_session.question_flow.total_time - answer_session.completed_time).round %> minutes remaining!</p>
+<p>Around <%= answer_session.completed_time.ceil %> out of <%= answer_session.question_flow.total_time.ceil %> minutes completed. Only <%= (answer_session.question_flow.total_time.ceil - answer_session.completed_time.ceil) %> minutes remaining!</p>
 
 <div class="progress">
 

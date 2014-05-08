@@ -5,7 +5,13 @@
       <div class="panel panel-default">
         <%= form_tag(process_answer_path, {role: "form"}) do %>
           <div class="panel-heading">
-            <h3 class="panel-title"><%= @answer_session.question_flow.name %></h3>
+            <h3 class="panel-title">
+              <%= @answer_session.question_flow.name %>
+              <button type="button" class="btn btn-link pull-right" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                <span class="glyphicon glyphicon-question-sign"></span>
+              </button>
+
+            </h3>
             <%= render partial: 'session_progress', locals: {answer_session: @answer_session} %>
           </div>
           <div class="panel-body">
