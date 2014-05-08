@@ -7,7 +7,7 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-files = [["units.yml", Unit], ["answer_types.yml", AnswerType], ["question_types.yml", QuestionType], ["answer_options.yml", AnswerOption], ["questions.yml", Question], ["question_flows.yml", QuestionFlow], ["question_edges.yml", QuestionEdge]]
+files = [["units.yml", Unit], ["answer_types.yml", AnswerType], ["question_types.yml", QuestionType], ["answer_options.yml", AnswerOption], ["questions.yml", Question], ["question_flows.yml", QuestionFlow], ["question_edges.yml", QuestionEdge], ["question_help_messages.yml", QuestionHelpMessage]]
 
 files.each do |file_name, model_class|
   file_path = Rails.root.join('lib', 'data', 'questionnaires', file_name)
