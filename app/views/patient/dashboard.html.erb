@@ -15,7 +15,7 @@
             <%= render partial: 'answer_sessions/session_progress', locals: {answer_session: AnswerSession.where(question_flow_id: qf.id, user_id: current_user.id).order(updated_at: :desc).first} %>
           <% else %>
             <p>Questionnaire not yet started.</p>
-            <p><strong>Estimated time commitment:</strong> <%= qf.total_time.round %> minutes for <%= qf.all_questions.length %> questions.</p>
+            <p><strong>Estimated time commitment:</strong> <%= qf.total_time.ceil %> minutes for <%= qf.all_questions.length %> questions.</p>
 
           <% end %>
 
