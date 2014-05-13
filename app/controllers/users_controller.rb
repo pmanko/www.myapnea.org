@@ -9,7 +9,18 @@ class UsersController < ApplicationController
     end
   end
 
-  def process_consent
+  def consent
+    if params[:consent_signed]
+      session[:accepted_consent_at] = Time.zone.now
+    end
 
   end
+
+  def pledge
+    if params[:pledge_signed]
+      session[:accepted_pledge_at] = Time.zone.now
+      redirect_to
+    end
+  end
+
 end
