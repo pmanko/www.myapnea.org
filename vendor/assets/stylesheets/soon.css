@@ -3,13 +3,22 @@ ADDED
 ****/
 
 #main-container {
-    margin-top: 30px;
+    margin-top: 50px;
     background-color: rgba(100, 100, 100, 0.6);
 
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
+.tp-caption .creative-commons {
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    padding: 0 5px;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
 
 /******************************************************************************************************************************
 MAIN STYLE
@@ -93,7 +102,7 @@ HEADER
 #slider{
     width: 100%;
     position: fixed;
-    background-color: #2c3e50; 
+    background-color: #2c3e50;
     top: 0;
     left: 0;
     z-index: 0;
@@ -183,7 +192,7 @@ ANIMATIONS
 @-moz-keyframes GoIn {
     0%   {opacity: 0; -moz-transform: translateY(-2000px);}
     60%  {opacity: 1; -moz-transform: translateY(30px);}
-    80%  {-moz-transform: translateY(-10px);}               
+    80%  {-moz-transform: translateY(-10px);}
     100% {-moz-transform: translateY(0);}
 }
 @-o-keyframes GoIn {
@@ -194,7 +203,7 @@ ANIMATIONS
 }
 @keyframes GoIn {
     0%   {opacity: 0; transform: translateY(-2000px);}
-    60%  {opacity: 1; transform: translateY(30px);}   
+    60%  {opacity: 1; transform: translateY(30px);}
     80%  {transform: translateY(-10px);}
     100% {transform: translateY(0);}
 }
@@ -612,7 +621,7 @@ PLUGINS
     bottom: 0;
     background-color: rgba(255, 255, 255, .6);
 }
-.tp-bullets {   
+.tp-bullets {
     z-index:1000; position:absolute;
     left: 90% !important;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -621,16 +630,16 @@ PLUGINS
     opacity: 1;
     -webkit-transition: opacity 0.2s ease-out; -moz-transition: opacity 0.2s ease-out; -o-transition: opacity 0.2s ease-out; -ms-transition: opacity 0.2s ease-out;
 }
-.tp-bullets.simplebullets.round .bullet {   
+.tp-bullets.simplebullets.round .bullet {
     cursor:pointer;
-    position:relative;  
+    position:relative;
     border: 3px solid rgba(255, 255, 255, .6);
-    width:20px; 
-    height:20px;  
-    margin-right:0px; 
-    float:left; 
+    width:20px;
+    height:20px;
+    margin-right:0px;
+    float:left;
     border-radius: 50%;
-    margin-top:-10px; 
+    margin-top:-10px;
     margin-left:3px;
 }
 .tp-bullets.simplebullets.round .bullet.selected{
