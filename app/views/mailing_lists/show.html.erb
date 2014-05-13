@@ -1,0 +1,25 @@
+<header>
+  <!-- HEADLINE -->
+  <h1><b>MyApnea.org</b> is coming soon...</h1>
+</header>
+
+<div class="col-lg-6 col-lg-offset-3 mt centered">
+  <h4>LET ME KNOW WHEN YOU LAUNCH</h4>
+
+  <%= form_tag put_on_list_path, class: "form-inline", role: "form" do |f|%>
+    <div class="form-group">
+      <label class="sr-only" for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+    </div>
+    <button type="submit" class="btn btn-info">Submit</button>
+
+
+  <% end %>
+
+</div>
+
+<div class="col-lg-6 col-lg-offset-3 mt centered">
+
+  <p>In the meantime, you can find out more about sleep apnea from the <a href="http://www.sleepapnea.org">ASAA</a></p>
+  <p>You can also learn more about this project and other Patient-Powered Research Networks at <a href="http://http://www.pcornet.org/">PCORnet</a></p>
+</div>

@@ -1,30 +1,22 @@
 <header>
   <!-- HEADLINE -->
-  <h1 data-animated="GoIn"><b>MyApnea.org</b> is coming soon...</h1>
+  <h1><b>MyApnea.org</b> is coming soon...</h1>
 </header>
 
 <div class="col-lg-4 col-lg-offset-4 mt centered">
   <h4>LET ME KNOW WHEN YOU LAUNCH</h4>
   <form class="form-inline" role="form">
     <div class="form-group">
-      <label class="sr-only" for="exampleInputEmail2">Email address</label>
-      <input type="email" class="form-control" id="user-email" placeholder="Enter email">
+      <label class="sr-only" for="email">Email address</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
     </div>
     <button type="submit" class="btn btn-info">Submit</button>
   </form>
-</div>
 
 </div>
-<!-- LAYER OVER THE SLIDER TO MAKE THE WHITE TEXTE READABLE -->
-<div id="layer"></div>
-<!-- END LAYER -->
-<!-- START SLIDER -->
-<div id="slider" class="rev_slider">
-  <ul>
-    <%= (1..6).each do |i| %>
-      <li data-transition="slideleft" data-slotamount="1" data-thumb="<%= asset_path("#{i}.jpg") %>">
-        <img src="<%= asset_path("#{i}.jpg") %>">
-      </li>
-    <% end %>
-  </ul>
+
+<div class="col-lg-6 col-lg-offset-3 mt centered">
+
+<p>In the meantime, you can find out more about sleep apnea from the <a href="http://www.sleepapnea.org">ASAA</a></p>
+<p>You can also learn more about this project and other Patient-Powered Research Networks at <a href="http://http://www.pcornet.org/">PCORnet</a></p>
 </div>

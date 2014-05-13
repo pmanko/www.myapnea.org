@@ -13,6 +13,3 @@
 //= require jquery
 //= require modernizr.custom
 //= require bootstrap
-//= require soon/plugins
-//= require soon/jquery.themepunch.revolution.min
-//= require soon/custom.js

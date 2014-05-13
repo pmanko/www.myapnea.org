@@ -52,6 +52,9 @@ gem 'bootstrap-generators', '~> 3.1.1'
 # Markdown Support
 gem 'redcarpet'
 
+# Geocoding
+gem 'geocoder'
+
 # Development
 group :development do
   gem "better_errors"
