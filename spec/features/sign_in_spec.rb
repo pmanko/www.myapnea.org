@@ -3,7 +3,7 @@ require "spec_helper"
 describe "Signs in user" do
   before do
     @password = "password"
-    @user = create(:confirmed_user, password: @password)
+    @user = create(:registered_user, password: @password)
 
 #    expect(@user.valid_password?(@password)).to be_true
 #    expect(@user).to be_confirmed

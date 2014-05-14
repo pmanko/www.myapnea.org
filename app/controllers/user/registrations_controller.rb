@@ -4,8 +4,6 @@ class User::RegistrationsController < Devise::RegistrationsController
   before_filter :configure_permitted_parameters
 
 
-
-
   def after_inactive_sign_up_path_for(resource)
     consent_path
   end
@@ -14,14 +12,13 @@ class User::RegistrationsController < Devise::RegistrationsController
     consent_path
   end
 
-  def after_sign_in_path_for(resource)
-    page_path('thank_you')
-  end
-
   protected
 
   def configure_permitted_parameters
-    [:accepted_pledge_at, :accepted_consent_at].each {|key| params[:user][key] = session[key] if session[key] }
+    [:accepted_pledge_at, :accepted_consent_at].each do |key|
+      params[:user] ||= {}
+      params[:user][key] = session[key] if session[key]
+    end
 
     devise_parameter_sanitizer.for(:sign_up) << :first_name
     devise_parameter_sanitizer.for(:sign_up) << :last_name

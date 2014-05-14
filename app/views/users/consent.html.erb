@@ -23,8 +23,10 @@
 </div>
 </div>
 <div class="text-center panel-footer">
-  <%= link_to "I Agree to Participate", page_path("thank_you"), class: 'btn btn-primary btn-lg' %>
-  <%= link_to "I Decline, but I want to help another way.", page_path("faqs"), class: 'btn btn-default btn-lg' %>
+  <%= form_tag consent_path do  %>
+    <input name="consent_signed" type="submit" value="I Agree to Participate" class="btn btn-primary btn-lg" />
+    <%= link_to "I Decline, but I want to help another way.", page_path("faqs"), class: 'btn btn-default btn-lg' %>
+  <% end %>
 </div>
 </div>
 </div>

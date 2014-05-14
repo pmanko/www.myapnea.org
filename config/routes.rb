@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   resources :answer_options
 
-  devise_for :users, path: '', path_names: { sign_up: 'sign_up', sign_in: 'sign_in' }, controllers: { registrations: 'user/registrations'}
+  devise_for :users, path: '', path_names: { sign_up: 'sign_up', sign_in: 'sign_in' }, controllers: { registrations: 'user/registrations', sessions: 'user/sessions'}
 
   match 'pledge', to: "users#pledge", as: :pledge, via: [:get, :post]
   match 'consent', to: "users#consent", as: :consent, via: [:get, :post]

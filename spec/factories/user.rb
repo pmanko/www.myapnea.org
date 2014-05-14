@@ -3,12 +3,13 @@ FactoryGirl.define do
     first_name "Bob"
     last_name "Dole"
     sequence(:email) {|n| "user_email_#{n}@example.com"}
-    date_of_birth Date.new(1988, 4, 5)
+    year_of_birth 1988
     zip_code '02141'
     password "my_password"
 
     factory :registered_user do
-
+      accepted_pledge_at { Time.zone.now }
+      accepted_consent_at { Time.zone.now }
     end
 
     factory :confirmed_user do

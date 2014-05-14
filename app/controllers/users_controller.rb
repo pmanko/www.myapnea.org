@@ -10,10 +10,10 @@ class UsersController < ApplicationController
   end
 
   def consent
-    if params[:consent_signed]
-      session[:accepted_consent_at] = Time.zone.now
+    if params[:consent_signed] && current_user
+      current_user.update_attribute(:accepted_consent_at, Time.zone.now)
+      redirect_to page_path("thank_you")
     end
-
   end
 
   def pledge

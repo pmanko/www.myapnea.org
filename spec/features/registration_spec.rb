@@ -23,12 +23,12 @@ describe "Registers new user" do
     fill_in("Last name", with: u.last_name)
     fill_in("Password", with: password)
     fill_in("Email", with: u.email)
-    fill_in("Date of Birth", with: u.date_of_birth)
+    fill_in("Year of birth", with: u.year_of_birth)
     fill_in("Zip Code", with: u.zip_code)
 
     click_on "Sign up"
 
-    expect(page).to have_content "Before you continue..."
+    expect(page).to have_content "Before you continue"
 
     expect(User.all.count).to eq(2)
     cu = User.find_by_last_name(u.last_name)
@@ -38,15 +38,16 @@ describe "Registers new user" do
     expect(cu.first_name).to eq(u.first_name)
     expect(cu.last_name).to eq(u.last_name)
     expect(cu.email).to eq(u.email)
-    expect(cu.date_of_birth).to eq(u.date_of_birth)
+    expect(cu.year_of_birth).to eq(u.year_of_birth)
     expect(cu.zip_code).to eq(u.zip_code)
-    #expect(cu.accepted_pledge_at).to be_present
+    expect(cu.accepted_pledge_at).to be_present
 
     click_on "I Agree to Participate"
 
     cu = User.find_by_last_name(u.last_name)
     expect(page).to have_content "Thanks!"
-    #expect(cu.accepted_consent_at).to be_present
+
+    expect(cu.accepted_consent_at).to be_present
 
 
     click_on "Enough talk - take me to my site!"
