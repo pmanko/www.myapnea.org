@@ -21,4 +21,4 @@ files.each do |file_name, model_class|
 
 end
 
-User.create(email: "piotr.mankowski@gmail.com", first_name: "Piotr", last_name: "Mankowski", password: "123", date_of_birth: Date.today, zip_code: "02141")
+User.create(email: "piotr.mankowski@gmail.com", first_name: "Piotr", last_name: "Mankowski", password: "123", year_of_birth: Date.today.year, zip_code: "02141", accepted_consent_at: Time.now, accepted_pledge_at: Time.now)

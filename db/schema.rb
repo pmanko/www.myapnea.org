@@ -136,15 +136,15 @@ ActiveRecord::Schema.define(version: 20140508115318) do
     t.datetime "confirmed_at"
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.integer  "year_of_birth"
+    t.string   "zip_code"
+    t.datetime "accepted_consent_at"
+    t.datetime "accepted_pledge_at"
     t.string   "first_name"
     t.string   "last_name"
     t.string   "theme"
-    t.date     "date_of_birth"
-    t.string   "zip_code"
-    t.datetime "accepted_pledge_at"
-    t.datetime "accepted_consent_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree

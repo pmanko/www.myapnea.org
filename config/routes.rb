@@ -22,6 +22,9 @@ Rails.application.routes.draw do
 
   devise_for :users, path: '', path_names: { sign_up: 'sign_up', sign_in: 'sign_in' }, controllers: { registrations: 'user/registrations'}
 
+  match 'pledge', to: "users#pledge", as: :pledge, via: [:get, :post]
+  match 'consent', to: "users#consent", as: :consent, via: [:get, :post]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

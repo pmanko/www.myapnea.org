@@ -46,9 +46,10 @@
 
           </div>
           <div class="text-center">
-            <%= link_to "Awesome - I'm in!", new_registration_path(:user), class: 'btn btn-primary btn-lg' %>
-            <%= link_to "I'm not sure - is there another way to help?", page_path("faqs"), class: 'btn btn-default btn-lg' %>
-
+            <%= form_tag pledge_path do  %>
+              <input name="pledge_signed" type="submit" value="Awesome - I'm in!" class="btn btn-primary btn-lg" />
+              <%= link_to "I'm not sure - is there another way to help?", page_path("faqs"), class: 'btn btn-default btn-lg' %>
+            <% end %>
           </div>
         </div>
       </div>

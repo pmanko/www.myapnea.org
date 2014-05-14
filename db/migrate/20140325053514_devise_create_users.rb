@@ -31,6 +31,15 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # t.datetime :locked_at
 
 
+      ## Additional Fields
+      t.integer :year_of_birth
+      t.string :zip_code
+      t.timestamp :accepted_consent_at
+      t.timestamp :accepted_pledge_at
+      t.string :first_name
+      t.string :last_name
+      t.string :theme
+
       t.timestamps
     end
 

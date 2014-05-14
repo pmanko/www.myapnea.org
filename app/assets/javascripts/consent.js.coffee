@@ -1,6 +1,8 @@
 @consentReady = () ->
   $("#consent .scroll").slimscroll(
-    height: '385px';
+    height: '385px'
+    alwaysVisible: true
+    railVisible: true
   )
 
   $("a#print-link").click ->

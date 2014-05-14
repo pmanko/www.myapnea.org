@@ -3,7 +3,10 @@
 <div class="row">
   <div class="col-md-9">
     <section id="top">
-      <h1 class="page-header" id="myapnea"><%= team_data['myapnea']['title'] %></h1>
+      <div class="page-header">
+        <h1 id="myapnea"><%= team_data['myapnea']['title'] %></h1>
+      </div>
+
       <div class="section-content" id="myapnea-overview">
         <%= markdown team_data['myapnea']['content'] %>
       </div>
@@ -69,7 +72,7 @@
           </ul>
         </li>
         <li class="">
-          <a href="#steering">The SAPCOM Steering Committee</a>
+          <a href="#steering">The SAPCON Steering Committee</a>
           <ul class="nav">
             <% team_data['steering'].each do |person| %>
               <li><a href="#steering-<%= person['name'].parameterize %>"><%= person['name'] %></a></li>
