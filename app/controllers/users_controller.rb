@@ -19,7 +19,7 @@ class UsersController < ApplicationController
   def pledge
     if params[:pledge_signed]
       session[:accepted_pledge_at] = Time.zone.now
-      redirect_to
+      redirect_to sign_up_path
     end
   end
 
