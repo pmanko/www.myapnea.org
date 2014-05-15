@@ -4,6 +4,7 @@ var w = 300,                        //width
     color = d3.scale.category20c();     //builtin range of colors
 
 data = [];
+
 <% question.answer_frequencies.each do |key, value| %>
     data.push({"label":"<%= truncate(key.to_s, length: 15) %>", "value":<%= value.to_f %>});
 <% end %>
