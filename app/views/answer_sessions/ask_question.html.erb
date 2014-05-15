@@ -26,13 +26,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-
-tables.each do |table|
-
-  ActiveRecord::Base.connection.execute("Drop table #{table}")
-
-end

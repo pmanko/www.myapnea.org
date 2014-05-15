@@ -10,10 +10,10 @@
 
         <div class="row">
           <div class='col-md-3 col-xs-5'>
-            <img id='bwh-logo' src="http://www.brighamandwomens.org/_images/logo.gif" />
+            <%= image_tag 'logos/BWH_logo.gif', id: 'bwh-logo' %>
           </div>
           <div class="col-md-4 col-xs-7">
-            <img id='asaa-logo' src="http://sleepapnea.org/assets/templates/asaa/images/asaa-logo.png" />
+            <%= image_tag 'logos/asaa-logo.png', id: 'asaa-logo' %>
           </div>
           <div class="col-md-5 col-xs-12">
             <%= link_to "Join Now!", pledge_path, class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
