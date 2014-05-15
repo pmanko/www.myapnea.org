@@ -3,24 +3,33 @@
     $("#goal-chart").highcharts
       title:
         text: "Our Goal: 50,000 Signups"
-
+      legend:
+        enabled: false
       xAxis:
         categories: [
-          "Jan"
-          "Feb"
-          "Mar"
-          "Apr"
-          "May"
-          "Jun"
-          "Jul"
-          "Aug"
-          "Sep"
-          "Oct"
-          "Nov"
-          "Dec"
+          "May 14"
+          "Jun 14"
+          "Jul 14"
+          "Aug 14"
+          "Sep 14"
+          "Oct 14"
+          "Nov 14"
+          "Dec 14"
+          "Jan 15"
+          "Feb 15"
+          "Mar 15"
+          "Apr 15"
+          "May 15"
+          "Jun 15"
+          "Jul 15"
         ]
+        labels:
+          step: 3
+          maxStaggerLines: 1
+          overflow: false
 
       yAxis:
+        min: 0
         title:
           text: "Patients Enrolled"
 
@@ -34,16 +43,18 @@
         name: "Enrollment"
         data: [
           0
-          50
           100
           200
+          300
           400
-          800
+          500
+          1000
           2000
-          5000
-          10000
-          20000
-          30000
-          40000
+          3000
+          4000
+          8000
+          16000
+          32000
+          50000
         ]
       ]

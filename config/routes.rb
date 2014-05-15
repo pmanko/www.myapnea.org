@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   # Answer Sessions
   get 'survey/:question_flow_id', to: 'answer_sessions#start', as: :start_answer_session
-  get 'survey/:question_flow_id', to: 'answer_sessions#finish', as: :finish_answer_session
+  get 'survey/:answer_session_id/review', to: 'answer_sessions#finish', as: :finished_answer_session
 
   get 'survey/:answer_session_id/:question_id', to: 'answer_sessions#ask_question', as: :ask_question
   match 'survey', to: 'answer_sessions#process_answer', via: :post, as: :process_answer
@@ -22,7 +22,7 @@ Rails.application.routes.draw do
 
   devise_for :users, path: '', path_names: { sign_up: 'sign_up', sign_in: 'sign_in' }, controllers: { registrations: 'user/registrations', sessions: 'user/sessions'}
 
-  match 'pledge', to: "users#pledge", as: :pledge, via: [:get, :post]
+  match 'pledge', to: "users#pledge", eas: :pledge, via: [:get, :post]
   match 'consent', to: "users#consent", as: :consent, via: [:get, :post]
 
   # The priority is based upon order of creation: first created -> highest priority.

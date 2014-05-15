@@ -10,7 +10,9 @@ class AnswerSessionsController < ApplicationController
   end
 
   def finish
-    redirect_to dashboard_path
+    @answer_session = AnswerSession.find(params[:answer_session_id])
+    @question_flow = @answer_session.question_flow
+
   end
 
   def ask_question
@@ -34,7 +36,7 @@ class AnswerSessionsController < ApplicationController
     #raise StandardError
 
     if candidate_edges.length == 0
-      redirect_to dashboard_path
+      redirect_to finished_answer_session_path(@answer_session)
     else
       if candidate_edges.length == 1
         chosen_edge = candidate_edges.first

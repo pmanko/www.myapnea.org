@@ -1,6 +1,6 @@
 
 <p><%= answer_session.completed_answers.length %> / <%= answer_session.question_flow.all_questions.length %> questions done</p>
-<p>Around <%= answer_session.completed_time.ceil %> out of <%= answer_session.question_flow.total_time.ceil %> <%= pluralize(answer_session.question_flow.total_time.ceil, "minute") %> completed. Only <%= (answer_session.question_flow.total_time.ceil - answer_session.completed_time.ceil) %> <%= pluralize((answer_session.question_flow.total_time.ceil - answer_session.completed_time.ceil), "minute") %> remaining!</p>
+<p>Around <%= answer_session.completed_time.ceil %> out of <%= pluralize(answer_session.question_flow.total_time.ceil, "minute") %> completed. Only <%= pluralize((answer_session.question_flow.total_time.ceil - answer_session.completed_time.ceil), "minute") %> remaining!</p>
 
 <div class="progress">
 

@@ -1,0 +1,3 @@
+<% @question_flow.all_questions.each do |question| %>
+  <%= render partial: 'questions/graph', locals: { question: question, selector: "#visualize_#{question.id}" } %>
+<% end %>

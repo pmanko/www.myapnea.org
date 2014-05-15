@@ -19,5 +19,14 @@ class Question < ActiveRecord::Base
     candidate_edges.first
   end
 
+  def user_answer(answer_session)
+    answers.where(answer_session_id: answer_session.id).first
+  end
+
+  def answer_frequencies
+    groups = answers.group_by{|answer| answer.value}
+    groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
+
+  end
 
 end

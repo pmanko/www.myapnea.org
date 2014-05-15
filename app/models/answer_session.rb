@@ -3,6 +3,12 @@ class AnswerSession < ActiveRecord::Base
   belongs_to :first_answer, class_name: "Answer", foreign_key: "first_answer_id"
   belongs_to :user
 
+  def self.most_recent(question_flow_id, user_id)
+    answer_sessions = AnswerSession.where(question_flow_id: question_flow_id, user_id: user_id).order(updated_at: :desc)
+    answer_sessions.empty? ? nil : answer_sessions.first
+  end
+
+
   def completed_time
     completed_answers.map(&:question).map(&:time_estimate).reduce(:+) || 0
   end
@@ -35,4 +41,15 @@ class AnswerSession < ActiveRecord::Base
   end
 
 
+  def all_answers
+    current_answer = first_answer
+    answers = []
+
+    begin
+      answers << current_answer
+      current_answer = current_answer.next_answer
+    end while current_answer.present?
+
+    answers
+  end
 end
