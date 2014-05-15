@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require jquery.slimscroll
 //= require jquery.PrintArea
-//= require_tree .
+//= require d3.min
+//= require_tree
