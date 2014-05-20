@@ -1,67 +1,132 @@
 - id: 1
-  text_value: Male
-- id: 2
-  text_value: Female
-- id: 3
-  text_value: USA
-- id: 4
-  text_value: Mexico
-- id: 5
-  text_value: China
-- id: 6
-  text_value: India
-- id: 7
-  text_value: Philippines
-- id: 8
-  text_value: Twitter
-- id: 9
-  text_value: Black or African American
-- id: 10
-  text_value: White
-- id: 11
-  text_value: Asian (including South Asian and Asian Indian)
-- id: 12
-  text_value: Native Hawaiian or Pacific Islander
-- id: 13
-  text_value: American Indian or Alaskan Native
-- id: 14
-  text_value: Yes, Mexican, Mexican American, or Chicano
-- id: 15
-  text_value: Yes, Puerto Rican
-- id: 16
-  text_value: Yes, Cuban
-- id: 17
-  text_value: Yes, other or Mixed Hispanic, Latino, or Spanish origin
-- id: 18
-  text_value: Partners Healthcare
-- id: 19
-  text_value: Group Health
-- id: 20
-  text_value: UPMC
-- id: 21
-  text_value: Wake Forest
-- id: 22
-  text_value: Columbus
-- id: 23
-  text_value: Facebook
-- id: 24
-  text_value: Google+
-- id: 25
-  text_value: LinkedIn
-- id: 26
-  text_value: "Yes"
-- id: 27
-  text_value: "No"
-- id: 28
-  text_value: Don't know
-- id: 29
-  text_value: Other
-- id: 30
   text_value: High chance of dozing
-- id: 31
+- id: 2
   text_value: Moderate chance of dozing
-- id: 32
+- id: 3
   text_value: Slight chance of dozing
-- id: 33
+- id: 4
   text_value: Would never doze
-
+- id: 5
+  text_value: Male
+- id: 6
+  text_value: Female
+- id: 7
+  text_value: U.S.A
+- id: 8
+  text_value: Mexico
+- id: 9
+  text_value: China
+- id: 10
+  text_value: India
+- id: 11
+  text_value: Philippines
+- id: 12
+  text_value: Other country
+- id: 13
+  text_value: Black or African American
+- id: 14
+  text_value: White
+- id: 15
+  text_value: Asian (including South Asian and Asian Indian)
+- id: 16
+  text_value: Native Hawaiian or Pacific Islander
+- id: 17
+  text_value: American Indian or Alaska Native
+- id: 18
+  text_value: Some other race
+- id: 19
+  text_value: Don't know
+- id: 20
+  text_value: No
+- id: 21
+  text_value: Yes, Mexican, Mexican American or Chicano
+- id: 22
+  text_value: Yes, Puerto Rico
+- id: 23
+  text_value: Yes, Cuban
+- id: 24
+  text_value: Yes, other or Mixed Hispanic, Latino or Spanish orgin
+- id: 25
+  text_value: No formal schooling
+- id: 26
+  text_value: Some school, but did not graduate high school
+- id: 27
+  text_value: High school diploma or equivalency (e.g., GED)
+- id: 28
+  text_value: Associate degree (e.g., junior college)
+- id: 29
+  text_value: Some college, but did not graduate college
+- id: 30
+  text_value: Bachelor's degree
+- id: 31
+  text_value: Master's degree
+- id: 32
+  text_value: Doctorate (PhD)
+- id: 33
+  text_value: Professional docorate (MD, JD, DDS, etc.)
+- id: 34
+  text_value: Other
+- id: 35
+  text_value: Prefer not to state 
+- id: 36
+  text_value: Yes
+- id: 37
+  text_value: Working full times
+- id: 38
+  text_value: Working part time
+- id: 39
+  text_value: Unemployed, laid off, or looking for work 
+- id: 40
+  text_value: In school (full- or part-time student)
+- id: 41
+  text_value: Stay-at-home parent or keeping household
+- id: 42
+  text_value: Retired
+- id: 43
+  text_value: Disabled
+- id: 44
+  text_value: Very hard
+- id: 45
+  text_value: Hard
+- id: 46
+  text_value: Somewhat hard
+- id: 47
+  text_value: Not very hard
+- id: 48
+  text_value: Frequently
+- id: 49
+  text_value: Occasionally
+- id: 50
+  text_value: Hardly ever
+- id: 51
+  text_value: Never
+- id: 52
+  text_value: Less than $10,000
+- id: 53
+  text_value: $10,000 to under $20,000
+- id: 54
+  text_value: $20,000 to under $30,000
+- id: 55
+  text_value: $30,000 to under 40,000
+- id: 56
+  text_value: $40,000 to under $50,000
+- id: 57
+  text_value: $50,000 to under $75,000 
+- id: 58
+  text_value: $75,000 to under $100,000
+- id: 59
+  text_value: $100,000 to under $150,000
+- id: 60
+  text_value: More than $150,000
+- id: 61
+  text_value: Married
+- id: 62
+  text_value: Living with domestic partner (or other marriage-like relationship)
+- id: 63
+  text_value: Widowed
+- id: 64
+  text_value: Divorced
+- id: 65
+  text_value: Separated 
+- id: 66
+  text_value: Never married

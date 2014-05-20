@@ -4,222 +4,264 @@
   time_estimate: .3
   answer_type_id: 1
   answer_option_ids:
-  - 1
-  - 2
+  - 5
+  - 6
 - text: What is your last height?
   id: 2
   question_type_id: 6
   time_estimate: .5
   answer_type_id: 2
   unit_id: 1
+
 - text: What is your last weight?
   id: 3
-  question_type_id: 6
   time_estimate: .5
-  answer_type_id: 2
+  question_type_id: 3
+  answer_type_id: 2 
   unit_id: 2
-- text: Where were you born (country)?
+- text: Where were you **born**(country)? 
   id: 4
   question_type_id: 3
-  time_estimate: 2
+  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 3
-  - 4
-  - 5
-  - 6
-  - 7
-  - 29
-- text: Please specify the country you were born in.
+  answer_option_ids: 
+  -7
+  -8
+  -9
+  -10
+  -11
+  -12
+- text: Where did you live most of your **childhood**(up to age 12)? 
   id: 5
-  question_type_id: 1
-  time_estimate: 1
-  answer_type_id: 1
-- text: What is your racial background?
-  id: 6
-  question_type_id: 4
-  time_estimate: .5
-  answer_type_id: 1
-  answer_option_ids:
-  - 9
-  - 10
-  - 11
-  - 12
-  - 13
-  - 28
-  - 29
-- text: Are you of Hispanic, Latino, or Spanish origin or ancestry?
-  id: 7
   question_type_id: 3
+  question_help_message_id: 1
   time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 27
-  - 14
-  - 15
-  - 16
-  - 17
-  - 28
-- text: Is there a healthcare system where you receive most of your primary medical care?
+  answer_option_ids: 
+  -7
+  -8
+  -9
+  -10
+  -11
+  -12
+
+- text: Where did you live most of your **teenage** years (ages 12-18)? 
+  id: 6
+  question_type_id: 3
+  question_help_message_id: 1
+  time_estimate: .5
+  answer_type_id: 1
+  answer_option_ids: 
+  -7
+  -8
+  -9
+  -10
+  -11
+  -12
+
+- text: What is *your* racial background? Check all that apply
+  id: 7
+  question_type_id: 4
+  question_help_message_id: 1
+  time_estimate: .5
+  answer_type_id: 1
+  answer_option_ids: 
+  -13
+  -14
+  -15
+  -16
+  -17
+  -18
+  -19
+
+- text: Are *you* of Hispanic, Latino or Spanish origin or ancestry?
   id: 8
   question_type_id: 3
-  time_estimate: 1
+  question_help_message_id: 13
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 26
-  - 27
-- text: Which of the following healthcare systems do you recieve most of your medical care in?
+  answer_option_ids: 
+  -19
+  -20
+  -21
+  -22
+  -23
+  -24
+
+- text: What is the racial background of your *biological(natural or blood-related) father*?
   id: 9
   question_type_id: 3
-  time_estimate: 2
-  answer_type_id: 1
-  answer_option_ids:
-  - 18
-  - 19
-  - 20
-  - 21
-  - 22
-  - 23
-  - 29
-- text: Please specify your the healthcare system you recieve your medical care in.
-  id: 10
-  time_estimate: 1
-  question_type_id: 1
-  answer_type_id: 1
-- text: Do you have a cell phone?
-  id: 11
-  time_estimate: 1
-  question_type_id: 3
-  answer_type_id: 1
-  answer_option_ids:
-  - 26
-  - 27
-- text: Do you have an account on any of the following? Check all that apply.
-  id: 12
+  question_help_message_id: 1
   time_estimate: .5
-  question_type_id: 4
+  answer_type_id: 1
+  answer_option_ids: 
+  -13
+  -14
+  -15
+  -16
+  -17
+  -18
+  -19
+
+- text: Is your *biological father* of Hispanic, Latino, or Spanish origin or ancestry?
+  id: 10
+  question_type_id: 3
+  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
   answer_option_ids:
-  - 23
-  - 24
-  - 25
-  - 8
+  -19
+  -20
+  -21
+  -22
+  -23
+  -24
 
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+- text: What is the racial background of your *biological (natural or blood-related) mother*?
+  id: 11
+  question_type_id: 3
+  question_help_message_id: 1
+  time_estimate: .5
+  answer_type_id: 1
+  answer_option_ids: 
+  -13
+  -14
+  -15
+  -16
+  -17
+  -18
+  -19
 
-    **Situation:** Sitting and reading
+- text: Is your *biological mother* of Hispanic, Latino, or Spanish origin or ancestry?
+  id: 12
+  question_type_id: 3
+  question_help_message_id: 1
+  time_estimate: .5
+  answer_type_id: 1
+  answer_option_ids: 
+  -19
+  -20
+  -21
+  -22
+  -23
+  -24
+ 
+- text: What is the highest level of education **you** completed?
+  id: 13
+  question_type_id: 3
+  question_help_message_id: 1
+  time_estimate: .5
+  answer_type_id: 1
+  answer_option_ids: 
+  -19
+  -25
+  -26
+  -27
+  -28
+  -29
+  -30
+  -31
+  -32
+  -33
+  -34
+  -35
+
+
+- text: Are you currently attending school, college or graduate school?
   id: 14
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -36
+  -20
+  -35
 
-    **Situation:** Watching TV
+- text: What best describes your current main daily activities and/or responsibilities? 
   id: 15
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -37
+  -38
+  -39
+  -40
+  -41
+  -42
+  -43
+  -35
 
-    **Situation:** Sitting, inactive, in a public place (e.g., a movie theater or classroom)
-  id: 16
-  time_estimate: .4
-  question_type_id: 3
+- text: In the past year, have you been unemployed *and looking for work* for more than 2 months?
+  id: 16 
+  question_type_id: 3 
   question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -36
+  -20
+  -35
 
-    **Situation:** Riding as a passenger in a car for an hour without a break
+
+- text: How hard is it for you (and your family) to pay for *very basics* like food, rent, or mortgage, heating, etc?
   id: 17
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -19
+  -35
+  -44
+  -45
+  -46
+  -47
 
-    **Situation:** Lying down to rest in the afternoon when circumstances permit
+- text: Do you have difficulty making ends meet?
   id: 18
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5 
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -19
+  -35
+  -48
+  -49
+  -50
+  -51
 
-    **Situation:** Sitting and talking to someone
+- text: Last year, what was your total household income from all sources, before taxes? 
   id: 19
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
+  answer_option_ids: 
+  -19
+  -35
+  -52
+  -53
+  -54
+  -55
+  -56
+  -57
+  -58
+  -59
+  -60
 
-    **Situation:** Sitting quietly after lunch without alcohol
+- text: What is your current marital status? 
   id: 20
-  time_estimate: .4
   question_type_id: 3
-  question_help_message_id: 1
+  time_estimate: .5
   answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-- text: |
-    How likely ar you to **doze** or **fall asleep** (*not* just feel tired) in the following situation?
-
-    **Situation:** In a car, while stopped for a few minutes in traffic
-  id: 21
-  time_estimate: .4
-  question_type_id: 3
-  question_help_message_id: 1
-  answer_type_id: 1
-  answer_option_ids:
-  - 30
-  - 31
-  - 32
-  - 33
-
-
-
-
+  answer_option_ids: 
+  -34
+  -35
+  -61
+  -62
+  -63
+  -64
+  -65
+  -66
 
 
