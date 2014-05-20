@@ -1,5 +1,5 @@
 - name: text
-  id: 2
+  id: 1
   tag: input
   input_type: text
 - name: paragraph
