@@ -7,7 +7,7 @@ describe "Registers new user" do
     u = build(:user)
     password = "password"
 
-    visit page_path('splash')
+    visit root_path
 
     expect(page).to have_content "Join Now!"
 

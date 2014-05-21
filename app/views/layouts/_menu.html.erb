@@ -1,5 +1,14 @@
 <header class="navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
+    <div id="hld">
+      <div id='locale-chooser'>
+        <%= link_to "en", {locale: :en}, class: ('active' if I18n.locale==:en)  %>
+        <%= link_to "es", {locale: :es}, class: ('active' if I18n.locale==:es) %>
+        <%= link_to "pl", {locale: :pl}, class: ('active' if I18n.locale==:pl)  %>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".myapnea-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
@@ -22,9 +31,9 @@
           </p>
         <% end %>
 
-        <li class="<%= 'active' if current_page?(page_path('network')) %>"><%= link_to "Network", page_path('network') %></li>
-        <li class="<%= 'active' if current_page?(page_path('faqs')) %>"><%= link_to "FAQs", page_path('faqs') %></li>
-        <li class="<%= 'active' if current_page?(page_path('team')) %>"><%= link_to "Team", page_path('team') %></li>
+        <li class="<%= 'active' if current_page?(network_path) %>"><%= link_to "Network", network_path %></li>
+        <li class="<%= 'active' if current_page?(faqs_path) %>"><%= link_to "FAQs", faqs_path %></li>
+        <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to "Team", team_path %></li>
 
         <% if user_signed_in? %>
           <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>

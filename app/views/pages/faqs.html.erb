@@ -1,14 +1,13 @@
 <div class="page-header">
-  <h1>Frequently Asked Questions</h1>
+  <h1><%= t :faqs_title %></h1>
 </div>
 
-<% faq_data = YAML.load_file(Rails.root.join('lib', 'data', 'faqs.yml')) %>
 
 <div class="row">
   <div class="col-md-12">
     <!-- Nav tabs category -->
     <ul class="nav nav-tabs faq-cat-tabs">
-      <% faq_data.each_key do |category| %>
+      <% @faq_data.each_key do |category| %>
         <li class="<%= 'active' if category == 'general' %>"><a href="#faq-cat-<%= category %>" data-toggle="tab"><%= category.titleize %></a></li>
       <% end %>
     </ul>
