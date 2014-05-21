@@ -130,3 +130,67 @@
   text_value: Separated 
 - id: 66
   text_value: Never married
+- id: 67
+  text_value: Spouse or partner
+- id: 68
+  text_value: Mother
+- id: 69
+  text_value: Father
+- id: 70
+  text_value: Son
+- id: 71
+  text_value: Daughter
+- id: 72
+  text_value: Other relative
+- id: 73
+  text_value: Not related
+- id: 74
+  text_value: 1
+- id: 75
+  text_value: 2
+- id: 76
+  text_value: 3
+- id: 77
+  text_value: 4
+- id: 78
+ text_value: A.W.A.K.E group
+- id: 79
+ text_value: CPAP company
+- id: 80
+  text_value: My doctor
+- id: 81
+  text_value: Clinic or hospital
+- id: 82
+  text_value: CPAP provider
+- id: 83
+  text_value: Poster or other advertisement
+- id: 84
+  text_value: Facebook
+- id: 85
+  text_value: LinkedIn
+- id: 86
+  text_value: Google+
+- id: 87
+  text_value: Family member 
+- id: 88
+  text_value: Friend
+- id: 89
+  text_value: Internet search 
+- id: 90
+  text_value: Other patient-centered network
+- id: 91
+  text_value: Partners Healthcare
+- id: 92
+  text_value: Group Health
+- id: 93
+  text_value: UPMC
+- id: 94
+  text_value: Wake Forest
+- id: 95
+  text_value: Columbus
+- id: 96
+  text_value: Morehouse
+- id: 97
+  text_value: Twitter
+- id: 98
+  text_value: None of the above

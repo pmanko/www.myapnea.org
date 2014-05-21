@@ -3,3 +3,9 @@
     In these situations, let us know how likely you are to doze off or fall asleep - not just feel tired - in your recent experience.
 
     If you are never or rarely in the situation, please give your best guess!
+- id: 2
+  message: Provide the age and relationships to you for each person in your household. 
+- id: 3
+  message: Tell us about your parents or guardians during the majority of your childhood? 
+- id: 4
+  message: Since this is an online study, we'd like to know about the technology you use. 
