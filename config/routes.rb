@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope "/:locale", locale: /en|es|pl/ do
+  scope "(:locale)", locale: /en|es|pl/ do
 
     # Static Pages
     get 'network', to: "pages#network", as: :network

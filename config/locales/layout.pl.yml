@@ -1,1 +1,39 @@
 pl:
+  main_brand: MyApnea.org
+  sub_brand: Sieć Dla Pacjentów z Bezdechem Sennym
+  menu:
+    sr_toggle: Przełącz nawigacje
+  network: Nasza Sieć
+  faqs: FAQs
+  team: Nasza Grupa
+  privacy_policy: Polityka Prywatności
+  log_in: Zaloguj się
+  log_out: Wyloguj się
+  connect: Połączenia
+  support_email: support@myapnea.org
+  join_message: Zapisz się dzisiaj! Razem możemy osiągnąć bardzo dużo.
+  bottom_join_button: Dołącz do MyApnea.org
+  other_pprns: |
+    **MyApnea.org to tylko jedna część dużego ruchu na założenie wielu sieci zasilanych przez pacjentów. Więcej informacji na ten temat można znaleźć tutaj: [www.pcornet.org](http://www.pcornet.org)**
+  sign_in_prompt: Proszę się zalogować
+  not_signed_up: Jeszcze się nie zapisałeś?
+  join_button: Zapisz się teraz!
+  remember_me: Zapamiętaj mnie
+  forgot_password: Zapomniane hasło?
+  sign_in_button: Zaloguj się
+  sign_in_strong: Zaloguj się!
+  registration_problems: Niestety, znaleźliśmy kilka problemów z rejestracją.
+  sign_up: Zapiśz się
+  already_member: Już jesteś zapisany?
+
+  activerecord:
+    models:
+      user: Użytkownik
+    attributes:
+      user:
+        first_name: "Imie"
+        last_name: "Nazwisko"
+        email: "E-mail"
+        password: "Hasło"
+        year_of_birth: "Rok urodzenia"
+        zip_code: "Kod pocztowy"
