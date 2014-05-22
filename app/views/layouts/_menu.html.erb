@@ -11,14 +11,14 @@
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".myapnea-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only"><%= t 'menu.sr_toggle' %></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
       <a href="<%= user_signed_in? ? dashboard_path : root_path %>" class="navbar-brand">
-        <div id="main-brand">My Apnea</div>
-        <div id="sub-brand">Sleep Apnea Patient Centered Outcomes Network</div>
+        <div id="main-brand"><%= t :main_brand %></div>
+        <div id="sub-brand"><%= t :sub_brand %></div>
       </a>
     </div>
 
@@ -31,14 +31,14 @@
           </p>
         <% end %>
 
-        <li class="<%= 'active' if current_page?(network_path) %>"><%= link_to "Network", network_path %></li>
-        <li class="<%= 'active' if current_page?(faqs_path) %>"><%= link_to "FAQs", faqs_path %></li>
-        <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to "Team", team_path %></li>
+        <li class="<%= 'active' if current_page?(network_path) %>"><%= link_to t(:network), network_path %></li>
+        <li class="<%= 'active' if current_page?(faqs_path) %>"><%= link_to t(:faqs), faqs_path %></li>
+        <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to t(:team), team_path %></li>
 
         <% if user_signed_in? %>
-          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></li>
         <% else %>
-          <li><%= link_to "Log In", new_user_session_path %></li>
+          <li><%= link_to t(:log_in), new_user_session_path %></li>
         <% end %>
 
         <li id="theme-switcher">

@@ -2,53 +2,39 @@
   <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-primary" id="pledge">
         <div class="panel-heading">
-          <h2>Our Promise</h2>
-          <p>When you sign up for the study, here's what we expect of you - and what you should expect of us.</p>
+          <h2><%= @pc['heading'] %></h2>
+          <p><%= @pc['subheading'] %></p>
         </div>
         <div id="pledge" class="panel-body">
           <div class="row">
             <div class="col-md-6">
-              <h3 class="center-block">You promise to...</h3>
+              <h3 class="center-block"><%= @pc['you_promise'] %></h3>
               <div class="list-group">
-                <div class="list-group-item">
-                  <h4>Tell us about your health</h4>
-                  <p>Answer our health-related questions as completely and accurately as you can.</p>
-                </div>
-                <div class="list-group-item">
-                  <h4>Check in regularly</h4>
-                  <p>Update your information regularly (we’ll remind you) so we have all your latest data.</p>
-                </div>
-                <div class="list-group-item">
-                  <h4>Stick around</h4>
-                  <p>We’d like you to be in the study for at least 2 years so we know how your health changes over time.</p>
-                </div>
+                <% @pc['your_promises'].each do |promise| %>
+                  <div class="list-group-item">
+                    <h4><%= promise['title'] %></h4>
+                    <p><%= promise['description'] %></p>
+                  </div>
+                 <% end %>
               </div>
             </div>
             <div class="col-md-6">
-              <h3 class="center-block">We promise to...</h3>
+              <h3 class="center-block"><%= @pc['we_promise'] %></h3>
               <div class="list-group">
-                <div class="list-group-item">
-                  <h4>Make things easy for you</h4>
-                  <p>Surveys can be done in 5-minute blocks on your computer, tablet, or smartphone.</p>
-                </div>
-                <div class="list-group-item">
-                  <h4>Respect your time and privacy</h4>
-                  <p>We will keep communication to a minimum and assure that your data is extremely secure.</p>
-                </div>
-                <div class="list-group-item">
-                  <h4>Provide a community and tools to help you</h4>
-                  <p> We will build useful tools to help you manage
-                    your condition and provide a community where
-                    you can be supported.</p>
-                </div>
+                <% @pc['our_promises'].each do |promise| %>
+                  <div class="list-group-item">
+                    <h4><%= promise['title'] %></h4>
+                    <p><%= promise['description'] %></p>
+                  </div>
+                <% end %>
               </div>
             </div>
 
           </div>
           <div class="text-center">
             <%= form_tag pledge_path do  %>
-              <input name="pledge_signed" type="submit" value="Awesome - I'm in!" class="btn btn-primary btn-lg" />
-              <%= link_to "I'm not sure - is there another way to help?", faqs_path, class: 'btn btn-default btn-lg' %>
+              <input name="pledge_signed" type="submit" value="<%= @pc['accept'] %>" class="btn btn-primary btn-lg" />
+              <%= link_to @pc['decline'], faqs_path, class: 'btn btn-default btn-lg' %>
             <% end %>
           </div>
         </div>

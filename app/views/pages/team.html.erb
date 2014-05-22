@@ -1,28 +1,27 @@
-<% team_data = YAML.load_file(Rails.root.join('lib', 'data', 'team.yml')) %>
 <div id="team">
 <div class="row">
   <div class="col-md-9">
     <section id="top">
       <div class="page-header">
-        <h1 id="myapnea"><%= team_data['myapnea']['title'] %></h1>
+        <h1 id="myapnea"><%= @pc['myapnea']['title'] %></h1>
       </div>
 
       <div class="section-content" id="myapnea-overview">
-        <%= markdown team_data['myapnea']['content'] %>
+        <%= markdown @pc['myapnea']['content'] %>
       </div>
     </section>
 
     <section>
-      <h1 class="page-header" id="sapcon"><%= team_data['sapcon']['title'] %></h1>
+      <h1 class="page-header" id="sapcon"><%= @pc['sapcon']['title'] %></h1>
       <div class="section-content" id="sapcon-overview">
-        <%= markdown team_data['sapcon']['content'] %>
+        <%= markdown @pc['sapcon']['content'] %>
       </div>
     </section>
 
     <section>
-      <h1 class="page-header" id="steering">The Sleep Apnea Patient Centered Outcomes Network Steering Committee</h1>
+      <h1 class="page-header" id="steering"><%= @pc['steering_title'] %></h1>
 
-      <% team_data['steering'].each do |person| %>
+      <% @pc['steering'].each do |person| %>
         <div class="section-content" id="steering-<%= person['name'].parameterize %>">
 
           <div class="row">
@@ -41,8 +40,8 @@
     </section>
 
     <section>
-      <h1 class="page-header" id="partners">Partners</h1>
-      <% team_data['partners'].each do |partner| %>
+      <h1 class="page-header" id="partners"><%= @pc['partners_title'] %></h1>
+      <% @pc['partners'].each do |partner| %>
         <div class="section-content" id="partners-<%= partner['name'].parameterize %>">
           <h2><%= partner['name'] %></h2>
           <a href="<%= partner['link'] %>"><%= partner['link'] %></a>
@@ -60,29 +59,29 @@
       <ul class="nav myapnea-sidenav">
 
         <li class="">
-          <a href="#myapnea"><%= team_data['myapnea']['title'] %></a>
+          <a href="#myapnea"><%= @pc['myapnea']['title'] %></a>
           <ul class="nav">
-            <li><a href="#myapnea-overview">Overview</a></li>
+            <li><a href="#myapnea-overview"><%= @pc['overview'] %></a></li>
           </ul>
         </li>
         <li class="">
-          <a href="#sapcon"><%= team_data['sapcon']['title'] %></a>
+          <a href="#sapcon"><%= @pc['sapcon']['title'] %></a>
           <ul class="nav">
-            <li><a href="#sapcon-overview">Overview</a></li>
+            <li><a href="#sapcon-overview"><%= @pc['overview'] %></a></li>
           </ul>
         </li>
         <li class="">
-          <a href="#steering">The SAPCON Steering Committee</a>
+          <a href="#steering"><%= @pc['steering_menu'] %></a>
           <ul class="nav">
-            <% team_data['steering'].each do |person| %>
+            <% @pc['steering'].each do |person| %>
               <li><a href="#steering-<%= person['name'].parameterize %>"><%= person['name'] %></a></li>
             <% end %>
           </ul>
         </li>
         <li class="">
-          <a href="#partners">Partners</a>
+          <a href="#partners"><%= @pc['partners_title'] %></a>
           <ul class="nav">
-            <% team_data['partners'].each do |partner| %>
+            <% @pc['partners'].each do |partner| %>
               <li><a href="#partners-<%= partner['name'].parameterize %>"><%= partner['name'] %></a></li>
             <% end %>
           </ul>
@@ -94,7 +93,7 @@
 
 
       <a class="back-to-top" href="#top">
-        Back to top
+        <%= @pc['back_to_top'] %>
       </a>
     </div>
 

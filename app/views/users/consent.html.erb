@@ -2,30 +2,26 @@
 <div class="col-md-10 col-md-offset-1">
 <div class="panel panel-primary" id="pledge">
 <div class="panel-heading">
-  <h2>Before you continue...</h2>
-
-  <p>
-    The Sleep Apnea Patient Centered Outcomes Study is a medical research study and includes only people who choose to participate. Please read the following agreement and privacy policy in full before you decide to sign up.
-  </p>
+ <%= markdown @pc['before'] %>
 </div>
 <div id="consent" class="panel-body">
 <div class="row">
 <div class="col-md-12">
 <div class="scroll">
   <div id="print-area">
-    <%= markdown File.read(Rails.root.join('lib', 'data', 'consent.md')) %>
+    <%= markdown @pc['consent'] %>
   </div>
 </div>
 </div>
-<%= link_to "Print consent form", "#", id: "print-link", class: 'print-link' %>
+<%= link_to @pc['print'], "#", id: "print-link", class: 'print-link' %>
 
 
 </div>
 </div>
 <div class="text-center panel-footer">
   <%= form_tag consent_path do  %>
-    <input name="consent_signed" type="submit" value="I Agree to Participate" class="btn btn-primary btn-lg" />
-    <%= link_to "I Decline, but I want to help another way.", faqs_path, class: 'btn btn-default btn-lg' %>
+    <input name="consent_signed" type="submit" value="<%= @pc['agree'] %>" class="btn btn-primary btn-lg" />
+    <%= link_to @pc['decline'], faqs_path, class: 'btn btn-default btn-lg' %>
   <% end %>
 </div>
 </div>

@@ -5,16 +5,16 @@
       <div class="col-md-3">
         <div class="center-block">
           <ul class="">
-            <li><%= link_to "Network", network_path %></li>
-            <li><%= link_to "FAQs", faqs_path %></li>
-            <li><%= link_to "Team", team_path %></li>
-            <li><%= link_to "Privacy Policy", privacy_policy_path %></li>
+            <li><%= link_to t(:network), network_path %></li>
+            <li><%= link_to t(:faqs), faqs_path %></li>
+            <li><%= link_to t(:team), team_path %></li>
+            <li><%= link_to t(:privacy_policy), privacy_policy_path %></li>
           </ul>
         </div>
       </div>
       <div class="col-md-3">
         <div class="center-block">
-          <h5>Connect</h5>
+          <h5><%= t :connect %></h5>
           <ul>
             <li><%= link_to "SAPCON", "http://pfaawards.pcori.org/node/20/datavizwiz/detail/4344" %></li>
             <li><%= link_to "ASAA", "http://www.sleepapnea.org/" %></li>
@@ -27,8 +27,8 @@
         </div>
       </div>
       <div class="col-md-3">
-        <div class="bottom-brand"><a href="<%= root_path %>">My Apnea</a></div>
-        <%= mail_to "support@myapnea.org" %>
+        <div class="bottom-brand"><a href="<%= root_path %>"><%= t :main_brand %></a></div>
+        <%= mail_to t :support_email %>
       </div>
 
     </div>

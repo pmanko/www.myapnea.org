@@ -1,0 +1,17 @@
+en:
+  main_brand: My Apnea
+  sub_brand: Sleep Apnea Patient Centered Outcomes Network
+  menu:
+    sr_toggle: Toggle navigation
+  network: Network
+  faqs: FAQs
+  team: Team
+  privacy_policy: Privacy Policy
+  log_in: Log In
+  log_out: Log Out
+  connect: Connect
+  support_email: support@myapnea.org
+  join_message: Sign up today and help us find answers, together!
+  bottom_join_button: Join MyApnea.org
+  other_pprns: |
+    **MyApnea.org is one part of a national movement for patient-powered research networks. Visit (www.pcornet.org)[http://www.pcornet.org] for more information!**

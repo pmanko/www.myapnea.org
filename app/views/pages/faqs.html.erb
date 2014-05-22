@@ -1,5 +1,5 @@
 <div class="page-header">
-  <h1><%= t :faqs_title %></h1>
+  <h1><%= @pc['title'] %></h1>
 </div>
 
 
@@ -7,14 +7,14 @@
   <div class="col-md-12">
     <!-- Nav tabs category -->
     <ul class="nav nav-tabs faq-cat-tabs">
-      <% @faq_data.each_key do |category| %>
+      <% @pc['faqs'].each_key do |category| %>
         <li class="<%= 'active' if category == 'general' %>"><a href="#faq-cat-<%= category %>" data-toggle="tab"><%= category.titleize %></a></li>
       <% end %>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content faq-cat-content">
-      <% faq_data.each_pair do |category, faqs| %>
+      <% @pc['faqs'].each_pair do |category, faqs| %>
         <div class="tab-pane <%= 'active' if category == 'general' %> in fade" id="faq-cat-<%= category %>">
           <div class="panel-group" id="accordion-cat-<%= category %>">
             <% faqs.each_with_index do |qa_hash, j| %>
