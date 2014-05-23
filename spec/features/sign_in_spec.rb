@@ -13,7 +13,7 @@ describe "Signs in user" do
   it "should sign in a confirmed user using the main signin page", :js => true do
     visit new_user_session_path
 
-    fill_in("Email address", with: @user.email)
+    fill_in("Email", with: @user.email)
     fill_in("Password", with: @password)
 
     click_on "Sign in"

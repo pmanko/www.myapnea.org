@@ -21,4 +21,9 @@ class PagesController < ApplicationController
   def privacy_policy
     @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "privacy_policy.#{I18n.locale}.yml"))
   end
+
+  def thank_you
+    @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "thank_you.#{I18n.locale}.yml"))
+
+  end
 end

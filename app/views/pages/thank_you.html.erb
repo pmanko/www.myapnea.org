@@ -5,7 +5,7 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-              <%= markdown File.read(Rails.root.join('lib', 'data', 'thank_you.md')) %>
+              <%= markdown @pc['content'] %>
 
             </div>
           </div>
