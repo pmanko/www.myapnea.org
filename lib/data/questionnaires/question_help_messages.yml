@@ -9,3 +9,20 @@
   message: The following question tells us about your parents or guardians during the majority of your childhood? 
 - id: 4
   message: Since this is an online study, we'd like to know about the technology you use. 
+- id: 5
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+         Does your **biological mother** have the following health condition? Please give your best answer. 
+- id: 6
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+         Does your **biological father** have the following health condition? Please give your best answer. 
+- id: 7
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following. 
+           Does your **biological brother(s)** have the following health condition? Please give your best answer.
+  
+- id: 8
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following. 
+          Does your **biological sister(s)** have the following health condition? Please give your best answer. 
+
+- id: 9
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following. 
+           Does your **biological children** have the following health condition? Please give your best answer.  
