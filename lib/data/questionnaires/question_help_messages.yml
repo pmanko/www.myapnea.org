@@ -26,3 +26,24 @@
 - id: 9
   message: Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following. 
            Does your **biological children** have the following health condition? Please give your best answer.  
+- id: 10
+  message: This survey asks about your health limitations, pain level, and emotional state. These can be important factors in sleep apnea. 
+
+- id: 11
+  message: The following questions are about activities you might do during a typical day. Does your health now **limit you** in these activities?  If so, how much? 
+
+- id: 12
+  message: During the **past 4 weeks**, have you had any of the following problems with your work or other regular daily activities **as a result of your physical health**? 
+  
+- id: 13
+  message: During the **past 4 weeks*, have you had any of the following problems with your work or other regular daily activities **as a result of any emotional problems** (such as feeling depressed or anxious?)
+
+- id: 14
+  message: These questions are about how you feel and how things have been with you during the **past 4 weeks**. 
+           For each question, please give the one answer that comes closest to the way you have been feeling. 
+           How much of the time during the **past 4 weeks...**
+      
+- id: 15
+  message: These questions are about how you feel and how things have been with you during the **past 2 weeks**. 
+           For each question, please give the one answer that comes closest to the way you have been feeling. 
+           Over the **past 2 weeks**, how often have you been bothered by any of the following problems? 

@@ -196,3 +196,77 @@
   text_value: None of the above
 - id: 99
   text_value: N/A
+- id: 100
+  text_value: Excellent
+- id: 101
+  text value: Very good
+- id: 102
+  text_value: Good
+- id: 103 
+  text_value: Fair
+- id: 104
+  text_value: Poor
+- id: 105
+  text_value: Much better now than one year ago
+- id: 106
+  text_value: Somewhat better now than one year ago
+- id: 107
+  text_value: About the same as one year ago
+- id: 108
+  text_value: Somewhat worse now than one year ago
+- id: 109
+  text_value: Much worse than one year ago
+- id: 110
+  text_value: Yes, limited a lot
+- id: 111
+  text_value: Yes, limited a little
+- id: 112
+  text_value: No, not limited at all
+- id: 113
+  text_value: Extremely 
+- id: 114
+  text_value: Quite a bit
+- id: 115
+  text_value: Moderately 
+- id: 116
+  text_value: A little bit
+- id: 117
+  text_value: Not at all 
+- id: 118
+  text_value: Very severe
+- id: 119
+  text_value: Severe
+- id: 120
+  text_value: Moderate
+- id: 121
+  text_value: Mild
+- id: 122
+  text_value: Very mild 
+- id: 123
+  text_value: None 
+- id: 124
+  text value: All of the time
+- id: 125
+  text_value: Most of the time 
+- id: 126
+  text_value: A good bit of the time
+- id: 127
+  text_value: Some of the time
+- id: 128
+  text_value: A little of the time 
+- id: 129
+  text_value: None of the time 
+- id: 130
+  text_value: Nearly every day
+- id: 131
+  text_value: More than half the days
+- id: 132
+  text_value: Several days
+- id: 133
+  text_value: Extremely difficult
+- id: 134
+  text_value: Very difficult 
+- id: 135
+  text_value: Somewhat difficult
+- id: 136
+  text_value: Not difficult at all 
