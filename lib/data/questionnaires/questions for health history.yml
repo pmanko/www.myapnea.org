@@ -1,0 +1,495 @@
+- text: Allergies
+  id: 1
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: At what age were you first diagnosed?
+  id: 2
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 3
+  
+- text: Do you still have allergies? 
+  id: 3
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for allergies? 
+  id: 4
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify the medication taken for allergy 
+  id: 5
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Asthma 
+  id: 6
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have asthma?
+  id: 7
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for asthma?
+  id: 8
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for asthma 
+  id: 9
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Chronic bronchitis
+  id: 10
+  question_type_id: 3
+  question_help_message_id: 16
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have chronic bronchitis? 
+  id: 11
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Are you taking medicine for chronic bronchitis?
+  id: 12
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify the medication taken for chronic bronchitis
+  id: 13
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Emphysema or COPD
+  id: 14
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have emphysema or COPD? 
+  id: 15
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for emphysema or COPD? 
+  id: 16
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If yes, please specify medication taken for emphysema or COPD 
+  id: 17
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  id: 18
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have attention deficit hyperactivity disorder (ADD/ADHD)?
+  id: 19
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for attention deficit hyperactivity disorder (ADD/ADHD)? 
+  id: 20
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify the medication taken for attention deficit hyperactivity disorder (ADD/ADHD) 
+  id: 21
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Anxiety disorder
+  id: 22
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have an anxiety disorder? 
+  id: 23
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for an anxiety disorder?
+  id: 24
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for anxiety disorder 
+  id: 25
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Depression
+  id: 26
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have depression?
+  id: 27
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for depression? 
+  id: 28
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for depression
+  id: 29
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Diabetes
+  id: 30
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have diabetes?
+  id: 31
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for diabetes? 
+  id: 32
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for diabetes 
+  id: 33
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: High blood pressure or hypertension
+  id: 34
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have high blood pressure or hypertension? 
+  id: 35
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Are you taking medicine for high blood pressure or hypertension? 
+  id: 36
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for high blood pressure or hypertension 
+  id: 37
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: High Blood cholesterol
+  id: 38
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have high blood cholesterol? 
+  id: 39
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+- text: Are you taking medicine for high blood cholesterol? 
+  id: 40
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: If yes, please specify medication taken for high blood cholesterol
+  id: 41
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id:1
+  
+- text: Gastroesophageal reflux disease (GERD)
+  id: 42
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Do you still have gastroesophageal reflux disease (GERD)?  
+  id: 43
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Are you taking medicine for gastroesophageal reflux disease (GERD)?
+  id: 44
+  question_type_id: 3
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: If yes, please specify medication taken for gastroesophageal reflux disease (GERD)
+  id: 45
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+ 
+- text: Inflammatory bowel disease (ulcerative colitis or Crohn's disease)
+  id: 46
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have inflammatory bowel disease (ulcerative colitis or Crohn's disease)?
+  id: 47
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Are taking medicine for inflammatory bowel disease (ulcerative colitis or Crohn's disease)? 
+  id: 48
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for inflammatory bowel disease (ulcerative colitis or Crohn's disease)? 
+  id: 49
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Multiple sclerosis
+  id: 50
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have multiple sclerosis?
+  id: 51
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Are you taking medicine for multiple sclerosis? 
+  id: 52
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: If yes, please specify medication taken for multiple sclerosis? 
+  id: 53
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Rheumatoid arthritis, lupus, or other collagen vascular disease 
+  id: 54
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for rheumatoid arthriitis, lupus or other collagen vascular disease? 
+  id: 55
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: If yes, please specify medication taken for rheumatoid arthriitis, lupus or other collagen vascular disease?
+  id: 56
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1

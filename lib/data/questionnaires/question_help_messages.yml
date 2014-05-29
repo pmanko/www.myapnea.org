@@ -47,3 +47,7 @@
   message: These questions are about how you feel and how things have been with you during the **past 2 weeks**. 
            For each question, please give the one answer that comes closest to the way you have been feeling. 
            Over the **past 2 weeks**, how often have you been bothered by any of the following problems? 
+- id: 16
+  message: The following questions ask about health problems you have been diagnosed with. 
+          Has a doctor or health care professional ever told you that you had any of the following?
+          
