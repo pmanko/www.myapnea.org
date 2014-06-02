@@ -35,7 +35,7 @@
   -36
   -20
   
-- text: If yes, please specify the medication taken for allergy 
+- text: Please specify the medication taken for allergy 
   id: 5
   question_type_id: 1
   time_estimate: 1
@@ -71,7 +71,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for asthma 
+- text: Please specify medication taken for asthma 
   id: 9
   question_type_id: 1
   time_estimate: 1
@@ -103,7 +103,7 @@
   -36
   -20
   
-- text: If yes, please specify the medication taken for chronic bronchitis
+- text: Please specify the medication taken for chronic bronchitis
   id: 13
   question_type_id: 1
   time_estimate: 1
@@ -140,7 +140,7 @@
   -20
   -19
   
-- text: If yes, please specify medication taken for emphysema or COPD 
+- text: Please specify medication taken for emphysema or COPD 
   id: 17
   question_type_id: 1
   time_estimate: 1
@@ -176,7 +176,7 @@
   -36
   -20
   
-- text: If yes, please specify the medication taken for attention deficit hyperactivity disorder (ADD/ADHD) 
+- text: Please specify the medication taken for attention deficit hyperactivity disorder (ADD/ADHD) 
   id: 21
   question_type_id: 1
   time_estimate: 1
@@ -212,7 +212,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for anxiety disorder 
+- text: Please specify medication taken for anxiety disorder 
   id: 25
   question_type_id: 1
   time_estimate: 1
@@ -248,7 +248,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for depression
+- text: Please specify medication taken for depression
   id: 29
   question_type_id: 1
   time_estimate: 1
@@ -284,7 +284,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for diabetes 
+- text: Please specify medication taken for diabetes 
   id: 33
   question_type_id: 1
   time_estimate: 1
@@ -319,7 +319,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for high blood pressure or hypertension 
+- text: Please specify medication taken for high blood pressure or hypertension 
   id: 37
   question_type_id: 1
   time_estimate: 1
@@ -354,7 +354,7 @@
   -36
   -20
 
-- text: If yes, please specify medication taken for high blood cholesterol
+- text: Please specify medication taken for high blood cholesterol
   id: 41
   question_type_id: 1
   time_estimate: 1
@@ -390,7 +390,7 @@
   -36
   -20
 
-- text: If yes, please specify medication taken for gastroesophageal reflux disease (GERD)
+- text: Please specify medication taken for gastroesophageal reflux disease (GERD)
   id: 45
   question_type_id: 1
   time_estimate: 1
@@ -426,7 +426,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for inflammatory bowel disease (ulcerative colitis or Crohn's disease)? 
+- text: Please specify medication taken for inflammatory bowel disease (ulcerative colitis or Crohn's disease)
   id: 49
   question_type_id: 1
   time_estimate: 1
@@ -462,7 +462,7 @@
   -36
   -20
   
-- text: If yes, please specify medication taken for multiple sclerosis? 
+- text: Please specify medication taken for multiple sclerosis
   id: 53
   question_type_id: 1
   time_estimate: 1
@@ -479,8 +479,18 @@
   -20
   -19
   
-- text: Are you taking medicine for rheumatoid arthriitis, lupus or other collagen vascular disease? 
+- text: Do you still have rheumatoid arthriitis, lupus, or other collagen vascular disease? 
   id: 55
+  question_type_id: 3
+  time_estimate: 0.1 
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for rheumatoid arthriitis, lupus or other collagen vascular disease? 
+  id: 56
   question_type_id: 3
   time_estimate: 0.1
   answer_type_id: 1
@@ -488,8 +498,611 @@
   -36
   -20
  
-- text: If yes, please specify medication taken for rheumatoid arthriitis, lupus or other collagen vascular disease?
-  id: 56
+- text: Please specify medication taken for rheumatoid arthriitis, lupus or other collagen vascular disease
+  id: 57
   question_type_id: 1
   time_estimate: 1
   answer_type_id: 1
+
+- text: Sickle cell disease
+  id: 58
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have sickle cell disease?
+  id: 59
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for sickle cell disease?
+  id: 60
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 3
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify the medication taken for sickle cell disease
+  id: 61
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Migraine headaches 
+  id: 62
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1 
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Do you still have migraine headaches? 
+  id: 63
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for migraine headaches? 
+  id: 64
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for migraine headaches
+  id: 65
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Epilepsy (seizure disorder) 
+  id: 66
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have epilepsy (seizure disorder)? 
+  id: 67
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for epilepsy (seizure disorder)? 
+  id: 68
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for epilepsy (seizure disorder)? 
+  id: 69
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Narcolepsy 
+  id: 70
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Do you still have narcolepsy? 
+  id: 71
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are taking medicine for narcolepsy?
+  id: 72
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for narcolepsy
+  id: 73
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+
+- text: Restless leg syndrome
+  id: 74
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids
+  -36
+  -20
+  -19
+  
+- text: Do you still have restless leg syndrome? 
+  id: 75
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for restless leg syndrome?
+  id: 76
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for restless leg syndrome? 
+  id: 77
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Periodic limb movements/restless legs
+  id: 78
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have periodic limb movements/restless legs? 
+  id: 79
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for periodic limb movements/restless legs? 
+  id: 80
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for periodic limb movements/ restless legs
+  id: 81
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Insomnia 
+  id: 82
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have insomnia?
+  id: 83
+  question_type_id: 3
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: What treatments have you used for this? Check all that apply
+  id: 84
+  question_type_id: 4
+  time_estimate: 0.5
+  answer_type_id: 1
+  answer_option_ids: 
+  -137
+  -138
+  -139
+  -34
+  
+- text: If other, please specify the insomnia treatment you used 
+  id: 85
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Shift work disorder or circadian rhythm disorder
+  id: 86
+  question_type_id: 3
+  question_help_message_id: 16
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have shift work disorder or circadian rhythm disorder
+  id: 87
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for shift work disorder or circadian rhythm disorder
+  id: 88
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Please specify medication taken for shift work disorder or circadian rhythm disorder
+  id: 89
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: REM behavior disorder
+  id: 90
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have REM behavior disorder?
+  id: 91
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for REM behavior disorder?
+  id: 92
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Please specify medication taken for REM behavior disorder
+  id: 93
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Parkinson's disease
+  id: 94
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have Parkinson's disease?
+  id: 95
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for Parkinson's disease
+  id: 96
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for Parkinson's disease
+  id: 97
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Cancer
+  id: 98
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Prostate cancer
+  id: 99
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have prostate cancer? 
+  id: 100
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for prostate cancer? 
+  id: 101
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+  
+- text: Please specify medication taken for prostate cancer
+  id: 102
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Breast cancer
+  id: 103
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have breast cancer? 
+  id: 104
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for breast cancer?
+  id: 105
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for breast cancer
+  id: 106
+  question_type_id: 1
+  time_estimate: 1
+  answer_option_ids: 1
+  
+- text: Colon cancer
+  id: 107
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+  
+- text: Do you still have colon cancer?
+  id: 108
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for colon cancer?
+  id: 109
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+  
+- text: Please specify medication taken for colon cancer
+  id: 110
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Lung cancer
+  id: 111
+  question_type_id: 3
+  question_help_message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have lung cancer? 
+  id: 112
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for lung cancer?
+  id: 113
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for lung cancer
+  id: 114
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+
+- text: Blood cancer (leukemia, lymphoma, other) 
+  id: 115
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have blood cancer (leukemia, lymphoma, other)? 
+  id: 116
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for blood cancer (leukemia, lymphoma, other)? 
+  id: 117
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for blood cancer (leukemia, lymphoma, other)
+  id: 118
+  question_type_id: 1
+  time_estimate: 1 
+  answer_type_id: 1
+  
+- text: Other cancer
+  id: 119
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify other cancer
+  id: 120
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Do you still have this cancer? 
+  id: 121
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for this cancer? 
+  id: 122
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Please specify medication taken for this cancer?
+  id: 123
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Other
+  id: 124
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Please specify other
+  id: 125
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+ 
