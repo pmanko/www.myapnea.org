@@ -276,3 +276,9 @@
   text_value: Anti-depressants ot anti-anxiety medication
 - id: 139
   text_value: Behavioral therapy
+- id: 140
+  text_value: Estrogen alone (like Premarin or Estratab) 
+- id: 141
+  text_value: Estrogen with progestin (like Provera) 
+- id: 142
+  text_value: Other types of hormone replacement therapy
