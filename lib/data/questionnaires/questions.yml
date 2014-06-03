@@ -1,3 +1,5 @@
+# A Little About Me
+
 - text: What is your biological sex?
   id: 1
   question_type_id: 3
@@ -382,3 +384,2198 @@
   -85
   -97
   -98
+  
+# Health History
+- text: Allergies
+  old_id: 1
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: At what age were you first diagnosed?
+  old_id: 2 
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 3
+  
+- text: Do you still have allergies? 
+  old_id: 3
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for allergies? 
+  old_id: 4
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify the medication taken for allergies
+  old_id: 5
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Asthma 
+  old_id: 6
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have asthma?
+  old_id: 7
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for asthma?
+  old_id: 8
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for asthma 
+  old_id: 9
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Chronic bronchitis
+  old_id: 10
+  question_type_id: 3
+  question_help _message_id: 16
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have chronic bronchitis? 
+  old_id: 11
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Are you taking medicine for chronic bronchitis?
+  old_id: 12
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify the medication taken for chronic bronchitis
+  old_id: 13
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Emphysema or COPD
+  old_id: 14
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have emphysema or COPD? 
+  old_id: 15
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for emphysema or COPD? 
+  old_id: 16
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Please specify medication taken for emphysema or COPD 
+  old_id: 17
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  old_id: 18
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have attention deficit hyperactivity disorder (ADD/ADHD)?
+  old_id: 19
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for attention deficit hyperactivity disorder (ADD/ADHD)? 
+  old_id: 20
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify the medication taken for attention deficit hyperactivity disorder (ADD/ADHD) 
+  old_id: 21
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Anxiety disorder
+  old_id: 22
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have an anxiety disorder? 
+  old_id: 23
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for an anxiety disorder?
+  old_id: 24
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for anxiety disorder 
+  old_id: 25
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Depression
+  old_id: 26
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have depression?
+  old_id: 27
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for depression? 
+  old_id: 28
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for depression
+  old_id: 29
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Diabetes
+  old_id: 30
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have diabetes?
+  old_id: 31
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for diabetes? 
+  old_id: 32
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for diabetes 
+  old_id: 33
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: High blood pressure or hypertension
+  old_id: 34
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have high blood pressure or hypertension? 
+  old_id: 35
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Are you taking medicine for high blood pressure or hypertension? 
+  old_id: 36
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for high blood pressure or hypertension 
+  old_id: 37
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: High Blood cholesterol
+  old_id: 38
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have high blood cholesterol? 
+  old_id: 39
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+- text: Are you taking medicine for high blood cholesterol? 
+  old_id: 40
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for high blood cholesterol
+  old_id: 41
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Gastroesophageal reflux disease (GERD)
+  old_id: 42
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Do you still have gastroesophageal reflux disease (GERD)?  
+  old_id: 43
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Are you taking medicine for gastroesophageal reflux disease (GERD)?
+  old_id: 44
+  question_type_id: 3
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for gastroesophageal reflux disease (GERD)
+  old_id: 45
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+ 
+- text: Inflammatory bowel disease (ulcerative colitis or Crohn's disease)
+  old_id: 46
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have inflammatory bowel disease (ulcerative colitis or Crohn's disease)?
+  old_id: 47
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Are taking medicine for inflammatory bowel disease (ulcerative colitis or Crohn's disease)? 
+  old_id: 48
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for inflammatory bowel disease (ulcerative colitis or Crohn's disease)
+  old_id: 49
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Multiple sclerosis
+  old_id: 50
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have multiple sclerosis?
+  old_id: 51
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Are you taking medicine for multiple sclerosis? 
+  old_id: 52
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for multiple sclerosis
+  old_id: 53
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Rheumatoid arthritis, lupus, or other collagen vascular disease 
+  old_id: 54
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have rheumatoid arthriitis, lupus, or other collagen vascular disease? 
+  old_id: 55
+  question_type_id: 3
+  time_estimate: 0.1 
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for rheumatoid arthriitis, lupus or other collagen vascular disease? 
+  old_id: 56
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Please specify medication taken for rheumatoid arthriitis, lupus or other collagen vascular disease
+  old_id: 57
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+
+- text: Sickle cell disease
+  old_id: 58
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have sickle cell disease?
+  old_id: 59
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for sickle cell disease?
+  old_id: 60
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 3
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify the medication taken for sickle cell disease
+  old_id: 61
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Migraine headaches 
+  old_id: 62
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1 
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Do you still have migraine headaches? 
+  old_id: 63
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for migraine headaches? 
+  old_id: 64
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for migraine headaches
+  old_id: 65
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Epilepsy (seizure disorder) 
+  old_id: 66
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have epilepsy (seizure disorder)? 
+  old_id: 67
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for epilepsy (seizure disorder)? 
+  old_id: 68
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for epilepsy (seizure disorder)? 
+  old_id: 69
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Narcolepsy 
+  old_id: 70
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Do you still have narcolepsy? 
+  old_id: 71
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are taking medicine for narcolepsy?
+  old_id: 72
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for narcolepsy
+  old_id: 73
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+
+- text: Restless leg syndrome
+  old_id: 74
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Do you still have restless leg syndrome? 
+  old_id: 75
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for restless leg syndrome?
+  old_id: 76
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for restless leg syndrome? 
+  old_id: 77
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Periodic limb movements/restless legs
+  old_id: 78
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have periodic limb movements/restless legs? 
+  old_id: 79
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for periodic limb movements/restless legs? 
+  old_id: 80
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for periodic limb movements/ restless legs
+  old_id: 81
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Insomnia 
+  old_id: 82
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have insomnia?
+  old_id: 83
+  question_type_id: 3
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: What treatments have you used for this? Check all that apply
+  old_id: 84
+  question_type_id: 4
+  time_estimate: 0.5
+  answer_type_id: 1
+  answer_option_ids: 
+  -137
+  -138
+  -139
+  -34
+  
+- text: Please specify the insomnia treatment you used 
+  old_id: 85
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Shift work disorder or circadian rhythm disorder
+  old_id: 86
+  question_type_id: 3
+  question_help _message_id: 16
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have shift work disorder or circadian rhythm disorder
+  old_id: 87
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for shift work disorder or circadian rhythm disorder
+  old_id: 88
+  question_type_id: 3
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Please specify medication taken for shift work disorder or circadian rhythm disorder
+  old_id: 89
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: REM behavior disorder
+  old_id: 90
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have REM behavior disorder?
+  old_id: 91
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for REM behavior disorder?
+  old_id: 92
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Please specify medication taken for REM behavior disorder
+  old_id: 93
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Parkinson's disease
+  old_id: 94
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Do you still have Parkinson's disease?
+  old_id: 95
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for Parkinson's disease
+  old_id: 96
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for Parkinson's disease
+  old_id: 97
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Cancer
+  old_id: 98
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Prostate cancer
+  old_id: 99
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have prostate cancer? 
+  old_id: 100
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for prostate cancer? 
+  old_id: 101
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+  
+- text: Please specify medication taken for prostate cancer
+  old_id: 102
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Breast cancer
+  old_id: 103
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have breast cancer? 
+  old_id: 104
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for breast cancer?
+  old_id: 105
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for breast cancer
+  old_id: 106
+  question_type_id: 1
+  time_estimate: 1
+  answer_option_ids: 1
+  
+- text: Colon cancer
+  old_id: 107
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+  
+- text: Do you still have colon cancer?
+  old_id: 108
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for colon cancer?
+  old_id: 109
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+  
+- text: Please specify medication taken for colon cancer
+  old_id: 110
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Lung cancer
+  old_id: 111
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have lung cancer? 
+  old_id: 112
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for lung cancer?
+  old_id: 113
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for lung cancer
+  old_id: 114
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+
+- text: Blood cancer (leukemia, lymphoma, other) 
+  old_id: 115
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Do you still have blood cancer (leukemia, lymphoma, other)? 
+  old_id: 116
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for blood cancer (leukemia, lymphoma, other)? 
+  old_id: 117
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Please specify medication taken for blood cancer (leukemia, lymphoma, other)
+  old_id: 118
+  question_type_id: 1
+  time_estimate: 1 
+  answer_type_id: 1
+  
+- text: Other cancer
+  old_id: 119
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify other cancer
+  old_id: 120
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Do you still have this cancer? 
+  old_id: 121
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for this cancer? 
+  old_id: 122
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Please specify medication taken for this cancer?
+  old_id: 123
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Other
+  old_id: 124
+  question_type_id: 3
+  question_help _message_id: 16
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Please specify other
+  old_id: 125
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Do you still have this? 
+  old_id: 126
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Are you taking medicine for this?
+  old_id: 127
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify medication taken for this? 
+  old_id: 128
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Have you gone through menopause or "change of life"?
+  old_id: 129
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Have you had surgery to remove your ovaries? 
+  old_id: 130
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: At what age? 
+  old_id: 131
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 3
+  
+- text: How many ovaries were removed?
+  old_id: 132
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 4
+  
+- text: Have you had a hysterectomy (surgery to remove your uterus/womb)? 
+  old_id: 133
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Have you had a menstrual period in the past 12 months? 
+  old_id: 134
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: How many periods have you had in the last 12 months? 
+  old_id: 135
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 5
+  
+- text: Are you currently using hormone replacement therapy? 
+  old_id: 136
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: At what age did you begin? 
+  old_id: 137
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 3
+
+- text: Did you ever use hormone therapy? 
+  old_id: 138
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: At what age did you start taking hormones? 
+  old_id: 139
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 3
+  
+- text: At what age did you stop taking hormones? 
+  old_id: 139
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_old_id: 3
+  
+- text: If you were or are taking hormone replacement therapy, which type of therapy was/is it? 
+  old_id: 140
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -140
+  -141
+  -142
+  
+- text: Please specify other type of hormone replacement therapy
+  old_id: 141
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+# My general health 
+- text: In general, would you say your health is:
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 10
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -100
+  -101
+  -102
+  -103
+  -104
+  
+- text: Compared to one year ago, how would you rate your health in general now? 
+  old_id: 2
+  question_type_id: 3
+  question_help_message_id: 10
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -105
+  -106
+  -107
+  -108
+  -109
+  
+- text: Vigorous activities, such as running, lifting heavy objects, or participating in strenuous sports
+  old_id: 3
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+
+- text: Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf
+  old_id: 4
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Lifting or carrying groceries
+  old_id: 5
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids:
+  -110
+  -111
+  -112
+  
+- text: Climbing several flights of stairs
+  old_id: 6
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Climbing one flight of stairs
+  old_id: 7
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Bending, kneeling or stooping
+  old_id: 8
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Walking more than a mile 
+  old_id: 9
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Walking several blocks 
+  old_id: 10
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Walking one block
+  old_id: 11
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Bathing or dressing yourself
+  old_id: 12
+  question_type_id: 3
+  question_help_message_id: 11
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -110
+  -111
+  -112
+  
+- text: Cut down on the amount of time you spend on work or other activities
+  old_id: 13
+  question_type_id: 3
+  question_help_message_id: 12
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Accomplished less than you would like
+  old_id: 14
+  question_type_id: 3
+  question_help_message_id: 12
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Were limited in the kind of work or other activities  
+  old_id: 15
+  question_type_id: 3
+  question_help_message_id: 12
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Had difficulty performing the work or other activities (e.g., it took extra effort)
+  old_id: 16
+  question_type_id: 3
+  question_help_message_id: 12
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Cut down on the amount of time you spent on work or other activities
+  old_id: 17
+  question_type_id: 3
+  question_help_message_id: 13
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: Accomplished less than you would like 
+  old_id: 18
+  question_type_id: 3
+  question_help_message_id: 13
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Did work or other activities less carefully than usual 
+  old_id: 19
+  question_type_id: 3
+  question_help_message_id: 13
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: During the **past 4 weeks**, to what extent has your physical heath or emotional problems interfered with your normal social activities with family, friends, neighbors, or groups? 
+  old_id: 20
+  question_type_id: 3
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -113
+  -114
+  -115
+  -116
+  -117
+
+- text: How much bodily pain have you had during the **past 4 weeks**
+  old_id: 21
+  question_type_id: 3
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -118
+  -119
+  -120
+  -121
+  -122
+  -123
+
+- text: During the **past 4 weeks**, how much did **pain** interfere with your normal work (including both work outside the home and housework)?
+  old_id: 22
+  question_type_id: 3
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -113
+  -114
+  -115
+  -116
+  -117
+
+- text: Did you feel full of pep? 
+  old_id: 23
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+
+- text: Have you been a very nervous person? 
+  old_id: 24
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+
+- text: Have you felt so down in the dumps that nothing could cheer you up? 
+  old_id: 25
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+
+- text: Have you felt calm and peaceful?
+  old_id: 26
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+
+- text: Did you have a lot of energy? 
+  old_id: 27
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids:
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+  
+- text: Have you felt downhearted and blue?
+  old_id: 28
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids:
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+
+- text: Did you feel worn out? 
+  old_id: 29
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+  
+
+- text: Have you been a happy person? 
+  old_id: 30
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -124
+  -125
+  -126
+  -127
+  -128
+  -129
+  
+- text: Did you feel tired?
+  old_id: 31
+  question_type_id: 3
+  question_help_message_id: 14
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids:
+  -124
+  -125
+  -127
+  -128
+  -129
+
+- text: Little interest or pleasure in doing things
+  old_id: 32
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+  
+- text: Feeling down, depressed, or hopeless
+  old_id: 33
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+  
+- text: Trouble falling or staying asleep, or sleeping too much
+  old_id: 34
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+  
+- text: Feeling tired or having little energy
+  old_id: 35
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+
+- text: Poor appetite or overeating 
+  old_id: 36
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+
+- text: Feeling bad about yourself - or that you are a failture or have let yourself or your family down
+  old_id: 37
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+  
+- text: Trouble concentrating on things, such as reading the newspaper or watching television
+  old_id: 38
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+  
+- text: Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual. 
+  old_id: 39
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 1
+  answer_option_ids: 
+  -130
+  -131
+  -132
+  -117
+
+- text: If you checked off **any** problems, how **difficult** have these problems made it for you to do your work, take care of things at home, or get along with other people? 
+  old_id: 40
+  question_type_id: 3
+  question_help_message_id: 15
+  time_estimate: 0.15
+  answer_type_id: 10
+  answer_option_ids: 
+  -133
+  -134
+  -135
+  -136
+  
+# Family Health
+
+- text: Heart attack 
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Stroke
+  old_id: 2
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Heart failure
+  old_id: 3
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  old_id: 4
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  old_id: 5
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity 
+  old_id: 6
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  old_id: 7
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)? 
+  old_id: 8
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Attack
+  old_id: 9
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke 
+  old_id: 10
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Heart Failure
+  old_id: 11
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  old_id: 12
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  old_id: 13
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  old_id: 14
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  old_id: 15
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  old_id: 16
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any brothers, please mark this box
+  old_id: 17
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+
+- text: Heart attack
+  old_id: 18
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_types_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke
+  old_id: 19
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Failure 
+  old_id: 20
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  old_id: 21
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  old_id: 22
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  old_id: 23
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  old_id: 24
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  old_id: 25
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any sisters, please mark this box
+  old_id: 26
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+  
+- text: Heart Attack 
+  old_id: 27
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Stroke 
+  old_id: 28
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Failure
+  old_id: 29
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High Blood pressure or hypertension
+  old_id: 30
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  old_id: 31
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  old_id: 32
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  old_id: 33
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  old_id: 34
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any children, please mark this box
+  old_id: 35
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+  
+- text: Heart attack
+  old_id: 36
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke
+  old_id: 37
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Heart Failure 
+  old_id: 38
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  old_id: 39
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  old_id: 40
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  old_id: 41
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  old_id: 42
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  old_id: 43
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
