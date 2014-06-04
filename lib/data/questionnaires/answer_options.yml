@@ -282,3 +282,12 @@
   text_value: Estrogen with progestin (like Provera) 
 - id: 142
   text_value: Other types of hormone replacement therapy
+- id: 143
+  text_value: More than three cups a day
+- id: 144
+  text_value: More than one cup, less than three cups a day
+- id: 145
+  text_value: Approximately one cup (8oz.) a day
+- id: 146
+  text_value: Less than one cup a day
+ 

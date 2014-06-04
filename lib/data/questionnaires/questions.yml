@@ -402,7 +402,7 @@
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 3
+  unit_id: 3
   
 - text: Do you still have allergies? 
   old_id: 3
@@ -1506,7 +1506,7 @@
   -19
   
 - text: Are you taking medicine for this?
-  old_id: 127
+  old_id: 127 
   question_type_id: 3
   time_estimate: 0.1
   answer_type_id: 1
@@ -1545,14 +1545,14 @@
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 3
+  unit_id: 3
   
 - text: How many ovaries were removed?
   old_id: 132
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 4
+  unit_id: 4
   
 - text: Have you had a hysterectomy (surgery to remove your uterus/womb)? 
   old_id: 133
@@ -1579,7 +1579,7 @@
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 5
+  unit_id: 5
   
 - text: Are you currently using hormone replacement therapy? 
   old_id: 136
@@ -1595,7 +1595,7 @@
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 3
+  unit_id: 3
 
 - text: Did you ever use hormone therapy? 
   old_id: 138
@@ -1611,17 +1611,17 @@
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 3
+  unit_id: 3
   
 - text: At what age did you stop taking hormones? 
-  old_id: 139
+  old_id: 140
   question_type_id: 6
   time_estimate: 0.5
   answer_type_id: 2
-  unit_old_id: 3
+  unit_id: 3
   
 - text: If you were or are taking hormone replacement therapy, which type of therapy was/is it? 
-  old_id: 140
+  old_id: 141
   question_type_id: 3
   time_estimate: 0.2
   answer_type_id: 1
@@ -1631,7 +1631,7 @@
   -142
   
 - text: Please specify other type of hormone replacement therapy
-  old_id: 141
+  old_id: 142
   question_type_id: 1
   time_estimate: 1
   answer_type_id: 1
@@ -2579,3 +2579,80 @@
   -36
   -20
   -19
+  
+# My Health Habits
+
+- text: Have you ever smoked cigerettes? 
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 17
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: How old were you when you first started regular cigarette smoking? 
+  old_id: 2
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 3
+ 
+- text: On the average, over the entire time you smoked, how many cigarettes did you smoke each day? 
+  old_id: 3
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 6
+  
+- text: Are you still currently smoking cigarettes? 
+  old_id: 4
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+- text: How old were you when you stopped smoking?
+  old_id: 5
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 3
+  
+- text: Over the *past 4 weeks*, have you smoked at least 1 cigarette per day?
+  old_id: 6
+  question_type_id: 3
+  time_estimate: 0.5
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: How many cigarettes do you now smoke each day?
+  old_id: 7
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 6
+  
+- text: In the *past 4 weeks*, how often did you drink beverages containing caffeine (cola, coffee, tea, etc.)? 
+  old_id: 8
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -143
+  -144
+  -145
+  -146
+  -123
+
+- text: In a typical week during the past year, on how many days did you consume an alcoholic beverage of any type? 
+  old_id: 9
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  
