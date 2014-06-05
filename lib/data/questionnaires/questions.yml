@@ -171,10 +171,15 @@
   -33
   -34
   -35
-
-
-- text: Are you currently attending school, college or graduate school?
+  
+- text: If other, please specify
   id: 17
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Are you currently attending school, college or graduate school?
+  id: 18
   question_type_id: 3
   time_estimate: .5
   answer_type_id: 1
@@ -184,7 +189,7 @@
   -35
 
 - text: What best describes your current main daily activities and/or responsibilities? 
-  id: 18
+  id: 19
   question_type_id: 3
   time_estimate: .5
   answer_type_id: 1
@@ -199,7 +204,7 @@
   -35
 
 - text: In the past year, have you been unemployed *and looking for work* for more than 2 months?
-  id: 19
+  id: 20
   question_type_id: 3 
   time_estimate: .5
   answer_type_id: 1
@@ -210,7 +215,7 @@
 
 
 - text: How hard is it for you (and your family) to pay for *very basics* like food, rent, or mortgage, heating, etc?
-  id: 20
+  id: 21
   question_type_id: 3
   time_estimate: .5
   answer_type_id: 1
@@ -223,7 +228,7 @@
   -47
 
 - text: Do you have difficulty making ends meet?
-  id: 21
+  id: 22
   question_type_id: 3
   time_estimate: .5 
   answer_type_id: 1
@@ -236,7 +241,7 @@
   -51
 
 - text: Last year, what was your total household income from all sources, before taxes? 
-  id: 22
+  id: 23
   question_type_id: 3
   time_estimate: .5
   answer_type_id: 1
@@ -254,7 +259,7 @@
   -60
 
 - text: What is your current marital status? 
-  id: 23
+  id: 24
   question_type_id: 3
   time_estimate: .5
   answer_type_id: 1
@@ -268,25 +273,25 @@
   -65
   -66
 - text: If other, what is your current marital status? 
-  id: 24
+  id: 25
   question_type_id: 1
   time_estimate: 1
   answer_type_id: 1
 - text: How many people, other than you, live in your household? You may add up to 20 people that live in your household. 
-  id: 25
+  id: 26
   question_type_id: 6
   time_estimate: .5
   answer_type_id: 2
 
 - text: What is the age of the person that lives in your household? 
-  id: 26
+  id: 27
   question_type_id: 6
   question_help_message_id: 2
   time_estimate: .5
   answer_type_id: 2
   unit_id: 3
 - text: What is relationship between you and the person that lives in your household?
-  id: 27
+  id: 28
   question_type_id: 3
   question_help_message_id: 2
   time_estimate: .2
@@ -300,7 +305,7 @@
   -72
   -73    
 - text:  How many parents or guardians (up to 4) did you have? 
-  id: 28
+  id: 29
   question_type_id: 3
   question_help_message_id: 3
   time_estimate: .5
@@ -311,7 +316,7 @@
   -76
   -77
 - text: How did you hear about the Sleep Apnea Patient-Centered Outcomes Research? Check all that apply. 
-  id: 29
+  id: 30
   question_type_id: 4
   time_estimate: .2
   answer_type_id: 1
@@ -331,12 +336,12 @@
   -90
   -34
 -text: If Other, please specify how did you hear about the Sleep Apnea Patient-Centered Outcomes Research? 
- id: 30
+ id: 31
  question_type_id: 1
  time_estimate: 1
  answer_type_id: 1
 - text: Is there a healthcare system where you receive most of your primary medical care? 
-  id: 31
+  id: 32
   question_type_id: 3
   time_estimate: .1
   answer_type_id: 1
@@ -345,7 +350,7 @@
   -36
 
 - text: If yes, which one? 
-  id: 32
+  id: 33
   question_type_id: 3
   time_estimate: .2
   answer_type_id: 1
@@ -358,13 +363,13 @@
   -96
   -34
 - text: If other, please specify which healthcare system where you receive most of your primary medical care? 
-  id: 33
+  id: 34
   question_type_id: 1
   time_estimate: 1
   answer_type_id: 1
   
 - text: Do you have a cell phone? 
-  id: 34
+  id: 35
   question_type_id: 3
   question_help_message_id: 4
   time_estimate: .1
@@ -373,7 +378,7 @@
   -20
   -36
 - text: Do you have an account on any of the following? Check all that apply. 
-  id: 35
+  id: 36
   question_type_id: 4
   question_help_message_id: 4
   time_estimate: .3
@@ -2655,4 +2660,451 @@
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids: 
+  -147
+  -148
+  -149
+  -150
+  -151
+  -152
+  -153
+  -154
+  
+- text: In a typical month during the past year, what was the largest number of drink of beer, wine and/or liquor you may have had in one day
+  old_id: 10
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -155
+  -156
+  -157
+  -158
+  -159
+  -160
+  
+- text: When you drink alcohol, do you usually drink during the two hours before bedtime? 
+  old_id: 11
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+# My Healthcare Experience
+
+- text: How often did you get the services you thought you needed?
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+ 
+- text: How often did you have to wait too long to obtain a service/appointment? 
+  old_id: 2
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often was it difficult to get transport to services?
+  old_id: 3
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: In the past 3 months, how often did you seem to receive the medicines you thought you you needed?
+  old_id: 4
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: How often did providers seem to be unnecessarily repeating tests or assessments?
+  old_id: 5
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: How often were results of tests or assessments discussed with you? (e.g. blood tests) 
+  old_id: 6
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: In the past 3 months, how often did you feel the care your received was well coordinated? 
+  old_id: 7
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often were you happy with the quality of care you received? 
+  old_id: 8
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often were you confused about the roles of different healthcare providers? 
+  old_id: 9
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+
+- text: In the past 3 months, how often have healthcare providers responded appropiately to changes in your needs? 
+  old_id: 10
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: How often did you seem to get conflicting advice from healthcare providers? 
+  old_id: 11
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1 
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: In the past 3 months, how often have you felt like complaining about any of your care?
+  old_id: 12
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+ 
+- text: How often did you feel you understood your conditions? 
+  old_id: 13
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -165
+  -166
+  -167
+  
+- text: How often did you feel you could cope with life? 
+  old_id: 14
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -165
+  -166
+  -167
+  
+- text: Overall, how satisified are you with the care you received in the past 3 months? 
+  old_id: 15
+  question_type_id: 3
+  question_help_message_id: 18
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -168
+  -169
+  -170
+  -171
+  -172
+ 
+- text: How often did you and you PCP **agree** about your card needs?
+  old_id: 16
+  question_type_id: 3
+  question_help_message_id: 19
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often did your PCP seem to be **communicating** with your other providers? 
+  old_id: 17
+  question_type_id: 3
+  question_help_message_id: 19
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often did your PCP **involve you** when making decisions about your care? 
+  old_id: 18
+  question_type_id: 3
+  question_help_message_id: 19
+  time_estimate: 0.10
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often does your PCP talk to you about your **future care**? 
+  old_id: 19
+  question_type_id: 3
+  question_help_message_id: 19
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How important is it to you to **be involved in decisions** with your PCP about your care? 
+  old_id: 20
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -173
+  -174
+  -175
+  
+- text: Do you currently have a "Case Manager"? (A Case Manager is a type of healthcare provider) 
+  old_id: 21
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Is your PCP the **only** healthcare provider you have seen in the past 3 months? 
+  old_id: 22
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Nominate one healthcare provider, other than your Primary Care Provider (PCP), whom you have seen in the past 3 months.
+  old_id: 23
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -176
+  -177
+  -178
+  -179
+  -34
+  
+- text: Please specify what kind of specialist whom you have seen in the past 3 months
+  old_id: 24
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Please specify a health care provider, other than your PCP, 
+  old_id: 25
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: How often did you and that healthcare provider agree about your care needs? 
+  old_id: 26
+  question_type_id: 3
+  question_help_message_id: 20
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often did that healthcare provider seem to be communicating with your other providers? 
+  old_id: 27
+  question_type_id: 3
+  question_help_message_id: 20
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often did that healthcare provider involve you when making decisions about your care? 
+  old_id: 28
+  question_type_id: 3
+  question_help_message_id: 20
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How often does that healthcare provider talk with you abour future care? 
+  old_id: 29
+  question_type_id: 3
+  question_help_message_id: 20
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  
+- text: How important is it you to be involved in decisions with that healthcare provider about your care? 
+  old_id: 30
+  question_type_id: 3
+  question_help_message_id: 20
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -173
+  -174
+  -175
+  
+- text: Who are your caregivers? Check all that apply.
+  old_id: 31
+  question_type_id: 4
+  question_help_message_id: 21
+  time_estimate: 0.3
+  answer_type_id: 1
+  answer_option_ids: 
+  -180
+  -67
+  -181
+  -71
+  -70
+  -72
+  -88
+  -182
+  -34
+  
+- text: Please specify a caregiver 
+  old_id: 32
+  question_type_id: 1
+  question_help_message_id: 21
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: In the past 3 months, how often was your **main caregiver** involved in making decisions about your care?
+  old_id: 33
+  question_type_id: 3
+  question_help_message_id: 21
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
+  
+- text: In the past 3 months, how often do you think your **main caregiver** was satisified with the care your received?
+  old_id: 34
+  question_help_message_id: 3
+  question_help_message_id: 21
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -162
+  -163
+  -164
+  -51
+  -99
   

@@ -51,3 +51,17 @@
   message: The following questions ask about health problems you have been diagnosed with. 
           Has a doctor or health care professional ever told you that you had any of the following?
           
+- id: 17
+  message: The following questions ask about your health behaviors. **No** means less than 20 packs in a lifetime or less than 1 cigerette per day for 1 year. 
+- id: 18
+  message: We are interested in how patients view the quality of their overall healthcare. Yours answers will not be shared with your physician or clinic. 
+- id: 19
+  message: The following 4 questions relate to the care you have received from your Primary Care Provider (PCP) in the past 3 months.
+- id: 20
+  message: The following 5 questions relate to the care you have received from your Case Manager or the healthcare provider that you have just nominated, in the past 3 months. 
+- id: 21
+  message: The following 3 questions relate to caregivers. By "caregiver" we mean someone **you rely on to help with daily life**, but is not paid to do so (i.e., a friend or relative)
+- id: 22
+  message: Staying healthy is difficult when you have a chronic condition. We would like to learn about the type of help with your condition you get from your healthcare team. 
+          This might include your regular doctor, his or her nurse, or physician's assistant who treats your illness. 
+          Over the **past 6 months**, when I received care for my chronic conitions, I was ...

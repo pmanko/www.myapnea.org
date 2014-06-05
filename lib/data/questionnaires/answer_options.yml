@@ -290,4 +290,75 @@
   text_value: Approximately one cup (8oz.) a day
 - id: 146
   text_value: Less than one cup a day
- 
+- id: 147
+  text_value: 0 days
+- id: 148
+  text_value: 1 day
+- id: 149
+  text_value: 2 days
+- id: 150
+  text_value: 3 days
+- id: 151
+  text_value: 4 days
+- id: 152
+  text_value: 5 days
+- id: 153
+  text_value: 6 days
+- id: 154
+  text_value: 7 days
+- id: 155
+  text_value: 0
+- id: 156
+  text_value: 1-2
+- id: 157
+  text_value: 3-5
+- id: 158
+  text_value: 6-9
+- id: 159
+  text_value: 10-14
+- id: 160
+  text_value: 15 or more
+- id: 161
+  text_value: Always
+- id: 162
+  text_value: Mostly
+- id: 163
+  text_value: Sometimes
+- id: 164
+  text_value: Rarely
+- id: 165
+  text_value: Very well
+- id: 166
+  text_value: Fairly well
+- id: 167
+  text_value: Not at all well
+- id: 168
+  text_value: Very satisified 
+- id: 169
+  text_value: Moderately satisified
+- id: 170
+  text_value: Neutral
+- id: 171
+  text_value: Moderately dissatisifed 
+- id: 172
+  text_value: Very dissatisfied 
+- id: 173
+  text_value: Very important
+- id: 174
+  text_value: Somewhat important
+- id: 175
+  text_value: Not at all important
+- id: 176
+  text_value: Specialist
+- id: 177
+  text_value: Nurse
+- id: 178
+  text_value: Home and community care
+- id: 179
+  text_value: Social worker
+- id: 180
+  text_value: No caregiver
+- id: 181
+  text_value: Parent
+- id: 182
+  text_value: Neighbor
