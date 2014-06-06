@@ -65,3 +65,11 @@
   message: Staying healthy is difficult when you have a chronic condition. We would like to learn about the type of help with your condition you get from your healthcare team. 
           This might include your regular doctor, his or her nurse, or physician's assistant who treats your illness. 
           Over the **past 6 months**, when I received care for my chronic conitions, I was ...
+- id: 23
+  message: This survey asks for information about what level of exercise you can do normally and how much physical activity you do. 
+- id: 24
+  message: We are interested in finding out the kinds of physical activities that people do as part of their everyday lives. 
+           The questions will ask you about the time you spent being physically active **in the last 7 days**.
+           Please answer each question even if you do not consider yourself to be an active person.
+           Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, excercise or sport. 
+           

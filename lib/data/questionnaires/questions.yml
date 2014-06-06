@@ -3096,7 +3096,7 @@
   
 - text: In the past 3 months, how often do you think your **main caregiver** was satisified with the care your received?
   old_id: 34
-  question_help_message_id: 3
+  question_type_id: 3
   question_help_message_id: 21
   time_estimate: 0.1
   answer_type_id: 1
@@ -3107,4 +3107,458 @@
   -164
   -51
   -99
+  
+- text: Asked for my ideas when we made a treatment plan
+  old_id: 35
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Given choices about treatment to think about 
+  old_id: 36
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Asked to talk about any problems with my medicines or their effects
+  old_id: 37
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Given a written list of things I should do to improve my health 
+  old_id: 38
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Satisfied that my care was well organized
+  old_id: 39
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Shown how what I did to take care of myself infleunced my conditions
+  old_id: 40
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Asked to talk about my goals in caring for my condition
+  old_id: 41
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Helped to set specific goals to improve my eating or exercise
+  old_id: 42
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Given a copy of my treatment plan
+  old_id: 43
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Encouraged to go to a specific group or class to help me cope with my chronic condition
+  old_id: 44
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Asked questions, either directly or on a survey, about my health habits
+  old_id: 45
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Sure that my doctor or nurse thought about my values, beliefs, and traditions when they recommended treatments to me
+  old_id: 46
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Helped to make a treatment plan that I could carry out in my daily life
+  old_id: 47
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Helped to plan ahead so I could take care of my condition even in hard times
+  old_id: 48
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Asked how my chronic condition affects my life
+  old_id: 49
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+ 
+- text: Contacted after a visit to see how things were going
+  old_id: 50
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Encouraged to attend programs in the community that could help me
+  old_id: 51
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+  
+- text: Referred to a dietitian, health educator, or counselor 
+  old_id: 52
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+ 
+- text: Told how my visits with other types of doctors, like an eye doctor or other specialist, helped my treatment
+  old_id: 53
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+
+- text: Asked how my visits with other doctors were going
+  old_id: 54
+  question_type_id: 3
+  question_help_message_id: 22
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -161
+  -125
+  -127
+  -128
+  -129
+
+# My Physical Activity
+- text: Can you take of yourself (eating, dressing, bathing, or using the toilet)? 
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you walk indoor, such as around the house?
+  old_id: 2
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you walk a block or 2 on level ground? 
+  old_id: 3
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you climb a flight of stairs or walk up a hill? 
+  old_id: 4
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: Can you run a short distance?
+  old_id: 5
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you do light work around the house, like dusting or washing dishes? 
+  old_id: 6
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you do moderate work around the house, like vacuuming, sweeping floors, or carrying groceries? 
+  old_id: 7
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you do heavy work around the house, like scrubbing floors or lifting and moving heavy furniture? 
+  old_id: 8
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you do yard work, like raking leaves, weeding or pushing a power mower? 
+  old_id: 9
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Can you have sexual relations?
+  old_id: 10
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you participate in moderate recreational activities, like golf, bowling, dancng, doubles tennis, or throwing a baseball or football?
+  old_id: 11
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Can you partipate in strenuous sports, like swimming, single tennis, football, basketball, or skiing
+  old_id: 12
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: Is your activity severely limited by joint or muscle pain (arthritis) or neurologic  reasons (such as a stroke or paralysis)? 
+  old_id: 13
+  question_type_id: 3
+  question_help_message_id: 23
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Think about all the vigorous activities that you did in the last 7 days. 
+        Vigorous physical activities refer to activities that take hard physical effort and make you breathe much harder than normal. 
+        Think only about those physical activities that you did for at least 10 minutes at a time. 
+        During the last 7 days, on how many days did you do vigorous physical activities like heavy lifting, digging, aerobics, or fast bicycling? 
+        
+  old_id: 14
+  question_type_id: 3
+  question_help_message_id: 24
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -183
+  -148
+  -149
+  -150
+  -151
+  -152
+  -153
+  -154
+ 
+  
+- text: Think about the moderate activities that you did in the last 7 days. 
+        Moderate activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal.
+        Think only about those physical activities that you did for at least 10 minutes at a time. 
+        During the last 7 days, on how many days did you do moderate physical activites like carrying light loads, bicycling at a regular pace, or double tennis? 
+        Do not include walking. 
+        
+  old_id: 15
+  question_type_id: 3
+  question_help_message_id: 24
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -184
+  -148
+  -149
+  -150
+  -151
+  -152
+  -153
+  -154
+  
+  
+- text: Think about the time you spent walking in the last 7 days. 
+        This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. 
+        During the past 7 days, on how many days did you walk for at least 10 minutes at a time. 
+        
+  old_id: 16
+  question_type_id: 3
+  question_help_message_id: 24
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -185
+  -148
+  -149
+  -150
+  -151
+  -152
+  -153
+  -154
+
   

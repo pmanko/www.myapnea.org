@@ -362,3 +362,9 @@
   text_value: Parent
 - id: 182
   text_value: Neighbor
+- id: 183
+  text_value: No vigorous physical activities
+- id: 184
+  text_value: No moderate physical activities
+- id: 185
+  text_value: No walking
