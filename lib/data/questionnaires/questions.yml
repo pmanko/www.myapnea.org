@@ -3561,4 +3561,372 @@
   -153
   -154
 
+- text: The last question is about the time you spent sitting on weekdays during the last 7 days. 
+        Include time spent at work, at home, while doing course work and during leisure time. 
+        This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television. 
+        During the last 7 days, how much time did you spend sitting on a week day? 
+  old_id: 17
+  question_type_id: 6
+  question_help_message_id: 24
+  time_estimate: 1
+  answer_type_id: 2
+  unit_id: 7
+  
+# My Sleep Apnea Risk Perception
+- text: Falling asleep while driving
+  old_id: 1
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Having an accident
+  old_id: 2
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Having a heart attack
+  old_id: 3
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+
+- text: Falling asleep during the day
+  old_id: 4
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Having high blood pressure
+  old_id: 5
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Having difficulty concentrating
+  old_id: 6
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Being depressed
+  old_id: 7
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+- text: Having problems with sexual performance
+  old_id: 8
+  question_type_id: 3
+  question_help_message_id: 25
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -186
+  -187
+  -188
+  -189
+  
+# My Sleep Apnea Treatment 
+- text: Where do you receive your sleep apnea care? Check all that apply. 
+  old_id: 1
+  question_type_id: 4
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -190
+  -191
+  -192
+  -193
+  -194
+  -34
+
+- text: Please specify where do you receive your sleep apnea care.
+  old_id: 2 
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Did you receive **adequate** education about sleep apnea from your providers? (i.e., verbal, audiovisual aids, pamphlets, brochures or other)
+  old_id: 3
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Did such education improve your understanding of sleep apnea? 
+  old_id: 4
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Did such education help you realize the risks associated with sleep apnea? 
+  old_id: 5
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you did not receive satisfactory education regarding the risks of sleep apnea from your physician or sleep center, did you receive it elsewhere?
+  old_id: 6
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -99
+  
+- text: Please specify where did you receive satisfactory education regarding the risks of sleep apnea
+  old_id: 7
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: How satisfied were you with the care you received from your physician or helthcare provider for your sleep apnea? 
+  old_id: 8
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -195
+  -74
+  -75
+  -76
+  -77
+  -196
+
+- text: How often do you see a sleep specialist? 
+  old_id: 9
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -197
+  -198
+  -199
+  -51
+  
+- text: When did you last see a sleep specialist? 
+  old_id: 10
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -200
+  -201
+  -202
+  -203
+  
+- text: How satisfied have you been with the care you received from a sleep specialist? 
+  old_id: 11
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -195
+  -74
+  -75
+  -76
+  -77
+  -196
+  
+- text: Did you've had sleep apnea treatment? 
+  old_id: 12
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Did you use CPAP (Continuous Positive Airway Pressure Machine)? 
+  old_id: 13
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: When do you start treatment? 
+  old_id: 14
+  question_type_id: 6
+  time_estimate: 1
+  answer_type_id: 2
+  unit_id: 
+  
+- text: How many days did it take between your first sleep study and when you received machine for treating sleep apnea? 
+  old_id: 15
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 8
+  
+- text: What kind of insurance did you have at the time your sleep apnea was diagnosed treated? 
+  old_id: 16
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -204
+  -205
+  -206
+  -207
+  -208
+  -209
+  -19
+  
+- text: Are you still using this treatment?
+  old_id: 17
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: During a typical night, how many hours do you use the machine? 
+  old_id: 18
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 7
+  
+- text: During a typical week, how many days do you use the machine? 
+  old_id: 19
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 8
+  
+- text: What is your prescribed CPAP level? 
+  old_id: 20
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 9
+  
+- text: How satisified were you with this treatment?
+  old_id: 21
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -195
+  -74
+  -75
+  -76
+  -77
+  -196
+  
+- text: Did you use APAP (Auto Positive Airway Pressure Machine)
+  old_id: 22
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -20
+  -36
+  
+- text: Did you use BiPAP (Bi-level Positive Airway Pressure Machine)?
+  old_id: 23
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -20
+  -36
+  
+- text: What are the upper and lower levels of your Bi-level (BiPAP) machine? (e.g. "14/6")
+  old_id: 24
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 9
+  
+- text: Did you use Adaptive servo-ventilation (ASV)? 
+  old_id: 25
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: Did you use oral appliance? 
+  old_id: 26
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  
+- text: Did you use other device besides CPAP, APAP, Bi-PAP, ASV and oral appliance?
+  old_id: 27
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify other device
+  old_id: 28
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
   

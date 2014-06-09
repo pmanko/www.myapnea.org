@@ -368,3 +368,51 @@
   text_value: No moderate physical activities
 - id: 185
   text_value: No walking
+- id: 186
+  text_value: Very high risk
+- id: 187
+  text_value: High risk 
+- id: 188
+  text_value: Low risk
+- id: 189
+  text_value: Very low risk
+- id: 190
+  text_value: Primary care doctor
+- id: 191
+  text_value: Cardiologist
+- id: 192
+  text_value: Pulmonologist
+- id: 193
+  text_value: Diabetes specialist 
+- id: 194
+  text_value: Sleep specialist
+- id: 195
+  text_value: 1 (very dissatisfied)
+- id: 196
+  text_value: 5 (very satisified)
+- id: 197
+  text_value: Several times a year
+- id: 198
+  text_value: Once a year
+- id: 199
+  text_value: Once every few years
+- id: 200
+  text_value: Less than three months ago
+- id: 201
+  text_value: Three months to one year ago
+- id: 202
+  text_value: One to three years ago
+- id: 203
+  text_value: More than three years ago 
+- id: 204
+  text_value: HMO
+- id: 205
+  text_value: PPO
+- id: 206
+  text_value: POS
+- id: 207
+  text_value: Medicare
+- id: 208
+  text_value: VA
+- id: 209
+  text_value: No insurance

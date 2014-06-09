@@ -72,4 +72,7 @@
            The questions will ask you about the time you spent being physically active **in the last 7 days**.
            Please answer each question even if you do not consider yourself to be an active person.
            Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, excercise or sport. 
+- id: 25
+  message: This survey asks questions about how you view the possible consequences of having sleep apnea. 
+           **Having obstructive sleep apnea, how great is your risk for ...?**
            

@@ -10,3 +10,9 @@
   name: periods
 - id: 6
   name: cigarettes per day
+- id: 7
+  name: hour(s)
+- id: 8
+  name: day(s)
+- id: 9
+  name: cm H20
