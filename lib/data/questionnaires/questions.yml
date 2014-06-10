@@ -3792,9 +3792,10 @@
   -36
   -20
   
-- text: Did you use CPAP (Continuous Positive Airway Pressure Machine)? 
+- text: CPAP (Continuous Positive Airway Pressure Machine)
   old_id: 13
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids: 
@@ -3806,7 +3807,7 @@
   question_type_id: 6
   time_estimate: 1
   answer_type_id: 2
-  unit_id: 
+  unit_id: 10
   
 - text: How many days did it take between your first sleep study and when you received machine for treating sleep apnea? 
   old_id: 15
@@ -3872,18 +3873,20 @@
   -77
   -196
   
-- text: Did you use APAP (Auto Positive Airway Pressure Machine)
+- text: APAP (Auto Positive Airway Pressure Machine)
   old_id: 22
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids: 
   -20
   -36
   
-- text: Did you use BiPAP (Bi-level Positive Airway Pressure Machine)?
+- text: BiPAP (Bi-level Positive Airway Pressure Machine)
   old_id: 23
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -3897,18 +3900,20 @@
   answer_type_id: 2
   unit_id: 9
   
-- text: Did you use Adaptive servo-ventilation (ASV)? 
+- text: Adaptive servo-ventilation (ASV)
   old_id: 25
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids: 
   -36
   -20
 
-- text: Did you use oral appliance? 
+- text: Oral appliance
   old_id: 26
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -3918,6 +3923,7 @@
 - text: Did you use other device besides CPAP, APAP, Bi-PAP, ASV and oral appliance?
   old_id: 27
   question_type_id: 3
+  question_help_message_id: 26
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids: 
@@ -3930,3 +3936,290 @@
   time_estimate: 1
   answer_type_id: 1
   
+- text: How many days did it take between your first sleep study and when you received the device for treating sleep apnea? 
+  old_id: 29
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 8
+  
+- text: During a typical night, how many hours do you use the device?
+  old_id: 30
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 7
+  
+- text: During a typical week, how many days do you use the device? 
+  old_id: 31
+  question_type_id: 6
+  time_estimate: 0.5
+  answer_type_id: 2
+  unit_id: 8
+
+- text: Behavioral theraepy
+  old_id: 32
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+ 
+- text: Tongue Stimulation
+  old_id: 33
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Tonsillectomy (removal of tonsils) 
+  old_id: 34
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+
+- text: When was the surgery? 
+  old_id: 35
+  question_type_id: 6
+  time_estimate: 0.1
+  answer_type_id: 2
+  unit_id: 10
+  
+- text: Adenoidectomy (removal of adenoids)
+  old_id: 36
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: UPPP (removal of palate and other tissue from the mouth)
+  old_id: 37
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Nasal deviation surgery
+  old_id: 38
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Tongue surgery
+  old_id: 39
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Jaw surgery
+  old_id: 40
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Bariatric surgery 
+  old_id: 41
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Are there other treatments you have had?
+  old_id: 42
+  question_type_id: 3
+  question_help_message_id: 26
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  
+- text: Please specify other treatments you have had
+  old_id: 43
+  question_type_id: 1
+  time_estimate: 1
+  answer_type_id: 1
+  
+- text: Sleepiness
+  old_id: 44
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Sleep quality
+  old_id: 45
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Energy level 
+  old_id: 46
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Alertness
+  old_id: 47
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Attention
+  old_id: 48
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Abiliy to think clearly
+  old_id: 49
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Blood pressure control 
+  old_id: 50
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids:
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Nasal congestion
+  old_id: 51
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Sinus problems
+  old_id: 52
+  question_type_id: 3
+  question_help_message_id: 27
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -210
+  -75
+  -211
+  -77
+  -212
+  
+- text: Having been treated for your sleep apnea and/or snoring do you believe that overall there has been an improvement in your quality of life since you started treatment?
+  old_id: 53
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -213
+  -74
+  -75
+  -76
+  -77
+  -214
+  -215
+  -216
+  -217
+  -218
+  -219
+ 
+- text: Please think of the symptoms that developed as a result of being treated for sleep apnea and/or snoring. 
+        How much of an impact on your quality of life have these symptoms had?
+  old_id: 54
+  question_type_id: 3
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -213
+  -74
+  -75
+  -76
+  -77
+  -214
+  -215
+  -216
+  -217
+  -218
+  -219

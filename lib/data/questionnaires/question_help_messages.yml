@@ -75,4 +75,9 @@
 - id: 25
   message: This survey asks questions about how you view the possible consequences of having sleep apnea. 
            **Having obstructive sleep apnea, how great is your risk for ...?**
-           
+- id: 26
+  message: If you've had sleep apnea treatment, what treatment(s) have you had? 
+  
+- id: 27
+  message: How do you think your sleep apnea treatment has infleunced the following? 
+           Please give your best answer. 

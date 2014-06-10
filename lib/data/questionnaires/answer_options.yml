@@ -416,3 +416,23 @@
   text_value: VA
 - id: 209
   text_value: No insurance
+- id: 210
+  text_value: 1 (Much better)
+- id: 211 
+  text_value: 3 (No change)
+- id: 212 
+  text_value: 5 (Much worse)
+- id: 213
+  text_value: 0 (No impact)
+- id: 214
+  text_value: 5
+- id: 215
+  text_value: 6
+- id: 216
+  text_value: 7
+- id: 217
+  text_value: 8
+- id: 218
+  text_value: 9
+- id: 219
+  text_value: 10 (Extremely large impact) 
