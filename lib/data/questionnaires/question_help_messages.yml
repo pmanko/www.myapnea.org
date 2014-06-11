@@ -81,3 +81,10 @@
 - id: 27
   message: How do you think your sleep apnea treatment has infleunced the following? 
            Please give your best answer. 
+- id: 28
+  message: This survey asks questions about your sleep disorder history and sleep apnea diagnosis. 
+           These questions will help us understand how sleep apnea is diagnosed and how satisified you were with that process. 
+- id: 29
+  message: These following questions are symptoms that are related to sleep apnea. 
+           Which of the following symptoms triggered you to be evaluated for sleep apnea? 
+           

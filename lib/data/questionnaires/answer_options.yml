@@ -436,3 +436,11 @@
   text_value: 9
 - id: 219
   text_value: 10 (Extremely large impact) 
+- id: 220
+  text_value: A sleep study at my home (portable sleep study)
+- id: 221
+  text_value: A sleep study in a sleep lab/center
+- id: 222
+  text_value: 0 (very dissatisfied)
+- id: 223
+  text_value: 7 (very satisified) 
