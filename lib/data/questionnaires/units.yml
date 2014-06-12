@@ -20,3 +20,7 @@
   name: year
 - id: 11
   name: months
+- id: 12
+  name: minutes
+- id: 13
+  name: naps 

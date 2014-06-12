@@ -82,9 +82,21 @@
   message: How do you think your sleep apnea treatment has infleunced the following? 
            Please give your best answer. 
 - id: 28
-  message: This survey asks questions about your sleep disorder history and sleep apnea diagnosis. 
+  message: This survey asks questions for your sleep disorder history and sleep apnea diagnosis. 
            These questions will help us understand how sleep apnea is diagnosed and how satisified you were with that process. 
 - id: 29
   message: These following questions are symptoms that are related to sleep apnea. 
            Which of the following symptoms triggered you to be evaluated for sleep apnea? 
+- id: 30
+  message: The survey asks for information about your sleep patterns.
+           This information can be important in understanding your sleep apnea. 
+- id: 31
+  message: These questions ask about your sleep habits. 
+           Please choose one of your answers for each one of the following questions. 
+           Pick the answer that best describes how often you experienced the situation in the **past 4 weeks.**
+           
+- id: 32
+  message: How often, on average in the **past 4 weeks**, have you been awakened with the following?
+- id: 33
+  message: This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general. 
            
