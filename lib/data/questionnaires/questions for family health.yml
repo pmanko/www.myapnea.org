@@ -1,0 +1,463 @@
+- text: Heart attack 
+  id: 1
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Stroke
+  id: 2
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Heart failure
+  id: 3
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  id: 4
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  id: 5
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity 
+  id: 6
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  id: 7
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)? 
+  id: 8
+  question_type_id: 3
+  question_help_message_id: 5
+  time_estimate: .2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Attack
+  id: 9
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke 
+  id: 10
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+
+- text: Heart Failure
+  id: 11
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  id: 12
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: .20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  id: 13
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  id: 14
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  id: 15
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  id: 16
+  question_type_id: 3
+  question_help_message_id: 6
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any brothers, please mark this box
+  id: 17
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+
+- text: Heart attack
+  id: 18
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_types_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke
+  id: 19
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Failure 
+  id: 20
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  id: 21
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  id: 22
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  id: 23
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  id: 24
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  id: 25
+  question_type_id: 3
+  question_help_message_id: 7
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any sisters, please mark this box
+  id: 26
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+  
+- text: Heart Attack 
+  id: 27
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids:
+  -36
+  -20
+  -19
+  
+- text: Stroke 
+  id: 28
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Heart Failure
+  id: 29
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High Blood pressure or hypertension
+  id: 30
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.20
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  id: 31
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  id: 32
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  id: 33
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  id: 34
+  question_type_id: 3
+  question_help_message_id: 8
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: If you don't have any children, please mark this box
+  id: 35
+  question_type_id: 3
+  time_estimate: 0.1
+  answer_type_id: 1
+  answer_option_ids: 
+  -99
+  
+- text: Heart attack
+  id: 36
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Stroke
+  id: 37
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+
+- text: Heart Failure 
+  id: 38
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: High blood pressure or hypertension
+  id: 39
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Diabetes
+  id: 40
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Obesity
+  id: 41
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Sleep Apnea
+  id: 42
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19
+  
+- text: Attention deficit hyperactivity disorder (ADD/ADHD)
+  id: 43
+  question_type_id: 3
+  question_help_message_id: 9
+  time_estimate: 0.2
+  answer_type_id: 1
+  answer_option_ids: 
+  -36
+  -20
+  -19

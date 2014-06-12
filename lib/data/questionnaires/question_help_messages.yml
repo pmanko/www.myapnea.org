@@ -3,3 +3,88 @@
     In these situations, let us know how likely you are to doze off or fall asleep - not just feel tired - in your recent experience.
 
     If you are never or rarely in the situation, please give your best guess!
+- id: 2
+  message: The following questions are about the age and relationships to you for each person in your household. 
+- id: 3
+  message: The following question tells us about your parents or guardians during the majority of your childhood? 
+- id: 4
+  message: Since this is an online study, we'd like to know about the technology you use. 
+- id: 5
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+         Does your **biological mother** have the following health condition? Please give your best answer. 
+- id: 6
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+         Does your **biological father** have the following health condition? Please give your best answer. 
+- id: 7
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following. 
+           Does your **biological brother(s)** have the following health condition? Please give your best answer.
+  
+- id: 8
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following. 
+          Does your **biological sister(s)** have the following health condition? Please give your best answer. 
+
+- id: 9
+  message: Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following. 
+           Does your **biological children** have the following health condition? Please give your best answer.  
+- id: 10
+  message: This survey asks about your health limitations, pain level, and emotional state. These can be important factors in sleep apnea. 
+
+- id: 11
+  message: The following questions are about activities you might do during a typical day. Does your health now **limit you** in these activities?  If so, how much? 
+
+- id: 12
+  message: During the **past 4 weeks**, have you had any of the following problems with your work or other regular daily activities **as a result of your physical health**? 
+  
+- id: 13
+  message: During the **past 4 weeks*, have you had any of the following problems with your work or other regular daily activities **as a result of any emotional problems** (such as feeling depressed or anxious?)
+
+- id: 14
+  message: These questions are about how you feel and how things have been with you during the **past 4 weeks**. 
+           For each question, please give the one answer that comes closest to the way you have been feeling. 
+           How much of the time during the **past 4 weeks...**
+      
+- id: 15
+  message: These questions are about how you feel and how things have been with you during the **past 2 weeks**. 
+           For each question, please give the one answer that comes closest to the way you have been feeling. 
+           Over the **past 2 weeks**, how often have you been bothered by any of the following problems? 
+- id: 16
+  message: The following questions ask about health problems you have been diagnosed with. 
+          Has a doctor or health care professional ever told you that you had any of the following?
+          
+- id: 17
+  message: The following questions ask about your health behaviors. **No** means less than 20 packs in a lifetime or less than 1 cigerette per day for 1 year. 
+- id: 18
+  message: We are interested in how patients view the quality of their overall healthcare. Yours answers will not be shared with your physician or clinic. 
+- id: 19
+  message: The following 4 questions relate to the care you have received from your Primary Care Provider (PCP) in the past 3 months.
+- id: 20
+  message: The following 5 questions relate to the care you have received from your Case Manager or the healthcare provider that you have just nominated, in the past 3 months. 
+- id: 21
+  message: The following 3 questions relate to caregivers. By "caregiver" we mean someone **you rely on to help with daily life**, but is not paid to do so (i.e., a friend or relative)
+- id: 22
+  message: Staying healthy is difficult when you have a chronic condition. We would like to learn about the type of help with your condition you get from your healthcare team. 
+          This might include your regular doctor, his or her nurse, or physician's assistant who treats your illness. 
+          Over the **past 6 months**, when I received care for my chronic conitions, I was ...
+- id: 23
+  message: This survey asks for information about what level of exercise you can do normally and how much physical activity you do. 
+- id: 24
+  message: We are interested in finding out the kinds of physical activities that people do as part of their everyday lives. 
+           The questions will ask you about the time you spent being physically active **in the last 7 days**.
+           Please answer each question even if you do not consider yourself to be an active person.
+           Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, excercise or sport. 
+- id: 25
+  message: This survey asks questions about how you view the possible consequences of having sleep apnea. 
+           **Having obstructive sleep apnea, how great is your risk for ...?**
+- id: 26
+  message: If you've had sleep apnea treatment, what treatment(s) have you had? 
+  
+- id: 27
+  message: How do you think your sleep apnea treatment has infleunced the following? 
+           Please give your best answer. 
+- id: 28
+  message: This survey asks questions about your sleep disorder history and sleep apnea diagnosis. 
+           These questions will help us understand how sleep apnea is diagnosed and how satisified you were with that process. 
+- id: 29
+  message: These following questions are symptoms that are related to sleep apnea. 
+           Which of the following symptoms triggered you to be evaluated for sleep apnea? 
+           
