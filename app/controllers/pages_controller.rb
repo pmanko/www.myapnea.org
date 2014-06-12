@@ -26,4 +26,8 @@ class PagesController < ApplicationController
     @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "thank_you.#{I18n.locale}.yml"))
 
   end
+
+  def version
+
+  end
 end

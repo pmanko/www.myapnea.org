@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get 'team', to: "pages#team", as: :team
     get 'privacy-policy', to: "pages#privacy_policy", as: :privacy_policy
     get 'thank-you', to: "pages#thank_you", as: :thank_you
-
+    get 'version', to: 'pages#version', as: :version
 
 
     get 'dashboard', to: "patient#dashboard"
