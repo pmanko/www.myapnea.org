@@ -99,4 +99,11 @@
   message: How often, on average in the **past 4 weeks**, have you been awakened with the following?
 - id: 33
   message: This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general. 
-           
+- id: 34
+  message: These questions are about how your sleep has been over the **past 7 days.** 
+           For each question, please give one answer that comes closest to how you have been sleeping.
+           In the **past 7 days...**
+- id: 35
+  message: What is the chance that you would doze or fall asleep (not just "feel tired") in the following situations? 
+           Please choose one of the answers for each situation. 
+           If you are never or rarely in the situation, please give your **best guess** for that situation.

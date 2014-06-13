@@ -530,3 +530,11 @@
   text_value: Rarely (once a month or less)
 - id: 266
   text_value: Never (0)
+- id: 267
+  text_value: Very much
+- id: 268
+  text_value: Somewhat
+- id: 269
+  text_value: Often
+- id: 270
+  text_value: Very poor
