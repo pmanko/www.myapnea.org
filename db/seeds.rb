@@ -31,4 +31,16 @@ files.each do |file_name, model_class|
   end
 end
 
+File.open('/home/pwm4/Desktop/qs.yml', 'w') {|f| f.write Question.all.map{|q| {
+    'id' => q.id,
+    'graph_id' => q.old_id,
+    'text_en' => q.text,
+    'time_estimate' => q.time_estimate.to_f,
+    'question_type_id' => q.question_type_id,
+    'answer_type_id' => q.answer_type_id,
+    'question_help_message_id' => q.question_help_message_id,
+    'unit_id' => q.unit_id,
+    'answer_option_ids' => q.answer_option_ids
+} }.to_yaml }
+
 User.create(email: "piotr.mankowski@gmail.com", first_name: "Piotr", last_name: "Mankowski", password: "123", year_of_birth: Date.today.year, zip_code: "02141", accepted_consent_at: Time.now, accepted_pledge_at: Time.now)

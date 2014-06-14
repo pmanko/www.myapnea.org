@@ -2,7 +2,7 @@ class Question < ActiveRecord::Base
   belongs_to :question_type
   belongs_to :answer_type
   belongs_to :unit
-  has_many :question_answer_options
+  has_many :question_answer_options, -> { order "question_answer_options.created_at" }
   has_many :answer_options, through: :question_answer_options
   has_many :answers
   has_many :in_edges, class_name: "QuestionEdge", foreign_key: "child_question_id"
