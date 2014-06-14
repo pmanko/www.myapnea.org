@@ -199,7 +199,7 @@
 - id: 100
   text_value: Excellent
 - id: 101
-  text value: Very good
+  text_value: Very good
 - id: 102
   text_value: Good
 - id: 103 
@@ -245,7 +245,7 @@
 - id: 123
   text_value: None 
 - id: 124
-  text value: All of the time
+  text_value: All of the time
 - id: 125
   text_value: Most of the time 
 - id: 126

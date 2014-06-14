@@ -1,3 +1,6 @@
+## For internationalization:
+# - text
+
 # A Little About Me
 - text: What is your biological sex?
   old_id: 1
@@ -392,7 +395,7 @@
 - text: Allergies
   old_id: 1
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -435,7 +438,7 @@
 - text: Asthma
   old_id: 6
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -471,7 +474,7 @@
 - text: Chronic bronchitis
   old_id: 10
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   answer_type_id: 1
   answer_option_ids:
   - 36
@@ -503,7 +506,7 @@
 - text: Emphysema or COPD
   old_id: 14
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -540,7 +543,7 @@
 - text: Attention deficit hyperactivity disorder (ADD/ADHD)
   old_id: 18
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -576,7 +579,7 @@
 - text: Anxiety disorder
   old_id: 22
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -612,7 +615,7 @@
 - text: Depression
   old_id: 26
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -648,7 +651,7 @@
 - text: Diabetes
   old_id: 30
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -684,7 +687,7 @@
 - text: High blood pressure or hypertension
   old_id: 34
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -719,7 +722,7 @@
 - text: High Blood cholesterol
   old_id: 38
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -754,7 +757,7 @@
 - text: Gastroesophageal reflux disease (GERD)
   old_id: 42
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -790,7 +793,7 @@
 - text: Inflammatory bowel disease (ulcerative colitis or Crohn's disease)
   old_id: 46
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -826,7 +829,7 @@
 - text: Multiple sclerosis
   old_id: 50
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -862,7 +865,7 @@
 - text: Rheumatoid arthritis, lupus, or other collagen vascular disease
   old_id: 54
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -898,7 +901,7 @@
 - text: Sickle cell disease
   old_id: 58
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -934,7 +937,7 @@
 - text: Migraine headaches
   old_id: 62
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1005,7 +1008,7 @@
 - text: Narcolepsy
   old_id: 70
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1041,7 +1044,7 @@
 - text: Restless leg syndrome
   old_id: 74
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1077,7 +1080,7 @@
 - text: Periodic limb movements/restless legs
   old_id: 78
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1113,7 +1116,7 @@
 - text: Insomnia
   old_id: 82
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1151,7 +1154,7 @@
 - text: Shift work disorder or circadian rhythm disorder
   old_id: 86
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   answer_type_id: 1
   answer_option_ids:
   - 36
@@ -1185,7 +1188,7 @@
 - text: REM behavior disorder
   old_id: 90
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1222,7 +1225,7 @@
 - text: Parkinson's disease
   old_id: 94
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1258,7 +1261,7 @@
 - text: Cancer
   old_id: 98
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1269,7 +1272,7 @@
 - text: Prostate cancer
   old_id: 99
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1305,7 +1308,7 @@
 - text: Breast cancer
   old_id: 103
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1340,7 +1343,7 @@
 - text: Colon cancer
   old_id: 107
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1377,7 +1380,7 @@
 - text: Lung cancer
   old_id: 111
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -1486,7 +1489,7 @@
 - text: Other
   old_id: 124
   question_type_id: 3
-  question_help _message_id: 16
+  question_help_message_id: 16
   time_estimate: 0.1
   answer_type_id: 1
   answer_option_ids:
@@ -2309,7 +2312,7 @@
   question_type_id: 3
   question_help_message_id: 7
   time_estimate: 0.2
-  answer_types_id: 1
+  answer_type_id: 1
   answer_option_ids:
   - 36
   - 20
