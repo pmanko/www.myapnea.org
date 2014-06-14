@@ -1,5 +1,26 @@
 class QuestionnaireModifications < ActiveRecord::Migration
   def change
-    add_column :questions, :old_id, :integer
+    # Questions
+    add_column :questions, :group_id, :integer
+    rename_column :questions, :text, :text_en
+    add_column :questions, :text_es, :text
+
+    # Units
+    rename_column :units, :name, :name_en
+    add_column :units, :name_es, :string
+
+    # Question Help Messages
+    rename_column :question_help_messages, :message, :message_en
+    add_column :question_help_messages, :message_es, :text
+
+    # Question Flows
+    rename_column :question_flows, :name, :name_en
+    add_column :question_flows, :name_es, :string
+    rename_column :question_flows, :description, :description_en
+    add_column :question_flows, :description_es, :text
+
+    # Answer Options
+    rename_column :answer_options, :text_value, :text_value_en
+    add_column :answer_options, :text_value_es, :string
   end
 end
