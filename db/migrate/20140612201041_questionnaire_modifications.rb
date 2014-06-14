@@ -1,7 +1,8 @@
 class QuestionnaireModifications < ActiveRecord::Migration
   def change
     # Questions
-    add_column :questions, :group_id, :integer
+
+    add_column :questions, :graph_id, :integer
     rename_column :questions, :text, :text_en
     add_column :questions, :text_es, :text
 

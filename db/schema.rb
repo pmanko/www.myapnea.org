@@ -26,10 +26,11 @@ ActiveRecord::Schema.define(version: 20140612201041) do
 
   create_table "answer_options", force: true do |t|
     t.decimal  "numeric_value"
-    t.string   "text_value"
+    t.string   "text_value_en"
     t.datetime "time_value"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "text_value_es"
   end
 
   create_table "answer_sessions", force: true do |t|
@@ -82,18 +83,21 @@ ActiveRecord::Schema.define(version: 20140612201041) do
   end
 
   create_table "question_flows", force: true do |t|
-    t.string   "name"
-    t.text     "description"
+    t.string   "name_en"
+    t.text     "description_en"
     t.integer  "first_question_id"
     t.string   "status"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_es"
+    t.text     "description_es"
   end
 
   create_table "question_help_messages", force: true do |t|
-    t.text     "message"
+    t.text     "message_en"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "message_es"
   end
 
   create_table "question_types", force: true do |t|
@@ -105,7 +109,7 @@ ActiveRecord::Schema.define(version: 20140612201041) do
   end
 
   create_table "questions", force: true do |t|
-    t.text     "text"
+    t.text     "text_en"
     t.integer  "question_type_id"
     t.integer  "question_help_message_id"
     t.integer  "answer_type_id"
@@ -113,13 +117,15 @@ ActiveRecord::Schema.define(version: 20140612201041) do
     t.decimal  "time_estimate"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "old_id"
+    t.integer  "graph_id"
+    t.text     "text_es"
   end
 
   create_table "units", force: true do |t|
-    t.string   "name"
+    t.string   "name_en"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name_es"
   end
 
   create_table "users", force: true do |t|
