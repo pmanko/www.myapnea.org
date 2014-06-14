@@ -46,7 +46,7 @@
   - 12
 - id: 5
   graph_id: 5
-  text_en: If other country, please specify where were you **born** (country)?
+  text_en: Please specify the country where you were **born**.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -55,7 +55,7 @@
   answer_option_ids: []
 - id: 6
   graph_id: 6
-  text_en: Where did you live most of your **childhood**(up to age 12)?
+  text_en: Where did you live most of your **childhood** (up to age 12)?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -70,8 +70,8 @@
   - 12
 - id: 7
   graph_id: 7
-  text_en: If other country, please specify where did you live most of your **childhood**
-    (up to age 12)?
+  text_en: Please specify in what country you lived most of your **childhood**
+    (up to age 12).
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -95,8 +95,8 @@
   - 12
 - id: 9
   graph_id: 9
-  text_en: Please specify where did you live most of your **teenage** years (ages
-    12- 18)?
+  text_en: Please specify in what country you lived most of your **teenage** years (ages
+    12- 18).
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -105,7 +105,7 @@
   answer_option_ids: []
 - id: 10
   graph_id: 10
-  text_en: What is *your* racial background? Check all that apply
+  text_en: What is *your* racial background? Check all that apply.
   time_estimate: 0.1
   question_type_id: 4
   answer_type_id: 1
@@ -136,7 +136,8 @@
   - 24
 - id: 12
   graph_id: 12
-  text_en: What is the racial background of your *biological(natural or blood-related)
+  text_en: |
+    What is the racial background of your *biological (natural or blood-related)
     father*?
   time_estimate: 0.1
   question_type_id: 3
@@ -259,7 +260,8 @@
   - 35
 - id: 20
   graph_id: 20
-  text_en: In the past year, have you been unemployed *and looking for work* for more
+  text_en: |
+    In the past year, have you been unemployed *and looking for work* for more
     than 2 months?
   time_estimate: 0.1
   question_type_id: 3
@@ -272,7 +274,8 @@
   - 35
 - id: 21
   graph_id: 21
-  text_en: How hard is it for you (and your family) to pay for *very basics* like
+  text_en: |
+    How hard is it for you (and your family) to pay for *very basics* like
     food, rent, or mortgage, heating, etc?
   time_estimate: 0.1
   question_type_id: 3
@@ -341,7 +344,7 @@
   - 66
 - id: 25
   graph_id: 25
-  text_en: If other, what is your current marital status?
+  text_en: Please describe your current marital status.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -350,8 +353,7 @@
   answer_option_ids: []
 - id: 26
   graph_id: 26
-  text_en: How many people, other than you, live in your household? You may add up
-    to 20 people that live in your household.
+  text_en: How many people, other than you, live in your household?
   time_estimate: 0.2
   question_type_id: 6
   answer_type_id: 2
@@ -385,7 +387,7 @@
   - 73
 - id: 29
   graph_id: 29
-  text_en: How many parents or guardians (up to 4) did you have?
+  text_en: How many parents or guardians did you have?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 2
@@ -444,7 +446,7 @@
   - 36
 - id: 33
   graph_id: 33
-  text_en: If yes, which one?
+  text_en: Which of these healthcare systems do you recieve most of your primary care at?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -460,8 +462,8 @@
   - 34
 - id: 34
   graph_id: 34
-  text_en: If other, please specify which healthcare system where you receive most
-    of your primary medical care?
+  text_en: Please specify the healthcare system where you receive most
+    of your primary medical care.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
