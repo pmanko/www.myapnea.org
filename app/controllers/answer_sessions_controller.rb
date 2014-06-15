@@ -29,6 +29,8 @@ class AnswerSessionsController < ApplicationController
     @question = Question.find(params[:question_id])
     @answer_session = AnswerSession.find(params[:answer_session_id]) # Validate user!
 
+    raise StandardError
+
     answer = @answer_session.process_answer(@question, params)
 
     candidate_edges = QuestionEdge.where(parent_question_id: @question.id, question_flow_id: @answer_session.question_flow.id)

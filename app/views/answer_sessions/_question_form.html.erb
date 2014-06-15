@@ -5,7 +5,7 @@
   <% @question.answer_options.each_with_index do |answer_option, i| %>
     <div class="<%= @question.question_type.input_type %>">
       <label>
-        <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" name="<%= @question.id %>" id="question_<%= "#{@question.id}_#{i+1}" %>" value="<%= answer_option.value(@question.answer_type.data_type) %>" <%= "checked" if @answer.value and (@answer.value == answer_option.value(@question.answer_type.data_type)) %>/>
+        <<%= @question.question_type.tag %> type="<%= @question.question_type.input_type %>" name="<%= @question.id %>" id="question_<%= "#{@question.id}_#{i+1}" %>" value="<%= answer_option.id%>" <%= "checked" if @answer.value and (@answer.value == answer_option.value(@question.answer_type.data_type)) %>/>
         <%= answer_option.value(@question.answer_type.data_type) %>
       </label>
     </div>

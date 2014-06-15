@@ -1,4 +1,9 @@
 class QuestionFlow < ActiveRecord::Base
+  include Localizable
+
+  localize :name
+  localize :description
+
   belongs_to :first_question, class_name: "Question"
 
   def total_time

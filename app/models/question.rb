@@ -9,6 +9,10 @@ class Question < ActiveRecord::Base
   has_many :out_edges, class_name: "QuestionEdge", foreign_key: "parent_question_id"
   belongs_to :question_help_message
 
+  include Localizable
+
+  localize :text
+
   def next_question(question_flow)
     candidate_edges = QuestionEdge.where(parent_question_id: self[:id], question_flow_id: question_flow.id)
     candidate_edges.first
@@ -28,5 +32,4 @@ class Question < ActiveRecord::Base
     groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
 
   end
-
 end

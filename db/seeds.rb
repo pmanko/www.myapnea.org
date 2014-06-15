@@ -14,8 +14,8 @@ files = [
     ["answer_options.yml", AnswerOption],
     ["question_help_messages.yml", QuestionHelpMessage],
     ["questions.yml", Question],
-    ["question_flows.yml", QuestionFlow]
-#    ["question_edges.yml", QuestionEdge],
+    ["question_flows.yml", QuestionFlow],
+    ["question_edges.yml", QuestionEdge]
 ]
 
 
@@ -63,7 +63,7 @@ end
 #   end
 # end
 
-File.open('/home/pwm4/Desktop/qf.yml', 'w') {|f| f.write m.to_yaml }
+# File.open('/home/pwm4/Desktop/qf.yml', 'w') {|f| f.write m.to_yaml }
 
 
 

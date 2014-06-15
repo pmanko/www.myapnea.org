@@ -30,7 +30,15 @@ class AnswerSession < ActiveRecord::Base
 
     #answer_values =
     answer = Answer.where(question_id: question.id, answer_session_id: self.id).first || Answer.new(question_id: question.id, answer_session_id: self.id)
-    answer.value = params[question.id.to_s]
+
+    if question.question_type.name == 'multiple_choice'
+
+    elsif question.question_type.name == 'check_box'
+
+    else
+      answer.value = params[question.id.to_s]
+    end
+
     answer.save
     answer
   end
