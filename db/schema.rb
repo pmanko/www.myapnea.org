@@ -106,6 +106,8 @@ ActiveRecord::Schema.define(version: 20140612201041) do
     t.string   "input_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "store_raw_value"
+    t.boolean  "allow_multiple"
   end
 
   create_table "questions", force: true do |t|

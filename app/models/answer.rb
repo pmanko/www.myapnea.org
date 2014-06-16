@@ -10,30 +10,47 @@ class Answer < ActiveRecord::Base
     Answer.where(question_id: question.id, answer_session_id: answer_session.id).first
   end
 
-  def value=(val)
-    answer_values.length == 1 ? answer_values.first.update_attribute(question.answer_type.data_type, val) : answer_values.build(question.answer_type.data_type => val)
-  end
+  ## Different options:
+  # single value, raw value!
+  # single value, answer option id (multiple_choice)
+  # Multiple Values, answer option id (check_box)
+  # (not supported now) multiple values,
 
-  def values=(vals)
-    if answer_values.present?
-      answer_values.clear
+  def value=(val)
+    answer_values.clear
+
+    if question.question_type.store_raw_value
+      target_field = question.answer_type.data_type
+    else
+      target_field = 'answer_option_id'
+    end
+
+    if question.question_type.allow_multiple and val.type_of?(Array)
+      val.each {|v| answer_values.build(target_field => v) }
+    else
+      answer_values.build(target_field => val)
     end
 
     if self.persisted?
-      vals.each {|value| answer_values.create(answer_option_id: value)}
-    else
-      vals.each {|value| answer_values.build(answer_option_id: value)}
+      self.save
     end
+
+    #answer_values.first.update_attribute(question.answer_type.data_type, val) : answer_values.build(question.answer_type.data_type => val)
   end
 
-  def values
-
-  end
-
-  def value
+  def value(raw = false)
     if question.present? and question.answer_type.present?
-      
-      answer_values.first[question.answer_type.data_type]
+      if raw or question.question_type.store_raw_value
+        target_field = question.answer_type.data_type
+      else
+        target_field = 'answer_option_id'
+      end
+
+      if question.question_type.allow_multiple and answer_values.length > 1
+        answer_values.map{|av| av[target_field] }
+      else
+        answer_values.first[target_field]
+      end
     else
       nil
     end
@@ -42,6 +59,4 @@ class Answer < ActiveRecord::Base
   def next_answer
     out_edge.child_answer
   end
-
-
 end

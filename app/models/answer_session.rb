@@ -1,6 +1,7 @@
 class AnswerSession < ActiveRecord::Base
   belongs_to :question_flow
   belongs_to :first_answer, class_name: "Answer", foreign_key: "first_answer_id"
+  belongs_to :last_answer, class_name: "Answer", foreign_key: "last_answer_id"
   belongs_to :user
 
   def self.most_recent(question_flow_id, user_id)
@@ -31,15 +32,10 @@ class AnswerSession < ActiveRecord::Base
     #answer_values =
     answer = Answer.where(question_id: question.id, answer_session_id: self.id).first || Answer.new(question_id: question.id, answer_session_id: self.id)
 
-    if question.question_type.name == 'multiple_choice'
-
-    elsif question.question_type.name == 'check_box'
-
-    else
-      answer.value = params[question.id.to_s]
-    end
+    answer.value = params[question.id.to_s]
 
     answer.save
+
     answer
   end
 

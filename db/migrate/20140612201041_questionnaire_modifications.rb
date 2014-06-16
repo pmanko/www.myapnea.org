@@ -23,5 +23,14 @@ class QuestionnaireModifications < ActiveRecord::Migration
     # Answer Options
     rename_column :answer_options, :text_value, :text_value_en
     add_column :answer_options, :text_value_es, :string
+
+    # Question Types
+    add_column :question_types, :store_raw_value, :boolean
+    add_column :question_types, :allow_multiple, :boolean
+
+    # Answer Sessions
+    add_column :answer_sessions, :last_answer_id, :integer
+
   end
+
 end
