@@ -23,11 +23,19 @@ class AnswerSessionsController < ApplicationController
     @answer_session = AnswerSession.find(params[:answer_session_id])
     @question = Question.find(params[:question_id])
     @answer = Answer.where(question_id: @question.id, answer_session_id: @answer_session.id).first || Answer.new
+
+    @previous_path = @answer_session.last_answer.present? ? ask_question_path(question_id: @answer_session.last_answer.question.id, answer_session_id: @answer_session.id) : ''
+    @disabled = @answer_session.last_answer.blank?
+
+    #raise StandardError
+
   end
 
   def process_answer
     @question = Question.find(params[:question_id])
     @answer_session = AnswerSession.find(params[:answer_session_id]) # Validate user!
+
+    #raise StandardError
 
     answer = @answer_session.process_answer(@question, params)
 
@@ -41,7 +49,7 @@ class AnswerSessionsController < ApplicationController
       if candidate_edges.length == 1
         chosen_edge = candidate_edges.first
       else
-        chosen_edge = candidate_edges.select {|e| e.condition == answer.value}.first || candidate_edges.select { |e| e.condition == nil }.first || candidate_edges.first
+        chosen_edge = candidate_edges.select {|e| e.condition == answer.value.to_s}.first || candidate_edges.select { |e| e.condition == nil }.first || candidate_edges.first
       end
 
 

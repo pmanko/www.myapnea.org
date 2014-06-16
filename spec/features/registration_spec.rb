@@ -7,7 +7,7 @@ describe "Registers new user" do
     u = build(:user)
     password = "password"
 
-    visit page_path('splash')
+    visit root_path
 
     expect(page).to have_content "Join Now!"
 
@@ -24,7 +24,7 @@ describe "Registers new user" do
     fill_in("Password", with: password)
     fill_in("Email", with: u.email)
     fill_in("Year of birth", with: u.year_of_birth)
-    fill_in("Zip Code", with: u.zip_code)
+    fill_in("Zip code", with: u.zip_code)
 
     click_on "Sign up"
 

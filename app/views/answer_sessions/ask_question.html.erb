@@ -7,10 +7,6 @@
           <div class="panel-heading">
             <h3 class="panel-title">
               <%= @answer_session.question_flow.name %>
-              <button type="button" class="btn btn-link pull-right" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                <span class="glyphicon glyphicon-question-sign"></span>
-              </button>
-
             </h3>
             <%= render partial: 'session_progress', locals: {answer_session: @answer_session} %>
           </div>
@@ -18,7 +14,11 @@
             <%= render partial: 'question_form' %>
           </div>
           <div class="panel-footer">
-            <%= link_to 'Previous Question', (URI.parse(request.referer.to_s).path), class: 'btn btn-lg btn-default' %>
+            <%= link_to 'Previous Question',
+                        @previous_path,
+                        class: 'btn btn-lg btn-default',
+                        disabled: @disabled
+             %>
             <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
           </div>
         <% end %>
@@ -27,12 +27,3 @@
   </div>
 </div>
 
-
-
-
-
-tables.each do |table|
-
-  ActiveRecord::Base.connection.execute("Drop table #{table}")
-
-end

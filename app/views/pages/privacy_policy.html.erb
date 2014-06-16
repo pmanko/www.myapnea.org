@@ -6,11 +6,11 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-primary">
         <div class="panel-heading">
-          <h1>Privacy Policy and Data Security Measures</h1>
+          <h1><%= @pc['title'] %></h1>
         </div>
 
         <div class="panel-body">
-          <%= markdown File.read(Rails.root.join('lib', 'data', 'privacy_policy.md')) %>
+          <%= markdown @pc['privacy_policy'] %>
         </div>
       </div>
     </div>

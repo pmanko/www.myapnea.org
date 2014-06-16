@@ -3,20 +3,18 @@
   <section id="join">
     <div class="row">
       <div class="col-md-12">
-        <h1>Finding Answers...Together!</h1>
-        <p>Join the largest patient-led community ever created to fight sleep apnea.  MyApnea.org is a network created by people with sleep apnea to empower others like you and us get the answers WE want and need.</p>
-        <p>We are inviting thousands of people with sleep apnea to come together at MyApnea.org and become part of a national research network to improve OUR lives.  It’s a whole new way of finding help—for you and for millions of people like us.</p>
-        <p>MyApnea.org is what’s called patient-powered research.  Together, we share health information, discuss experiences regarding treatment, and express views on future research projects directly with researchers and sleep experts that can make a difference.  In return, you will get easy to use tools to track your health and will be able to learn from others about treatments, symptoms, and coping with sleep apnea in order to take control of your life.</p>
+        <h1><%= @page_content['join']['title'] %></h1>
+        <%= markdown @page_content['join']['content'] %>
 
         <div class="row">
           <div class='col-md-3 col-xs-5'>
-            <img id='bwh-logo' src="http://www.brighamandwomens.org/_images/logo.gif" />
+            <%= image_tag 'logos/BWH_logo.gif', id: 'bwh-logo' %>
           </div>
           <div class="col-md-4 col-xs-7">
-            <img id='asaa-logo' src="http://sleepapnea.org/assets/templates/asaa/images/asaa-logo.png" />
+            <%= image_tag 'logos/asaa-logo.png', id: 'asaa-logo' %>
           </div>
           <div class="col-md-5 col-xs-12">
-            <%= link_to "Join Now!", pledge_path, class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
+            <%= link_to @page_content['join']['button'], pledge_path, class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
           </div>
         </div>
       </div>
@@ -41,8 +39,8 @@
 
     <div class="col-md-4">
       <section id="perils">
-        <h3>Why?</h3>
-        <p>Sleep apnea is a common and potentially life threatening sleep and breathing disorder that affects millions of people like us.  Left untreated, sleep apnea increases the risk for high blood pressure, heart attack, stroke and other medical conditions.  Although there are several treatments for sleep apnea, there is a lot that is not known about what treatments work best for which people.</p>
+        <h3><%= @page_content['why']['title'] %></h3>
+        <%= markdown @page_content['why']['content'] %>
       </section>
     </div>
 
@@ -61,17 +59,15 @@
   <section id="safe-easy">
     <div class="row">
       <div class="col-md-6">
-        <h2>It's Safe</h2>
-        <p>Because patients run the network, we are committed to protecting the security of your identity and information.  MyApnea.org will never sell your contact information.  Our partners—the American Sleep Apnea Association and the Division of Sleep and Circadian Disorders at Brigham and Women’s Hospital, Harvard Medical School—are dedicated to helping patients with sleep apnea.  They are interested in generating new knowledge while respecting the privacy concerns of our members. </p>
-        <h3>It's Easy</h3>
-        <p>Use your computer, your tablet or your smartphone.  The health surveys you answer are short, easy to complete, and can be done whenever is easiest for you.</p>
+        <h2><%= @page_content['safe']['title'] %></h2>
+        <%= markdown @page_content['safe']['content'] %>
+        <h2><%= @page_content['easy']['title'] %></h2>
+        <%= markdown @page_content['easy']['content'] %>
       </div>
 
       <div class="col-md-6">
-        <h3>"Patient Power"</h3>
-        <p>MyApnea.org will bring together more people with sleep apnea to share, learn and contribute to research than has ever been tried before.  By joining our community, you can make a big difference in how you, and others like us, live everyday and sleep every night. </p>
-        <p>You will also have a choice to weigh in on what questions you most want answered about sleep apnea.  And we will report back on all interesting research findings, in language you don’t have to be a scientist to understand.</p>
-        <div class='thumbnail'><%= image_tag "pages/safe-easy.jpg", class: 'hidden' %></div>
+        <h3><%= @page_content['patient_power']['title'] %></h3>
+        <%= markdown @page_content['patient_power']['content'] %>
       </div>
     </div>
   </section>
@@ -90,68 +86,34 @@
   </section>
 
 
-  <section id="personal-stories" class='hidden'>
+  <section id="personal-stories">
     <div id="reason-carousel" class="carousel slide">
       <ol class="carousel-indicators">
-        <li data-target="#reason-carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#reason-carousel" data-slide-to="1" class=""></li>
-        <li data-target="#reason-carousel" data-slide-to="2" class=""></li>
+        <% @page_content['testimonials'].each_with_index do |testimonial, i| %>
+          <li data-target="#reason-carousel" data-slide-to="<%= i %>" class="<%= 'active' if i == 0 %>"></li>
+        <% end %>
       </ol>
 
       <div class="carousel-inner">
-        <div class="item active">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/1.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>My husband has sleep apnea. And my daughter was diagnosed at the age of 3. I want other parents to realized that kids can have this condition too.</p>
-                    <footer><cite>Justine</cite></footer>
-                  </blockquote>
+        <% @page_content['testimonials'].each_with_index do |testimonial, i| %>
+          <div class="item <%= 'active' if i == 0 %>">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="thumbnail"><%= image_tag testimonial['image'] %></div>
+              </div>
+              <div class="col-md-6 col-md-offset-1">
+                <div class="vertical-center">
+                  <div class="cell">
+                    <blockquote>
+                      <p><%= testimonial['quote'] %></p>
+                      <footer><cite><%= testimonial['name'] %></cite></footer>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/2.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>My wife told me I stopped breathing while I slept. A lot. Thankfully she read an article on sleep apnea and made me go to the Doctor. I don’t want other people to suffer needlessly from this condition.</p>
-                    <footer><cite>Steve</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail"><%= image_tag "people/3.jpg" %></div>
-            </div>
-            <div class="col-md-6 col-md-offset-1">
-              <div class="vertical-center">
-                <div class="cell">
-                  <blockquote>
-                    <p>
-                      I have always been a snorer - I had no idea it was more than just a nuisance to my partner. I have lowered my blood pressure and my chances of heart disease by wearing a CPAP. I want to be a part of the study to find out what else is effected by this condition.
-                    </p>
-                    <footer><cite>Richard</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <% end %>
       </div>
       <a class="left carousel-control" href="#reason-carousel" data-slide="prev">
         <span class="icon-prev"></span>

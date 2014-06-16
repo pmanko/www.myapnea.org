@@ -2,12 +2,16 @@ class Question < ActiveRecord::Base
   belongs_to :question_type
   belongs_to :answer_type
   belongs_to :unit
-  has_many :question_answer_options
+  has_many :question_answer_options, -> { order "question_answer_options.created_at" }
   has_many :answer_options, through: :question_answer_options
   has_many :answers
   has_many :in_edges, class_name: "QuestionEdge", foreign_key: "child_question_id"
   has_many :out_edges, class_name: "QuestionEdge", foreign_key: "parent_question_id"
   belongs_to :question_help_message
+
+  include Localizable
+
+  localize :text
 
   def next_question(question_flow)
     candidate_edges = QuestionEdge.where(parent_question_id: self[:id], question_flow_id: question_flow.id)
@@ -28,5 +32,4 @@ class Question < ActiveRecord::Base
     groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
 
   end
-
 end

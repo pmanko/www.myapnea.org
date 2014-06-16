@@ -1,15 +1,15 @@
 <div id="registration" class="panel panel-default">
   <div class="panel-heading">
     <div class="row">
-      <div class="col-md-4"><h2>Sign up</h2></div>
-      <div class="col-md-8"><p class="pull-right">Already a member? <%= link_to "Sign in!", new_session_path(:user) %></p></div>
+      <div class="col-md-4"><h2><%= t :sign_up %></h2></div>
+      <div class="col-md-8"><p class="pull-right"><%= t :already_member %><%= link_to t(:sign_in_strong), new_session_path(:user) %></p></div>
     </div>
   </div>
   <div class="panel-body">
     <% if resource.errors.any? %>
       <div class="alert alert-danger alert-dismissable">
         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-        <strong>There were some problems with your registration.</strong>
+        <strong><%= t :registration_problems %></strong>
         <ul>
           <% resource.errors.full_messages.each do |msg| %>
             <li><%= msg.html_safe %></li>
@@ -21,29 +21,29 @@
     <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), html: {}) do |f| %>
       <div class='form-group'>
         <%= f.label :first_name, class: 'sr-only' %>
-        <%= f.text_field :first_name, class: 'form-control input-lg', placeholder: "First Name", autocomplete: :off %>
+        <%= f.text_field :first_name, class: 'form-control input-lg', placeholder: User.human_attribute_name(:first_name), autocomplete: :off %>
       </div>
       <div class='form-group'>
         <%= f.label :last_name, class: 'sr-only' %>
-        <%= f.text_field :last_name, class: 'form-control input-lg', placeholder: "Last Name", autocomplete: :off  %>
+        <%= f.text_field :last_name, class: 'form-control input-lg', placeholder: User.human_attribute_name(:last_name), autocomplete: :off  %>
       </div>
       <div class='form-group'>
         <%= f.label :year_of_birth, class: 'sr-only' %>
-        <%= f.text_field :year_of_birth, class: 'form-control input-lg', placeholder: "Year of Birth", autocomplete: :off  %>
+        <%= f.text_field :year_of_birth, class: 'form-control input-lg', placeholder: User.human_attribute_name(:year_of_birth), autocomplete: :off  %>
       </div>
       <div class='form-group'>
         <%= f.label :zip_code, class: 'sr-only' %>
-        <%= f.text_field :zip_code, class: 'form-control input-lg', placeholder: "Zip Code", autocomplete: :off  %>
+        <%= f.text_field :zip_code, class: 'form-control input-lg', placeholder: User.human_attribute_name(:zip_code), autocomplete: :off  %>
       </div>
       <div class='form-group'>
         <%= f.label :email, class: 'sr-only' %>
-        <%= f.email_field :email, class: 'form-control input-lg', placeholder: "Email", autocomplete: :off  %>
+        <%= f.email_field :email, class: 'form-control input-lg', placeholder: User.human_attribute_name(:email), autocomplete: :off  %>
       </div>
       <div class='form-group'>
         <%= f.label :password, class: 'sr-only' %>
-        <%= f.password_field :password, class: 'form-control input-lg', placeholder: "Password" %>
+        <%= f.password_field :password, class: 'form-control input-lg', placeholder: User.human_attribute_name(:password) %>
       </div>
-      <%= f.submit "Sign up", class: 'btn btn-primary btn-block btn-lg' %>
+      <%= f.submit t(:sign_up), class: 'btn btn-primary btn-block btn-lg' %>
     <% end %>
 
   </div>

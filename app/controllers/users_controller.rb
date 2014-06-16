@@ -12,7 +12,9 @@ class UsersController < ApplicationController
   def consent
     if params[:consent_signed] && current_user
       current_user.update_attribute(:accepted_consent_at, Time.zone.now)
-      redirect_to page_path("thank_you")
+      redirect_to thank_you_path
+    else
+      @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "consent.#{I18n.locale}.yml"))
     end
   end
 
@@ -20,6 +22,8 @@ class UsersController < ApplicationController
     if params[:pledge_signed]
       session[:accepted_pledge_at] = Time.zone.now
       redirect_to new_user_registration_path
+    else
+      @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "pledge.#{I18n.locale}.yml"))
     end
   end
 

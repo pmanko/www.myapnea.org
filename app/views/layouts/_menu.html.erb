@@ -1,15 +1,24 @@
 <header class="navbar navbar-default navbar-fixed-top" role="banner">
   <div class="container">
+    <div id="hld">
+      <div id='locale-chooser'>
+        <%= link_to "en", {locale: :en}, class: ('active' if I18n.locale==:en)  %>
+        <%= link_to "es", {locale: :es}, class: ('active' if I18n.locale==:es) %>
+        <%= link_to "pl", {locale: :pl}, class: ('active' if I18n.locale==:pl)  %>
+      </div>
+    </div>
+  </div>
+  <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".myapnea-navbar-collapse">
-        <span class="sr-only">Toggle navigation</span>
+        <span class="sr-only"><%= t 'menu.sr_toggle' %></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="<%= root_path %>" class="navbar-brand">
-        <div id="main-brand">My Apnea</div>
-        <div id="sub-brand">Sleep Apnea Patient Centered Outcomes Network</div>
+      <a href="<%= user_signed_in? ? dashboard_path : root_path %>" class="navbar-brand">
+        <div id="main-brand"><%= t :main_brand %></div>
+        <div id="sub-brand"><%= t :sub_brand %></div>
       </a>
     </div>
 
@@ -22,14 +31,14 @@
           </p>
         <% end %>
 
-        <li class="<%= 'active' if current_page?(page_path('network')) %>"><%= link_to "Network", page_path('network') %></li>
-        <li class="<%= 'active' if current_page?(page_path('faqs')) %>"><%= link_to "FAQs", page_path('faqs') %></li>
-        <li class="<%= 'active' if current_page?(page_path('team')) %>"><%= link_to "Team", page_path('team') %></li>
+        <li class="<%= 'active' if current_page?(network_path) %>"><%= link_to t(:network), network_path %></li>
+        <li class="<%= 'active' if current_page?(faqs_path) %>"><%= link_to t(:faqs), faqs_path %></li>
+        <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to t(:team), team_path %></li>
 
         <% if user_signed_in? %>
-          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></li>
         <% else %>
-          <li><%= link_to "Log In", new_user_session_path %></li>
+          <li><%= link_to t(:log_in), new_user_session_path %></li>
         <% end %>
 
         <li id="theme-switcher">
