@@ -24,7 +24,7 @@
   graph_id: 3
   text_en: What is your last weight?
   time_estimate: 0.2
-  question_type_id: 3
+  question_type_id: 6
   answer_type_id: 2
   question_help_message_id: 
   unit_id: 2

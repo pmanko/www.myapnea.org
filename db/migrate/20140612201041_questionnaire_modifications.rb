@@ -28,9 +28,6 @@ class QuestionnaireModifications < ActiveRecord::Migration
     add_column :question_types, :store_raw_value, :boolean
     add_column :question_types, :allow_multiple, :boolean
 
-    # Answer Sessions
-    add_column :answer_sessions, :last_answer_id, :integer
-
   end
 
 end

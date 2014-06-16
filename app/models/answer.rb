@@ -25,7 +25,7 @@ class Answer < ActiveRecord::Base
       target_field = 'answer_option_id'
     end
 
-    if question.question_type.allow_multiple and val.type_of?(Array)
+    if question.question_type.allow_multiple and val.kind_of?(Array)
       val.each {|v| answer_values.build(target_field => v) }
     else
       answer_values.build(target_field => val)
