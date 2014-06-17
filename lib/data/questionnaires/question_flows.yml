@@ -1,41 +1,63 @@
 - id: 1
   name_en: A Little About Me
-  description_en: This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general.
+  description_en: |
+    This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general.
   first_question_id: 1
   status: show
 - id: 2
   name_en: Health History
+  description_en: |
+    This survey asks about specific information concerning your health history. 
   first_question_id: 37
   status: show
 - id: 3
   name_en: My General Health
+  description_en: |
+    This survey asks about your health limitations, pain level, and emotional state. 
+    These can be important factors in sleep apnea. 
   first_question_id: 179
   status: show
 - id: 4
   name_en: Family Health
+  description_en: |
+    This survey asks basic health conditions that run in your family. 
   first_question_id: 219
   status: show
 - id: 5
   name_en: My Health Habits
+  description_en: |
+    This survey asks your health behaviours. 
   first_question_id: 262
   status: show
 - id: 6
   name_en: My Healthcare Experience
+  description_en: |
+    This survey asks how you view the quality of their overall healthcare. 
+    Your answers will not be shared with your physician or clinic. 
   first_question_id: 273
   status: show
 - id: 7
   name_en: My Physical Activity
+  description_en: |
+    This survey asks for information about what level of exercise you can do normally and how much physical activity you do. 
   first_question_id: 327
   status: show
 - id: 8
   name_en: My Sleep Apnea Risk Perception
+  description_en: |
+    This survey asks questions about how you view the possible consequences of having sleep apnea. 
   first_question_id: 344
   status: show
 - id: 9
   name_en: My Sleep Apnea Treatment
+  description_en: |
+    This survey asks for information about your sleep apnea treatment. 
   first_question_id: 352
   status: show
 - id: 10
   name_en: My Sleep Apnea Diagnosis
+  description_en: |
+    This survey asks questions about your sleep disorder history and sleep apnea diagnosis.
+    These questions will help us understand how sleep apnea is diagnosed and how satisfied you were with that process.  
   first_question_id: 406
   status: show

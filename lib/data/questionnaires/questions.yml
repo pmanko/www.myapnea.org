@@ -1018,7 +1018,7 @@
   - 19
 - id: 84
   graph_id: 48
-  text_en: |
+  text_en: | 
     Are taking medicine for inflammatory bowel disease (ulcerative colitis
     or Crohn's disease)?
   time_estimate: 0.1
@@ -1097,7 +1097,7 @@
   - 20
   - 19
 - id: 91
-  graph_id: 55
+  graph_id: 55 
   text_en: Do you still have rheumatoid arthriitis, lupus, or other collagen vascular
     disease?
   time_estimate: 0.1
@@ -5196,81 +5196,107 @@
   - 223
   
 # My Sleep Patterns
-- text: How many hours of sleep do you usually get per night on weekdays or workdays?
-  old_id: 1
-  question_type_id: 6
-  question_help_message_id: 30
+
+- id: 426
+  graph_id: 1
+  text_en: How many hours of sleep do you usually get per night on weekdays or workdays?
   time_estimate: 0.3
+  question_type_id: 6
   answer_type_id: 2
+  question_help_message_id: 30
   unit_id: 7
+  answer_option_ids: []
   
-- text: How many hours of sleep do you usually get per night on weekends or days off? 
-  old_id: 2
-  question_type_id: 6
-  question_help_message_id: 30
+- id: 427
+  graph_id: 2
+  text_en: How many hours of sleep do you usually get per night on weekends or days off? 
   time_estimate: 0.3
+  question_type_id: 6
   answer_type_id: 2
+  question_help_message_id: 30
   unit_id: 7
+  answer_option_ids: []
   
-- text: How many minutes does it usually take for you to fall asleep at bedtime? 
-  old_id: 3
-  question_type_id: 6
-  question_help_message_id: 30
+- id: 428
+  graph_id: 3
+  text_en: How many minutes does it usually take for you to fall asleep at bedtime? 
   time_estimate: 0.3
+  question_type_id: 6
   answer_type_id: 2
+  question_help_message_id: 30
   unit_id: 12
+  answer_option_ids: [] 
   
-- text: Not including naps, at what time do you usually go to bed on weekdays or workdays? 
-  old_id: 4
+- id: 429
+  graph_id: 4
+  text_en: Not including naps, at what time do you usually go to bed on weekdays or workdays? 
   question_type_id: 7
+  answer_type_id: 2
   question_help_message_id: 30
   time_estimate: 0.3
-  answer_type_id: 2
+  unit_id: 
+  answer_option_ids: []
   
-- text: Is the time in AM or PM?  (between noon and midnight are PM, midnight is AM, noon is PM)
-  old_id: 5
+- id: 430
+  graph_id: 5
+  text_en: Is the time in AM or PM?  (between noon and midnight are PM, midnight is AM, noon is PM)
   question_type_id: 3
   time_estimate: 0.1
+  question_help_message_id: 
   answer_type_id: 1
+  unit_id: 
   answer_option_ids: 
   -224
   -225
   
-- text: Not including naps, at what time do you usally go to bed on weekends or days off? 
-  old_id: 6
-  question_type_id: 7
-  question_help_message_id: 30
+- id: 431
+  graph_id: 6
+  text_en: Not including naps, at what time do you usally go to bed on weekends or days off? 
   time_estimate: 0.3
-  answer_type_id: 2
-  
-- text: Not including naps, at what time do you usually wake up on weekdays or workdays? 
-  old_id: 7
   question_type_id: 7
-  question_help_message_id: 30
-  time_estimate: 0.3
   answer_type_id: 2
+  question_help_message_id: 30
+  unit_id: 
+  answer_option_ids: []
   
-- text: Not including naps, at what time do you usually wake up on weekends or days off?
-  old_id: 8
+- id: 432
+  graph_id: 7
+  text_en: Not including naps, at what time do you usually wake up on weekdays or workdays? 
+  time_estimate: 0.3
   question_type_id: 7
-  question_help_message_id: 30
-  time_estimate: 0.3
   answer_type_id: 2
+  question_help_message_id: 30
+  unit_id: 
+  answer_option_ids: []
   
-- text: During a usual week, how many times do you nap for 5 minutes or more? 
-  old_id: 9
+- id: 433 
+  graph_id: 8
+  text_en: Not including naps, at what time do you usually wake up on weekends or days off?
+  time_estimate: 0.3
+  question_type_id: 7
+  answer_type_id: 2
+  question_help_message_id: 30
+  unit_id: 
+  answer_option_ids: []
+  
+- id: 434 
+  graph_id:  9
+  text_en: During a usual week, how many times do you nap for 5 minutes or more? 
   question_type_id: 6
   question_help_message_id: 30
   time_estimate: 0.3
   answer_type_id: 2
   unit_id: 13
+  answer_option_ids: []
   
-- text: Considering only your own **"feeling best"** rhythm, at what time would you get up if you were entirely free to plan your day. 
-  old_id: 10
-  question_type_id: 3
-  question_help_message_id: 30
+- id: 435 
+  graph_id: 10
+  text_en: Considering only your own **"feeling best"** rhythm, at what time would you get up if you were entirely free to plan your day. 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 30
+  unit_id: 
   answer_option_ids: 
   -226
   -227
@@ -5278,36 +5304,42 @@
   -229
   -230
   
-- text: During the first half hour after having woken in the morning, how tired do you feel? 
-  old_id: 11
-  question_type_id: 3
-  question_help_message_id: 30
+- id: 436
+  graph_id: 11
+  text_en: During the first half hour after having woken in the morning, how tired do you feel? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 30
+  unit_id: 
   answer_option_ids: 
   -231
   -232
   -233
   -234
   
-- text: At what time in the evening do you feel most tired and, as a result, most in need of sleep? 
-  old_id: 12
-  question_type_id: 3
-  question_help_message_id: 30
+- id: 437 
+  graph_id: 12
+  text_en: At what time in the evening do you feel most tired and, as a result, most in need of sleep? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 30
+  unit_id: 
   answer_option_ids: 
   -231
   -232
   -233
   -234
   
-- text: At what time of the day do you think that you reach you **"feeling best"** peak? 
-  old_id: 13
+- id: 438
+  graph_id: 13
+  text_en: At what time of the day do you think that you reach you **"feeling best"** peak? 
   question_type_id: 3
+  answer_type_id: 1
   question_help_message_id: 30
   time_estimate: 0.1
-  answer_type_id: 1
+  unit_id: 
   answer_option_ids: 
   -235
   -236
@@ -5315,12 +5347,14 @@
   -238
   -239
 
-- text: One hears about "morning" and "evening" types of people. Which one of these types do you consider yourself to be?
-  old_id: 14
-  question_type_id: 3
-  question_help_message_id: 30
+- id: 439 
+  graph_id: 14
+  text_en: One hears about "morning" and "evening" types of people. Which one of these types do you consider yourself to be?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 30
+  unit_id: 
   answer_option_ids: 
   -240
   -241
@@ -5328,12 +5362,14 @@
   -243
   -244
 
-- text: Which of the following best describes your usual work schedule? Mark only one.
-  old_id: 15
-  question_type_id: 3
-  question_help_message_id: 30
+- id: 440
+  graph_id: 15
+  text_en: Which of the following best describes your usual work schedule? Mark only one.
   time_estimate: 0.2
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 30
+  unit_id: 
   answer_option_ids: 
   -245
   -246
@@ -5344,12 +5380,14 @@
   -251
   
 # My Sleep Quality
-- text: Did you have trouble falling asleep? 
-  old_id: 1
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 441
+  graph_id: 1
+  text_en: Did you have trouble falling asleep?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -252
   -253
@@ -5357,12 +5395,14 @@
   -255
   -256
   
-- text: Did you wake up several times at night?
-  old_id: 2
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 442
+  graph_id: 2
+  text_en: Did you wake up several times at night?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -252
   -253
@@ -5370,12 +5410,14 @@
   -255
   -256
   
-- text: Did you wake up earlier than you planned to?
-  old_id: 3
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 443
+  graph_id: 3
+  text_en: Did you wake up earlier than you planned to?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -252
   -253
@@ -5383,12 +5425,14 @@
   -255
   -256
   
-- text: Did you have trouble getting back to sleep after you woke up too early? 
-  old_id: 4
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 444
+  graph_id: 4
+  text_en: Did you have trouble getting back to sleep after you woke up too early? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -252
   -253
@@ -5396,12 +5440,14 @@
   -255
   -256
   
-- text: Did you take sleeping pills to help you sleep? 
-  old_id: 5
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 445
+  graph_id: 5
+  text_en: Did you take sleeping pills to help you sleep? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -252
   -253
@@ -5409,12 +5455,14 @@
   -255
   -256
   
-- text: Overall, your typical night's sleep during the **past 4 weeks** was ... 
-  old_id: 6
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 446
+  graph_id: 6
+  text_en: Overall, your typical night's sleep during the **past 4 weeks** was ... 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -257
   -258
@@ -5422,55 +5470,65 @@
   -260
   -261
   
-- text: In the **past 4 weeks**, have you been awakened at night by trouble breathing? 
-  old_id: 7
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 447
+  graph_id: 7
+  text_en: In the **past 4 weeks**, have you been awakened at night by trouble breathing? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id:
   answer_option_ids: 
   -36
   -20
   -19
   
-- text: In the **past 4 weeks**, have you had to sleep on two or more pillows to help you breathe? 
-  old_id: 8
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 448 
+  graph_id: 8
+  text_en: In the **past 4 weeks**, have you had to sleep on two or more pillows to help you breathe? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -36
   -20
   -19
   
-- text: Have you **ever** had any pain or discomfort in your chest? 
-  old_id: 9
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 449
+  graph_id: 9
+  text_en: Have you **ever** had any pain or discomfort in your chest? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id:
   answer_option_ids: 
   -36
   -20
  
  
-- text: Have you **ever** had any pressure or heaviness in your chest? 
-  old_id: 10
-  question_type_id: 3
-  question_help_message_id: 31
+- id: 450
+  graph_id: 10
+  text_en: Have you **ever** had any pressure or heaviness in your chest? 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 31
+  unit_id: 
   answer_option_ids: 
   -36
   -20
   
-- text: Coughing or wheezing
-  old_id: 11
+- id: 451
+  graph_id: 11
+  text_en: Coughing or wheezing
+  time_estimate: 0.1
   question_type_id: 3
+  answer_type_id: 1
   question_help_message_id: 32
-  time_estimate: 0.1
-  answer_type_id: 1
+  unit_id:
   answer_option_ids: 
   -262
   -263
@@ -5478,12 +5536,14 @@
   -265
   -266
 
-- text: Chest pain or tightness
-  old_id: 12
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 452
+  graph_id: 12
+  text_en: Chest pain or tightness
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5491,12 +5551,14 @@
   -265
   -266
   
-- text: Shortness of breath
-  old_id: 13
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 453
+  graph_id: 13
+  text_en: Shortness of breath
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5504,12 +5566,14 @@
   -265
   -266
   
-- text: Sweats or hot flashes
-  old_id: 14
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 454
+  graph_id: 14
+  text_en: Sweats or hot flashes
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5517,12 +5581,14 @@
   -265
   -266
   
-- text: Noise in your surroundings
-  old_id: 15
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 455
+  graph_id: 15
+  text_en: Noise in your surroundings
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5530,12 +5596,14 @@
   -265
   -266
   
-- text: Pain in your joints, muscles, or back
-  old_id: 16
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 456 
+  graph_id: 16
+  text_en: Pain in your joints, muscles, or back
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5543,36 +5611,14 @@
   -265
   -266
   
-- text: Heartburn or indigestion
-  old_id: 17
-  question_type_id: 3
-  question_help_message_id: 32
-  answer_type_id: 1
-  answer_option_ids: 
-  -262
-  -263
-  -264
-  -265
-  -266
-  
-- text: Leg cramps or leg jerks
-  old_id: 18
-  question_type_id: 3
-  question_help_message_id: 32
-  answer_type_id: 1
-  answer_option_ids: 
-  -262
-  -263
-  -264
-  -265
-  -266
-  
-- text: Need to go to the bathroom
-  old_id: 19
-  question_type_id: 3
-  question_help_message_id: 32
+- id: 457
+  graph_id: 17
+  text_en: Heartburn or indigestion
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
   answer_option_ids: 
   -262
   -263
@@ -5580,52 +5626,96 @@
   -265
   -266
   
-- text: In the **past 4 weeks,** did you ever experience a desire to move your legs because of discomfort or disagreeable sensations in your legs? 
-  old_id: 20
-  question_type_id: 3
+- id: 458
+  graph_id: 18
+  text_en: Leg cramps or leg jerks
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
+  answer_option_ids: 
+  -262
+  -263
+  -264
+  -265
+  -266
+  
+- id: 459
+  graph_id: 19
+  text_en: Need to go to the bathroom
+  time_estimate: 0.1
+  question_type_id: 3
+  answer_type_id: 1
+  question_help_message_id: 32
+  unit_id: 
+  answer_option_ids: 
+  -262
+  -263
+  -264
+  -265
+  -266
+  
+- id: 460
+  graph_id: 20
+  text_en: In the **past 4 weeks,** did you ever experience a desire to move your legs because of discomfort or disagreeable sensations in your legs? 
+  time_estimate: 0.1
+  question_type_id: 3
+  answer_type_id: 1
+  question_help_message_id: 
+  unit_id: 
   answer_option_ids: 
   -20
   -36
   -19
   
-- text: Do you sometimes feel the need to move to relieve the discomfort in your legs, for example by walking, or to relieve the discomfort by rubbing your legs?
-  old_id: 21
-  question_type_id: 3
+- id: 461
+  graph_id: 21
+  text_en: Do you sometimes feel the need to move to relieve the discomfort in your legs, for example by walking, or to relieve the discomfort by rubbing your legs?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 
+  unit_id: 
   answer_option_ids: 
   -20
   -36
   -19
   
-- text: Are the symptoms worse when you are at rest, but are at least temporarily relieved by activity?
-  old_id: 22
-  question_type_id: 3
+- id: 462
+  graph_id: 22
+  text_en: Are the symptoms worse when you are at rest, but are at least temporarily relieved by activity?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 
+  unit_id: 
   answer_option_ids: 
   -20
   -36
   -19
   
-- text: Are these symptoms worse later in the day or at night?
-  old_id: 23
-  question_type_id: 3
+- id: 463
+  graph_id: 23
+  text_en: Are these symptoms worse later in the day or at night?
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 
+  unit_id: 
   answer_option_ids: 
   -20
   -36
   -19
   
-- text: My sleep was restless
-  old_id: 24
+- id: 464
+  graph_id: 24
+  text_en: My sleep was restless
+  time_estimate: 0.1
   question_type_id: 3
+  answer_type_id: 1
   question_help_message_id: 34
-  time_estimate: 0.1
-  answer_type_id: 1
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5633,12 +5723,14 @@
   -116
   -117
  
-- text: I was satisified with my sleep 
-  old_id: 25
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 465
+  graph_id: 25
+  text_en: I was satisified with my sleep 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5646,12 +5738,14 @@
   -116
   -117
   
-- text: My sleep was refreshing 
-  old_id: 26
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 466
+  graph_id: 26
+  text_en: My sleep was refreshing 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5659,12 +5753,14 @@
   -116
   -117
   
-- text: I had difficulty falling asleep 
-  old_id: 27
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 467
+  graph_id: 27
+  text_en: I had difficulty falling asleep
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5672,12 +5768,14 @@
   -116
   -117
   
-- text: I had trouble staying asleep 
-  old_id: 28
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 468
+  graph_id: 28
+  text_en: I had trouble staying asleep 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -161
   -269
@@ -5685,12 +5783,14 @@
   -164
   -51
   
-- text: I had trouble sleeping 
-  old_id: 29
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 469
+  graph_id: 29
+  text_en: I had trouble sleeping 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -161
   -269
@@ -5698,12 +5798,14 @@
   -164
   -51
   
-- text: I got enough sleep
-  old_id: 30
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 470
+  graph_id: 30
+  text_en: I got enough sleep
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -161
   -269
@@ -5711,12 +5813,14 @@
   -164
   -51
   
-- text: My sleep quality was
-  old_id: 31
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 471
+  graph_id: 31
+  text_en: My sleep quality was
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -101
   -102
@@ -5724,12 +5828,14 @@
   -104
   -270
   
-- text: I had a hard time getting things done because I was sleepy
-  old_id: 32
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 472
+  graph_id: 32
+  text_en: I had a hard time getting things done because I was sleepy
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5737,12 +5843,14 @@
   -116
   -117
   
-- text: I felt alert when I woke up
-  old_id: 33
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 473
+  graph_id: 33
+  text_en: I felt alert when I woke up
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5750,12 +5858,14 @@
   -116
   -117
   
-- text: I felt tired
-  old_id: 34
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 474
+  graph_id: 34
+  text_en: I felt tired
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5763,12 +5873,14 @@
   -116
   -117
   
-- text: I had problems during the day because of poor sleep
-  old_id: 35
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 475
+  graph_id: 35
+  text_en: I had problems during the day because of poor sleep
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5776,12 +5888,14 @@
   -116
   -117
   
-- text: I had a hard time concentrating because of poor sleep
-  old_id: 36
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 476
+  graph_id: 36
+  text_en: I had a hard time concentrating because of poor sleep
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5789,12 +5903,14 @@
   -116
   -117
   
-- text: I felt irritable because of poor sleep
-  old_id: 37
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 477
+  graph_id: 37
+  text_en: I felt irritable because of poor sleep
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids:
   -267
   -114
@@ -5802,12 +5918,14 @@
   -116
   -117
   
-- text: I was sleepy during the daytime
-  old_id: 38
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 478
+  graph_id: 38
+  text_en: I was sleepy during the daytime
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5815,12 +5933,14 @@
   -116
   -117
   
-- text: I had trouble staying awake during the day
-  old_id: 39
-  question_type_id: 3
-  question_help_message_id: 34
+- id: 479
+  graph_id: 39
+  text_en: I had trouble staying awake during the day
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 34
+  unit_id: 
   answer_option_ids: 
   -267
   -114
@@ -5828,108 +5948,126 @@
   -116
   -117
   
-- text: Sitting and reading
-  old_id: 40
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 480
+  graph_id: 40
+  text_en: Sitting and reading
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: Watching TV
-  old_id: 41
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 481
+  graph_id: 41
+  text_en: Watching TV
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: Sitting, inactive, in a public place (e.g., a movie theater or classroom)
-  old_id: 42
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 482
+  graph_id: 42
+  text_en: Sitting, inactive, in a public place (e.g., a movie theater or classroom)
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: Riding as a passenger in a car for an hour without a break
-  old_id: 43
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 483
+  graph_id: 43
+  text_en: Riding as a passenger in a car for an hour without a break
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
  
-- text: Lying down to rest in the afternoon when circumstances permit
-  old_id: 44
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 484
+  graph_id: 44
+  text_en: Lying down to rest in the afternoon when circumstances permit
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: Sitting and talking to someone 
-  old_id: 45
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 485
+  graph_id: 45
+  text_en: Sitting and talking to someone 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: Sitting quietly after lunch without alcohol 
-  old_id: 46
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 486
+  graph_id: 46
+  text_en: Sitting quietly after lunch without alcohol 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
 
-- text: In a car, while stopped for a few minutes in traffic 
-  old_id: 47
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 487
+  graph_id: 47
+  text_en: In a car, while stopped for a few minutes in traffic 
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
   -3
   -4
   
-- text: While driving
-  old_id: 48
-  question_type_id: 3
-  question_help_message_id: 35
+- id: 488
+  graph_id: 48
+  text_en: While driving
   time_estimate: 0.1
+  question_type_id: 3
   answer_type_id: 1
+  question_help_message_id: 35
+  unit_id: 
   answer_option_ids: 
   -1
   -2
