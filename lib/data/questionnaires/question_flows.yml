@@ -45,7 +45,7 @@
 - id: 8
   name_en: My Sleep Apnea Risk Perception
   description_en: |
-    This survey asks questions about how you view the possible consequences of having sleep apnea. 
+    This survey asks questions about how you view the possible consequences of having Sleep Apnea. 
   first_question_id: 344
   status: show
 - id: 9
@@ -57,7 +57,18 @@
 - id: 10
   name_en: My Sleep Apnea Diagnosis
   description_en: |
-    This survey asks questions about your sleep disorder history and sleep apnea diagnosis.
-    These questions will help us understand how sleep apnea is diagnosed and how satisfied you were with that process.  
+    This survey asks questions about your sleep disorder history and Sleep Apnea diagnosis.
+    These questions will help us understand how Sleep Apnea is diagnosed and how satisfied you were with that process.  
   first_question_id: 406
   status: show
+- id: 11
+  name_en: My Sleep Patterns
+  description_en: |
+    The survey asks for information about your sleep patterns. 
+    This information can be important in understanding your Sleep Apnea. 
+  first_question_id: 426
+- id: 12
+  name_en: My Sleep Quality
+  description_en: |
+    This survey asks questions about the quality of your sleep. 
+  first_question_id: 441
