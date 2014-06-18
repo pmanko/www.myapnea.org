@@ -49,8 +49,8 @@ class QuestionFlow < ActiveRecord::Base
     distances = Hash[topological_order.map {|q| [q,-1*Float::INFINITY]}]
     times = distances.clone
 
-    times[source.id] = 0.0
-    distances[source.id] = 0
+    times[source.id] = source.time_estimate
+    distances[source.id] = 1
 
     topological_order.each do |question_id|
       question = Question.find(question_id)

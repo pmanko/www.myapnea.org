@@ -356,7 +356,7 @@
   text_en: How many people, other than you, live in your household?
   time_estimate: 0.2
   question_type_id: 6
-  answer_type_id: 2
+  answer_type_id: 1
   question_help_message_id: 
   unit_id: 
   answer_option_ids: []

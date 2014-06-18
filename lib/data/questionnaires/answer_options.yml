@@ -37,7 +37,8 @@
 - id: 19
   text_value_en: Don't know
 - id: 20
-  text_value_en: No
+  text_value_en: |
+    No
 - id: 21
   text_value_en: Yes, Mexican, Mexican American or Chicano
 - id: 22
@@ -69,7 +70,8 @@
 - id: 35
   text_value_en: Prefer not to state 
 - id: 36
-  text_value_en: Yes
+  text_value_en: |
+    Yes
 - id: 37
   text_value_en: Working full times
 - id: 38

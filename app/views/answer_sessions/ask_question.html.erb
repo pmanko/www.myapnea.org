@@ -14,11 +14,7 @@
             <%= render partial: 'question_form' %>
           </div>
           <div class="panel-footer">
-            <%= link_to 'Previous Question',
-                        @previous_path,
-                        class: 'btn btn-lg btn-default',
-                        disabled: @disabled
-             %>
+            <%= link_to 'Previous Question', previous_question_path(@answer), class: 'btn btn-lg btn-default' %>
             <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
           </div>
         <% end %>
