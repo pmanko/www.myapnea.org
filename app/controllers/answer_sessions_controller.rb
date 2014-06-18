@@ -7,6 +7,7 @@ class AnswerSessionsController < ApplicationController
     # creates (or finds) answer session
     @question_flow = QuestionFlow.find(params[:question_flow_id])
     @answer_session = AnswerSession.find_or_create_by(user_id: current_user.id, question_flow_id: @question_flow.id)
+    @answer_session.reset_answers
   end
 
   def finish

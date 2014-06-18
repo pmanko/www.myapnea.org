@@ -15,7 +15,7 @@
           </div>
           <div class="panel-footer">
             <%= link_to 'Previous Question', previous_question_path(@answer), class: 'btn btn-lg btn-default' %>
-            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
+            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg" data-confirm="Are you sure??">Next Question</button>
           </div>
         <% end %>
         </div>

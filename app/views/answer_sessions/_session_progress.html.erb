@@ -1,6 +1,6 @@
 
 <p><%= stats[:completed_questions] %> / <%= stats[:total_questions] %> possible questions done</p>
-<p>You have only around <%= pluralize(stats[:remaining_time], "minute") %> remaining!</p>
+<p>You have only around <%= pluralize(stats[:remaining_time].round, "minute") %> remaining!</p>
 
 <div class="progress">
 

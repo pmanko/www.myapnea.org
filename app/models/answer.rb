@@ -115,4 +115,8 @@ class Answer < ActiveRecord::Base
     end
 
   end
+
+  def multiple_options?
+    answer.question.links_as_parent.length > 1
+  end
 end

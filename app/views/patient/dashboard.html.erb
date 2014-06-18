@@ -9,10 +9,14 @@
       <% QuestionFlow.where(status: "show").each do |qf| %>
         <% as = AnswerSession.most_recent(qf.id, current_user.id) %>
         <% if as and as.completed? %>
-          <a href="<%= finished_answer_session_path(answer_session_id: as.id) %>" class="list-group-item">
+          <div class="list-group-item">
             <h3><%= qf.name %></h3>
             <p><strong>Questionnaire finished!</strong></p>
-          </a>
+            <div>
+              <%= link_to 'Review Answers', finished_answer_session_path(answer_session_id: as.id) %>
+              <%= link_to 'Retake Questionnaire', start_answer_session_path(question_flow_id: qf.id), data: {confirm: "Are you sure you want to retake the questionnaire?", description: "All your progress will be lost, and you'll have complete the questionnaire again."} %>
+            </div>
+          </div>
         <% else %>
           <a href="<%= start_answer_session_path(question_flow_id: qf.id) %>" class="list-group-item">
             <h3><%= qf.name %></h3>

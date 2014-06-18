@@ -106,7 +106,8 @@ class AnswerSession < ActiveRecord::Base
         if answer.in_edge.blank? and answer != first_answer
           answer_edges.create(parent_answer_id: last_answer.id, child_answer_id: answer.id)
         else
-          answer.destroy_descendant_edges #
+          # Only destroy downstream if answer can change flow
+          answer.destroy_descendant_edges if answer.multiple_options?
         end
       end
 
@@ -133,6 +134,13 @@ class AnswerSession < ActiveRecord::Base
     end while current_answer.present?
 
     answers
+  end
+
+  def reset_answers
+    first_answer.destroy_descendant_edges
+    self.first_answer = nil
+    self.last_answer = nil
+    save
   end
 
   private
