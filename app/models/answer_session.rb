@@ -137,10 +137,12 @@ class AnswerSession < ActiveRecord::Base
   end
 
   def reset_answers
-    first_answer.destroy_descendant_edges
-    self.first_answer = nil
-    self.last_answer = nil
-    save
+    if first_answer.present?
+      first_answer.destroy_descendant_edges
+      self.first_answer = nil
+      self.last_answer = nil
+      save
+    end
   end
 
   private
