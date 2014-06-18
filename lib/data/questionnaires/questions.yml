@@ -425,7 +425,7 @@
   - 34
 - id: 31
   graph_id: 31
-  text_en: If Other, please specify how did you hear about the Sleep Apnea Patient-Centered
+  text_en: Please specify how did you hear about the Sleep Apnea Patient-Centered
     Outcomes Research?
   time_estimate: 1.0
   question_type_id: 1
@@ -6074,3 +6074,5 @@
   -3
   -4
   -99
+  
+99
