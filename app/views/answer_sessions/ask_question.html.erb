@@ -8,7 +8,7 @@
             <h3 class="panel-title">
               <%= @answer_session.question_flow.name %>
             </h3>
-            <%= render partial: 'session_progress', locals: {answer_session: @answer_session} %>
+            <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
           </div>
           <div class="panel-body">
             <%= render partial: 'question_form' %>

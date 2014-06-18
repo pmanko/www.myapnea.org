@@ -11,21 +11,22 @@ class AnswerSession < ActiveRecord::Base
   end
 
 
-  def completed_time
-    completed_answers.map(&:question).map(&:time_estimate).reduce(:+) || 0
+  def calculate_status_stats
+    completed = completed_path
+    remaining = remaining_path
+
+    {
+        percent_completed: (completed[:time] / (completed[:time] + remaining[:time])) * 100,
+        completed_questions: completed[:distance],
+        remaining_questions: remaining[:distance],
+        total_questions: completed[:distance] + remaining[:distance],
+        completed_time: completed[:time],
+        remaining_time: remaining[:time],
+        total_time: completed[:time] + remaining[:time]
+    }
   end
 
-  def remaining_time
-    # if last_answer.blank?
-    #   s = question_flow.first_question
-    # else
-    #   s = last_answer.question
-    # end
-    # # So, we have a last answer, which has a last question. Using that question as a starting point,
 
-    # get distance of all edges
-
-  end
   #
   # def wfs
   #   if last_answer.blank?
@@ -57,13 +58,27 @@ class AnswerSession < ActiveRecord::Base
   # def top_sort_u()
   #
   # end
-
-  def completed_percentage
-    (self.completed_time / question_flow.total_time) * 100
-  end
+  # def remaining_answers
+  #   if last_answer.blank?
+  #     s = question_flow.first_question
+  #   else
+  #     s = last_answer.question
+  #   end
+  #
+  #   # # So, we have a last answer, which has a last question. Using that question as a starting point,
+  #   l = question_flow.leaf
+  #
+  #   question_flow.find_longest_path(s,l)[:distance]
+  #
+  # end
 
   def completed_answers
     Answer.where(answer_session_id: self.id)
+  end
+
+  def completed?
+    remaining_path[:distance] == 0
+
   end
 
   def process_answer(question, params)
@@ -108,4 +123,27 @@ class AnswerSession < ActiveRecord::Base
 
     answers
   end
+
+  private
+
+  def completed_path
+    time = completed_answers.map(&:question).map(&:time_estimate).reduce(:+) || 0
+    distance = completed_answers.length
+
+    {time: time, distance: distance}
+  end
+
+  def remaining_path
+    if last_answer.blank?
+      s = question_flow.first_question
+    else
+      s = last_answer.question
+    end
+
+    # # So, we have a last answer, which has a last question. Using that question as a starting point,
+    l = question_flow.leaf
+
+    question_flow.find_longest_path(s,l)
+  end
+
 end

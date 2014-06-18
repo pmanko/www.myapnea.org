@@ -1,11 +1,11 @@
 
-<p><%= answer_session.completed_answers.length %> / <%= answer_session.question_flow.all_questions.length %> questions done</p>
-<p>You have only around <%= pluralize((answer_session.question_flow.total_time.ceil - answer_session.completed_time.ceil), "minute") %> remaining!</p>
+<p><%= stats[:completed_questions] %> / <%= stats[:total_questions] %> questions done</p>
+<p>You have only around <%= pluralize(stats[:remaining_time], "minute") %> remaining!</p>
 
 <div class="progress">
 
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="<%= answer_session.completed_percentage %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= answer_session.completed_percentage %>%">
-    <span class="sr-only"><%= answer_session.completed_percentage %>% Complete</span>
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="<%= stats[:percent_completed] %>" aria-valuemin="0" aria-valuemax="100" style="width: <%= stats[:percent_completed] %>%">
+    <span class="sr-only"><%= stats[:percent_completed] %>% Complete</span>
   </div>
 
 </div>

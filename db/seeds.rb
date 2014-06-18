@@ -15,7 +15,6 @@ files = [
     ["question_help_messages.yml", QuestionHelpMessage],
     ["questions.yml", Question],
     ["question_flows.yml", QuestionFlow],
-    ["question_edges.yml", QuestionEdge]
 ]
 
 
@@ -30,6 +29,24 @@ files.each do |file_name, model_class|
     model_class.create(object_attrs)
   end
 end
+
+qe_path = Rails.root.join('lib', 'data', 'questionnaires', 'question_edges.yml')
+puts(qe_path)
+
+yaml_data = YAML.load_file(qe_path)
+
+yaml_data.each_with_index do |attrs, i|
+
+  q1 = Question.find(attrs['parent_question_id'])
+  q2 = Question.find(attrs['child_question_id'])
+
+  qe = QuestionEdge.build_edge(q1, q2, attrs['condition'], attrs['question_flow_id'])
+
+  puts("Creating edge #{i} of #{yaml_data.length}")
+  raise StandardError unless qe.save
+end
+
+QuestionFlow.all.each {|qf| qf.reset_paths}
 
 # File.open('/home/pwm4/Desktop/qs.yml', 'w') {|f| f.write Question.all.map{|q| {
 #     'id' => q.id,
@@ -51,7 +68,7 @@ end
 #   p = s[i]
 #   c = p + 1
 #
-#   while c <= e[i] do
+#   while c < e[i] do
 #     m << {
 #       'question_flow_id' => qf.id,
 #       'parent_question_id' => p,
@@ -62,7 +79,8 @@ end
 #     c += 1
 #   end
 # end
-
+#
+#
 # File.open('/home/pwm4/Desktop/qf.yml', 'w') {|f| f.write m.to_yaml }
 
 

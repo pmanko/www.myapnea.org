@@ -27,6 +27,9 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts-as-dag (4.0.0)
+      activemodel
+      activerecord (~> 4.0, >= 4.0.0)
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     better_errors (1.1.0)
@@ -64,7 +67,7 @@ GEM
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
-    docile (1.1.4)
+    docile (1.1.5)
     erubis (2.7.0)
     execjs (2.2.0)
     factory_girl (4.4.0)
@@ -75,7 +78,7 @@ GEM
     ffi (1.9.3)
     hike (1.2.3)
     i18n (0.6.9)
-    jbuilder (2.1.0)
+    jbuilder (2.1.1)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
     jquery-rails (3.1.0)
@@ -203,6 +206,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts-as-dag
   better_errors
   binding_of_caller
   bootstrap-generators (~> 3.1.1.3)

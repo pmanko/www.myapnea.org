@@ -44,7 +44,7 @@ gem 'spring',        group: :development
 # Static pages
 # gem 'high_voltage', '~> 2.1.0'
 
-# Less support
+# Less sup
 gem 'less-rails'
 
 # Scaffold Generation
@@ -52,6 +52,9 @@ gem 'bootstrap-generators', '~> 3.1.1.3'
 
 # Markdown Support
 gem 'redcarpet'
+
+# Directed Acyclic Graph
+gem 'acts-as-dag'
 
 # Development
 group :development do

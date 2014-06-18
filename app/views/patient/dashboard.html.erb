@@ -7,16 +7,17 @@
     <h2>Questionnaires</h2>
     <div id="questionnaires" class="list-group">
       <% QuestionFlow.where(status: "show").each do |qf| %>
-        <% if AnswerSession.most_recent(qf.id, current_user.id) and AnswerSession.most_recent(qf.id, current_user.id).completed_answers.length == qf.all_questions.length %>
-          <a href="<%= finished_answer_session_path(answer_session_id: AnswerSession.most_recent(qf.id, current_user.id).id) %>" class="list-group-item">
+        <% as = AnswerSession.most_recent(qf.id, current_user.id) %>
+        <% if as and as.completed? %>
+          <a href="<%= finished_answer_session_path(answer_session_id: as.id) %>" class="list-group-item">
             <h3><%= qf.name %></h3>
             <p><strong>Questionnaire finished!</strong></p>
           </a>
         <% else %>
           <a href="<%= start_answer_session_path(question_flow_id: qf.id) %>" class="list-group-item">
             <h3><%= qf.name %></h3>
-            <% if AnswerSession.most_recent(qf.id, current_user.id) %>
-              <%= render partial: 'answer_sessions/session_progress', locals: {answer_session: AnswerSession.most_recent(qf.id, current_user.id)} %>
+            <% if as %>
+              <%=  render partial: 'answer_sessions/session_progress', locals: {stats: as.calculate_status_stats} %>
             <% else %>
               <p>Questionnaire not yet started.</p>
               <p><strong>Estimated time commitment:</strong> <%= qf.total_time.ceil %> minutes for <%= qf.all_questions.length %> questions.</p>
