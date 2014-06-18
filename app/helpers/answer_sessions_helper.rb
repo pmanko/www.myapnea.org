@@ -8,4 +8,17 @@ module AnswerSessionsHelper
       ask_question_path(question_id: answer.answer_session.last_answer.question.id, answer_session_id: answer.answer_session.id)
     end
   end
+
+  def have_checked?(answer, val)
+    if answer.value.present?
+      if answer.value.kind_of?(Array)
+        answer.value.include? val
+      else
+        answer.value == val
+      end
+    else
+      false
+    end
+
+  end
 end
