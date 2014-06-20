@@ -13,15 +13,15 @@
     Since this is an online study, we'd like to know about the technology you use.
 - id: 5
   message_en: |
-    Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+    Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following.
     Does your **biological mother** have the following health condition? Please give your best answer.
 - id: 6
   message_en: |
-    Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+    Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following.
     Does your **biological father** have the following health condition? Please give your best answer.
 - id: 7
   message_en: |
-    Some health conditions run in families. Please let us know if any or your family members have been diagonsed with the following.
+    Some health conditions run in families. Please let us know if any or your family members have been diagnosed with the following.
     Does your **biological brother(s)** have the following health condition? Please give your best answer.
 - id: 8
   message_en: |
@@ -33,7 +33,7 @@
     Does your **biological children** have the following health condition? Please give your best answer.
 - id: 10
   message_en: |
-    This survey asks about your health limitations, pain level, and emotional state. These can be important factors in sleep apnea.
+    This survey asks about your health limitations, pain level, and emotional state. These can be important factors in Sleep Apnea.
 - id: 11
   message_en: |
     The following questions are about activities you might do during a typical day. Does your health now **limit you** in these activities?  If so, how much?
@@ -81,34 +81,34 @@
   message_en: |
     This survey asks for information about what level of exercise you can do normally and how much physical activity you do.
 - id: 24
-  message_en: |
+  message_en: | 
     We are interested in finding out the kinds of physical activities that people do as part of their everyday lives.
     The questions will ask you about the time you spent being physically active **in the last 7 days**.
     Please answer each question even if you do not consider yourself to be an active person.
-    Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, excercise or sport.
+    Please think about the activities you do at work, as part of your house and yard work, to get from place to place, and in your spare time for recreation, exercise or sport.
 - id: 25
-  message_en: |
-    This survey asks questions about how you view the possible consequences of having sleep apnea.
-    **Having obstructive sleep apnea, how great is your risk for ...?**
+  message_en: | 
+    This survey asks questions about how you view the possible consequences of having Sleep Apnea.
+    **Having obstructive Sleep Apnea, how great is your risk for ...?**
 - id: 26
   message_en: |
-    If you've had sleep apnea treatment, what treatment(s) have you had?
+    If you've had Sleep Apnea treatment, what treatment(s) have you had?
 - id: 27
   message_en: |
-    How do you think your sleep apnea treatment has influenced the following?
+    How do you think your Sleep Apnea treatment has influenced the following?
     Please give your best answer.
 - id: 28
   message_en: |
-    This survey asks questions for your sleep disorder history and sleep apnea diagnosis. 
-    These questions will help us understand how sleep apnea is diagnosed and how satisified you were with that process. 
+    This survey asks questions for your sleep disorder history and Sleep Apnea diagnosis. 
+    These questions will help us understand how Sleep Apnea is diagnosed and how satisfied you were with that process. 
 - id: 29
   message_en: |
-    These following questions are symptoms that are related to sleep apnea. 
-    Which of the following symptoms triggered you to be evaluated for sleep apnea? 
+    These following questions are symptoms that are related to Sleep Apnea. 
+    Which of the following symptoms triggered you to be evaluated for Sleep Apnea? 
 - id: 30
   message_en: |
     The survey asks for information about your sleep patterns.
-    This information can be important in understanding your sleep apnea. 
+    This information can be important in understanding your Sleep Apnea. 
 - id: 31
   message_en: |
     These questions ask about your sleep habits. 
@@ -119,7 +119,7 @@
     How often, on average in the **past 4 weeks**, have you been awakened with the following?
 - id: 33
   message_en: |
-    This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general. 
+    This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to Sleep Apnea and health in general. 
 - id: 34
   message_en: |
     These questions are about how your sleep has been over the **past 7 days.** 
