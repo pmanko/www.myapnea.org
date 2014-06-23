@@ -18,15 +18,15 @@
             </div>
           </div>
         <% else %>
-          <a href="<%= start_answer_session_path(question_flow_id: qf.id) %>" class="list-group-item">
+          <%= link_to start_or_resume(qf, as), class: 'list-group-item' do %>
             <h3><%= qf.name %></h3>
-            <% if as %>
+            <% if as.present? and as.started? %>
               <%=  render partial: 'answer_sessions/session_progress', locals: {stats: as.calculate_status_stats} %>
             <% else %>
               <p>Questionnaire not yet started.</p>
               <p><strong>Estimated time commitment:</strong> <%= qf.total_time.ceil %> minutes for <%= qf.all_questions.length %> questions.</p>
             <% end %>
-          </a>
+          <% end %>
         <% end %>
       <% end %>
     </div>

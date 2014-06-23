@@ -21,4 +21,12 @@ module AnswerSessionsHelper
     end
 
   end
+
+  def start_or_resume(question_flow, answer_session)
+    if answer_session.present? and answer_session.started?
+      ask_question_path(answer_session_id: answer_session.id, question_id: answer_session.last_answer.next_question.id)
+    else
+      start_answer_session_path(question_flow_id: question_flow.id)
+    end
+  end
 end

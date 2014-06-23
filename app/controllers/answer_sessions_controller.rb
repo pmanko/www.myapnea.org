@@ -13,7 +13,6 @@ class AnswerSessionsController < ApplicationController
   def finish
     @answer_session = AnswerSession.find(params[:answer_session_id])
     @question_flow = @answer_session.question_flow
-
   end
 
   def ask_question

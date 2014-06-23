@@ -30,7 +30,7 @@ files.each do |file_name, model_class|
   end
 end
 
-qe_path = Rails.root.join('lib', 'data', 'questionnaires', 'question_edges.yml')
+qe_path = Rails.root.join('lib', 'data', Rails.env, 'questionnaires', 'question_edges.yml')
 puts(qe_path)
 
 yaml_data = YAML.load_file(qe_path)
@@ -46,7 +46,7 @@ yaml_data.each_with_index do |attrs, i|
   raise StandardError unless qe.save
 end
 
-QuestionFlow.all.each {|qf| qf.reset_paths}
+QuestionFlow.all.each {|qf| qf.reset_paths }
 
 # File.open('/home/pwm4/Desktop/qs.yml', 'w') {|f| f.write Question.all.map{|q| {
 #     'id' => q.id,

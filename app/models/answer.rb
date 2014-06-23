@@ -34,8 +34,6 @@ class Answer < ActiveRecord::Base
     if self.persisted?
       self.save
     end
-
-    #answer_values.first.update_attribute(question.answer_type.data_type, val) : answer_values.build(question.answer_type.data_type => val)
   end
 
   def value(raw = false)
@@ -77,17 +75,15 @@ class Answer < ActiveRecord::Base
   end
 
   def descendants
-    d = []
+    descendant_list = []
 
-    #raise StandardError
-    
-    n = self.next_answer
-    while n
-      d << n
-      n = n.next_answer
+    head = self.next_answer
+    while head
+      descendant_list << head
+      head = head.next_answer
     end
 
-    d
+    descendant_list
   end
 
   def destroy_descendant_edges
@@ -99,9 +95,6 @@ class Answer < ActiveRecord::Base
 
   def next_question
     candidate_edges = question.links_as_parent
-
-
-    #candidate_edges = QuestionEdge.where(parent_question_id: @question.id, question_flow_id: @answer_session.question_flow.id)
 
     if candidate_edges.empty?
       nil

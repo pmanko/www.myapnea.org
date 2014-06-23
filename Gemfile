@@ -71,6 +71,7 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'database_cleaner'
+  gem 'rails-erd'
 end
 
 gem 'simplecov', :require => false, :group => :test

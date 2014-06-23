@@ -10,7 +10,6 @@ class AnswerSession < ActiveRecord::Base
     answer_sessions.empty? ? nil : answer_sessions.first
   end
 
-
   def calculate_status_stats
     completed = completed_path
     remaining = remaining_path
@@ -26,52 +25,6 @@ class AnswerSession < ActiveRecord::Base
     }
   end
 
-
-  #
-  # def wfs
-  #   if last_answer.blank?
-  #     s = question_flow.first_question
-  #   else
-  #     s = last_answer.question
-  #   end
-  #
-  #   edges = QuestionEdge.where(question_flow_id: question_flow.id)
-  #
-  #
-  #
-  #   edges.select
-  #
-  # end
-  #
-  # def top_sort
-  #
-  #   qs = []
-  #
-  #
-  #
-  #   visited = []
-  #
-  #
-  #
-  # end
-  #
-  # def top_sort_u()
-  #
-  # end
-  # def remaining_answers
-  #   if last_answer.blank?
-  #     s = question_flow.first_question
-  #   else
-  #     s = last_answer.question
-  #   end
-  #
-  #   # # So, we have a last answer, which has a last question. Using that question as a starting point,
-  #   l = question_flow.leaf
-  #
-  #   question_flow.find_longest_path(s,l)[:distance]
-  #
-  # end
-
   def completed_answers
     if first_answer
       Answer.joins(:in_edge).where(answer_session_id: self.id).select{|a| a.in_edge.present? }.append(first_answer)
@@ -82,7 +35,6 @@ class AnswerSession < ActiveRecord::Base
 
   def completed?
     remaining_path[:distance] == 0
-
   end
 
   def process_answer(question, params)
@@ -118,22 +70,12 @@ class AnswerSession < ActiveRecord::Base
     answer
   end
 
-  def update_answer
-    # WARNING: UPDATING TO A NEW PATH MIGHT REQUIRE RE-ORGANIZATION OF ANSWER FLOW
-    # Links between answers might need to be updated. Answers might get orphaned
+  def all_answers
+    first_answer.descendants
   end
 
-
-  def all_answers
-    current_answer = first_answer
-    answers = []
-
-    begin
-      answers << current_answer
-      current_answer = current_answer.next_answer
-    end while current_answer.present?
-
-    answers
+  def started?
+    last_answer.present?
   end
 
   def reset_answers
@@ -162,11 +104,9 @@ class AnswerSession < ActiveRecord::Base
       s = last_answer.next_question
 
       if s
-        # # So, we have a last answer, which has a last question. Using that question as a starting point,
         l = question_flow.leaf
 
         result = question_flow.find_longest_path(s,l)
-  #      corrections = {time: (last_answer ? last_answer.question.time_estimate : 0), distance: 1}
         corrections = {time: 0.0, distance: 0}
 
         {time: result[:time] - corrections[:time], distance: result[:distance] - corrections[:distance]}
