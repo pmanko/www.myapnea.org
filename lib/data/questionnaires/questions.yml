@@ -2788,7 +2788,7 @@
   - 19
 - id: 235
   graph_id: 17
-  text_en: If you don't have any brothers, please mark this box
+  text_en: Please choose N/A if you don't have any brothers. 
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -2894,7 +2894,7 @@
   - 19
 - id: 244
   graph_id: 26
-  text_en: If you don't have any sisters, please mark this box
+  text_en: Please choose N/A if you don't have any sisters. 
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -3000,7 +3000,7 @@
   - 19
 - id: 253
   graph_id: 35
-  text_en: If you don't have any children, please mark this box
+  text_en: Please choose N/A if you don't have any children. 
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -5202,7 +5202,6 @@
   - 223
   
 # My Sleep Patterns
-
 - id: 426
   graph_id: 1
   text_en: How many hours of sleep do you usually get per night on weekdays or workdays?
@@ -5212,7 +5211,6 @@
   question_help_message_id: 30
   unit_id: 7
   answer_option_ids: []
-  
 - id: 427
   graph_id: 2
   text_en: How many hours of sleep do you usually get per night on weekends or days off? 
@@ -5222,7 +5220,6 @@
   question_help_message_id: 30
   unit_id: 7
   answer_option_ids: []
-  
 - id: 428
   graph_id: 3
   text_en: How many minutes does it usually take for you to fall asleep at bedtime? 
@@ -5232,7 +5229,6 @@
   question_help_message_id: 30
   unit_id: 12
   answer_option_ids: [] 
-  
 - id: 429
   graph_id: 4
   text_en: Not including naps, at what time do you usually go to bed on weekdays or workdays? 
@@ -5242,7 +5238,6 @@
   time_estimate: 0.3
   unit_id: 
   answer_option_ids: []
-  
 - id: 430
   graph_id: 5
   text_en: Is the time in AM or PM?  (between noon and midnight are PM, midnight is AM, noon is PM)
@@ -5254,7 +5249,6 @@
   answer_option_ids: 
   -224
   -225
-  
 - id: 431
   graph_id: 6
   text_en: Not including naps, at what time do you usally go to bed on weekends or days off? 
@@ -5264,7 +5258,6 @@
   question_help_message_id: 30
   unit_id: 
   answer_option_ids: []
-  
 - id: 432
   graph_id: 7
   text_en: Not including naps, at what time do you usually wake up on weekdays or workdays? 
@@ -5274,7 +5267,6 @@
   question_help_message_id: 30
   unit_id: 
   answer_option_ids: []
-  
 - id: 433 
   graph_id: 8
   text_en: Not including naps, at what time do you usually wake up on weekends or days off?
@@ -5284,7 +5276,6 @@
   question_help_message_id: 30
   unit_id: 
   answer_option_ids: []
-  
 - id: 434 
   graph_id:  9
   text_en: During a usual week, how many times do you nap for 5 minutes or more? 
@@ -5293,8 +5284,7 @@
   time_estimate: 0.3
   answer_type_id: 2
   unit_id: 13
-  answer_option_ids: []
-  
+  answer_option_ids: []  
 - id: 435 
   graph_id: 10
   text_en: Considering only your own **"feeling best"** rhythm, at what time would you get up if you were entirely free to plan your day. 
@@ -5308,8 +5298,7 @@
   -227
   -228
   -229
-  -230
-  
+  -230 
 - id: 436
   graph_id: 11
   text_en: During the first half hour after having woken in the morning, how tired do you feel? 
@@ -5322,8 +5311,7 @@
   -231
   -232
   -233
-  -234
-  
+  -234  
 - id: 437 
   graph_id: 12
   text_en: At what time in the evening do you feel most tired and, as a result, most in need of sleep? 
@@ -5337,7 +5325,6 @@
   -232
   -233
   -234
-  
 - id: 438
   graph_id: 13
   text_en: At what time of the day do you think that you reach you **"feeling best"** peak? 
@@ -5352,7 +5339,6 @@
   -237
   -238
   -239
-
 - id: 439 
   graph_id: 14
   text_en: One hears about "morning" and "evening" types of people. Which one of these types do you consider yourself to be?
@@ -5367,7 +5353,6 @@
   -242
   -243
   -244
-
 - id: 440
   graph_id: 15
   text_en: Which of the following best describes your usual work schedule? Mark only one.
@@ -5384,7 +5369,6 @@
   -249
   -250
   -251
-  
 # My Sleep Quality
 - id: 441
   graph_id: 1
@@ -5400,7 +5384,6 @@
   -254
   -255
   -256
-  
 - id: 442
   graph_id: 2
   text_en: Did you wake up several times at night?
@@ -5415,7 +5398,6 @@
   -254
   -255
   -256
-  
 - id: 443
   graph_id: 3
   text_en: Did you wake up earlier than you planned to?
@@ -5430,7 +5412,6 @@
   -254
   -255
   -256
-  
 - id: 444
   graph_id: 4
   text_en: Did you have trouble getting back to sleep after you woke up too early? 
@@ -5445,7 +5426,6 @@
   -254
   -255
   -256
-  
 - id: 445
   graph_id: 5
   text_en: Did you take sleeping pills to help you sleep? 
@@ -5460,7 +5440,6 @@
   -254
   -255
   -256
-  
 - id: 446
   graph_id: 6
   text_en: Overall, your typical night's sleep during the **past 4 weeks** was ... 
@@ -5474,8 +5453,7 @@
   -258
   -259
   -260
-  -261
-  
+  -261 
 - id: 447
   graph_id: 7
   text_en: In the **past 4 weeks**, have you been awakened at night by trouble breathing? 
@@ -5488,7 +5466,6 @@
   -36
   -20
   -19
-  
 - id: 448 
   graph_id: 8
   text_en: In the **past 4 weeks**, have you had to sleep on two or more pillows to help you breathe? 
@@ -5500,8 +5477,7 @@
   answer_option_ids: 
   -36
   -20
-  -19
-  
+  -19 
 - id: 449
   graph_id: 9
   text_en: Have you **ever** had any pain or discomfort in your chest? 
@@ -5513,8 +5489,6 @@
   answer_option_ids: 
   -36
   -20
- 
- 
 - id: 450
   graph_id: 10
   text_en: Have you **ever** had any pressure or heaviness in your chest? 
@@ -5526,7 +5500,6 @@
   answer_option_ids: 
   -36
   -20
-  
 - id: 451
   graph_id: 11
   text_en: Coughing or wheezing
@@ -5541,7 +5514,6 @@
   -264
   -265
   -266
-
 - id: 452
   graph_id: 12
   text_en: Chest pain or tightness
@@ -5556,7 +5528,6 @@
   -264
   -265
   -266
-  
 - id: 453
   graph_id: 13
   text_en: Shortness of breath
@@ -5571,7 +5542,6 @@
   -264
   -265
   -266
-  
 - id: 454
   graph_id: 14
   text_en: Sweats or hot flashes
@@ -5586,7 +5556,6 @@
   -264
   -265
   -266
-  
 - id: 455
   graph_id: 15
   text_en: Noise in your surroundings
@@ -5601,7 +5570,6 @@
   -264
   -265
   -266
-  
 - id: 456 
   graph_id: 16
   text_en: Pain in your joints, muscles, or back
@@ -5616,7 +5584,6 @@
   -264
   -265
   -266
-  
 - id: 457
   graph_id: 17
   text_en: Heartburn or indigestion
@@ -5631,7 +5598,6 @@
   -264
   -265
   -266
-  
 - id: 458
   graph_id: 18
   text_en: Leg cramps or leg jerks
@@ -5646,7 +5612,6 @@
   -264
   -265
   -266
-  
 - id: 459
   graph_id: 19
   text_en: Need to go to the bathroom
@@ -5661,7 +5626,6 @@
   -264
   -265
   -266
-  
 - id: 460
   graph_id: 20
   text_en: In the **past 4 weeks,** did you ever experience a desire to move your legs because of discomfort or disagreeable sensations in your legs? 
@@ -5674,7 +5638,6 @@
   -20
   -36
   -19
-  
 - id: 461
   graph_id: 21
   text_en: Do you sometimes feel the need to move to relieve the discomfort in your legs, for example by walking, or to relieve the discomfort by rubbing your legs?
@@ -5686,8 +5649,7 @@
   answer_option_ids: 
   -20
   -36
-  -19
-  
+  -19 
 - id: 462
   graph_id: 22
   text_en: Are the symptoms worse when you are at rest, but are at least temporarily relieved by activity?
@@ -5699,8 +5661,7 @@
   answer_option_ids: 
   -20
   -36
-  -19
-  
+  -19 
 - id: 463
   graph_id: 23
   text_en: Are these symptoms worse later in the day or at night?
@@ -5713,7 +5674,6 @@
   -20
   -36
   -19
-  
 - id: 464
   graph_id: 24
   text_en: My sleep was restless
@@ -5728,7 +5688,6 @@
   -268
   -116
   -117
- 
 - id: 465
   graph_id: 25
   text_en: I was satisified with my sleep 
@@ -5742,8 +5701,7 @@
   -114
   -268
   -116
-  -117
-  
+  -117 
 - id: 466
   graph_id: 26
   text_en: My sleep was refreshing 
@@ -5757,8 +5715,7 @@
   -114
   -268
   -116
-  -117
-  
+  -117  
 - id: 467
   graph_id: 27
   text_en: I had difficulty falling asleep
@@ -5772,8 +5729,7 @@
   -114
   -268
   -116
-  -117
-  
+  -117 
 - id: 468
   graph_id: 28
   text_en: I had trouble staying asleep 
@@ -5787,8 +5743,7 @@
   -269
   -163
   -164
-  -51
-  
+  -51  
 - id: 469
   graph_id: 29
   text_en: I had trouble sleeping 
@@ -5802,8 +5757,7 @@
   -269
   -163
   -164
-  -51
-  
+  -51 
 - id: 470
   graph_id: 30
   text_en: I got enough sleep
@@ -5818,7 +5772,6 @@
   -163
   -164
   -51
-  
 - id: 471
   graph_id: 31
   text_en: My sleep quality was
@@ -5832,8 +5785,7 @@
   -102
   -103
   -104
-  -270
-  
+  -270  
 - id: 472
   graph_id: 32
   text_en: I had a hard time getting things done because I was sleepy
@@ -5848,7 +5800,6 @@
   -268
   -116
   -117
-  
 - id: 473
   graph_id: 33
   text_en: I felt alert when I woke up
@@ -5863,7 +5814,6 @@
   -268
   -116
   -117
-  
 - id: 474
   graph_id: 34
   text_en: I felt tired
@@ -5878,7 +5828,6 @@
   -268
   -116
   -117
-  
 - id: 475
   graph_id: 35
   text_en: I had problems during the day because of poor sleep
@@ -5893,7 +5842,6 @@
   -268
   -116
   -117
-  
 - id: 476
   graph_id: 36
   text_en: I had a hard time concentrating because of poor sleep
@@ -5908,7 +5856,6 @@
   -268
   -116
   -117
-  
 - id: 477
   graph_id: 37
   text_en: I felt irritable because of poor sleep
@@ -5923,7 +5870,6 @@
   -268
   -116
   -117
-  
 - id: 478
   graph_id: 38
   text_en: I was sleepy during the daytime
@@ -5938,7 +5884,6 @@
   -268
   -116
   -117
-  
 - id: 479
   graph_id: 39
   text_en: I had trouble staying awake during the day
@@ -5953,7 +5898,6 @@
   -268
   -116
   -117
-  
 - id: 480
   graph_id: 40
   text_en: Sitting and reading
@@ -5967,7 +5911,6 @@
   -2
   -3
   -4
-  
 - id: 481
   graph_id: 41
   text_en: Watching TV
@@ -5980,8 +5923,7 @@
   -1
   -2
   -3
-  -4
-  
+  -4 
 - id: 482
   graph_id: 42
   text_en: Sitting, inactive, in a public place (e.g., a movie theater or classroom)
@@ -5994,8 +5936,7 @@
   -1
   -2
   -3
-  -4
-  
+  -4 
 - id: 483
   graph_id: 43
   text_en: Riding as a passenger in a car for an hour without a break
@@ -6009,7 +5950,6 @@
   -2
   -3
   -4
- 
 - id: 484
   graph_id: 44
   text_en: Lying down to rest in the afternoon when circumstances permit
@@ -6022,8 +5962,7 @@
   -1
   -2
   -3
-  -4
-  
+  -4 
 - id: 485
   graph_id: 45
   text_en: Sitting and talking to someone 
@@ -6037,7 +5976,6 @@
   -2
   -3
   -4
-  
 - id: 486
   graph_id: 46
   text_en: Sitting quietly after lunch without alcohol 
@@ -6051,7 +5989,6 @@
   -2
   -3
   -4
-
 - id: 487
   graph_id: 47
   text_en: In a car, while stopped for a few minutes in traffic 
@@ -6064,8 +6001,7 @@
   -1
   -2
   -3
-  -4
-  
+  -4  
 - id: 488
   graph_id: 48
   text_en: While driving
@@ -6079,5 +6015,4 @@
   -2
   -3
   -4
-  -99
-  
+  -99  

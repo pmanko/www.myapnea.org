@@ -1087,7 +1087,7 @@
 - question_flow_id: 2
   parent_question_id: 170 
   child_question_id: 172
-  condition: 
+  condition: 20
 - question_flow_id: 2
   parent_question_id: 170
   child_question_id: 171
@@ -1281,10 +1281,7 @@
   parent_question_id: 217
   child_question_id: 218
   condition: 
-- question_flow_id: 3
-  parent_question_id: 218
-  child_question_id: 219
-  condition: 
+# Family Health  
 - question_flow_id: 4
   parent_question_id: 219
   child_question_id: 220
@@ -1351,6 +1348,10 @@
   condition: 
 - question_flow_id: 4
   parent_question_id: 235
+  child_question_id: 244
+  condition: 99
+- question_flow_id: 4
+  parent_question_id: 235
   child_question_id: 236
   condition: 
 - question_flow_id: 4
@@ -1385,6 +1386,10 @@
   parent_question_id: 243
   child_question_id: 244
   condition: 
+- question_flow_id: 4  
+  parent_question_id: 244
+  child_question_id: 253 
+  condition: 99
 - question_flow_id: 4
   parent_question_id: 244
   child_question_id: 245
@@ -1421,6 +1426,10 @@
   parent_question_id: 252
   child_question_id: 253
   condition: 
+- question_flow_id: 4 
+  parent_question_id: 253
+  child_question_id: 
+  condition: 99
 - question_flow_id: 4
   parent_question_id: 253
   child_question_id: 254
@@ -1453,14 +1462,15 @@
   parent_question_id: 260
   child_question_id: 261
   condition: 
-- question_flow_id: 4
-  parent_question_id: 261
-  child_question_id: 262
-  condition: 
+# Health Habits
 - question_flow_id: 5
   parent_question_id: 262
   child_question_id: 263
-  condition: 
+  condition: 36
+- question_flow_id: 5
+  parent_question_id: 262
+  child_question_id: 269 
+  condition: 20
 - question_flow_id: 5
   parent_question_id: 263
   child_question_id: 264
@@ -1468,19 +1478,27 @@
 - question_flow_id: 5
   parent_question_id: 264
   child_question_id: 265
-  condition: 
+  condition:
+- question_flow_id: 5
+  parent_question_id: 265 
+  child_question_id: 267
+  condition: 36
 - question_flow_id: 5
   parent_question_id: 265
   child_question_id: 266
-  condition: 
+  condition: 20
 - question_flow_id: 5
   parent_question_id: 266
-  child_question_id: 267
+  child_question_id: 269
   condition: 
 - question_flow_id: 5
   parent_question_id: 267
   child_question_id: 268
-  condition: 
+  condition: 36
+- question_flow_id: 5 
+  parent_question_id: 267
+  child_question_id: 269
+  condition: 20 
 - question_flow_id: 5
   parent_question_id: 268
   child_question_id: 269
@@ -1497,10 +1515,7 @@
   parent_question_id: 271
   child_question_id: 272
   condition: 
-- question_flow_id: 5
-  parent_question_id: 272
-  child_question_id: 273
-  condition: 
+# My Healthcare Experience
 - question_flow_id: 6
   parent_question_id: 273
   child_question_id: 274
@@ -1583,20 +1598,36 @@
   condition: 
 - question_flow_id: 6
   parent_question_id: 293
+  child_question_id: 298
+  condition: 20
+- question_flow_id: 6
+  parent_question_id: 293
   child_question_id: 294
-  condition: 
+  condition: 36 
+- question_flow_id: 6 
+  parent_question_id: 294
+  child_question_id: 298
+  condition: 20 
 - question_flow_id: 6
   parent_question_id: 294
   child_question_id: 295
+  condition: 36
+- question_flow_id: 6 
+  parent_question_id: 295
+  child_question_id: 298
   condition: 
+- question_flow_id: 6
+  parent_question_id: 295 
+  child_question_id: 297
+  condition: 34
 - question_flow_id: 6
   parent_question_id: 295
   child_question_id: 296
-  condition: 
+  condition: 176
 - question_flow_id: 6
   parent_question_id: 296
-  child_question_id: 297
-  condition: 
+  child_question_id: 298
+  condition:  
 - question_flow_id: 6
   parent_question_id: 297
   child_question_id: 298
@@ -1713,10 +1744,7 @@
   parent_question_id: 325
   child_question_id: 326
   condition: 
-- question_flow_id: 6
-  parent_question_id: 326
-  child_question_id: 327
-  condition: 
+# My Physical Activity 
 - question_flow_id: 7
   parent_question_id: 327
   child_question_id: 328
@@ -1781,10 +1809,7 @@
   parent_question_id: 342
   child_question_id: 343
   condition: 
-- question_flow_id: 7
-  parent_question_id: 343
-  child_question_id: 344
-  condition: 
+# My Sleep Apnea Risk Perception
 - question_flow_id: 8
   parent_question_id: 344
   child_question_id: 345
@@ -1813,14 +1838,11 @@
   parent_question_id: 350
   child_question_id: 351
   condition: 
-- question_flow_id: 8
-  parent_question_id: 351
-  child_question_id: 352
-  condition: 
+# My Sleep Apnea Treatment  
 - question_flow_id: 9
   parent_question_id: 352
   child_question_id: 353
-  condition: 
+  condition: 34
 - question_flow_id: 9
   parent_question_id: 353
   child_question_id: 354
@@ -1836,11 +1858,15 @@
 - question_flow_id: 9
   parent_question_id: 356
   child_question_id: 357
-  condition: 
+  condition:   
+- question_flow_id: 9
+  parent_question_id: 357
+  child_question_id: 359
+  condition: 20
 - question_flow_id: 9
   parent_question_id: 357
   child_question_id: 358
-  condition: 
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 358
   child_question_id: 359
