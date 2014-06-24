@@ -1891,10 +1891,15 @@
   parent_question_id: 363
   child_question_id: 364
   condition: 
+- question_flow_id: 9 
+  parent_question_id: 364
+  child_question_id: 373
+  condition: 20
+# CPAP
 - question_flow_id: 9
   parent_question_id: 364
   child_question_id: 365
-  condition: 
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 365
   child_question_id: 366
@@ -1909,8 +1914,12 @@
   condition: 
 - question_flow_id: 9
   parent_question_id: 368
+  child_question_id: 373
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 368
   child_question_id: 369
-  condition: 
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 369
   child_question_id: 370
@@ -1927,32 +1936,105 @@
   parent_question_id: 372
   child_question_id: 373
   condition: 
-- question_flow_id: 9
+# APAP
+- question_flow_id: 9 
   parent_question_id: 373
   child_question_id: 374
-  condition: 
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 373 
+  child_question_id: 365
+  condition: 36
+# use id 365-370 from CPAP (if all yes)
+- question_flow_id: 9 
+  parent_question_id: 368
+  child_question_id:  374
+  condition: 20
+- question_flow_id: 9 
+  parent_question_id: 370 
+  child_question_id: 372
+  condition:
+- question_flow_id: 9 
+  parent_question_id: 372 
+  child_question_id: 374
+  condition:   
+# BiPAP Machine
 - question_flow_id: 9
   parent_question_id: 374
+  child_question_id: 376
+  condition: 20
+- question_flow_id: 9 
+  parent_question_id: 374
+  child_question_id: 365
+  condition: 36
+# use id: 365-370 from CPAP (if all yes)
+- question_flow_id: 9
+  parent_question_id: 368
+  child_question_id: 376
+  condition: 20 
+- question_flow_id: 9
+  parent_question_id: 370
   child_question_id: 375
   condition: 
 - question_flow_id: 9
   parent_question_id: 375
+  child_question_id: 372
+  condition: 
+- question_flow_id: 9
+  parent_question_id: 372
   child_question_id: 376
   condition: 
+# Adaptive servo-ventilation (ASV) 
+- question_flow_id: 9
+  parent_question_id: 376 
+  child_question_id: 377
+  condition: 20
 - question_flow_id: 9
   parent_question_id: 376
+  child_question_id: 365 
+  condition: 36
+# use id: 365-370 from CPAP (if all yes) and 370 to 372 like APAP
+- question_flow_id: 9
+  parent_question_id: 368
+  child_question_id: 377
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 372
   child_question_id: 377
   condition: 
+# Oral appliance
 - question_flow_id: 9
   parent_question_id: 377
+  child_question_id: 378 
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 377
+  child_question_id: 365
+  condition: 36
+# use id: 365-370(if all yes) and 370 to 372 like APAP 
+- question_flow_id: 9 
+  parent_question_id: 372
   child_question_id: 378
   condition: 
 - question_flow_id: 9
+  parent_question_id: 368 
+  child_question_id: 378
+  condition: 20
+## Other Device
+- question_flow_id: 9
+  parent_question_id: 378
+  child_question_id: 383 
+  condition: 20
+- question_flow_id: 9
   parent_question_id: 378
   child_question_id: 379
-  condition: 
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 379
+  child_question_id: 365
+  condition: 
+- question_flow_id: 9
+  parent_question_id: 365
   child_question_id: 380
   condition: 
 - question_flow_id: 9
@@ -1967,50 +2049,146 @@
   parent_question_id: 382
   child_question_id: 383
   condition: 
+# Behavioral Therapy 
 - question_flow_id: 9
   parent_question_id: 383
   child_question_id: 384
+  condition: 20
+- question_flow_id: 9 
+  parent_question_id: 383
+  child_question_id: 365 
+  condition: 36
+- question_flow_id: 9
+  parent_question_id: 365
+  child_question_id: 368
   condition: 
+- question_flow_id: 9
+  parent_question_id: 368
+  child_question_id: 372
+  condition: 
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 384
+  condition: 
+# Tongue Stimulation
 - question_flow_id: 9
   parent_question_id: 384
   child_question_id: 385
+  condition: 20
+# add id: 365 to 368 and 368 to 372 
+- question_flow_id: 9
+  parent_question_id: 372 
+  child_question_id: 384 
   condition: 
+# Tonsillectomy (removal of tonsils)
 - question_flow_id: 9
   parent_question_id: 385
   child_question_id: 386
-  condition: 
+  condition: 39
 - question_flow_id: 9
   parent_question_id: 386
-  child_question_id: 387
+  child_question_id: 372
   condition: 
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 387
+  condition: 36
+- question_flow_id: 9
+  parent_question_id: 385
+  child_question_id: 387
+  condition: 20 
+# Adenoidectomy (removal of adenoids)
 - question_flow_id: 9
   parent_question_id: 387
   child_question_id: 388
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 387
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 388
   condition: 
+# UPPP 
 - question_flow_id: 9
   parent_question_id: 388
   child_question_id: 389
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 388
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id:  9
+  parent_question_id: 372
+  child_question_id: 389
   condition: 
+# Nasal deviation surgery
 - question_flow_id: 9
   parent_question_id: 389
   child_question_id: 390
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 389 
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 390
   condition: 
+# Tongue surgery
 - question_flow_id: 9
   parent_question_id: 390
   child_question_id: 391
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 390
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 391
   condition: 
+# Jaw surgery
 - question_flow_id: 9
   parent_question_id: 391
   child_question_id: 392
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 391
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id: 9
+  parent_question_id: 372
+  child_question_id: 392 
   condition: 
+# Bariatric surgery
 - question_flow_id: 9
   parent_question_id: 392
+  child_question_id: 393
+  condition: 20 
+- question_flow_id: 9 
+  parent_question_id: 292
+  child_question_id: 386
+  condition: 36
+# add id: 386 to 372
+- question_flow_id: 9
+  parent_question_id: 272
   child_question_id: 393
   condition: 
 - question_flow_id: 9
   parent_question_id: 393
+  child_question_id: 395
+  condition: 20
+- question_flow_id: 9
+  parent_question_id: 393
   child_question_id: 394
-  condition: 
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 394
   child_question_id: 395
@@ -2055,10 +2233,7 @@
   parent_question_id: 404
   child_question_id: 405
   condition: 
-- question_flow_id: 9
-  parent_question_id: 405
-  child_question_id: 406
-  condition: 
+# My Sleep Apnea Diagnosis 
 - question_flow_id: 10
   parent_question_id: 406
   child_question_id: 407
@@ -2073,8 +2248,12 @@
   condition: 
 - question_flow_id: 10
   parent_question_id: 409
+  child_question_id: 411 
+  condition: 20
+- question_flow_id: 10
+  parent_question_id: 409
   child_question_id: 410
-  condition: 
+  condition: 36
 - question_flow_id: 10
   parent_question_id: 410
   child_question_id: 411
