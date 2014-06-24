@@ -38,8 +38,10 @@ class AnswerSessionsController < ApplicationController
     answer = @answer_session.process_answer(@question, params)
 
     if answer.next_question.nil?
+      MY_LOG.info "EXITING"
       redirect_to finished_answer_session_path(@answer_session)
     else
+      MY_LOG.info "#{answer.next_question.id}"
       redirect_to ask_question_path(question_id: answer.next_question.id, answer_session_id: @answer_session.id)
     end
   end

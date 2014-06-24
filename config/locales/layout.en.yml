@@ -24,7 +24,7 @@ en:
   sign_in_strong: Sign in!
   registration_problems: There were some problems with your registration.
   sign_up: Sign up
-  already_member: Already a member?
+  already_member: Already a member? 
 
   activerecord:
     models:

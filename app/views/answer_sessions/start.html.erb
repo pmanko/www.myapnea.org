@@ -5,7 +5,10 @@
       <div class="panel panel-default">
         <div class="panel-heading">
 
-          <h3 class="panel-title"><%= @question_flow.name %></h3>
+          <h3 class="panel-title">
+            <%= @question_flow.name %>
+            <div class='pull-right'><%= link_to "Return to My Dashboard", dashboard_path %></div>
+          </h3>
           <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
 
         </div>

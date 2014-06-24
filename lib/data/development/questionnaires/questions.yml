@@ -390,7 +390,7 @@
   text_en: How many parents or guardians did you have?
   time_estimate: 0.1
   question_type_id: 3
-  answer_type_id: 2
+  answer_type_id: 1
   question_help_message_id: 3
   unit_id: 
   answer_option_ids:

@@ -1,37 +1,7 @@
 <footer class="container" id="footer">
-  <div class="well">
-
-    <div class="row">
-      <div class="col-md-3">
-        <div class="center-block">
-          <ul class="">
-            <li><%= link_to t(:network), network_path %></li>
-            <li><%= link_to t(:faqs), faqs_path %></li>
-            <li><%= link_to t(:team), team_path %></li>
-            <li><%= link_to t(:privacy_policy), privacy_policy_path %></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="center-block">
-          <h5><%= t :connect %></h5>
-          <ul>
-            <li><%= link_to "SAPCON", "http://pfaawards.pcori.org/node/20/datavizwiz/detail/4344" %></li>
-            <li><%= link_to "ASAA", "http://www.sleepapnea.org/" %></li>
-            <li><%= link_to "Brigham & Women's Hospital", "http://www.brighamandwomens.org" %></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="center-block">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="bottom-brand"><a href="<%= root_path %>"><%= t :main_brand %></a></div>
-        <%= mail_to t :support_email %>
-      </div>
-
+  <div class="row">
+    <div class="col-md-2 col-md-offset-5">
+      <%= mail_to t(:support_email), nil, id: "support-email" %>
     </div>
-
   </div>
 </footer>

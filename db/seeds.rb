@@ -19,7 +19,7 @@ files = [
 
 
 files.each do |file_name, model_class|
-  file_path = Rails.root.join('lib', 'data', 'questionnaires', file_name)
+  file_path = Rails.root.join('lib', 'data', Rails.env, 'questionnaires', file_name)
 
   puts(file_path)
   yaml_data = YAML.load_file(file_path)
@@ -43,7 +43,7 @@ yaml_data.each_with_index do |attrs, i|
   qe = QuestionEdge.build_edge(q1, q2, attrs['condition'], attrs['question_flow_id'])
 
   puts("Creating edge #{i} of #{yaml_data.length}")
-  raise StandardError unless qe.save
+  raise StandardError, qe.errors.full_messages unless qe.save
 end
 
 QuestionFlow.all.each {|qf| qf.reset_paths }

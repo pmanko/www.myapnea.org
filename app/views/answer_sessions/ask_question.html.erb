@@ -3,20 +3,22 @@
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <%= @answer_session.question_flow.name %>
+            <div class='pull-right'><%= link_to "Return to My Dashboard", dashboard_path %></div>
+          </h3>
+          <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
+        </div>
+
         <%= form_tag(process_answer_path, {role: "form"}) do %>
-          <div class="panel-heading">
-            <h3 class="panel-title">
-              <%= @answer_session.question_flow.name %>
-            </h3>
-            <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
-          </div>
           <div class="panel-body">
             <%= render partial: 'help_message' if @question.question_help_message.present?%>
             <%= render partial: 'question_form' %>
           </div>
           <div class="panel-footer">
             <%= link_to 'Previous Question', previous_question_path(@answer), class: 'btn btn-lg btn-default' %>
-            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg" data-confirm="Are you sure??">Next Question</button>
+            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
           </div>
         <% end %>
         </div>

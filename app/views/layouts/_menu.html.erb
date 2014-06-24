@@ -1,5 +1,5 @@
 <header class="navbar navbar-default navbar-fixed-top" role="banner">
-  <div class="container">
+  <div class="container hidden">
     <div id="hld">
       <div id='locale-chooser'>
         <%= link_to "en", {locale: :en}, class: ('active' if I18n.locale==:en)  %>
@@ -31,9 +31,9 @@
           </p>
         <% end %>
 
-        <li class="<%= 'active' if current_page?(network_path) %>"><%= link_to t(:network), network_path %></li>
-        <li class="<%= 'active' if current_page?(faqs_path) %>"><%= link_to t(:faqs), faqs_path %></li>
-        <li class="<%= 'active' if current_page?(team_path) %>"><%= link_to t(:team), team_path %></li>
+        <li class="hidden <%= 'active' if current_page?(network_path) %>"><%= link_to t(:network), network_path %></li>
+        <li class="hidden <%= 'active' if current_page?(faqs_path) %>"><%= link_to t(:faqs), faqs_path %></li>
+        <li class="hidden <%= 'active' if current_page?(team_path) %>"><%= link_to t(:team), team_path %></li>
 
         <% if user_signed_in? %>
           <li><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></li>

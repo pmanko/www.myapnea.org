@@ -1,41 +1,13 @@
 - id: 1
   name_en: A Little About Me
-  description_en: This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general.
+  description_en: |
+    This survey covers some basic information about your age, sex, background, level of education, income and other social factors to better understand who you are and how these characteristics relate to sleep apnea and health in general.
   first_question_id: 1
-  status: show
-- id: 2
-  name_en: Health History
-  first_question_id: 37
-  status: show
-- id: 3
-  name_en: My General Health
-  first_question_id: 179
-  status: show
-- id: 4
-  name_en: Family Health
-  first_question_id: 219
-  status: show
-- id: 5
-  name_en: My Health Habits
-  first_question_id: 262
-  status: show
-- id: 6
-  name_en: My Healthcare Experience
-  first_question_id: 273
-  status: show
-- id: 7
-  name_en: My Physical Activity
-  first_question_id: 327
-  status: show
-- id: 8
-  name_en: My Sleep Apnea Risk Perception
-  first_question_id: 344
-  status: show
-- id: 9
-  name_en: My Sleep Apnea Treatment
-  first_question_id: 352
   status: show
 - id: 10
   name_en: My Sleep Apnea Diagnosis
+  description_en: |
+    This survey asks questions about your sleep disorder history and Sleep Apnea diagnosis.
+    These questions will help us understand how Sleep Apnea is diagnosed and how satisfied you were with that process.  
   first_question_id: 406
   status: show
