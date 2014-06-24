@@ -9,6 +9,12 @@ Rails.application.routes.draw do
     get 'thank-you', to: "pages#thank_you", as: :thank_you
     get 'version', to: 'pages#version', as: :version
 
+    get 'mailing_list', to: "mailing_lists#show", as: :mailing_list
+    get 'thank_you', to: "mailing_lists#thank_you", as: :thank_you_ml
+    post 'put_on_list', to: "mailing_lists#create", as: :put_on_list
+    get 'warning', to: 'mailing_lists#warning', as: :warning
+
+
 
     get 'dashboard', to: "patient#dashboard"
     get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme
@@ -42,7 +48,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'pages#splash'
+  root 'mailing_lists#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
