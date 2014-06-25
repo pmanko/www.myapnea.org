@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-to_keep = [ "users", "mailing_lists", "schema_migrations"]
+to_keep = [ "users", "schema_migrations"]
 tables = ["answer_types",
           "question_answer_options",
           "answer_sessions",
