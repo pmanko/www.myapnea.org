@@ -2,6 +2,15 @@
 ADDED
 ****/
 
+
+#early-adopters {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 #main-container {
     margin-top: 50px;
     background-color: rgba(100, 100, 100, 0.65);

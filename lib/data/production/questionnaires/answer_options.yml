@@ -147,13 +147,17 @@
 - id: 73
   text_value_en: Not related
 - id: 74
-  text_value_en: 1
+  text_value_en: |
+    1
 - id: 75
-  text_value_en: 2
+  text_value_en: |
+    2
 - id: 76
-  text_value_en: 3
+  text_value_en: |
+    3
 - id: 77
-  text_value_en: 4
+  text_value_en: |
+    4
 - id: 78
   text_value_en: A.W.A.K.E group
 - id: 79
@@ -446,3 +450,97 @@
   text_value_en: 0 (very dissatisfied)
 - id: 223
   text_value_en: 7 (very satisified) 
+- id: 224
+  text_value_en: AM
+- id: 225
+  text_value_en: PM
+- id: 226
+  text_value_en: 5:00-6:30 am
+- id: 227
+  text_value_en: 6:30-7:45 am
+- id: 228
+  text_value_en: 7:45-9:45 am
+- id: 229
+  text_value_en: 9:45-11:00 am 
+- id: 230
+  text_value_en: After 11:00 am
+- id: 231
+  text_value_en: Very tired
+- id: 232
+  text_value_en: Fairly tired
+- id: 233
+  text_value_en: Fairly refreshed
+- id: 234
+  text_value_en: Very refreshed
+- id: 235
+  text_value_en: 5:00-8:00 am
+- id: 236
+  text_value_en: 8:00-10:00 am
+- id: 237
+  text_value_en: 10:00-4:45 pm
+- id: 238
+  text_value_en: 4:45-9:45 pm
+- id: 239
+  text_value_en: After 9:45 pm
+- id: 240
+  text_value_en: Definitely a "morning" type
+- id: 241
+  text_value_en: Rather more a "morning" than an "evening" type
+- id: 242
+  text_value_en: Rather more an "evening" than a "morning" type
+- id: 243
+  text_value_en: Definitely an "evening" type
+- id: 244
+  text_value_en: Neither a "morning" or an "evening" type
+- id: 245
+  text_value_en: Day shift
+- id: 246
+  text_value_en: Afternoon shift
+- id: 247
+  text_value_en: Night shift
+- id: 248
+  text_value_en: Split shift
+- id: 249
+  text_value_en: Irregular shift/on-call 
+- id: 250
+  text_value_en: Rotating shifts
+- id: 251
+  text_value_en: Don't work
+- id: 252
+  text_value_en: Yes, 5 or more times a week
+- id: 253
+  text_value_en: Yes, 3 or 4 times a week
+- id: 254
+  text_value_en: Yes, 1 or 2 times a week
+- id: 255
+  text_value_en: Yes, less than once a week
+- id: 256
+  text_value_en: No, not in the past 4 weeks
+- id: 257
+  text_value_en: Very sound or restful 
+- id: 258
+  text_value_en: Sound or restful
+- id: 259
+  text_value_en: Average quality
+- id: 260
+  text_value_en: Restless
+- id: 261
+  text_value_en: Very restless
+- id: 262
+  text_value_en: Almost always (16-30 times a month)
+- id: 263
+  text_value_en: Often (5-15 times a month)
+- id: 264
+  text_value_en: Sometimes (2-4 times a month)
+- id: 265
+  text_value_en: Rarely (once a month or less)
+- id: 266
+  text_value_en: Never (0)
+- id: 267
+  text_value_en: Very much
+- id: 268
+  text_value_en: Somewhat
+- id: 269
+  text_value_en: Often
+- id: 270
+  text_value_en: Very poor

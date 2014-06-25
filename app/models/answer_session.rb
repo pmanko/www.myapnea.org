@@ -71,7 +71,7 @@ class AnswerSession < ActiveRecord::Base
   end
 
   def all_answers
-    first_answer.descendants
+    [first_answer] + first_answer.descendants
   end
 
   def started?
@@ -80,10 +80,12 @@ class AnswerSession < ActiveRecord::Base
 
   def reset_answers
     if first_answer.present?
+      connected_answers = all_answers
       first_answer.destroy_descendant_edges
       self.first_answer = nil
       self.last_answer = nil
       save
+      connected_answers.each(&:destroy)
     end
   end
 

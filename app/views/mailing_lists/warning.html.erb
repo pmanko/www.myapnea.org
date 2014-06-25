@@ -1,18 +1,13 @@
 <header>
   <!-- HEADLINE -->
-  <h1>Warning! You have chosen to explore an early version of <b>>www.myapnea.org</b></h1>
+  <h1>Warning! You have chosen to explore an early version of <b>www.myapnea.org</b></h1>
 </header>
 
 <div class="col-lg-12 mt centered">
-  <h4>This site contains only barebone functionality, and is intended for testing purposes.</h4>
-  <p>
-    To continue, click <%= link_to "here.", dashboard_path %>
-  </p>
-  <p>
-    To return to the previous page and sign up for the mailing list, click <%= link_to "here.", mailing_list_path %>
-  </p>
-  <p>
-    To view design demo, click <%= link_to "here.", "//sleepepi.partners.org/edge/design-myapnea" %>
-  </p>
+  <h4>This site contains only <strong>barebone functionality</strong>, and is intended <strong>gathering feedback</strong> from you. If you'd like to be notified when the MyApnea.Org launches fully, please go back to the previous page and sign up for the mailing list.</h4>
 
+  <div>
+    <%= link_to "Continue To Early Version", dashboard_path, class: 'btn btn-lg btn-danger' %>
+    <%= link_to "Return to Mailing List Signup", mailing_list_path, class: 'btn btn-lg btn-success' %>
+  </div>
 </div>
