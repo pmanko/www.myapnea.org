@@ -14,6 +14,10 @@
   condition: 
 - question_flow_id: 1
   parent_question_id: 4
+  child_question_id: 10
+  condition:
+- question_flow_id: 1
+  parent_question_id: 4
   child_question_id: 5
   condition: 12
 - question_flow_id: 1
@@ -117,7 +121,7 @@
 - question_flow_id: 10
   parent_question_id: 409
   child_question_id: 411
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10409
   child_question_id: 411
@@ -129,7 +133,7 @@
 - question_flow_id: 10
   parent_question_id: 411
   child_question_id: 412
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10411
   child_question_id: 412
@@ -141,7 +145,7 @@
 - question_flow_id: 10
   parent_question_id: 412
   child_question_id: 413
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10412
   child_question_id: 413
@@ -153,7 +157,7 @@
 - question_flow_id: 10
   parent_question_id: 413
   child_question_id: 414
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10413
   child_question_id: 414
@@ -165,7 +169,7 @@
 - question_flow_id: 10
   parent_question_id: 414
   child_question_id: 415
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10414
   child_question_id: 415
@@ -177,7 +181,7 @@
 - question_flow_id: 10
   parent_question_id: 415
   child_question_id: 416
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10415
   child_question_id: 416
@@ -189,7 +193,7 @@
 - question_flow_id: 10
   parent_question_id: 416
   child_question_id: 417
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10416
   child_question_id: 417
@@ -201,7 +205,7 @@
 - question_flow_id: 10
   parent_question_id: 417
   child_question_id: 418
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10417
   child_question_id: 418
@@ -213,7 +217,7 @@
 - question_flow_id: 10
   parent_question_id: 418
   child_question_id: 419
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10418
   child_question_id: 419
@@ -225,7 +229,7 @@
 - question_flow_id: 10
   parent_question_id: 419
   child_question_id: 420
-  condition: 20
+  condition:
 - question_flow_id: 10
   parent_question_id: 10419
   child_question_id: 420
