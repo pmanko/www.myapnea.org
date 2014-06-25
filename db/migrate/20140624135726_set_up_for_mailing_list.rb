@@ -1,6 +1,6 @@
 class SetUpForMailingList < ActiveRecord::Migration
   def change
-    unless ActiveRecord::Base.connection.tables.include?('mailing_list')
+    unless ActiveRecord::Base.connection.tables.include?('mailing_lists')
       create_table :mailing_lists do |t|
         t.string :email,              null: false, default: ""
         t.string :country
