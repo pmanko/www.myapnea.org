@@ -102,7 +102,7 @@ class Answer < ActiveRecord::Base
       if candidate_edges.length == 1
         chosen_edge = candidate_edges.first
       else
-        chosen_edge = candidate_edges.select {|e| e.condition == self.value.to_s}.first || candidate_edges.select { |e| e.condition == nil }.first || candidate_edges.first
+        chosen_edge = candidate_edges.select {|e| e.condition == self.value.to_s}.first || candidate_edges.select {|e| self.value.kind_of?(Array) ? self.value.map(&:to_s).include?(e.condition) : false }.first || candidate_edges.select { |e| e.condition == nil }.first || candidate_edges.first
       end
       chosen_edge.descendant
     end

@@ -18,7 +18,7 @@ class MailingListsController < ApplicationController
 
     ml.save
 
-    redirect_to thank_you_path
+    redirect_to thank_you_ml_path
   end
 
   def thank_you

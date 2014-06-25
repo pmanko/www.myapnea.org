@@ -56,6 +56,10 @@ gem 'redcarpet'
 # Directed Acyclic Graph
 gem 'acts-as-dag'
 
+# Geocoding
+gem 'geocoder'
+
+
 # Development
 group :development do
   gem "better_errors"

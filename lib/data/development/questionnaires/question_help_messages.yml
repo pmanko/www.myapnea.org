@@ -7,7 +7,7 @@
     The following questions are about the age and relationships to you for each person in your household.
 - id: 3
   message_en: |
-    The following question tells us about your parents or guardians during the majority of your childhood?
+    The following question tells us about your parents or guardians during the majority of your childhood.
 - id: 4
   message_en: |
     Since this is an online study, we'd like to know about the technology you use.
