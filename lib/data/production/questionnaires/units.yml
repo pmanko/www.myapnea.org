@@ -3,7 +3,7 @@
 - id: 2
   name_en: pounds
 - id: 3
-  name_en: years
+  name_en: years old
 - id: 4
   name_en: ovaries
 - id: 5
@@ -20,7 +20,3 @@
   name_en: year
 - id: 11
   name_en: months
-- id: 12
-  name_en: minutes
-- id: 13
-  name_en: naps 

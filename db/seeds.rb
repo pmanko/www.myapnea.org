@@ -6,6 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+to_keep = [ "users", "mailing_lists", "schema_migrations"]
+tables = ["answer_types",
+          "question_answer_options",
+          "answer_sessions",
+          "answers",
+          "answer_values", "questions", "answer_edges", "units", "question_help_messages", "answer_options", "question_types", "question_edges", "question_flows"]
+
+tables.each do |table|
+  ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
+end
 
 files = [
     ["units.yml", Unit],
@@ -16,7 +26,6 @@ files = [
     ["questions.yml", Question],
     ["question_flows.yml", QuestionFlow],
 ]
-
 
 files.each do |file_name, model_class|
   file_path = Rails.root.join('lib', 'data', Rails.env, 'questionnaires', file_name)
@@ -42,7 +51,7 @@ yaml_data.each_with_index do |attrs, i|
 
   qe = QuestionEdge.build_edge(q1, q2, attrs['condition'], attrs['question_flow_id'])
 
-  puts("Creating edge #{i} of #{yaml_data.length}")
+  puts("Creating edge #{i} of #{yaml_data.length} between #{q1.id} and #{q2.id}")
   raise StandardError, qe.errors.full_messages unless qe.save
 end
 
