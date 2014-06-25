@@ -108,7 +108,7 @@
   answer_option_ids: []
 - id: 10
   graph_id: 10
-  text_en: What is *your* racial background? Check all that apply.
+  text_en: What is your racial background? Check all that apply.
   time_estimate: 0.1
   question_type_id: 4
   answer_type_id: 1
@@ -124,7 +124,7 @@
   - 19
 - id: 11
   graph_id: 11
-  text_en: Are *you* of Hispanic, Latino or Spanish origin or ancestry?
+  text_en: Are you of Hispanic, Latino or Spanish origin or ancestry?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -135,13 +135,13 @@
   - 22
   - 23
   - 24
-  - 19
   - 20
+  - 19
 - id: 12
   graph_id: 12
   text_en: |
-    What is the racial background of your *biological (natural or blood-related)
-    father*?
+    What is the racial background of your **biological (natural or blood-related)
+    father**?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -157,7 +157,7 @@
   - 19
 - id: 13
   graph_id: 13
-  text_en: Is your *biological father* of Hispanic, Latino, or Spanish origin or ancestry?
+  text_en: Is your **biological father** of Hispanic, Latino, or Spanish origin or ancestry?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -205,7 +205,7 @@
   - 24
 - id: 16
   graph_id: 16
-  text_en: What is the highest level of education **you** completed?
+  text_en: What is the highest level of education you completed?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -222,8 +222,8 @@
   - 32
   - 33
   - 34
-  - 19
   - 35
+  - 19
 - id: 17
   graph_id: 17
   text_en: Please specify your highest level of education.
@@ -265,7 +265,7 @@
 - id: 20
   graph_id: 20
   text_en: |
-    In the past year, have you been unemployed *and looking for work* for more
+    In the past year, have you been unemployed **and looking for work** for more
     than 2 months?
   time_estimate: 0.1
   question_type_id: 3
@@ -279,7 +279,7 @@
 - id: 21
   graph_id: 21
   text_en: |
-    How hard is it for you (and your family) to pay for *very basics* like
+    How hard is it for you (and your family) to pay for **very basics** like
     food, rent, or mortgage, heating, etc?
   time_estimate: 0.1
   question_type_id: 3
