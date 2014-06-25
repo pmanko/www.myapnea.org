@@ -11,6 +11,8 @@ describe "Signs in user" do
   end
 
   it "should sign in a confirmed user using the main signin page", :js => true do
+    pending "Takedown of Under Construction page"
+    
     visit new_user_session_path
 
     fill_in("Email", with: @user.email)

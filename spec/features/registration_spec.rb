@@ -4,6 +4,8 @@ require "spec_helper"
 describe "Registers new user" do
 
   it "with correct credentials", :js => true do
+    pending "Takedown of Under Construction Page"
+
     u = build(:user)
     password = "password"
 

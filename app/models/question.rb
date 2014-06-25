@@ -28,6 +28,11 @@ class Question < ActiveRecord::Base
   end
 
   def answer_frequencies
+    groups = answers.group_by{|answer| answer.show_value}
+    groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
+  end
+
+  def graph_frequencies
     groups = answers.group_by{|answer| answer.value}
     groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
   end

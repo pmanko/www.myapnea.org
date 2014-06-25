@@ -4,13 +4,13 @@
 </div>
 
 <% @question_flow.all_questions.each do |question| %>
-  <% if question.user_answer(@answer_session) %>
+  <% if question.user_answer(@answer_session).present? and [3,4,6].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
     <div class="row send-request">
       <div class="col-md-3">
         <%= markdown question.text %>
       </div>
       <div class="col-md-3">
-        <p><%= question.user_answer(@answer_session).value %> <%= question.unit.name if question.unit.present? %></p>
+        <p><%= question.user_answer(@answer_session).show_value %> <%= question.unit.name if question.unit.present? %></p>
       </div>
       <div class="col-md-6">
         <div class="row">

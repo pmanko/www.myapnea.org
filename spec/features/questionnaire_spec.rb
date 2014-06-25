@@ -17,6 +17,8 @@ require "spec_helper"
 describe "Resuming a questionnaire" do
 
   it "typical workflow" do
+    pending
+
     q = QuestionFlow.first
     visit dashboard_path
 

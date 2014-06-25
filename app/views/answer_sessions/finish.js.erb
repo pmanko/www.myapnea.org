@@ -1,3 +1,5 @@
 <% @question_flow.all_questions.each do |question| %>
-  <%= render partial: 'questions/graph', locals: { question: question, selector: "#visualize_#{question.id}" } %>
+  <% if question.user_answer(@answer_session).present? and [3,4,6].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
+    <%= render partial: 'questions/graph', locals: { question: question, selector: "#visualize_#{question.id}" } %>
+  <% end %>
 <% end %>

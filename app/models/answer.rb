@@ -66,6 +66,23 @@ class Answer < ActiveRecord::Base
     end
   end
 
+  def show_value
+    v = self.value
+    if v
+      if question.question_type.store_raw_value
+
+        v
+      else
+        if v.kind_of?(Array)
+          AnswerOption.where(id: v).map{|ao| ao.value(question.answer_type.data_type)}.join(', ')
+        else
+
+          AnswerOption.find(v).value(question.answer_type.data_type)
+        end
+      end
+    end
+  end
+
   def next_answer
     out_edge.present? ? out_edge.child_answer : nil
   end
