@@ -352,7 +352,9 @@
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
-  
+  question_help_message_id: 
+  unit_id: 
+  answer_option_ids: []
 - id: 26
   graph_id: 26
   text_en: How many people, other than you, live in your household?
@@ -362,6 +364,7 @@
   answer_type_id: 2
   unit_id: 
   answer_option_ids: []
+# depending on # of people living in household
 - id: 27
   graph_id: 27
   text_en: What is the age of the person that lives in your household?
@@ -426,7 +429,8 @@
   - 34
 - id: 31
   graph_id: 31
-  text_en: Please specify how did you hear about the Sleep Apnea Patient-Centered
+  text_en: |
+    Please specify how did you hear about the Sleep Apnea Patient-Centered
     Outcomes Research?
   time_estimate: 1.0
   question_type_id: 1
@@ -1036,7 +1040,7 @@
   graph_id: 49
   text_en: |
     Please specify medication taken for inflammatory bowel disease (ulcerative
-    colitis or Crohn's disease)
+    colitis or Crohn's disease).
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1130,7 +1134,7 @@
   graph_id: 57
   text_en: |
     Please specify medication taken for rheumatoid arthritis, lupus or other
-    collagen vascular disease
+    collagen vascular disease.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1306,7 +1310,7 @@
   - 20
 - id: 109
   graph_id: 73
-  text_en: Please specify medication taken for narcolepsy
+  text_en: Please specify medication taken for narcolepsy.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1350,7 +1354,7 @@
   - 20
 - id: 113
   graph_id: 77
-  text_en: Please specify medication taken for restless leg syndrome?
+  text_en: Please specify medication taken for restless leg syndrome.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1394,7 +1398,7 @@
   - 20
 - id: 117
   graph_id: 81
-  text_en: Please specify medication taken for periodic limb movements/ restless legs
+  text_en: Please specify medication taken for periodic limb movements/ restless legs.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1427,7 +1431,7 @@
   - 19
 - id: 120
   graph_id: 84
-  text_en: What treatments have you used for this? Check all that apply
+  text_en: What treatments have you used for this? Check all that apply.
   time_estimate: 0.5
   question_type_id: 4
   answer_type_id: 1
@@ -1440,7 +1444,7 @@
   - 34
 - id: 121
   graph_id: 85
-  text_en: Please specify the insomnia treatment you used
+  text_en: Please specify the insomnia treatment used.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1485,8 +1489,9 @@
   - 19
 - id: 125
   graph_id: 89
-  text_en: Please specify medication taken for shift work disorder or circadian rhythm
-    disorder
+  text_en: | 
+    Please specify medication taken for shift work disorder or circadian rhythm
+    disorder. 
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1531,7 +1536,7 @@
   - 19
 - id: 129
   graph_id: 93
-  text_en: Please specify medication taken for REM behavior disorder
+  text_en: Please specify medication taken for REM behavior disorder.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1564,7 +1569,7 @@
   - 19
 - id: 132
   graph_id: 96
-  text_en: Are you taking medicine for Parkinson's disease
+  text_en: Are you taking medicine for Parkinson's disease?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -1575,7 +1580,7 @@
   - 20
 - id: 133
   graph_id: 97
-  text_en: Please specify medication taken for Parkinson's disease
+  text_en: Please specify medication taken for Parkinson's disease.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1630,7 +1635,7 @@
   - 20
 - id: 138
   graph_id: 102
-  text_en: Please specify medication taken for prostate cancer
+  text_en: Please specify medication taken for prostate cancer.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1673,7 +1678,7 @@
   - 20
 - id: 142
   graph_id: 106
-  text_en: Please specify medication taken for breast cancer
+  text_en: Please specify medication taken for breast cancer.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 
@@ -1717,7 +1722,7 @@
   - 20
 - id: 146
   graph_id: 110
-  text_en: Please specify medication taken for colon cancer
+  text_en: Please specify medication taken for colon cancer.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1760,7 +1765,7 @@
   - 20
 - id: 150
   graph_id: 114
-  text_en: Please specify medication taken for lung cancer
+  text_en: Please specify medication taken for lung cancer.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1803,7 +1808,7 @@
   - 20
 - id: 154
   graph_id: 118
-  text_en: Please specify medication taken for blood cancer (leukemia, lymphoma, other)
+  text_en: Please specify medication taken for blood cancer (leukemia, lymphoma, other). 
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1855,7 +1860,7 @@
   - 20
 - id: 159
   graph_id: 123
-  text_en: Please specify medication taken for this cancer?
+  text_en: Please specify medication taken for this cancer.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -1875,7 +1880,7 @@
   - 20
 - id: 161
   graph_id: 125
-  text_en: Please specify other
+  text_en: Please specify other.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -2040,7 +2045,8 @@
   answer_option_ids: []
 - id: 177
   graph_id: 141
-  text_en: If you were or are taking hormone replacement therapy, which type of therapy
+  text_en: |
+    If you were or are taking hormone replacement therapy, which type of therapy
     was/is it?
   time_estimate: 0.2
   question_type_id: 3
@@ -2053,7 +2059,7 @@
   - 142
 - id: 178
   graph_id: 142
-  text_en: Please specify other type of hormone replacement therapy
+  text_en: Please specify other type of hormone replacement therapy.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -2292,7 +2298,8 @@
   - 20
 - id: 198
   graph_id: 20
-  text_en: During the **past 4 weeks**, to what extent has your physical heath or
+  text_en: |
+    During the **past 4 weeks**, to what extent has your physical heath or
     emotional problems interfered with your normal social activities with family,
     friends, neighbors, or groups?
   time_estimate: 0.15
@@ -2323,7 +2330,8 @@
   - 123
 - id: 200
   graph_id: 22
-  text_en: During the **past 4 weeks**, how much did **pain** interfere with your
+  text_en: | 
+    During the **past 4 weeks**, how much did **pain** interfere with your
     normal work (including both work outside the home and housework)?
   time_estimate: 0.15
   question_type_id: 3
@@ -2565,7 +2573,8 @@
   - 117
 - id: 217
   graph_id: 39
-  text_en: Moving or speaking so slowly that other people could have noticed. Or the
+  text_en: |
+    Moving or speaking so slowly that other people could have noticed. Or the
     opposite - being so fidgety or restless that you have been moving around a lot
     more than usual.
   time_estimate: 0.15
@@ -2580,7 +2589,8 @@
   - 117
 - id: 218
   graph_id: 40
-  text_en: If you checked off **any** problems, how **difficult** have these problems
+  text_en: |
+    If you checked off **any** problems, how **difficult** have these problems
     made it for you to do your work, take care of things at home, or get along with
     other people?
   time_estimate: 0.15
@@ -2680,7 +2690,7 @@
   - 19
 - id: 226
   graph_id: 8
-  text_en: Attention deficit hyperactivity disorder (ADD/ADHD)?
+  text_en: Attention deficit hyperactivity disorder (ADD/ADHD)
   time_estimate: 0.2
   question_type_id: 3
   answer_type_id: 1
@@ -3177,7 +3187,8 @@
   answer_option_ids: []
 - id: 269
   graph_id: 8
-  text_en: In the *past 4 weeks*, how often did you drink beverages containing caffeine
+  text_en: |
+    In the *past 4 weeks*, how often did you drink beverages containing caffeine
     (cola, coffee, tea, etc.)?
   time_estimate: 0.1
   question_type_id: 3
@@ -3192,7 +3203,8 @@
   - 123
 - id: 270
   graph_id: 9
-  text_en: In a typical week during the past year, on how many days did you consume
+  text_en: |
+    In a typical week during the past year, on how many days did you consume
     an alcoholic beverage of any type?
   time_estimate: 0.1
   question_type_id: 3
@@ -3210,7 +3222,8 @@
   - 154
 - id: 271
   graph_id: 10
-  text_en: In a typical month during the past year, what was the largest number of
+  text_en: |
+    In a typical month during the past year, what was the largest number of
     drink of beer, wine and/or liquor you may have had in one day
   time_estimate: 0.1
   question_type_id: 3
@@ -3226,7 +3239,8 @@
   - 160
 - id: 272
   graph_id: 11
-  text_en: When you drink alcohol, do you usually drink during the two hours before
+  text_en: |
+    When you drink alcohol, do you usually drink during the two hours before
     bedtime?
   time_estimate: 0.1
   question_type_id: 3
@@ -3312,7 +3326,8 @@
   - 99
 - id: 278
   graph_id: 6
-  text_en: How often were results of tests or assessments discussed with you? (e.g.
+  text_en: |
+    How often were results of tests or assessments discussed with you? (e.g.
     blood tests)
   time_estimate: 0.1
   question_type_id: 3
@@ -3371,7 +3386,8 @@
   - 51
 - id: 282
   graph_id: 10
-  text_en: In the past 3 months, how often have healthcare providers responded appropiately
+  text_en:|
+    In the past 3 months, how often have healthcare providers responded appropiately
     to changes in your needs?
   time_estimate: 0.1
   question_type_id: 3
@@ -3566,7 +3582,7 @@
 - id: 296
   graph_id: 24
   text_en: Please specify what kind of specialist whom you have seen in the past 3
-    months
+    months.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -3575,7 +3591,7 @@
   answer_option_ids: []
 - id: 297
   graph_id: 25
-  text_en: Please specify a health care provider, other than your PCP,
+  text_en: Please specify a health care provider, other than your PCP (Primary Care Provider).
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -3673,7 +3689,7 @@
   - 34
 - id: 304
   graph_id: 32
-  text_en: Please specify a caregiver
+  text_en: Please specify a caregiver.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -3682,7 +3698,8 @@
   answer_option_ids: []
 - id: 305
   graph_id: 33
-  text_en: In the past 3 months, how often was your **main caregiver** involved in
+  text_en: |
+    In the past 3 months, how often was your **main caregiver** involved in
     making decisions about your care?
   time_estimate: 0.1
   question_type_id: 3
@@ -3698,8 +3715,9 @@
   - 99
 - id: 306
   graph_id: 34
-  text_en: In the past 3 months, how often do you think your **main caregiver** was
-    satisified with the care your received?
+  text_en: |
+    In the past 3 months, how often do you think your **main caregiver** was
+    satisfied with the care your received?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -3869,7 +3887,8 @@
   - 129
 - id: 318
   graph_id: 46
-  text_en: Sure that my doctor or nurse thought about my values, beliefs, and traditions
+  text_en: |
+    Sure that my doctor or nurse thought about my values, beliefs, and traditions
     when they recommended treatments to me
   time_estimate: 0.1
   question_type_id: 3
@@ -3969,7 +3988,8 @@
   - 129
 - id: 325
   graph_id: 53
-  text_en: Told how my visits with other types of doctors, like an eye doctor or other
+  text_en: |
+    Told how my visits with other types of doctors, like an eye doctor or other
     specialist, helped my treatment
   time_estimate: 0.1
   question_type_id: 3
@@ -4111,8 +4131,9 @@
   - 20
 - id: 337
   graph_id: 11
-  text_en: Can you participate in moderate recreational activities, like golf, bowling,
-    dancng, doubles tennis, or throwing a baseball or football?
+  text_en:  |
+    Can you participate in moderate recreational activities, like golf, bowling,
+    dancing, doubles tennis, or throwing a baseball or football?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4123,8 +4144,9 @@
   - 20
 - id: 338
   graph_id: 12
-  text_en: Can you partipate in strenuous sports, like swimming, single tennis, football,
-    basketball, or skiing
+  text_en: |
+    Can you participate in strenuous sports, like swimming, single tennis, football,
+    basketball, or skiing? 
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4135,8 +4157,9 @@
   - 20
 - id: 339
   graph_id: 13
-  text_en: Is your activity severely limited by joint or muscle pain (arthritis) or
-    neurologic  reasons (such as a stroke or paralysis)?
+  text_en: |
+    Is your activity severely limited by joint or muscle pain (arthritis) or
+    neurologic reasons (such as a stroke or paralysis)?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4147,12 +4170,11 @@
   - 20
 - id: 340
   graph_id: 14
-  text_en: Think about all the vigorous activities that you did in the last 7 days.
-    Vigorous physical activities refer to activities that take hard physical effort
-    and make you breathe much harder than normal. Think only about those physical
-    activities that you did for at least 10 minutes at a time. During the last 7 days,
-    on how many days did you do vigorous physical activities like heavy lifting, digging,
-    aerobics, or fast bicycling?
+  text_en: |
+    Think about all the vigorous activities that you did in the last 7 days.
+    Vigorous physical activities refer to activities that take hard physical effort and make you breathe much harder than normal.
+    Think only about those physical activities that you did for at least 10 minutes at a time. 
+    During the last 7 days, on how many days did you do vigorous physical activities like heavy lifting, digging, aerobics, or fast bicycling?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4169,12 +4191,12 @@
   - 154
 - id: 341
   graph_id: 15
-  text_en: Think about the moderate activities that you did in the last 7 days. Moderate
-    activities refer to activities that take moderate physical effort and make you
-    breathe somewhat harder than normal. Think only about those physical activities
-    that you did for at least 10 minutes at a time. During the last 7 days, on how
-    many days did you do moderate physical activites like carrying light loads, bicycling
-    at a regular pace, or double tennis? Do not include walking.
+  text_en: |
+    Think about the moderate activities that you did in the last 7 days. 
+    Moderate activities refer to activities that take moderate physical effort and make you breathe somewhat harder than normal. 
+    Think only about those physical activities that you did for at least 10 minutes at a time.
+    During the last 7 days, on how many days did you do moderate physical activities like carrying light loads, bicycling at a regular pace, or double tennis? 
+    Do not include walking.
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4191,10 +4213,10 @@
   - 154
 - id: 342
   graph_id: 16
-  text_en: Think about the time you spent walking in the last 7 days. This includes
-    at work and at home, walking to travel from place to place, and any other walking
-    that you have done solely for recreation, sport, exercise, or leisure. During
-    the past 7 days, on how many days did you walk for at least 10 minutes at a time.
+  text_en: |
+    Think about the time you spent walking in the last 7 days. 
+    This includes at work and at home, walking to travel from place to place, and any other walking that you have done solely for recreation, sport, exercise, or leisure. 
+    During the past 7 days, on how many days did you walk for at least 10 minutes at a time.
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4211,11 +4233,11 @@
   - 154
 - id: 343
   graph_id: 17
-  text_en: The last question is about the time you spent sitting on weekdays during
-    the last 7 days. Include time spent at work, at home, while doing course work
-    and during leisure time. This may include time spent sitting at a desk, visiting
-    friends, reading, or sitting or lying down to watch television. During the last
-    7 days, how much time did you spend sitting on a week day?
+  text_en: |
+    The last question is about the time you spent sitting on weekdays during the last 7 days. 
+    Include time spent at work, at home, while doing course work and during leisure time. 
+    This may include time spent sitting at a desk, visiting friends, reading, or sitting or lying down to watch television. 
+    During the last 7 days, how much time did you spend sitting on a week day?
   time_estimate: 1.0
   question_type_id: 6
   answer_type_id: 2
@@ -4330,7 +4352,7 @@
 # My Sleep Apnea Treatment
 - id: 352
   graph_id: 1
-  text_en: Where do you receive your sleep apnea care? Check all that apply.
+  text_en: Where do you receive your Sleep Apnea care? Check all that apply.
   time_estimate: 0.1
   question_type_id: 4
   answer_type_id: 1
@@ -4345,7 +4367,7 @@
   - 34
 - id: 353
   graph_id: 2
-  text_en: Please specify where do you receive your sleep apnea care.
+  text_en: Please specify where do you receive your Sleep Apnea care.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -4354,7 +4376,8 @@
   answer_option_ids: []
 - id: 354
   graph_id: 3
-  text_en: Did you receive **adequate** education about sleep apnea from your providers?
+  text_en: |
+    Did you receive **adequate** education about Sleep Apnea from your providers?
     (i.e., verbal, audiovisual aids, pamphlets, brochures or other)
   time_estimate: 0.1
   question_type_id: 3
@@ -4367,7 +4390,7 @@
   - 19
 - id: 355
   graph_id: 4
-  text_en: Did such education improve your understanding of sleep apnea?
+  text_en: Did such education improve your understanding of Sleep Apnea?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4379,7 +4402,7 @@
   - 19
 - id: 356
   graph_id: 5
-  text_en: Did such education help you realize the risks associated with sleep apnea?
+  text_en: Did such education help you realize the risks associated with Sleep Apnea?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4391,8 +4414,9 @@
   - 19
 - id: 357
   graph_id: 6
-  text_en: If you did not receive satisfactory education regarding the risks of sleep
-    apnea from your physician or sleep center, did you receive it elsewhere?
+  text_en: |
+    If you did not receive satisfactory education regarding the risks of Sleep
+    Apnea from your physician or sleep center, did you receive it elsewhere?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4404,8 +4428,9 @@
   - 99
 - id: 358
   graph_id: 7
-  text_en: Please specify where did you receive satisfactory education regarding the
-    risks of sleep apnea
+  text_en: |
+    Please specify where did you receive satisfactory education regarding the
+    risks of Sleep Apnea.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -4414,8 +4439,9 @@
   answer_option_ids: []
 - id: 359
   graph_id: 8
-  text_en: How satisfied were you with the care you received from your physician or
-    helthcare provider for your sleep apnea?
+  text_en: |
+    How satisfied were you with the care you received from your physician or
+    healthcare provider for your Sleep Apnea?
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4502,7 +4528,8 @@
   answer_option_ids: []
 - id: 366
   graph_id: 15
-  text_en: How many days did it take between your first sleep study and when you received
+  text_en: |
+    How many days did it take between your first sleep study and when you received
     machine for treating sleep apnea?
   time_estimate: 0.5
   question_type_id: 6
@@ -4636,7 +4663,7 @@
   - 20
 - id: 378
   graph_id: 27
-  text_en: Did you use other device besides CPAP, APAP, Bi-PAP, ASV and oral appliance?
+  text_en: Other device
   time_estimate: 0.1
   question_type_id: 3
   answer_type_id: 1
@@ -4647,7 +4674,7 @@
   - 20
 - id: 379
   graph_id: 28
-  text_en: Please specify other device
+  text_en: Please specify other device.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -4656,8 +4683,9 @@
   answer_option_ids: []
 - id: 380
   graph_id: 29
-  text_en: How many days did it take between your first sleep study and when you received
-    the device for treating sleep apnea?
+  text_en: |
+    How many days did it take between your first sleep study and when you received
+    the device for treating Sleep Apnea?
   time_estimate: 0.5
   question_type_id: 6
   answer_type_id: 2
@@ -4803,7 +4831,7 @@
   - 20
 - id: 394
   graph_id: 43
-  text_en: Please specify other treatments you have had
+  text_en: Please specify other treatments you have had.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -4938,7 +4966,8 @@
   - 212
 - id: 404
   graph_id: 53
-  text_en: Having been treated for your sleep apnea and/or snoring do you believe
+  text_en: |
+    Having been treated for your Sleep Apnea and/or snoring do you believe
     that overall there has been an improvement in your quality of life since you started
     treatment?
   time_estimate: 0.2
@@ -4960,9 +4989,9 @@
   - 219
 - id: 405
   graph_id: 54
-  text_en: Please think of the symptoms that developed as a result of being treated
-    for sleep apnea and/or snoring. How much of an impact on your quality of life
-    have these symptoms had?
+  text_en: |
+    Please think of the symptoms that developed as a result of being treated for Sleep Apnea and/or snoring. 
+    How much of an impact on your quality of life have these symptoms had?
   time_estimate: 0.2
   question_type_id: 3
   answer_type_id: 1
@@ -5021,8 +5050,8 @@
   - 20
 - id: 410
   graph_id: 5
-  text_en: How long had this symptom been present before you were diagnosed with sleep
-    apnea?
+  text_en: How long had this symptom been present before you were diagnosed with Sleep
+    Apnea?
   time_estimate: 0.5
   question_type_id: 6
   answer_type_id: 1
@@ -5141,7 +5170,7 @@
   - 20
 - id: 421
   graph_id: 16
-  text_en: Please specify other
+  text_en: Please specify other.
   time_estimate: 1.0
   question_type_id: 1
   answer_type_id: 1
@@ -5150,7 +5179,7 @@
   answer_option_ids: []
 - id: 422
   graph_id: 17
-  text_en: What doctor first talked to you about sleep apnea?
+  text_en: What doctor first talked to you about Sleep Apnea?
   time_estimate: 0.2
   question_type_id: 3
   answer_type_id: 1
@@ -5240,7 +5269,7 @@
   answer_option_ids: []
 - id: 430
   graph_id: 5
-  text_en: Is the time in AM or PM?  (between noon and midnight are PM, midnight is AM, noon is PM)
+  text_en: AM or PM? (between noon and midnight are PM, midnight is AM, noon is PM)
   question_type_id: 3
   time_estimate: 0.1
   question_help_message_id: 

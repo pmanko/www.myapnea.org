@@ -1431,7 +1431,7 @@
   parent_question_id: 253
   child_question_id: 
   condition: 99
-# above has no child_question_id 
+# above has no child_question_id
 - question_flow_id: 4
   parent_question_id: 253
   child_question_id: 254
@@ -1960,7 +1960,6 @@
   parent_question_id: 372 
   child_question_id: 374
   condition:   
-# BiPAP Machine
 - question_flow_id: 9
   parent_question_id: 374
   child_question_id: 376
@@ -1985,8 +1984,7 @@
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 376
-  condition: 
-# Adaptive servo-ventilation (ASV) 
+  condition:  
 - question_flow_id: 9
   parent_question_id: 376 
   child_question_id: 377
@@ -2004,7 +2002,6 @@
   parent_question_id: 372
   child_question_id: 377
   condition: 
-# Oral appliance
 - question_flow_id: 9
   parent_question_id: 377
   child_question_id: 378 
@@ -2022,7 +2019,6 @@
   parent_question_id: 368 
   child_question_id: 378
   condition: 20
-## Other Device
 - question_flow_id: 9
   parent_question_id: 378
   child_question_id: 383 
@@ -2051,7 +2047,6 @@
   parent_question_id: 382
   child_question_id: 383
   condition: 
-# Behavioral Therapy 
 - question_flow_id: 9
   parent_question_id: 383
   child_question_id: 384
@@ -2072,7 +2067,6 @@
   parent_question_id: 372
   child_question_id: 384
   condition: 
-# Tongue Stimulation
 - question_flow_id: 9
   parent_question_id: 384
   child_question_id: 385
@@ -2080,13 +2074,16 @@
 # add id: 365 to 368 and 368(parent) to 372  (child)
 - question_flow_id: 9
   parent_question_id: 372 
-  child_question_id: 384 
+  child_question_id: 385
   condition: 
-# Tonsillectomy (removal of tonsils)
+- question_flow_id: 9
+  parent_question_id: 385
+  child_question_id: 387
+  condition: 20 
 - question_flow_id: 9
   parent_question_id: 385
   child_question_id: 386
-  condition: 39
+  condition: 36
 - question_flow_id: 9
   parent_question_id: 386
   child_question_id: 372
@@ -2094,12 +2091,7 @@
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 387
-  condition: 36
-- question_flow_id: 9
-  parent_question_id: 385
-  child_question_id: 387
-  condition: 20 
-# Adenoidectomy (removal of adenoids)
+  condition: 
 - question_flow_id: 9
   parent_question_id: 387
   child_question_id: 388
@@ -2108,12 +2100,11 @@
   parent_question_id: 387
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
+# add id: 386(parent) to 372(child)
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 388
-  condition: 
-# UPPP 
+  condition:  
 - question_flow_id: 9
   parent_question_id: 388
   child_question_id: 389
@@ -2122,12 +2113,10 @@
   parent_question_id: 388
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
 - question_flow_id:  9
   parent_question_id: 372
   child_question_id: 389
   condition: 
-# Nasal deviation surgery
 - question_flow_id: 9
   parent_question_id: 389
   child_question_id: 390
@@ -2136,12 +2125,11 @@
   parent_question_id: 389 
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
+# add id: 386(parent) to 372 (child)
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 390
   condition: 
-# Tongue surgery
 - question_flow_id: 9
   parent_question_id: 390
   child_question_id: 391
@@ -2150,12 +2138,11 @@
   parent_question_id: 390
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
+# add id: 386(parent) to 372 (child)
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 391
   condition: 
-# Jaw surgery
 - question_flow_id: 9
   parent_question_id: 391
   child_question_id: 392
@@ -2164,12 +2151,11 @@
   parent_question_id: 391
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
+# add id: 386 (parent) to 372 (child)
 - question_flow_id: 9
   parent_question_id: 372
   child_question_id: 392 
   condition: 
-# Bariatric surgery
 - question_flow_id: 9
   parent_question_id: 392
   child_question_id: 393
@@ -2178,7 +2164,7 @@
   parent_question_id: 292
   child_question_id: 386
   condition: 36
-# add id: 386 to 372
+# add id: 386 (parent) to 372 (child)
 - question_flow_id: 9
   parent_question_id: 272
   child_question_id: 393
