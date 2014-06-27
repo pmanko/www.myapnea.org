@@ -41,7 +41,10 @@ class Question < ActiveRecord::Base
 
 
     elsif question_type.id == 6
-      range = answers.map(&:value)
+      answer_values = answers.map(&:value)
+      range = { min: answer_values.min, max: answer_values.max }
+
+      
     end
 
 
