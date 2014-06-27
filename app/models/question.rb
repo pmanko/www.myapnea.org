@@ -28,7 +28,23 @@ class Question < ActiveRecord::Base
   end
 
   def answer_frequencies
-    groups = answers.group_by{|answer| answer.show_value}
+    if [3,4].include? question_type.id
+      groups = answers.group_by{|answer| answer.show_value}
+
+      #all_options = answer_options.order{|ao| ao.value(answer_type.data_type)}
+
+      all_options = answer_options.to_a.sort_by!{|ao| ao.value(answer_type.data_type)}
+      all_options.each do |o|
+        groups[o.value(answer_type.data_type)] = []
+      end
+
+
+
+    elsif question_type.id == 6
+      range = answers.map(&:value)
+    end
+
+
     groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
   end
 
