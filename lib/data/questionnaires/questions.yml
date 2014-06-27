@@ -2253,7 +2253,8 @@
   - 20
 - id: 194
   graph_id: 16
-  text_en: Had difficulty performing the work or other activities (e.g., it took extra
+  text_en: |
+    Had difficulty performing the work or other activities (e.g., it took extra
     effort)
   time_estimate: 0.1
   question_type_id: 3
@@ -2545,7 +2546,7 @@
   - 117
 - id: 215
   graph_id: 37
-  text_en: Feeling bad about yourself - or that you are a failture or have let yourself
+  text_en: Feeling bad about yourself - or that you are a failure or have let yourself
     or your family down
   time_estimate: 0.15
   question_type_id: 3
@@ -3387,7 +3388,7 @@
 - id: 282
   graph_id: 10
   text_en:|
-    In the past 3 months, how often have healthcare providers responded appropiately
+    In the past 3 months, how often have healthcare providers responded appropriately
     to changes in your needs?
   time_estimate: 0.1
   question_type_id: 3
