@@ -124,6 +124,26 @@
   parent_question_id: 26
   child_question_id: 29
   condition: 
+# if above answer is zero 
+- question_flow_id: 1
+  parent_question_id: 26
+  child_question_id: 27
+  condition: 
+# if greater than zero 
+- question_flow_id: 1
+  parent_question_id: 27
+  child_question_id: 28
+  condition: 
+- question_flow_id: 1
+  parent_question_id: 28
+  child_question_id: 27
+  condition: 
+# if question 26 is greater than one
+- question_flow_id: 1
+  parent_question_id: 28
+  child_question_id: 29
+  condition: 
+# above appear after question 26 answer is fulfilled 
 - question_flow_id: 1
   parent_question_id: 29
   child_question_id: 30
