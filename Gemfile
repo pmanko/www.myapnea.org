@@ -59,6 +59,8 @@ gem 'acts-as-dag'
 # Geocoding
 gem 'geocoder'
 
+# Histogram
+gem 'histogram'
 
 # Development
 group :development do

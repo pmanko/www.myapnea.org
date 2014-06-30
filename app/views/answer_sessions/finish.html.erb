@@ -4,7 +4,7 @@
 </div>
 
 <% @question_flow.all_questions.each do |question| %>
-  <% if question.user_answer(@answer_session).present? and [3,4,6].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
+  <% if question.user_answer(@answer_session).present? and [3,4].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
     <div class="row send-request">
       <div class="col-md-3">
         <%= markdown question.text %>

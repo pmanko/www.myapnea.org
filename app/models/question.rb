@@ -1,3 +1,5 @@
+require 'histogram/array'
+
 class Question < ActiveRecord::Base
   belongs_to :question_type
   belongs_to :answer_type
@@ -31,24 +33,33 @@ class Question < ActiveRecord::Base
     if [3,4].include? question_type.id
       groups = answers.group_by{|answer| answer.show_value}
 
-      #all_options = answer_options.order{|ao| ao.value(answer_type.data_type)}
 
       all_options = answer_options.to_a.sort_by!{|ao| ao.value(answer_type.data_type)}
       all_options.each do |o|
-        groups[o.value(answer_type.data_type)] = []
+        groups[o.value(answer_type.data_type)] = [] if groups[o.value(answer_type.data_type)].blank?
       end
 
 
-
+      groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
     elsif question_type.id == 6
-      answer_values = answers.map(&:value)
-      range = { min: answer_values.min, max: answer_values.max }
+      answer_values = answers.map(&:value).map(&:to_f)
 
-      
+      #range = { min: answer_values.min.floor, max: answer_values.max.ceil }
+
+
+      (mins, freqs) = answer_values.histogram(bin_boundary: :min)
+      midpoints = answer_values.histogram[0]
+      ranges = []
+      histogram = []
+
+
+      mins.each_with_index{|x,i| ranges << {min: x.to_f, max: ((midpoints[i] - x) + midpoints[i]).to_f}}
+
+      ranges.each_with_index {|range, i| histogram << range.merge(frequency: freqs[i])}
+      {}
+      #raise StandardError
     end
 
-
-    groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
   end
 
   def graph_frequencies

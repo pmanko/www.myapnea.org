@@ -18,7 +18,7 @@
 - name: check_box
   id: 4
   tag: input
-  input_type: checkbosax
+  input_type: checkbox
   store_raw_value: false
   allow_multiple: true
 - name: date
