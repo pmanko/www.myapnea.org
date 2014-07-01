@@ -31,14 +31,16 @@ class Question < ActiveRecord::Base
 
   def answer_frequencies
     if [3,4].include? question_type.id
-      groups = answers.group_by{|answer| answer.show_value}
-
-
       all_options = answer_options.to_a.sort_by!{|ao| ao.value(answer_type.data_type)}
+      groups = {}
+
       all_options.each do |o|
-        groups[o.value(answer_type.data_type)] = [] if groups[o.value(answer_type.data_type)].blank?
+        groups[o.value(answer_type.data_type)] = []
       end
 
+      answers.group_by{|answer| answer.show_value}.each_pair do |key, array|
+        groups[key] = array
+      end
 
       groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
     elsif question_type.id == 6
