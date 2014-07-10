@@ -87,11 +87,10 @@ ahi_graph = (data) ->
   m = {top: 20, right: 20, bottom: 30, left: 40}
   w = 750 - m.left - m.right
   h = 400 - m.top - m.bottom
-  xa = d3.scale.linear().range([0, w])
+  xa = d3.scale.ordinal().rangeRoundBands([0, w], .1)
   ya = d3.scale.linear().range([h, 0])
 
-  xAxis = d3.svg.axis().scale(xa).orient("bottom")
-  yAxis = d3.svg.axis().scale(ya).orient("left").ticks(10, "%")
+
 
   # Create Graph Area
   svg = d3.select("#ahi-graph")
@@ -101,11 +100,24 @@ ahi_graph = (data) ->
   .append("g")
   .attr("transform", "translate(" + m.left + "," + m.top + ")")
 
+  xa.domain([-20, -10, -5, 5, 10, 20])
+  ya.domain([100, -100])
+
+  xAxis = d3.svg.axis().scale(xa).orient("bottom")
+  yAxis = d3.svg.axis().scale(ya).orient("left").ticks(20)
+
+
   # Create X Axis
   svg.append("g")
   .attr("class", "x axis")
   .attr("transform", "translate(0," + h + ")")
-  .call(xAxis);
+  .call(xAxis)
+  .append('text')
+  .attr("x", w/2)
+  .attr("y", 27)
+  .attr("dx", ".71em")
+  .style("text-anchor", "middle")
+  .text('Change in Weight (%)')
 
   # Create Y Axis
   svg.append("g")
@@ -113,13 +125,12 @@ ahi_graph = (data) ->
   .call(yAxis)
   .append("text")
   .attr("transform", "rotate(-90)")
-  .attr("y", 6)
-  .attr("dy", ".71em")
-  .style("text-anchor", "end")
-  .text("Frequency");
+  .attr("y", 0 - m.left)
+  .attr("x", 0 - (h/2))
+  .attr("dy", "1em")
+  .style("text-anchor", "middle")
+  .text("Change in AHI (%)")
 
-  xa.domain([d3.min(data, (d) -> d.weight_change), d3.max(data, (d) -> d.weight_change)])
-  ya.domain([d3.min(data, (d) -> d.ahi_change), d3.max(data, (d) ->d.ahi_change)])
 
   graph = svg.selectAll(".bar").data(data)
 
@@ -128,10 +139,12 @@ ahi_graph = (data) ->
   graph.enter().append("rect")
   .attr("class", "bar")
   .attr("x", (d) -> xa(d.weight_change))
-  .attr("width", 20)
-  .attr("y", (d) -> ya(d.ahi_change))
-  .attr("height", (d) -> h - ya(d.ahi_change))
+  .attr("width", w/6 - 10)
+  .attr("y", (d) -> d3.min([h - ya(d.ahi_change), ya(0)]))
+  .attr("height", (d) -> Math.abs(ya(d.ahi_change) - ya(0)))
 
+  window.xa = xa
+  window.ya = ya
 
 @reviewReady = () ->
   #set_up_graph()
