@@ -1,41 +1,51 @@
+<%=
+# Load data using json
+# Generate Chart
+
+
+
+%>
+
+<div id="review">
 <div class="page-header">
-  <h1><%= @question_flow.name %></h1>
-  <div><%= link_to "Return to My Dashboard", dashboard_path %></div>
+  <h1>Review of <strong><%= @question_flow.name %></strong>  Survey</h1>
+  <div>
+    <%= link_to dashboard_path, class: 'btn btn-md btn-default pull-left' do %>
+      <span class="glyphicon glyphicon-arrow-left"></span> Return to My Dashboard
+    <% end %>
+  </div>
+  <div>
+
+    <%= link_to '', class: 'btn btn-md btn-primary pull-right' do %>
+      Start Next Survey <span class="glyphicon glyphicon-arrow-right"></span>
+    <% end %>
+  </div>
 </div>
 
-<% @question_flow.all_questions.each do |question| %>
-  <% if question.user_answer(@answer_session).present? and [3,4].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
-    <div class="row send-request">
-      <div class="col-md-3">
-        <%= markdown question.text %>
-      </div>
-      <div class="col-md-3">
-        <p><%= question.user_answer(@answer_session).show_value %> <%= question.unit.name if question.unit.present? %></p>
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-6">
-            <table class="table table-bordered table-condensed">
-              <thead>
-                <tr>
-                  <th>Answer</th>
-                  <th>Frequency</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% question.answer_frequencies.each_pair do |k,v| %>
-                  <tr>
-                    <td><%= truncate(k.to_s, length: 40) %></td>
-                    <td><%= ((v.to_f/question.answers.length.to_f) * 100).round %>%</td>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-md-6"><div id="visualize_<%= question.id %>"></div></div>
-        </div>
+<div class="clearfix"></div>
 
-      </div>
-    </div>
-  <% end %>
-<% end %>
+<div class="row" id="bmi">
+  <div id="current" class="col-md-3">
+    <h3>Your Current Body Mass Index</h3>
+    <svg class="chart"></svg>
+  </div>
+  <div id="history" class="col-md-9">
+    <h3>Your BMI Trends</h3>
+    <svg class="chart"></svg>
+
+  </div>
+</div>
+
+
+<div class="row"  id="ahi">
+  <div id="prediction" class="col-md-4">
+    <h3>Your AHI Predictor</h3>
+    <svg class="chart"></svg>
+  </div>
+  <div id="ahi-graph" class="col-md-8">
+    <h3>Effects of Weight Change on AHI</h3>
+
+  </div>
+
+</div>
+</div>
