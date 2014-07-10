@@ -74,6 +74,10 @@ class AnswerSession < ActiveRecord::Base
     [first_answer] + first_answer.descendants
   end
 
+  def get_answer(question_id)
+    Question.find(question_id).answers.where(answer_session_id: self.id).first
+  end
+
   def started?
     last_answer.present?
   end

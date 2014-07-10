@@ -68,22 +68,26 @@
 #  .style("fill-opacity", 1e-6)
 #  .remove()
 
+
+calculate_predicted = () ->
+  $("#current-weight").data("weight")
+
+
 @weight_vs_ahi = (old_weight, new_weight) ->
   weight_change = ((new_weight-old_weight)/old_weight) * 100
   (2.938 * weight_change) + 4.833
 
-@ahi_data = [
-  {weight_change: -20, ahi_change: -48},
-  {weight_change: -10, ahi_change: -26},
-  {weight_change: -5, ahi_change: -14},
-  {weight_change: 5, ahi_change: 15},
-  {weight_change: 10, ahi_change: 32},
-  {weight_change: 20, ahi_change: 70}
-]
+draw_ahi_graph = () ->
+  data = [
+    {weight_change: -20, ahi_change: -48},
+    {weight_change: -10, ahi_change: -26},
+    {weight_change: -5, ahi_change: -14},
+    {weight_change: 5, ahi_change: 15},
+    {weight_change: 10, ahi_change: 32},
+    {weight_change: 20, ahi_change: 70}
+  ]
 
 
-
-ahi_graph = (data) ->
   m = {top: 20, right: 20, bottom: 30, left: 40}
   w = 750 - m.left - m.right
   h = 400 - m.top - m.bottom
@@ -148,7 +152,7 @@ ahi_graph = (data) ->
 
 @reviewReady = () ->
   #set_up_graph()
-  ahi_graph(ahi_data)
+  draw_ahi_graph()
 
 
 

@@ -38,7 +38,29 @@
 
 <div class="row"  id="ahi">
   <div id="prediction" class="col-md-4">
-    <h3>Your AHI Predictor</h3>
+    <h3>How might your AHI change?</h3>
+    <div class="list-group">
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-md-7"><h5>Your Current Weight:</h5></div>
+          <div class="col-md-5"><h5 id="current-weight" data-weight="<%= @answer_session.get_answer(3).value %>"><%= @answer_session.get_answer(3).value%>&nbsp;<%= @answer_session.get_answer(3).question.unit.name %></h5></div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-md-7"><h5>Your Desired Weight:</h5></div>
+          <div class="col-md-5"><div class="input-group input-group-sm"><input class="form-control"><span class="input-group-addon">pounds</span></div></div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <div class="row">
+          <div class="col-md-7"><h5>Possible AHI Change:</h5></div>
+          <div class="col-md-5"><h5 id="predicted"></h5></div>
+        </div>
+      </div>
+
+
+    </div>
 
 
   </div>
