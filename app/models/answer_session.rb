@@ -74,6 +74,10 @@ class AnswerSession < ActiveRecord::Base
     [first_answer] + first_answer.descendants
   end
 
+  def all_reportable_answers
+    all_answers.select {|answer| [3,4,6].include?(answer.question.question_type.id) and answer.show_value.present? }
+  end
+
   def get_answer(question_id)
     Question.find(question_id).answers.where(answer_session_id: self.id).first
   end

@@ -13,6 +13,14 @@ class AnswerSessionsController < ApplicationController
   def finish
     @answer_session = AnswerSession.find(params[:answer_session_id])
     @question_flow = @answer_session.question_flow
+
+    # Temporary holding place for specific reviews
+    if @question_flow.name == "A Little About Me"
+      @height = Question.find(2).user_answer(@answer_session)
+      @weight = Question.find(3).user_answer(@answer_session)
+
+    elsif @question_flow.name == "My Sleep Apnea Diagnosis"
+    end
   end
 
   def ask_question

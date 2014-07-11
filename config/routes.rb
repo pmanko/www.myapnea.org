@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     get 'version', to: 'pages#version', as: :version
 
 
+    get 'questions/frequencies/:question_id/:answer_session_id', to: "questions#frequencies", as: :question_frequencies, format: :json
 
     get 'dashboard', to: "patient#dashboard"
     get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme

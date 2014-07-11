@@ -8,8 +8,10 @@ class QuestionsController < ApplicationController
 
 
   def frequencies
-
+    @question = Question.find(params[:question_id])
+    @answer_session = AnswerSession.find(params[:answer_session_id])
   end
+
   private
 
   # Never trust parameters from the scary internet, only allow the white list through.
