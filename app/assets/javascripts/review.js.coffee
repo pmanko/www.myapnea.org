@@ -70,12 +70,15 @@
 
 
 calculate_predicted = () ->
-  $("#current-weight").data("weight")
+  old_w = parseFloat($("#current-weight").data("weight"))
+  new_w = parseFloat($("#desired-weight").val())
+
+  $("#predicted-change").html(weight_vs_ahi(old_w,new_w)+" %")
 
 
-@weight_vs_ahi = (old_weight, new_weight) ->
+weight_vs_ahi = (old_weight, new_weight) ->
   weight_change = ((new_weight-old_weight)/old_weight) * 100
-  (2.938 * weight_change) + 4.833
+  Math.round((2.938 * weight_change))
 
 draw_ahi_graph = () ->
   data = [
@@ -150,9 +153,15 @@ draw_ahi_graph = () ->
   window.xa = xa
   window.ya = ya
 
+
+
+
+
 @reviewReady = () ->
   #set_up_graph()
   draw_ahi_graph()
+  $(document).on 'change', '#desired-weight', () ->
+    calculate_predicted()
 
 
 
