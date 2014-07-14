@@ -13,7 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require jquery.slimscroll
 //= require jquery.PrintArea
 //= require d3.min

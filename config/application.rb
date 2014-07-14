@@ -35,7 +35,7 @@ module WwwMyapneaOrg
     config.assets.precompile += %w( day_theme.css night_theme.css reports/*)
 
     # Set templating engine for stylesheets to less.
-    config.app_generators.stylesheet_engine :less
+    config.app_generators.stylesheet_engine :sass
 
   end
 end
