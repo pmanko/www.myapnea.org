@@ -68,8 +68,6 @@
 #  .style("fill-opacity", 1e-6)
 #  .remove()
 
-bmi = (height, weight) ->
-  Math.round((weight / (height * height)) * 703)
 
 calculate_predicted_ahi_change = () ->
   height = parseFloat($("#height").data("height"))
@@ -77,35 +75,124 @@ calculate_predicted_ahi_change = () ->
   new_w = parseFloat($("#desired-weight").val())
 
   $("#predicted-change").html(weight_vs_ahi(old_w,new_w)+" %")
-  $("#predicted-bmi").html(bmi(height, new_w))
+  $("#predicted-bmi").html(get_bmi(height, new_w))
 
 weight_vs_ahi = (old_weight, new_weight) ->
   weight_change = ((new_weight-old_weight)/old_weight) * 100
   Math.round((2.938 * weight_change))
 
+get_bmi = (height, weight) ->
+  Math.round((weight / (height * height)) * 703)
 
 
-dra_frequency_graph = () ->
+
+draw_frequency_table = () ->
+  table = d3.select("#freq-table").append("table")
+  .attr("class", "table table-bordered")
+
+  @columns = ["label", "frequency"]
+  thead = table.append("thead")
+  tbody = table.append("tbody")
+
+  #thead.selectAll("th").data(columns).enter().append("th").text((d) -> d)
+
+
+  update_frequency_table()
+
+update_frequency_table = () ->
+  tbody = d3.select("#freq-table table tbody")
+  question_id = $("#question-select").val()
+  answer_session_id = $("#question-select").data("answer-session-id")
+
+
+  d3.json('/questions/frequencies/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
+    user_answer = json_data.user_answer
+    data = json_data.frequencies.map((f) -> { label: f.label, frequency: ((f.frequency * 100) + "%") })
+
+    rows = tbody.selectAll("tr").data(data)
+
+    rows.exit().remove()
+
+    rows.enter()
+    .append("tr")
+
+    rows.attr('class', (d) ->
+      if user_answer == d.label
+        "active"
+      else
+        ""
+    )
+
+    cells = rows.selectAll("td")
+    .data((row) -> columns.map((column) ->
+      {column: column, value: row[column]}
+    ))
+
+    cells.exit().remove()
+
+    cells.enter()
+    .append("td")
+
+    cells.html((d) -> d.value )
+
+
+  )
+
+
+draw_frequency_graph = () ->
   width = 300
   height = 300
-  radius = 150
+  @radius = 150
+  @color = d3.scale.category20c();
+  @arc = d3.svg.arc().outerRadius(radius)
+  @pie = d3.layout.pie().value((d) -> d.frequency)
 
-  svg = 34.select("#freq-graph").append('svg')
+  svg = d3.select("#freq-graph").append('svg')
   .attr("height", height)
   .attr("width", width)
   .append("g")
   .attr("transform", "translate("+radius+","+radius+")")
 
-  arc = d3.svg.arc().outerRadius(radius)
-
-  pie = d3.layout.pie().value((d) -> d.frequency)
 
 
+  update_frequency_graph()
 
 
 
 update_frequency_graph = () ->
-  data = null;
+  question_id = $("#question-select").val()
+  answer_session_id = $("#question-select").data("answer-session-id")
+
+  d3.json('/questions/frequencies/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
+    console.log(json_data)
+    window.json_data = json_data
+
+    arcs = d3.select("#freq-graph svg g").selectAll("g.slice")
+      .data(pie(json_data.frequencies))
+
+    entrance = arcs.enter()
+    .append("g")
+    .attr("class", "slice")
+    entrance.append("path")
+    .attr("fill", (d,i) -> color(i))
+    .attr("d", arc)
+    entrance.append("text")
+    .attr("transform", (d) ->
+      d.innerRadius = 0
+      d.outerRadius = radius
+      "translate(" + arc.centroid(d) + ")"
+    )
+    .attr("dy", ".35em")
+    .style("text-anchor", "middle")
+    .text((d) -> d.data.label);
+
+
+    arcs.exit().remove();
+  )
+
+
+
+###
 
   arcs = d3.select("#freq-graph svg").selectAll("g.slice")
 
@@ -121,7 +208,7 @@ update_frequency_graph = () ->
   .attr("fill", (d, i) -> color(i))
   .attr("d", arc)
 
-  
+
   var vis = d3.select("<%= selector %>")
   .append("svg:svg")              //create the SVG element inside the <body>
   .data([data])                   //associate our data with the document
@@ -148,6 +235,7 @@ update_frequency_graph = () ->
 
 
 
+###
 
 
 
@@ -290,8 +378,13 @@ draw_ahi_graph = () ->
   #set_up_graph()
   draw_ahi_graph()
   draw_bmi_graph()
+  draw_frequency_table()
+  draw_frequency_graph()
   $(document).on 'change', '#desired-weight', () ->
     calculate_predicted_ahi_change()
+  $(document).on 'change', '#question-select', () ->
+    update_frequency_table()
+    update_frequency_graph()
 
 
 
