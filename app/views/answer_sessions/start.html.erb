@@ -4,12 +4,8 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
         <div class="panel-heading">
-
-          <h3 class="panel-title">
-            <%= @question_flow.name %>
-            <div class='pull-right'><%= link_to "Return to My Dashboard", dashboard_path %></div>
-          </h3>
-          <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
+          <%= render partial: 'answer_sessions/header', locals: { question_flow: @question_flow } %>
+          <%= render partial: 'answer_sessions/session_progress', locals: { stats: @answer_session.calculate_status_stats } %>
 
         </div>
         <div class="panel-body">
