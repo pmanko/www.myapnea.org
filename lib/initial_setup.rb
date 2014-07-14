@@ -14,7 +14,8 @@ files = [
          ['config/initializers', 'action_mailer.rb'],
          ['config/initializers', 'secret_token.rb'],
          ['config/initializers', '00_site_name.rb'],
-         ['config/environments', 'production.rb']
+         ['config/environments', 'production.rb'],
+         ['app/assets/stylesheets', 'production.scss']
         ]
 
 files.each do |folder_name, file_name|
