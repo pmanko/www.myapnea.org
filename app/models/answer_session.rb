@@ -75,7 +75,7 @@ class AnswerSession < ActiveRecord::Base
   end
 
   def all_reportable_answers
-    all_answers.select {|answer| [3,4].include?(answer.question.question_type.id) and answer.show_value.present? }
+    all_answers.select {|answer| [3].include?(answer.question.question_type.id) and answer.show_value.present? }
   end
 
   def get_answer(question_id)

@@ -39,13 +39,15 @@ class Question < ActiveRecord::Base
         groups << {label: o.value(answer_type.data_type), answers: [], count: 0, frequency: 0.0}
       end
 
-      total_answers = answers.count
+      total_answers = answers.select{|answer| answer.show_value.present?}.length
 
       answers.group_by{|answer| answer.show_value}.each_pair do |key, array|
         g = groups.find{|x| x[:label] == key }
-        g[:answers] = array
-        g[:count] = array.count
-        g[:frequency] = array.count/total_answers.to_f
+        if g
+          g[:answers] = array
+          g[:count] = array.count
+          g[:frequency] = array.count/total_answers.to_f
+        end
       end
 
       groups

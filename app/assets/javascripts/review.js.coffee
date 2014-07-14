@@ -165,16 +165,20 @@ update_frequency_graph = () ->
   qf_path = $("#question-select").data("json-path")
 
   d3.json(qf_path+'/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
+    d3.select("#freq-graph svg g").selectAll("g.slice").remove()
+
     arcs = d3.select("#freq-graph svg g").selectAll("g.slice")
       .data(pie(json_data.frequencies))
 
-    entrance = arcs.enter()
+    g = arcs.enter()
     .append("g")
     .attr("class", "slice")
-    entrance.append("path")
+
+    g.append("path")
     .attr("fill", (d,i) -> color(i))
     .attr("d", arc)
-    entrance.append("text")
+
+    g.append("text")
     .attr("transform", (d) ->
       d.innerRadius = 0
       d.outerRadius = radius
@@ -182,10 +186,14 @@ update_frequency_graph = () ->
     )
     .attr("dy", ".35em")
     .style("text-anchor", "middle")
-    .text((d) -> d.data.label);
+    .text((d) ->
+      if d.data.frequency > 0.1
+        d.data.label
+      else
+        ""
+    );
 
 
-    arcs.exit().remove();
   )
 
 
@@ -373,16 +381,17 @@ draw_ahi_graph = () ->
 
 
 @reviewReady = () ->
-  #set_up_graph()
-  draw_ahi_graph()
-  draw_bmi_graph()
-  draw_frequency_table()
-  draw_frequency_graph()
-  $(document).on 'change', '#desired-weight', () ->
-    calculate_predicted_ahi_change()
-  $(document).on 'change', '#question-select', () ->
-    update_frequency_table()
-    update_frequency_graph()
+  if $("#review").length > 0
+    #set_up_graph()
+    draw_ahi_graph()
+    draw_bmi_graph()
+    draw_frequency_table()
+    draw_frequency_graph()
+    $(document).on 'change', '#desired-weight', () ->
+      calculate_predicted_ahi_change()
+    $(document).on 'change', '#question-select', () ->
+      update_frequency_table()
+      update_frequency_graph()
 
 
 
