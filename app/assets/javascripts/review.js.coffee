@@ -103,9 +103,9 @@ update_frequency_table = () ->
   tbody = d3.select("#freq-table table tbody")
   question_id = $("#question-select").val()
   answer_session_id = $("#question-select").data("answer-session-id")
+  qf_path = $("#question-select").data("json-path")
 
-
-  d3.json('/questions/frequencies/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
+  d3.json(qf_path+'/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
     user_answer = json_data.user_answer
     data = json_data.frequencies.map((f) -> { label: f.label, frequency: ((f.frequency * 100) + "%") })
 
@@ -162,11 +162,9 @@ draw_frequency_graph = () ->
 update_frequency_graph = () ->
   question_id = $("#question-select").val()
   answer_session_id = $("#question-select").data("answer-session-id")
+  qf_path = $("#question-select").data("json-path")
 
-  d3.json('/questions/frequencies/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
-    console.log(json_data)
-    window.json_data = json_data
-
+  d3.json(qf_path+'/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
     arcs = d3.select("#freq-graph svg g").selectAll("g.slice")
       .data(pie(json_data.frequencies))
 
