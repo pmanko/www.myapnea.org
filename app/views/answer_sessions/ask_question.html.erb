@@ -4,11 +4,8 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="panel panel-default">
         <div class="panel-heading">
-          <h3 class="panel-title">
-            <%= @answer_session.question_flow.name %>
-            <div class='pull-right'><%= link_to "Return to My Dashboard", dashboard_path %></div>
-          </h3>
-          <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats} %>
+          <%= render partial: 'answer_sessions/header', locals: {question_flow: @answer_session.question_flow} %>
+          <%= render partial: 'session_progress', locals: {stats: @answer_session.calculate_status_stats }%>
         </div>
 
         <%= form_tag(process_answer_path, {role: "form"}) do %>
@@ -18,7 +15,7 @@
           </div>
           <div class="panel-footer">
             <%= link_to 'Previous Question', previous_question_path(@answer), class: 'btn btn-lg btn-default', tabindex: -1 %>
-            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg">Next Question</button>
+            <button type="submit" name="direction" value="next" class="btn btn-primary btn-lg pull-right">Next Question</button>
           </div>
         <% end %>
         </div>

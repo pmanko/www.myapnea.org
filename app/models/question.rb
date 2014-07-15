@@ -32,17 +32,25 @@ class Question < ActiveRecord::Base
   def answer_frequencies
     if [3,4].include? question_type.id
       all_options = answer_options.to_a.sort_by!{|ao| ao.value(answer_type.data_type)}
-      groups = {}
+
+      groups = []
 
       all_options.each do |o|
-        groups[o.value(answer_type.data_type)] = []
+        groups << {label: o.value(answer_type.data_type), answers: [], count: 0, frequency: 0.0}
       end
+
+      total_answers = answers.select{|answer| answer.show_value.present?}.length
 
       answers.group_by{|answer| answer.show_value}.each_pair do |key, array|
-        groups[key] = array
+        g = groups.find{|x| x[:label] == key }
+        if g
+          g[:answers] = array
+          g[:count] = array.count
+          g[:frequency] = array.count/total_answers.to_f
+        end
       end
 
-      groups.inject({}) {|h, (k,v)| h[k] = v.length; h}
+      groups
     elsif question_type.id == 6
       answer_values = answers.map(&:value).map(&:to_f)
 

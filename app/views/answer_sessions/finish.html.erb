@@ -1,41 +1,37 @@
-<div class="page-header">
-  <h1><%= @question_flow.name %></h1>
-  <div><%= link_to "Return to My Dashboard", dashboard_path %></div>
+<%=
+# Load data using json
+# Generate Chart
+
+
+
+%>
+
+<div id="review">
+  <div class="page-header">
+    <h1>Thank you for completing the <strong><%= @question_flow.name %></strong> Survey!</h1>
+    <br/>
+    <%= render partial: "answer_sessions/report_nav" %>
+  </div>
+
+  <div class="clearfix"></div>
+
+  <h2>Here's some feedback on the answers you provided</h2>
+  <br/>
+
+  <%= render partial: "answer_sessions/reports/report_#{@question_flow.id}" %>
+
+
+  <br/>
+
+  <br/>
+  <br/>
+
+
+  <%= render partial: "answer_sessions/reports/default" %>
+
+  <br/>
+  <br/>
+
+  <%= render partial: "answer_sessions/report_nav" %>
+
 </div>
-
-<% @question_flow.all_questions.each do |question| %>
-  <% if question.user_answer(@answer_session).present? and [3,4].include?(question.question_type.id) and question.user_answer(@answer_session).show_value.present? %>
-    <div class="row send-request">
-      <div class="col-md-3">
-        <%= markdown question.text %>
-      </div>
-      <div class="col-md-3">
-        <p><%= question.user_answer(@answer_session).show_value %> <%= question.unit.name if question.unit.present? %></p>
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-6">
-            <table class="table table-bordered table-condensed">
-              <thead>
-                <tr>
-                  <th>Answer</th>
-                  <th>Frequency</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% question.answer_frequencies.each_pair do |k,v| %>
-                  <tr>
-                    <td><%= truncate(k.to_s, length: 40) %></td>
-                    <td><%= ((v.to_f/question.answers.length.to_f) * 100).round %>%</td>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </div>
-          <div class="col-md-6"><div id="visualize_<%= question.id %>"></div></div>
-        </div>
-
-      </div>
-    </div>
-  <% end %>
-<% end %>

@@ -3,7 +3,7 @@
 </div>
 
 <div class="row">
-  <div class="col-md-12">
+  <div class="col-md-6">
     <h2>Questionnaires</h2>
     <div id="questionnaires" class="list-group">
       <% QuestionFlow.where(status: "show").order('id').each do |qf| %>
@@ -21,7 +21,7 @@
           <%= link_to start_or_resume(qf, as), class: 'list-group-item' do %>
             <h3><%= qf.name %></h3>
             <% if as.present? and as.started? %>
-              <%=  render partial: 'answer_sessions/session_progress', locals: {stats: as.calculate_status_stats} %>
+              <%=  render partial: 'answer_sessions/session_progress', locals: {stats: as.calculate_status_stats, question_flow: qf} %>
             <% else %>
               <p>Questionnaire not yet started.</p>
               <p><strong>Estimated time commitment:</strong> <%= qf.total_time.ceil %> minutes for <%= qf.all_questions.length %> questions.</p>
@@ -32,11 +32,19 @@
     </div>
   </div>
 
-  <div class="hidden">
-    <h2>My Profile</h2>
-    <div class="btn-group-vertical">
-      <%= link_to "Change Email", "", class: 'btn btn-link' %>
-      <%= link_to "Change Password", "", class: 'btn btn-link' %>
+  <div class="col-md-6">
+    <h2>Daily Tracks</h2>
+    <p class="text-info">Keep track of your health with daily updates!</p>
+    <div class="row">
+      <div class="col-md-4">
+
+      </div>
+      <div class="col-md-8">
+
+      </div>
     </div>
+
+
+
   </div>
 </div>

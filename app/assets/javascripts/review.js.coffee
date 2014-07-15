@@ -1,6 +1,15 @@
+
 @reviewReady = () ->
-  if $(".send-request").length > 0
-    $.ajax(
-      url: document.URL
-      dataType: "script"
-    )
+  if $("#review").length > 0
+    null
+
+
+
+
+
+
+
+
+
+
+
