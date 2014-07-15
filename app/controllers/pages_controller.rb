@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+
+  layout 'myapnea'
+
   def faqs
 
     @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "faqs.#{I18n.locale}.yml"))

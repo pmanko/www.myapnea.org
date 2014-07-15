@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   scope "(:locale)", locale: /en|es|pl/ do
 
     # Static Pages
+    get 'home', to: "pages#home", as: :home
     get 'network', to: "pages#network", as: :network
     get 'faqs', to: "pages#faqs", as: :faqs
     get 'team', to: "pages#team", as: :team
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
 
     get 'questions/frequencies(/:question_id/:answer_session_id)', to: "questions#frequencies", as: :question_frequencies, format: :json
 
-    get 'dashboard', to: "patient#dashboard"
+    get 'dashboard', to: "patient#dashboard", as: :dashboard
     get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme
 
     # Answer Sessions

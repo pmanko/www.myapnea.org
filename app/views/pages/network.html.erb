@@ -1,64 +1,113 @@
-<div class="page-header">
-  <h1><%= @page_content['page_title'] %></h1>
-</div>
-<div id="network">
-<div class="row">
-  <div class="col-md-9">
-    <section id="learn">
-      <h3 class="text-primary"><%= @page_content['learn']['title'] %></h3>
-      <%= markdown @page_content['learn']['content'] %>
-    </section>
-    <section id="join">
-      <h3 class="text-primary"><%= @page_content['join']['title'] %></h3>
-      <%= markdown @page_content['join']['content'] %>
-    </section>
-    <section id="share">
-      <h3 class="text-primary"><%= @page_content['share']['title'] %></h3>
-      <%= markdown @page_content['share']['content'] %>
-    </section>
-    <section id="connect">
-      <h3 class="text-primary"><%= @page_content['connect']['title'] %></h3>
-      <%= markdown @page_content['connect']['content'] %>
-    </section>
-    <section id="community">
-      <h3 class="text-primary"><%= @page_content['community']['title'] %></h3>
-      <%= markdown @page_content['community']['content'] %>
-    </section>
+<div class="row pageTop">
+  <%= link_to 'Sign Up Today', pledge_path, class: 'sign', id: 'innerSignup' %>
 
-
+  <div id="innerCarousel">
+    <%= image_tag 'myapnea/hdr-sunsetBeach.jpg', class: 'headerImg', alt: '...' %>
   </div>
-  <div class="col-md-3">
+</div>
 
-    <div class="myapnea-sidebar hidden-print affix-top" role="complementary">
-      <ul class="nav myapnea-sidenav">
+<div class="row highlightPanelTop">
+  <div class="learnImg imgMobileFullWidth"></div>
+  <div class="container">
 
-        <li class="">
-          <a href="#learn"><%= @page_content['learn']['title'] %></a>
-        </li>
-        <li class="">
-          <a href="#join"><%= @page_content['join']['title'] %></a>
-        </li>
-        <li class="">
-          <a href="#share"><%= @page_content['share']['title'] %></a>
-        </li>
-        <li class="">
-          <a href="#connect"><%= @page_content['connect']['title'] %></a>
-        </li>
-        <li class="">
-          <a href="#community"><%= @page_content['community']['title'] %></a>
-        </li>
+
+    <div id="Learn" class="col-md-offset-5 col-md-7">
+      <h1>Learn</h1>
+      <p>
+        Come share and learn from others like you. We all know
+        that the management of sleep apnea isn’t always
+        guided by what’s best for each person. Which tests
+        we get sometimes depends on our insurance
+        coverage. Which treatment we get also may
+        depend on our insurance and which doctor we
+        see. Success is defined by how often we use our treatment, rather than how we feel or how it
+        improves our life. Figuring out what types of
+        treatments are best for each one of us with sleep
+        apnea is hard.
+      </p>
+
+      <p>
+        MyApnea.org brings together patients, researchers and doctors
+        all in the same community to share and discuss how to better diagnose
+        and treat sleep apnea to improve all of our lives.The promise to shape research is potentially huge.
+      </p>
+      <p>
+        The information being collected and potential to change lives is large.
+      </p>
+      <p>
+        By contributing information on your sleep apnea and health, researchers will be able to make side-by-side comparisons of different treatments and learn how different treatments help different types of patients.
+        This opportunity represents a whole new type of partnership with a high level of focus, resources
+        and information aimed at fighting sleep apnea.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="container makeRoom">
+    <div id="Join" class="col-md-9">
+      <h1>Join</h1>
+      <p>
+        If you have been diagnosed with sleep apnea, or if you love someone diagnosed with apnea,
+        join us. In the future, parents of children with apnea will have the ability to join.
+      </p>
+      <p>
+        If you are ready to take on your apnea in a whole new way and work with us to find answers
+        together, please join the patient-powered network.
+      </p>
+    </div>
+    <div class="col-md-3">
+      <%= image_tag 'myapnea/apneaIcon.png' %>
+    </div>
+  </div>
+</div>
+
+<div class="dividerLight"></div>
+
+<div class="container tall">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="shareImg imgMobileFullWidth"></div>
+    </div>
+    <div class="col-md-5">
+      <h1>Share</h1>
+      <p>The information you share will go into web and mobile apps that:</p>
+      <ul>
+        <li>Display your information into easy to use and understand graphs and charts that provide feedback on your health and treatment progress; you can view them on your computer, tablet or smartphone. It's that easy. </li>
+        <li>Creat graphs so you can compare your experience with treatments, devices and symptoms to others like you. It's your personal information, so why shouldn't you control it and see it when you want to?</li>
       </ul>
+      <p>The bottom line is you get new tools and new power to help you better manage your apnea and health.</p>
+    </div>
+  </div>
+</div>
 
+<div class="row highlightPanel community">
+  <div class="communityImg imgMobileFullWidth"></div>
+  <div class="container tall">
+    <div class="col-md-7 makeRoom">
+      <%= image_tag 'myapnea/communityIcon.png' %>
+      <h1>COMMUNITY</h1>
 
+      <p>
+        When you join MyApnea.org, you become part of a national community
+        of people who know just what you go through every night and every
+        day. We get it. Together, we can fight sleep apnea and improve
+        OUR lives. As our group grows, we get stronger, and
+        MyApnea.org will offer:
+      </p>
 
-      <a class="back-to-top" href="#top">
-        Back to top
-      </a>
+      <ul>
+        <li>A social network to share common experiences, successes, hopes, and frustrations.</li>
+        <li>Ways to track and monitor your health and progress online or right on your phone.</li>
+        <li>Breaking news on new treatments, study findings and study opportunities.</li>
+        <li> How-to videos and other educational information.</li>
+        <li> Ways to vote on research ideas you think are most important.
+        <li> Rewards for staying involved.</li>
+      </ul>
     </div>
 
-  </div>
+    <div class="col-md-3">
+    </div><!-- /.col-md-8 -->
+  </div><!-- /.container -->
+</div><!-- /.row -->
 
-</div>
-</div>
-
-<%= render partial: 'layouts/join_bottom' %>

@@ -15,6 +15,7 @@ class UsersController < ApplicationController
       redirect_to thank_you_path
     else
       @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "consent.#{I18n.locale}.yml"))
+      render layout: 'myapnea'
     end
   end
 
@@ -24,6 +25,7 @@ class UsersController < ApplicationController
       redirect_to new_user_registration_path
     else
       @pc = YAML.load_file(Rails.root.join('lib', 'data', 'content', "pledge.#{I18n.locale}.yml"))
+      render layout: 'myapnea'
     end
   end
 
