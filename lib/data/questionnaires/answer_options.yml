@@ -544,3 +544,34 @@
   text_value_en: Often
 - id: 270
   text_value_en: Very poor
+
+- id: 200001
+  text_value_en: 1
+
+- id: 200002
+  text_value_en: 2
+
+- id: 200003
+  text_value_en: 3
+
+- id: 200004
+  text_value_en: 4
+
+- id: 200005
+  text_value_en: 5
+
+- id: 200006
+  text_value_en: 6
+
+- id: 200007
+  text_value_en: 7
+
+- id: 200008
+  text_value_en: 8
+
+- id: 200009
+  text_value_en: 9
+
+- id: 200010
+  text_value_en: 10
+

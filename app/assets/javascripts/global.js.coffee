@@ -1,5 +1,5 @@
 @setFocus = () ->
-  $('input, textarea, select').not(':input[type=button], :input[type=hidden], :input[type=submit], :input[type=reset]').first().focus()
+  $('input, textarea, select').not(':input[type=button], :input[type=hidden], :input[type=submit], :input[type=reset], .no-focus').first().focus()
   #$('#answer-session :input:enabled:visible:first').focus()
 
 
@@ -11,7 +11,9 @@
   affixSidebarReady()
   registrationsReady()
   reviewReady()
+  votesReady()
   setFocus()
+
 
 
 

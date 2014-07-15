@@ -1,1 +1,1 @@
-json.extract! @question, :id
+json.extract! @question, :id, :rating

@@ -10,6 +10,7 @@
 
         <%= form_tag(process_answer_path, {role: "form"}) do %>
           <div class="panel-body">
+            <div class="pull-right"><span class="text-muted">Rate this question:&nbsp;</span><%= render partial: 'votes/rate_question', locals: { question: @question, show_badge: false } %></div>
             <%= render partial: 'help_message' if @question.question_help_message.present?%>
             <%= render partial: 'question_form' %>
           </div>

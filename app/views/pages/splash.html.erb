@@ -7,18 +7,47 @@
         <%= markdown @page_content['join']['content'] %>
 
         <div class="row">
-          <div class='col-md-3 col-xs-5'>
-            <%= image_tag 'logos/BWH_logo.gif', id: 'bwh-logo' %>
-          </div>
-          <div class="col-md-4 col-xs-7">
-            <%= image_tag 'logos/asaa-logo.png', id: 'asaa-logo' %>
-          </div>
-          <div class="col-md-5 col-xs-12">
+          <div class="col-md-12 col-xs-12">
             <%= link_to @page_content['join']['button'], pledge_path, class: "btn btn-block btn-primary btn-lg", id: "join-btn-top", remote: false %>
           </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section id="research-questions">
+    <h2>What are some research questions that might interest you?</h2>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Place your vote below and help guide sleep apnea reasearch!</div>
+      <!-- List group -->
+      <div class="list-group">
+        <% (1000001..1000012).map{|q_id| Question.find(q_id)}.each_with_index do |q, i| %>
+          <div class="list-group-item">
+            <div class="row">
+              <div class="col-md-2">
+                <h3 class="pull-left"><%= i+1 %></h3>
+                <div class="pull-right"><%= render partial: 'votes/rate_question', locals: {question: q, show_badge: true} %></div>
+              </div>
+              <div class="col-md-10"><h4 class="text-primary"><%= q.text %></h4></div>
+
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <div class="panel-body">
+        <span class="help-block">Think something's missing from the list?</span>
+        <div class="input-group input-group-lg">
+          <input class="form-control no-focus" placeholder="Enter a research question you've always wanted to ask." />
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Submit!</button>
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+
   </section>
 
 
@@ -126,4 +155,3 @@
 </div>
 
 <%= render partial: 'layouts/join_bottom' %>
-<%= render partial: 'layouts/press_others' %>

@@ -11,7 +11,7 @@ tables = ["answer_types",
           "question_answer_options",
           "answer_sessions",
           "answers",
-          "answer_values", "questions", "answer_edges", "units", "question_help_messages", "answer_options", "question_types", "question_edges", "question_flows"]
+          "answer_values", "questions", "answer_edges", "units", "question_help_messages", "answer_options", "question_types", "question_edges", "question_flows", "votes"]
 
 tables.each do |table|
   ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
@@ -28,7 +28,7 @@ files = [
 ]
 
 files.each do |file_name, model_class|
-  file_path = Rails.root.join('lib', 'data', Rails.env, 'questionnaires', file_name)
+  file_path = Rails.root.join('lib', 'data', 'questionnaires', file_name)
 
   puts(file_path)
   yaml_data = YAML.load_file(file_path)
@@ -39,7 +39,7 @@ files.each do |file_name, model_class|
   end
 end
 
-qe_path = Rails.root.join('lib', 'data', Rails.env, 'questionnaires', 'question_edges.yml')
+qe_path = Rails.root.join('lib', 'data', 'questionnaires', 'question_edges.yml')
 puts(qe_path)
 
 yaml_data = YAML.load_file(qe_path)

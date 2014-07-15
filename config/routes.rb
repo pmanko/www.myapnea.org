@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     get 'privacy-policy', to: "pages#privacy_policy", as: :privacy_policy
     get 'thank-you', to: "pages#thank_you", as: :thank_you
     get 'version', to: 'pages#version', as: :version
-
+    get 'splash', to: 'pages#splash', as: :splash
 
     get 'questions/frequencies(/:question_id/:answer_session_id)', to: "questions#frequencies", as: :question_frequencies, format: :json
 
@@ -27,6 +27,7 @@ Rails.application.routes.draw do
     get 'survey/:answer_session_id/:question_id', to: 'answer_sessions#ask_question', as: :ask_question
     match 'survey', to: 'answer_sessions#process_answer', via: :post, as: :process_answer
 
+    match 'vote', to: 'votes#vote', via: :post, as: :vote
 
     resources :question_flows
 

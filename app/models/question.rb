@@ -7,6 +7,7 @@ class Question < ActiveRecord::Base
   has_many :question_answer_options, -> { order "question_answer_options.created_at" }
   has_many :answer_options, through: :question_answer_options
   has_many :answers
+  has_many :votes
   belongs_to :question_help_message
 
   include Localizable
@@ -27,6 +28,14 @@ class Question < ActiveRecord::Base
 
   def user_answer(answer_session)
     answers.where(answer_session_id: answer_session.id).first
+  end
+
+  def rating
+    votes.sum(:rating)
+  end
+
+  def has_vote?(user, rating)
+    votes.where(user_id: user.id, rating: rating).count > 0
   end
 
   def answer_frequencies
