@@ -11,14 +11,16 @@ tables = ["answer_types",
           "question_answer_options",
           "answer_sessions",
           "answers",
-          "answer_values", "questions", "answer_edges", "units", "question_help_messages", "answer_options", "question_types", "question_edges", "question_flows", "votes"]
+          "answer_values", "questions", "answer_edges", "units", "question_help_messages", "answer_options", "question_types", "question_edges", "question_flows", "votes", "groups"]
 
 tables.each do |table|
   ActiveRecord::Base.connection.execute("TRUNCATE #{table}")
+  ActiveRecord::Base.connection.execute("SELECT SETVAL('#{table}_id_seq', 100000000)")
 end
 
 files = [
     ["units.yml", Unit],
+    ["groups.yml", Group],
     ["answer_types.yml", AnswerType],
     ["question_types.yml", QuestionType],
     ["answer_options.yml", AnswerOption],

@@ -21,10 +21,10 @@
       <!-- Default panel contents -->
       <div class="panel-heading">Place your vote below and help guide sleep apnea reasearch!</div>
       <!-- List group -->
-      <div class="list-group">
-        <% (1000001..1000012).map{|q_id| Question.find(q_id)}.each_with_index do |q, i| %>
+      <div class="list-group research-questions">
+        <% Group.find(1).questions.sort_by{|q| -q.rating }.each_with_index do |q, i| %>
           <div class="list-group-item">
-            <div class="row">
+            <div class="row" data-id="<%= q.id %>">
               <div class="col-md-2">
                 <h3 class="pull-left"><%= i+1 %></h3>
                 <div class="pull-right"><%= render partial: 'votes/rate_question', locals: {question: q, show_badge: true} %></div>
@@ -38,9 +38,9 @@
       <div class="panel-body">
         <span class="help-block">Think something's missing from the list?</span>
         <div class="input-group input-group-lg">
-          <input class="form-control no-focus" placeholder="Enter a research question you've always wanted to ask." />
+          <input id="rq-text" class="form-control no-focus" placeholder="Enter a research question you've always wanted to ask." />
           <span class="input-group-btn">
-            <button class="btn btn-default" type="button">Submit!</button>
+            <button class="btn btn-default" type="button" data-submit-path="<%= add_to_rl_path %>" id="submit-rq">Submit!</button>
           </span>
         </div>
       </div>

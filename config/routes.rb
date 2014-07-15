@@ -28,6 +28,7 @@ Rails.application.routes.draw do
     match 'survey', to: 'answer_sessions#process_answer', via: :post, as: :process_answer
 
     match 'vote', to: 'votes#vote', via: :post, as: :vote
+    match 'add_to_rl', to: 'questions#add_to_research_list', via: :post, as: :add_to_rl
 
     resources :question_flows
 

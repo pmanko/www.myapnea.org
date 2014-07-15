@@ -22,12 +22,19 @@ module AnswerSessionsHelper
 
   end
 
-  def start_or_resume(question_flow, answer_session)
+  def start_or_resume(question_flow, answer_session = nil)
     if answer_session.present? and answer_session.started?
       ask_question_path(answer_session_id: answer_session.id, question_id: answer_session.last_answer.next_question.id)
     else
       start_answer_session_path(question_flow_id: question_flow.id)
     end
+  end
+
+  def go_to_next_survey(user, current_qf)
+    next_qf = QuestionFlow.where(status: "show").select{|qf| qf.id != current_qf.id }.first
+    as = user.answer_sessions.where(question_flow_id: next_qf.id)
+
+    start_or_resume(next_qf, as)
   end
 
   def bmi(height, weight)

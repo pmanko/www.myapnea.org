@@ -1,11 +1,32 @@
-a.finished {
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  clear: none;
-  display: inline;
-}
+#dashboard {
+  a.finished {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    clear: none;
+    display: inline;
+  }
 
-.slice text {
-  font-size: 10pt;
+  .slice text {
+    font-size: 10pt;
+  }
+
+
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x.axis path {
+    display: none;
+  }
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
 }
