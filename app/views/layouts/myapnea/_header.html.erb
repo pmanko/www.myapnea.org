@@ -20,7 +20,12 @@
               <div class="navbar pull-right">
                 <ul class="nav navbar-nav">
                   <li><%= link_to 'Home', home_path, class: (current_page?(home_path) ? "currentPage" : "") %></li>
-                  <li><%= link_to 'Network', network_path, class: (current_page?(network_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Learn', learn_path, class: (current_page?(learn_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Share', share_path, class: (current_page?(share_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Research', research_path, class: (current_page?(research_path) ? "currentPage" : "") %></li>
+                  <% if false %>
+                    <li><%= link_to 'Network', network_path, class: (current_page?(network_path) ? "currentPage" : "") %></li>
+                  <% end %>
                   <li><%= link_to 'FAQs', faqs_path, class: (current_page?(faqs_path) ? "currentPage" : "") %></li>
                   <li><%= link_to 'Team', team_path, class: (current_page?(team_path) ? "currentPage" : "") %></li>
                   <% if current_user %><li><%= link_to 'My Dashboard', dashboard_path, class: (current_page?(dashboard_path) ? "currentPage" : "") %></li><% end %>
