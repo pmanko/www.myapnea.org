@@ -22,4 +22,14 @@ module ApplicationHelper
       else ""
     end
   end
+
+  def flash_alert_class(level)
+    case level.to_sym
+      when :notice then "warning"
+      when :success then "success"
+      when :error then "danger"
+      when :alert then "danger"
+      else ""
+    end
+  end
 end

@@ -5,13 +5,16 @@
 @import "bootstrap/mixins";
 
 // Mine
-@import "flatly_variables";
-@import "flatly_extras";
+// @import "flatly_variables";
+// @import "flatly_extras";
 
+// MyApneaDesign v3
+@import "myapnea/myapnea-variables";
 
 @import "bootstrap-custom";
 @import "bootstrap-sprockets";
 
 @import "manifest";
 
-
+@import "myapnea/myapnea-extras";
+@import "myapnea/additional-overrides";

@@ -1,0 +1,40 @@
+<div class="row">
+  <header>
+    <div class="navbar">
+      <div class="navbar-inverse navbar-fixed-top col-md-12" role="navigation">
+        <div class="container">
+          <%= link_to 'MyApnea.Org', home_path, class: 'navbar-brand', id: 'myApneaLogo' %>
+          <div class="navContainer">
+            <% if current_user %>
+              <div class="clientFunctions">
+                <div class="userName">Welcome <%= current_user.first_name %> <%= current_user.last_name.to_s.first %>.</div>
+                <div class="signInOut"><%= link_to t(:log_out), destroy_user_session_path, method: :delete %></div>
+              </div>
+            <% else %>
+              <div class="clientFunctions">
+                <div class="userName"></div>
+                <div class="signInOut"><%= link_to t(:log_in), new_user_session_path %></div>
+              </div>
+            <% end %>
+            <div class="navFunctions">
+              <div class="navbar pull-right">
+                <ul class="nav navbar-nav">
+                  <li><%= link_to 'Home', home_path, class: (current_page?(home_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Learn', learn_path, class: (current_page?(learn_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Share', share_path, class: (current_page?(share_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Research', research_path, class: (current_page?(research_path) ? "currentPage" : "") %></li>
+                  <% if false %>
+                    <li><%= link_to 'Network', network_path, class: (current_page?(network_path) ? "currentPage" : "") %></li>
+                  <% end %>
+                  <li><%= link_to 'FAQs', faqs_path, class: (current_page?(faqs_path) ? "currentPage" : "") %></li>
+                  <li><%= link_to 'Team', team_path, class: (current_page?(team_path) ? "currentPage" : "") %></li>
+                  <% if current_user %><li><%= link_to 'My Dashboard', dashboard_path, class: (current_page?(dashboard_path) ? "currentPage" : "") %></li><% end %>
+                </ul>
+              </div>
+            </div>
+          </div><!-- /.navContainer -->
+        </div><!-- /.container -->
+      </div><!-- /.row -->
+    </div><!--/.nav -->
+  </header>
+</div>
