@@ -1,11 +1,26 @@
 <div id="dashboard">
-<div class="page-header">
-  <h1><%= current_user.first_name %>'s Dashboard</h1>
-</div>
 
 <div class="row">
-  <div class="col-md-12">
-    <h2>Questionnaires</h2>
+  <div class="col-sm-3 col-md-2 sidebar">
+    <ul class="nav nav-sidebar">
+      <li><%= link_to "Help Guide Sleep Apnea Research!" %></li>
+    </ul>
+
+    <ul class="nav nav-sidebar dashboard-target">
+      <li class="active"><a data-target="my-sleep" href="#">My Sleep</a></li>
+      <li><a data-target="my-surveys" href="#">My Surveys</a></li>
+      <li><a data-target="research-qs" href="#">My Research Questions</a></li>
+    </ul>
+
+    <ul class="nav nav-sidebar">
+      <li><a href="#">Our Network</a></li>
+      <li><a href="#">Our Research Team</a></li>
+      <li><a href="#">FAQs About Sleep Apnea Research</a></li>
+    </ul>
+  </div>
+
+  <div class="col-md-10 col-sm-9 col-sm-offset-3 col-md-offset-2 main" id="my-surveys">
+    <h3>My Surveys</h3>
     <div id="questionnaires" class="list-group">
       <% QuestionFlow.where(status: "show").order('id').each do |qf| %>
         <% as = AnswerSession.most_recent(qf.id, current_user.id) %>
@@ -32,47 +47,79 @@
       <% end %>
     </div>
   </div>
-</div>
-    <div class="row">
-      <div class="col-md-4">
-        <h2>Daily Trends</h2>
-        <p class="text-info">Keep track of your health with daily updates!</p>
 
-        <%= form_tag process_answer_path, {role: 'form', class: "form-inline"} do %>
-          <div class="list-group">
-            <% @daily_questions.each do |q| %>
-              <div class="form-group">
-                <label for="question_<%= q.id %>"><%= q.text %></label>
-                <% if q.question_type.id == 6 %>
-                  <input type="number" class="form-control" id="question_<%= q.id %>">
-                <% else %>
-                  <select class="form-control" id="question_<%= q.id %>">
-                    <% q.answer_options.each do |ao| %>
-                      <option value="<%= ao.id %>"><%= ao.text_value %></option>
-                    <% end %>
-                  </select>
-                <% end %>
+  <div class="col-md-10 col-sm-9 col-sm-offset-3 col-md-offset-2 main" id="my-sleep">
+    <div class="col-md-4">
+      <h3>My Sleep</h3>
+      <p class="text-info">Keep track of your sleep health with daily updates!</p>
+
+      <%= form_tag process_answer_path, {role: 'form', class: "form-inline"} do %>
+        <div class="list-group">
+          <% @daily_questions.each do |q| %>
+            <div class="form-group">
+              <label for="question_<%= q.id %>"><%= q.text %></label>
+              <% if q.question_type.id == 6 %>
+                <input type="number" class="form-control" id="question_<%= q.id %>">
+              <% else %>
+                <select class="form-control" id="question_<%= q.id %>">
+                  <% q.answer_options.each do |ao| %>
+                    <option value="<%= ao.id %>"><%= ao.text_value %></option>
+                  <% end %>
+                </select>
+              <% end %>
 
 
+            </div>
+
+
+          <% end %>
+        </div>
+      <% end %>
+      </div>
+    <div class="col-md-8">
+      <div id="daily-trends-chart">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-10 col-sm-9 col-sm-offset-3 col-md-offset-2 main" id="research-qs">
+    <h3>What are some research questions that might interest you?</h3>
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading">Place your vote below and help guide sleep apnea reasearch!</div>
+      <!-- List group -->
+      <div class="list-group research-questions">
+        <% Group.find(1).questions.sort_by{|q| -q.rating }.each_with_index do |q, i| %>
+          <div class="list-group-item">
+            <div class="row" data-id="<%= q.id %>">
+              <div class="col-md-2">
+                <h3 class="pull-left"><%= i+1 %></h3>
+                <div class="pull-right"><%= render partial: 'votes/rate_question', locals: {question: q, show_badge: true} %></div>
               </div>
+              <div class="col-md-10"><h4 class="text-primary"><%= q.text %></h4></div>
 
-
-            <% end %>
+            </div>
           </div>
         <% end %>
       </div>
-      <div class="col-md-8">
-        <div id="daily-trends-chart">
-
+      <div class="panel-body">
+        <span class="help-block">Think something's missing from the list?</span>
+        <div class="input-group input-group-lg">
+          <input id="rq-text" class="form-control no-focus" placeholder="Enter a research question you've always wanted to ask." />
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button" data-submit-path="<%= add_to_rl_path %>" id="submit-rq">Submit!</button>
+        </span>
         </div>
-
       </div>
+
     </div>
+  </div>
 
 
 
   </div>
-</div>
 </div>
 
 

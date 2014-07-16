@@ -46,3 +46,36 @@ $.rails.allowAction = (element) ->
 
 
 
+#$(document).on "click", "#to-my-sleep", () ->
+#  $("#my-surveys").hide()
+#  $("#research-qs").hide()
+#  $("#my-sleep").show()
+#
+#  false
+#
+#$(document).on "click", "#to-research-qs", () ->
+#  $("#my-surveys").hide()
+#  $("#my-sleep").hide()
+#  $("#research-qs").show()
+#  false
+#
+#$(document).on "click", "#to-my-surveys", () ->
+#  $("#research-qs").hide()
+#  $("#my-sleep").hide()
+#  $("#my-surveys").show()
+#  false
+
+$(document).on "click", ".dashboard-target a", () ->
+  targets = $(".dashboard-target a").map((i, e) -> $(e).data('target'))
+  my_target = $(this).data("target")
+
+  targets.each((i, e) ->
+    $("#"+e).hide()
+  )
+
+  $("#"+my_target).show()
+
+  $(".dashboard-target li").removeClass("active")
+  $(this).parent().addClass("active")
+
+  false

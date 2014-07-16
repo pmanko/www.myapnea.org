@@ -7,3 +7,5 @@ travis-ci@example.com
 My Apnea
 http://localhost
 postgres://myapnea:myapnea@localhost/myapnea
+
+/assets/
