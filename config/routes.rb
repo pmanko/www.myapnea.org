@@ -29,6 +29,7 @@ Rails.application.routes.draw do
 
     match 'vote', to: 'votes#vote', via: :post, as: :vote
     match 'add_to_rl', to: 'questions#add_to_research_list', via: :post, as: :add_to_rl
+    match 'add_daily_trend', to: "answers#add_daily_trend", via: :post, as: :add_daily_trend
 
     resources :question_flows
 
