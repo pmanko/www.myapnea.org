@@ -46,3 +46,120 @@ $.rails.allowAction = (element) ->
 
 
 
+#$(document).on "click", "#to-my-sleep", () ->
+#  $("#my-surveys").hide()
+#  $("#research-qs").hide()
+#  $("#my-sleep").show()
+#
+#  false
+#
+#$(document).on "click", "#to-research-qs", () ->
+#  $("#my-surveys").hide()
+#  $("#my-sleep").hide()
+#  $("#research-qs").show()
+#  false
+#
+#$(document).on "click", "#to-my-surveys", () ->
+#  $("#research-qs").hide()
+#  $("#my-sleep").hide()
+#  $("#my-surveys").show()
+#  false
+
+$(document).on "click", ".dashboard-target a", () ->
+  targets = $(".dashboard-target a").map((i, e) -> $(e).data('target'))
+  my_target = $(this).data("target")
+
+  targets.each((i, e) ->
+    $("#"+e).hide()
+  )
+
+  $("#"+my_target).show()
+
+  $(".dashboard-target li").removeClass("active")
+  $(this).parent().addClass("active")
+
+  false
+
+$(document).on "submit", "#my-sleep form", () ->
+  $.post($(this).attr("action"), $(this).serialize(), () ->
+    $(".chart svg").fadeOut(100, () ->
+      $(".chart svg").html("")
+      drawGraphs()
+      $(".chart svg").fadeIn(100)
+    )
+
+#    $("#pap-chart svg").fadeOut().html("")
+#    $("#sleep-chart svg").fadeOut().html("")
+
+
+  )
+
+  false
+
+
+@drawGraphs = () ->
+
+  d3.json("/daily_trends", (error,json_data) ->
+    nv.addGraph(() ->
+      data = json_data.sleep
+      chart = nv.models.linePlusBarChart()
+        .margin({top: 30, right: 60, bottom: 50, left: 70})
+        .x((d,i) -> i )
+        .y((d,i) ->  d[1])
+
+      chart.xAxis.tickFormat((d) ->
+        dx = data[0].values[d] && data[0].values[d][0] || 0
+        d3.time.format('%x')(new Date(dx))
+      )
+
+      chart.y1Axis.tickFormat(d3.format(',f'))
+
+      chart.y2Axis.tickFormat(d3.format(',f'))
+
+      chart.bars.forceY([0])
+
+      d3.select('#sleep-chart svg')
+        .datum(data)
+        .transition()
+        .duration(0)
+        .call(chart)
+
+      nv.utils.windowResize(chart.update)
+
+      chart
+    )
+
+    nv.addGraph(() ->
+      data = json_data.pap
+      chart = nv.models.linePlusBarChart()
+      .margin({top: 30, right: 60, bottom: 50, left: 70})
+      .x((d,i) -> i )
+      .y((d,i) ->  d[1])
+
+      chart.xAxis.tickFormat((d) ->
+        dx = data[0].values[d] && data[0].values[d][0] || 0
+        d3.time.format('%x')(new Date(dx))
+      )
+
+      chart.y1Axis.tickFormat(d3.format(',f'))
+
+      chart.y2Axis.tickFormat(d3.format(',f'))
+
+      chart.bars.forceY([0])
+
+      d3.select('#pap-chart svg')
+      .datum(data)
+      .transition()
+      .duration(0)
+      .call(chart)
+
+      nv.utils.windowResize(chart.update)
+
+      chart
+    )
+  )
+
+@dashboardReady = () ->
+  if($("#dashboard").length)
+    drawGraphs()
+

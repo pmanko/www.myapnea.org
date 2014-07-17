@@ -39,9 +39,9 @@
   input_type: time
   store_raw_value: true
   allow_multiple: false
-- name: time
+- name: select
   id: 8
   tag: select
   input_type: option
-  store_raw_value: true
+  store_raw_value: false
   allow_multiple: false

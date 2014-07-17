@@ -13,7 +13,7 @@
   reviewReady()
   votesReady()
   setFocus()
-
+  dashboardReady()
 
 
 
