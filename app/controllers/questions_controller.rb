@@ -62,7 +62,7 @@ class QuestionsController < ApplicationController
 
     rl_group = Group.find(1)
 
-    rl_group.questions.create(text_en: params[:question_text])
+    rl_group.questions.create(text_en: params[:question_text])# if current_user.email == "pmankowski@partners.org"
 
 
     @questions = Group.find(1).questions.sort_by{|q| -q.rating }
