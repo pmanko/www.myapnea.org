@@ -546,32 +546,31 @@
   text_value_en: Very poor
 
 - id: 200001
-  text_value_en: 1
+  numeric_value: 1
 
 - id: 200002
-  text_value_en: 2
+  numeric_value: 2
 
 - id: 200003
-  text_value_en: 3
+  numeric_value: 3
 
 - id: 200004
-  text_value_en: 4
+  numeric_value: 4
 
 - id: 200005
-  text_value_en: 5
+  numeric_value: 5
 
 - id: 200006
-  text_value_en: 6
+  numeric_value: 6
 
 - id: 200007
-  text_value_en: 7
+  numeric_value: 7
 
 - id: 200008
-  text_value_en: 8
+  numeric_value: 8
 
 - id: 200009
-  text_value_en: 9
+  numeric_value: 9
 
 - id: 200010
-  text_value_en: 10
-
+  numeric_value: 10

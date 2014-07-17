@@ -4,5 +4,6 @@ class PatientController < ApplicationController
   layout 'myapnea'
 
   def dashboard
+    @daily_questions = Group.find(2).questions
   end
 end

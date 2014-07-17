@@ -1,0 +1,12 @@
+<% Group.find(1).questions.sort_by{|q| -q.rating }.each_with_index do |q, i| %>
+  <div class="list-group-item">
+    <div class="row" data-id="<%= q.id %>">
+      <div class="col-md-2">
+        <h3 class="pull-left"><%= i+1 %></h3>
+        <div class="pull-right"><%= render partial: 'votes/rate_question', locals: {question: q, show_badge: true} %></div>
+      </div>
+      <div class="col-md-10"><h4 class="text-primary"><%= q.text %></h4></div>
+
+    </div>
+  </div>
+<% end %>
