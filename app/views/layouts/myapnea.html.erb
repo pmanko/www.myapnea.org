@@ -22,15 +22,16 @@
 
 <%= render partial: 'layouts/myapnea/header' %>
 
+<% if flash.present? %>
+  <div class="alert main-alert alert-<%= flash_alert_class(flash.keys.first) %>" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <%= flash[flash.keys.first] %>
+  </div>
+<% end %>
+
 
 <div class="container main-container">
 
-  <% if flash.present? %>
-    <div class="alert alert-<%= flash_alert_class(flash.keys.first) %>" role="alert" style="margin-top:50px">
-      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-      <%= flash[flash.keys.first] %>
-    </div>
-  <% end %>
 
   <%= yield %>
 </div>
