@@ -13,7 +13,6 @@
   reviewReady()
   votesReady()
   setFocus()
-  launchShapeWrapper()
   dashboardReady()
 
 
