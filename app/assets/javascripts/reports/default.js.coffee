@@ -19,7 +19,7 @@ update_frequency_table = () ->
 
   d3.json(qf_path+'/'+question_id+'/'+answer_session_id+'.json', (error, json_data) ->
     user_answer = json_data.user_answer
-    data = json_data.frequencies.map((f) -> { label: f.label, frequency: ((f.frequency * 100) + "%") })
+    data = json_data.frequencies.map((f) -> { label: f.label, frequency: (Math.round(f.frequency * 100) + "%") })
 
     rows = tbody.selectAll("tr").data(data)
 
