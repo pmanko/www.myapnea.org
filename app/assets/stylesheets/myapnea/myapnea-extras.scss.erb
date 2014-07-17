@@ -69,7 +69,7 @@ body {
 }
 
 body a {
-  text-decoration: underline;
+  // text-decoration: underline;
 }
 
 body a:hover {
@@ -151,7 +151,7 @@ p{
       -o-transition: height 1s;
       transition: height 1s; }
 
-      header .navbar .navbar-inverse .container #myApneaLogo {
+      header .navbar .navbar-inverse .container-fluid #myApneaLogo {
         background-image: url('myapnea/myApneaLogo<%= asset_path('myapnea/myApneaLogo.png').split('myApneaLogo').last %>');
         display: inline-block;
         height: 140px;
@@ -171,7 +171,7 @@ p{
       }
 
 
-      header.smaller .navbar .navbar-inverse .container #myApneaLogo {
+      header.smaller .navbar .navbar-inverse .container-fluid #myApneaLogo {
         height: 70px;
         background-size: 40%;
         -webkit-transition: all 0.5s ease-in-out;
@@ -181,7 +181,7 @@ p{
         transition: all 0.5s ease-in-out;
       }
 
-      header.smaller .navbar .navbar-inverse .container .navContainer .clientFunctions {
+      header.smaller .navbar .navbar-inverse .container-fluid .navContainer .clientFunctions {
        color:$menuLinkColor;
        text-align:left;
        border-bottom:none;
@@ -196,12 +196,11 @@ p{
      }
 
 
-     header .navbar .navbar-inverse .container .navContainer .clientFunctions {
+     header .navbar .navbar-inverse .container-fluid .navContainer .clientFunctions {
        color: $menuLinkColor;
        border-bottom: 1px solid $borderColor;
        min-width: 330px;
        margin-top: 5px;
-       margin-right:-20px;
        position:relative;
        text-align: right;
        text-transform:uppercase;
@@ -213,7 +212,7 @@ p{
        transition: all 0.25s ease-in-out;
      }
 
-     header .navbar .navbar-inverse .container .navContainer .navbar-inverse .navbar-nav > li > a:after {
+     header .navbar .navbar-inverse .container-fluid .navContainer .navbar-inverse .navbar-nav > li > a:after {
       content:'|';
       opacity: .5;
       padding-left:22px;
@@ -225,7 +224,7 @@ p{
     }
 
 
-    header.smaller .navbar .navbar-inverse .container .navContainer .navbar-inverse .navbar-nav > li > a:after {
+    header.smaller .navbar .navbar-inverse .container-fluid .navContainer .navbar-inverse .navbar-nav > li > a:after {
       content:'|';
       opacity: .5;
       padding-left:22px;
@@ -274,7 +273,6 @@ p{
 
     .navbar {
      min-height:0;
-     margin-right:-20px;
    }
 
    .clientFunctions, .navFunctions {

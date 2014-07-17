@@ -3,7 +3,7 @@
 <div class="row">
   <div class="col-sm-3 col-md-2 sidebar">
     <ul class="nav nav-sidebar">
-      <li><%= link_to "Help Guide Sleep Apnea Research!" %></li>
+      <li><%= link_to "Help Guide Sleep Apnea Research!", home_path %></li>
     </ul>
 
     <ul class="nav nav-sidebar dashboard-target">
@@ -13,9 +13,9 @@
     </ul>
 
     <ul class="nav nav-sidebar">
-      <li><a href="#">Our Network</a></li>
-      <li><a href="#">Our Research Team</a></li>
-      <li><a href="#">FAQs About Sleep Apnea Research</a></li>
+      <li><a href="<%= network_path %>">Our Network</a></li>
+      <li><a href="<%= team_path %>">Our Research Team</a></li>
+      <li><a href="<%= faqs_path %>">FAQs About Sleep Apnea Research</a></li>
     </ul>
   </div>
 
@@ -62,11 +62,18 @@
               <% if q.question_type.id == 6 %>
                 <input type="number" class="form-control" id="<%= q.id %>" name="questions[<%= q.id %>]">
               <% else %>
-                <select class="form-control" id="<%= q.id %>" name="questions[<%= q.id %>]">
-                  <% q.answer_options.each do |ao| %>
-                    <option value="<%= ao.id %>"><%= ao.value(:numeric_value).to_i %></option>
+                  <% if false #q.answer_options.each do |ao| %>
+                    <label class="radio-inline">
+                      <input type="radio" name="questions[<%= q.id %>]" id="<%= q.id %>" value="<%= ao.id %>"> <%= ao.value(:numeric_value).to_i %>
+                    </label>
                   <% end %>
-                </select>
+
+
+                  <select class="form-control" id="<%= q.id %>" name="questions[<%= q.id %>]">
+                    <% q.answer_options.each do |ao| %>
+                      <option value="<%= ao.id %>"><%= ao.value(:numeric_value).to_i %></option>
+                    <% end %>
+                  </select>
               <% end %>
 
 

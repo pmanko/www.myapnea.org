@@ -160,6 +160,9 @@ $(document).on "submit", "#my-sleep form", () ->
   )
 
 @dashboardReady = () ->
+
   if($("#dashboard").length)
+    $("#dashboard").parents(".container").addClass("container-fluid").removeClass("container")
     drawGraphs()
+
 
