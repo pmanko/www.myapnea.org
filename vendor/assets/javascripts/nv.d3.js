@@ -184,7 +184,7 @@
                          d3.mouse() returns incorrect X,Y mouse coordinates when mouse moving
                          over a rect in IE 10.
                          However, d3.event.offsetX/Y also returns the mouse coordinates
-                         relative to the triggering <rect>. So we use offsetX/Y on IE.  
+                         relative to the triggering <rect>. So we use offsetX/Y on IE.
                          */
                         mouseX = d3.event.offsetX;
                         mouseY = d3.event.offsetY;
@@ -195,7 +195,7 @@
                          When this happens on IE, the offsetX/Y is set to where ever the child element
                          is located.
                          As a result, we do NOT need to subtract margins to figure out the mouse X/Y
-                         position under this scenario. Removing the line below *will* cause 
+                         position under this scenario. Removing the line below *will* cause
                          the interactive layer to not work right on IE.
                          */
                         if(d3.event.target.tagName !== "svg")
@@ -326,7 +326,7 @@
     /* Utility class that uses d3.bisect to find the index in a given array, where a search value can be inserted.
      This is different from normal bisectLeft; this function finds the nearest index to insert the search value.
 
-     For instance, lets say your array is [1,2,3,5,10,30], and you search for 28. 
+     For instance, lets say your array is [1,2,3,5,10,30], and you search for 28.
      Normal d3.bisectLeft will return 4, because 28 is inserted after the number 10.  But interactiveBisect will return 5
      because 28 is closer to 30 than 10.
 
@@ -385,7 +385,7 @@
         window.nv.tooltip = {};
 
         /* Model which can be instantiated to handle tooltip rendering.
-         Example usage: 
+         Example usage:
          var tip = nv.models.tooltip().gravity('w').distance(23)
          .data(myDataObject);
 
@@ -397,7 +397,7 @@
              Format of data:
              {
              key: "Date",
-             value: "August 2009", 
+             value: "August 2009",
              series: [
              {
              key: "Series 1",
@@ -570,7 +570,7 @@
                         var svgBoundTop = svgBound.top;
 
                         //Defensive code. Sometimes, svgBoundTop can be a really negative
-                        //  number, like -134254. That's a bug. 
+                        //  number, like -134254. That's a bug.
                         //  If such a number is found, use zero instead. FireFox bug only
                         if (svgBoundTop < 0) {
                             var containerBound = chartContainer.getBoundingClientRect();
@@ -1964,14 +1964,14 @@
                  .attr('width', w0)
                  .attr('height', availableHeight)
                  .attr('x', reverse ? x0 : 0)
-                 .on('mouseover', function(d,i) { 
+                 .on('mouseover', function(d,i) {
                  dispatch.elementMouseover({
                  value: d,
                  label: (i <= 0) ? 'Maximum' : (i > 1) ? 'Minimum' : 'Mean', //TODO: make these labels a variable
                  pos: [x1(d), availableHeight/2]
                  })
                  })
-                 .on('mouseout', function(d,i) { 
+                 .on('mouseout', function(d,i) {
                  dispatch.elementMouseout({
                  value: d,
                  label: (i <= 0) ? 'Minimum' : (i >=1) ? 'Maximum' : 'Mean' //TODO: make these labels a variable
@@ -1995,14 +1995,14 @@
                  .attr('height', availableHeight / 3)
                  .attr('x', reverse ? x0 : 0)
                  .attr('y', availableHeight / 3)
-                 .on('mouseover', function(d) { 
+                 .on('mouseover', function(d) {
                  dispatch.elementMouseover({
                  value: d,
                  label: 'Current', //TODO: make these labels a variable
                  pos: [x1(d), availableHeight/2]
                  })
                  })
-                 .on('mouseout', function(d) { 
+                 .on('mouseout', function(d) {
                  dispatch.elementMouseout({
                  value: d,
                  label: 'Current' //TODO: make these labels a variable
@@ -5240,7 +5240,7 @@
                 groups
                     .transition()
                     .style('stroke-opacity', 1)
-                    .style('fill-opacity', .5);
+                    .style('fill-opacity', 0);
 
 
 
@@ -5882,7 +5882,7 @@
             , getY = function(d) { return d.y }
             , color = nv.utils.defaultColor()
             , showLegend = true
-            , tooltips = true
+            , tooltips = false
             , tooltip = function(key, x, y, e, graph) {
                 return '<h3>' + key + '</h3>' +
                     '<p>' +  y + ' at ' + x + '</p>';
@@ -10974,7 +10974,7 @@
             , forceX       = [] // List of numbers to Force into the X scale (ie. 0, or a max / min, etc.)
             , forceY       = [] // List of numbers to Force into the Y scale
             , forceSize    = [] // List of numbers to Force into the Size scale
-            , interactive  = true // If true, plots a voronoi overlay for advanced point intersection
+            , interactive  = false // If true, plots a voronoi overlay for advanced point intersection
             , pointKey     = null
             , pointActive  = function(d) { return !d.notActive } // any points that return false will be filtered out
             , padData      = false // If true, adds half a data points width to front and back, for lining up a line chart with a bar chart
@@ -10990,7 +10990,7 @@
             , sizeRange    = null
             , singlePoint  = false
             , dispatch     = d3.dispatch('elementClick', 'elementMouseover', 'elementMouseout')
-            , useVoronoi   = true
+            , useVoronoi   = false
             ;
 
         //============================================================

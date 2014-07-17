@@ -53,18 +53,18 @@
       <h3>My Sleep</h3>
       <p class="text-info">Keep track of your sleep health with daily updates!</p>
 
-      <%= form_tag process_answer_path, {role: 'form', class: "form-inline"} do %>
+      <%= form_tag add_daily_trend_path, {role: 'form', class: "form-inline", remote: false} do %>
         <div class="list-group">
           <% @daily_questions.each do |q| %>
             <div class="list-group-item">
             <div class="form-group">
-              <label for="question_<%= q.id %>"><%= q.text %></label>
+              <label for="<%= q.id %>"><%= q.text %></label>
               <% if q.question_type.id == 6 %>
-                <input type="number" class="form-control" id="<%= q.id %>" name="<%= q.id %>">
+                <input type="number" class="form-control" id="<%= q.id %>" name="questions[<%= q.id %>]">
               <% else %>
-                <select class="form-control" id="<%= q.id %>" name="<%= q.id %>">
+                <select class="form-control" id="<%= q.id %>" name="questions[<%= q.id %>]">
                   <% q.answer_options.each do |ao| %>
-                    <option value="<%= ao.id %>"><%= ao.text_value %></option>
+                    <option value="<%= ao.id %>"><%= ao.value(:numeric_value).to_i %></option>
                   <% end %>
                 </select>
               <% end %>
@@ -81,9 +81,14 @@
       <% end %>
       </div>
     <div class="col-md-8">
-      <div id="daily-trends-chart">
-
+      <div id="sleep-chart" class="chart">
+        <svg></svg>
       </div>
+
+      <div id="pap-chart" class="chart">
+        <svg></svg>
+      </div>
+
 
     </div>
   </div>
@@ -127,66 +132,3 @@
 </div>
 
 
-<script>
-
-  var margin = {top: 20, right: 20, bottom: 30, left: 50},
-      width = 560 - margin.left - margin.right,
-      height = 350 - margin.top - margin.bottom;
-
-  var parseDate = d3.time.format("%d-%b-%y").parse;
-
-  var x = d3.time.scale()
-      .range([0, width]);
-
-  var y = d3.scale.linear()
-      .range([height, 0]);
-
-  var xAxis = d3.svg.axis()
-      .scale(x)
-      .orient("bottom");
-
-  var yAxis = d3.svg.axis()
-      .scale(y)
-      .orient("left");
-
-  var line = d3.svg.line()
-      .x(function(d) { return x(d.date); })
-      .y(function(d) { return y(d.close); });
-
-  var svg = d3.select("#daily-trends-chart").append("svg")
-      .attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom)
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-  d3.tsv("/data.tsv", function(error, data) {
-    data.forEach(function(d) {
-      d.date = parseDate(d.date);
-      d.close = +d.close;
-    });
-
-    x.domain(d3.extent(data, function(d) { return d.date; }));
-    y.domain(d3.extent(data, function(d) { return d.close; }));
-
-    svg.append("g")
-        .attr("class", "x axis")
-        .attr("transform", "translate(0," + height + ")")
-        .call(xAxis);
-
-    svg.append("g")
-        .attr("class", "y axis")
-        .call(yAxis)
-        .append("text")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 6)
-        .attr("dy", ".71em")
-        .style("text-anchor", "end")
-        .text("Price ($)");
-
-    svg.append("path")
-        .datum(data)
-        .attr("class", "line")
-        .attr("d", line);
-  });
-
-</script>

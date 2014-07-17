@@ -16,6 +16,7 @@ Rails.application.routes.draw do
     get 'splash', to: 'pages#splash', as: :splash
 
     get 'questions/frequencies(/:question_id/:answer_session_id)', to: "questions#frequencies", as: :question_frequencies, format: :json
+    get 'daily_trends', to: "questions#daily_trends", as: :daily_trends, format: :json
 
     get 'dashboard', to: "patient#dashboard"
     get 'switch_theme/:theme', to: 'users#switch_theme', as: :switch_theme
