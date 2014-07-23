@@ -1,12 +1,44 @@
 # 0.5.1
+## Bug Fixes
+- Style and design integration fixes.
+- Updates to tests and documentation.
 
-# 0.5.0
+# 0.5.0 (07/16/2014)
+## Enhancements
+- Dashboard re-design.
+- Research questions.
+- Daily Trends
+- Integration of MyApnea theme.
 
-# 0.4.0
+# 0.4.0 (07/14/2014)
+## Enhancements
+- Custom Report for A Little About Me Questionnaire.
+- Enhancement of global report areas to involve user interaction.
 
-# 0.3.1
+## Refactoring
+- Switch from Less to Sass to be ready for integration with MyApnea design.
+- Re-factoring of Survey reports to include custom and global areas.
 
-# 0.3.0
+
+# 0.3.1 (07/10/2014)
+## Bug Fixes
+- Prevent automatic focus setting for unwanted form fields.
+- Fix potential data leak in survey reports.
+- Fix issues with listing of answers for reports.
+- Enable Password Reset support.
+
+# 0.3.0 (06/28/2014)
+
+## Enhancements
+- Implementation of Questionnaires
+  - Question and Answer Model Implemented.
+  - Questionnaires represented as Directed Acyclic Graphs.
+  - Methods for calculating shortest and longest paths, completion percentages, status tracking.
+  - Internationalization support.
+  - Refined user interface and experience.
+
+## Content
+- A Little About Me questionnaire
 
 # 0.2.0 (05/23/2014)
 ## Enhancements
