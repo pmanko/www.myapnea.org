@@ -145,7 +145,7 @@ GEM
       rspec-support (~> 3.0.0)
     rspec-mocks (3.0.3)
       rspec-support (~> 3.0.0)
-    rspec-rails (3.0.1)
+    rspec-rails (3.0.2)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
@@ -233,7 +233,7 @@ DEPENDENCIES
   rails (= 4.1.4)
   rails-erd
   redcarpet
-  rspec-rails (= 3.0.1)
+  rspec-rails (= 3.0.2)
   sass-rails (~> 4.0.1)
   schema_to_scaffold
   sdoc (~> 0.4.0)
