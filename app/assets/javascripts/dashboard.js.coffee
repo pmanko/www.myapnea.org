@@ -99,7 +99,7 @@ $(document).on "submit", "#my-sleep form", () ->
 
 @drawGraphs = () ->
 
-  d3.json("/daily_trends", (error,json_data) ->
+  d3.json($(".charts").data("path"), (error,json_data) ->
     nv.addGraph(() ->
       data = json_data.sleep
       chart = nv.models.linePlusBarChart()
@@ -160,6 +160,9 @@ $(document).on "submit", "#my-sleep form", () ->
   )
 
 @dashboardReady = () ->
+
   if($("#dashboard").length)
+    $("#dashboard").parents(".container").addClass("container-fluid").removeClass("container")
     drawGraphs()
+
 

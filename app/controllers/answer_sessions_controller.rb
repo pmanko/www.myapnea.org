@@ -1,7 +1,7 @@
 class AnswerSessionsController < ApplicationController
   before_filter :authenticate_user!
   # Each session needs user(current), question flow
-
+  layout 'myapnea'
   def start
     # question_flow
     # creates (or finds) answer session

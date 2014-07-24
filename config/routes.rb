@@ -54,7 +54,7 @@ Rails.application.routes.draw do
 
   get '/:locale' => 'mailing_lists#show'
 
-  root 'mailing_lists#show'
+  root 'pages#home'
 
 
 end

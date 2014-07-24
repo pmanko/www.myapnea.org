@@ -3,7 +3,7 @@
 
   <div class="col-md-4">
     <span class="help-block">Choose question to view results for.</span>
-    <select class="form-control" id="question-select" data-answer-session-id="<%= @answer_session.id %>" data-json-path="<%= question_frequencies_path %>">
+    <select class="form-control no-focus" id="question-select" data-answer-session-id="<%= @answer_session.id %>" data-json-path="<%= question_frequencies_path %>">
       <% @answer_session.all_reportable_answers.each do |answer| %>
         <option value="<%= answer.question.id %>"><%= markdown answer.question.text %></option>
       <% end %>

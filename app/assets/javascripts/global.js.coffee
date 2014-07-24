@@ -22,5 +22,7 @@
   loadShapeWrapper()
 
 
+
+
 $(document).ready(loaders)
 $(document).on('page:load', loaders)

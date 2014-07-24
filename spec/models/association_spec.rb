@@ -3,9 +3,13 @@
 require "spec_helper"
 
 describe "Model Associations" do
+  before do
+    pending "migration to OpenPPRN"
+  end
+
   context "Example questionnaire" do
     it "Should load the yaml definitions and have the correct associations" do
-      pending 
+
       ## THIS IS LOADED IN SEED DATA. ADD ANY OTHER REQUIRED FILES IN THIS FASHION
       # files = [["units.yml", Unit], ["answer_types.yml", AnswerType], ["question_types.yml", QuestionType], ["answer_options.yml", AnswerOption], ["questions.yml", Question], ["question_flows.yml", QuestionFlow], ["question_edges.yml", QuestionEdge]]
       #

@@ -2,16 +2,17 @@ require "spec_helper"
 
 describe "Signs in user" do
   before do
+    pending "migration to OpenPPRN"
+
     @password = "password"
     @user = create(:registered_user, password: @password)
 
-#    expect(@user.valid_password?(@password)).to be_true
-#    expect(@user).to be_confirmed
+    expect(@user.valid_password?(@password)).to be_true
+    expect(@user).to be_confirmed
     expect(@user).to be_persisted
   end
 
   it "should sign in a confirmed user using the main signin page", :js => true do
-    pending "Takedown of Under Construction page"
 
     visit new_user_session_path
 
