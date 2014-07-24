@@ -1,4 +1,4 @@
-# 0.5.1
+# 0.5.1 (07/23/2014)
 ## Bug Fixes
 - Style and design integration fixes.
 - Updates to tests and documentation.

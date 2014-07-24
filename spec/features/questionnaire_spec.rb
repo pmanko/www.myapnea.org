@@ -15,9 +15,11 @@ require "spec_helper"
 #   -
 
 describe "Resuming a questionnaire" do
+  before do
+    pending "migration to OpenPPRN"
+  end
 
   it "typical workflow" do
-    pending
 
     q = QuestionFlow.first
     visit dashboard_path
@@ -26,10 +28,6 @@ describe "Resuming a questionnaire" do
 
     expect(page).to have_content q.description
 
-
-  end
-
-  it "should present question after last answer" do
 
   end
 
